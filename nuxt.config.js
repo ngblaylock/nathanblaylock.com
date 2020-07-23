@@ -1,8 +1,5 @@
 export default {
   mode: 'universal',
-  /*
-   ** Headers of the page
-   */
   head: {
     title: process.env.npm_package_name || '',
     meta: [{
@@ -88,27 +85,11 @@ export default {
       }
     ]
   },
-  /*
-   ** Customize the progress-bar color
-   */
   loading: {
     color: '#fff'
   },
-  /*
-   ** Global CSS
-   */
-  
-  /*
-   ** Plugins to load before mounting the App
-   */
   plugins: [],
-  /*
-   ** Nuxt.js dev-modules
-   */
   buildModules: [],
-  /*
-   ** Nuxt.js modules
-   */
   css: [
     '@/assets/style/custom.scss'
   ],
@@ -118,16 +99,14 @@ export default {
     '@nuxtjs/pwa',
   ],
   bootstrapVue: {
-    bootstrapCSS: false, // Or `css: false`
-    bootstrapVueCSS: false // Or `bvCSS: false`
+    bootstrapCSS: false,
+    bootstrapVueCSS: false
   },
-  /*
-   ** Build configuration
-   */
   build: {
-    /*
-     ** You can extend webpack config here
-     */
     extend(config, ctx) {}
+  },
+  components: true,
+  generate: {
+    fallback: true,
   }
 }

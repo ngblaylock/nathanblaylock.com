@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <div>
   <b-navbar toggleable="lg" type="dark" variant="danger">
     <nuxt-link class="navbar-brand" to="/">
       <img
@@ -13,7 +13,7 @@
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
-      <ul class="navbar-nav ml-auto text-center py-4 py-lg-2">
+      <ul class="navbar-nav ml-auto text-center p-1">
         <li class="nav-item">
           <nuxt-link class="nav-link" to="/">Portfolio</nuxt-link>
         </li>
@@ -26,7 +26,7 @@
       </ul>
     </b-collapse>
   </b-navbar>
-</nav>
+</div>
 </template>
 
 <script>
@@ -59,24 +59,4 @@ export default {};
     }
   }
 }
-// $border: 3px;
-// $active-color: rgba(0, 0, 0, 0.25);
-
-// .collapse {
-//   .nuxt-link-exact-active {
-//     border-bottom: $border solid $active-color;
-//     background-color: $active-color;
-//     border-radius: 4px;
-//     color: white !important;
-//   }
-//   > ul > li.nav-item > .nav-link {
-//     color: white;
-//     margin: 0 5px;
-//     padding: 5px 15px;
-//   }
-//   > ul > li.nav-item > .nav-link:hover:not(.nuxt-link-exact-active) {
-//     border-bottom: $border solid $active-color;
-//     color: white;
-//   }
-// }
 </style>
