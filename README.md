@@ -1,22 +1,19 @@
-# portfolio
+# Nathan Blaylock Company Portfolio
 
-> My ultimate Nuxt.js project
+## Time Spent
 
-## Build Setup
+| Date         | Time      | Task                                   |
+| ------------ | --------- | -------------------------------------- |
+| Before       | ~ 8 Hours | Before I tracked my time               |
+| May 18, 2020 | .75 Hours | Getting back in the mood. Some Content |
 
-``` bash
-# install dependencies
-$ npm run install
+## To Do
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+- Write out the Services section
+- Re-Design the Contact Page
+- Get individual pages for the portfolio page
+- Make a "Show More Projects" on Home Page
+- More imagery on Services Page
+- Get on Google My Business
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Issues

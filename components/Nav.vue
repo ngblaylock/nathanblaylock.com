@@ -18,7 +18,7 @@
           <nuxt-link class="nav-link" to="/">Portfolio</nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link class="nav-link" to="resume">Resume</nuxt-link>
+          <nuxt-link class="nav-link" to="services">Services</nuxt-link>
         </li>
         <li class="nav-item">
           <nuxt-link class="nav-link" to="contact">Contact</nuxt-link>
