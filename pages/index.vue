@@ -5,7 +5,7 @@
         <div class="row align-items-center">
           <div class="col-sm-4 align-self-start">
             <img
-              src="/img/blaylock-nathan-square.jpg"
+              src="/img/blaylock-nathan-1-square.png"
               alt="Nathan Blaylock"
               class="rounded-circle d-block mx-auto img-fluid"
             />

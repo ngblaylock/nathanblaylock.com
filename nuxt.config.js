@@ -1,7 +1,8 @@
 export default {
   mode: 'universal',
   head: {
-    title: process.env.npm_package_name || '',
+    title: '',
+    titleTemplate: '%s Nathan Blaylock Media',
     meta: [{
         charset: 'utf-8'
       },
@@ -52,11 +53,6 @@ export default {
         rel: 'apple-touch-icon',
         sizes: '180x180',
         href: '/img/apple-touch-icon.png'
-      },
-      {
-        rel: 'stylesheet',
-        sizes: '180x180',
-        href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i&display=swap'
       },
       {
         rel: 'icon',

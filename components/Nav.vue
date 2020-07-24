@@ -1,9 +1,9 @@
 <template>
   <div>
-  <b-navbar toggleable="lg" type="dark" variant="danger">
+  <b-navbar toggleable="sm" type="dark" variant="danger">
     <nuxt-link class="navbar-brand" to="/">
       <img
-        src="/img/nathan-blaylock-media.svg"
+        src="/img/logo-white-nathan-blaylock-media.svg"
         style="width: 50px;"
         alt="Nathan Blaylock Media Logo"
       />
