@@ -15,6 +15,11 @@
           <i class="fab fa-markdown"></i> Docs
         </a>
       </li>
+      <li>
+        <nuxt-link to="/privacy">
+          <i class="fas fa-shield-alt"></i> Privacy
+        </nuxt-link>
+      </li>
     </ul>
   </footer>
 </template>

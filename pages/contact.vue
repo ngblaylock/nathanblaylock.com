@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container py-5">
     <div class="row">
-      <div class="col-sm-8 col-lg-6 offset-sm-2 offset-lg-3 bg-light my-4 p-3">
+      <div class="col-sm-8 col-lg-6 offset-sm-2 offset-lg-3 bg-light p-3">
         <h1>Contact Me</h1>
         <div id="submission" style="display: none;">
           <div

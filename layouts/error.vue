@@ -1,9 +1,9 @@
 <template>
   <div class="mt-5">
     <div class="text-center">
-      <h1 v-if="error.statusCode === 404">Page not found</h1>
+      <h1 v-if="error.statusCode === 404"><span class="display-1 text-muted">404</span><br />Page not found</h1>
       <h1 v-else>An error occurred</h1>
-      <nuxt-link to="/">Back to Home</nuxt-link>
+      <nuxt-link class="btn btn-primary mt-3" to="/">Back to Home</nuxt-link>
     </div>
   </div>
 </template>
