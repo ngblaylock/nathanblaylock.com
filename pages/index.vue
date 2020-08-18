@@ -93,7 +93,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-light">
+    <!-- <div class="bg-light">
       <div class="container">
         <div class="row py-5">
           <div class="col-sm-12">
@@ -115,7 +115,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="container py-5">
       <div class="row">
         <div class="col-sm-12">
