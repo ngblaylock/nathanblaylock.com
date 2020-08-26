@@ -18,9 +18,7 @@
               design, and a strong web presence.
             </p>
             <p>
-              <nuxt-link to="/contact" class="btn btn-light"
-                >Request a Quote</nuxt-link
-              >
+              <nuxt-link to="/contact" class="btn btn-light">Request a Quote</nuxt-link>
             </p>
           </div>
         </div>
@@ -64,9 +62,7 @@
           </div>
           <div class="col-sm-12">
             <p class="text-center">
-              <nuxt-link class="btn btn-primary" to="services"
-                >More About Services</nuxt-link
-              >
+              <nuxt-link class="btn btn-primary" to="services">More About Services</nuxt-link>
             </p>
           </div>
         </div>
@@ -75,14 +71,10 @@
     <div class="container py-5">
       <div class="row">
         <div class="col-sm-12">
-          <h2 class="h1 text-center pb-4">My Work</h2>
+          <h2 class="text-center pb-4">My Work</h2>
         </div>
 
-        <div
-          class="col-sm-4 pb-4"
-          v-for="project in projects"
-          :key="project.id"
-        >
+        <div class="col-sm-4 pb-4" v-for="project in projects" :key="project.id">
           <a :href="project.link" target="_blank">
             <img
               :src="'/img/' + project.image"
@@ -93,37 +85,50 @@
         </div>
       </div>
     </div>
-    <!-- <div class="bg-light">
+    <div class="bg-light">
       <div class="container">
         <div class="row py-5">
-          <div class="col-sm-12">
-            <h2 class="h1 text-center pb-4">Testimonials</h2>
-          </div>
-          <div v-for="(i, index) in 4" class="col-sm-3" :key="index">
-            <img
-              :src="testimonials[index].image"
-              alt="Placeholder"
-              class="mb-2 rounded-circle mx-auto d-block img-fluid"
-              style="max-width: 150px;"
-            />
-            <blockquote class="text-center">
-              {{ testimonials[index].quote }}
-              <footer class="blockquote-footer text-center mt-3">
-                {{ testimonials[index].name }}
-              </footer>
-            </blockquote>
+          <div class="col-sm-8 offset-sm-2">
+            <h2 class="text-center">Testimonial</h2>
+            <div class="testimonial testimonial-start d-none d-sm-block">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="testimonial testimonial-end d-none d-sm-block">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <p
+              class="lead"
+            >When I separated from my prior partnership and formed my own CPA firm I knew that one of the first things I would need was a website. I turned to Nathan to help me get my website up and going. Nathan was able to get it up and going in the short time frame I had to work with.</p>
+            <p>He has also been very responsive to website changes. Our firm and many of our clients have been very pleased with the look and functionality of the website. I would definitely recommend using Nathan to develop a website for any purpose.</p>
+            <div class="d-flex align-items-center">
+              <img
+                src="/img/people/jeff.png"
+                alt="Jeff Wangsgard"
+                class="rounded-circle mr-2"
+                style="width: 75px;"
+              />
+              <p class="mb-0">
+                Jeffrey R Wangsgard, Managing Member
+                <br />
+                <small>Jeffrey R Wangsgard &amp; Associates LLC</small>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="container py-5">
       <div class="row">
         <div class="col-sm-12">
-          <h2 class="h1 text-center pb-4">Request a Quote</h2>
+          <h2 class="text-center pb-4">Request a Quote</h2>
         </div>
         <div class="col-sm-8 offset-sm-2">
-          <p class="lead text-center">Because every business is different, there is no cookie-cutter pricing guide to display. Get in contact and we will talk about your company goals, and the results you would like to see. I love providing my clients with quality products while keeping my prices below market value. And in case you are wondering, yes, the quote is free, as it should be.</p>
-          <p class="text-center"><nuxt-link to="/contact" class="btn btn-danger">Request a Quote</nuxt-link></p>
+          <p
+            class="lead text-center"
+          >Because every business is different, there is no cookie-cutter pricing guide to display. Get in contact and we will talk about your company goals, and the results you would like to see. I love providing my clients with quality products while keeping my prices below market value. And in case you are wondering, yes, the quote is free, as it should be.</p>
+          <p class="text-center">
+            <nuxt-link to="/contact" class="btn btn-danger">Request a Quote</nuxt-link>
+          </p>
         </div>
       </div>
     </div>
@@ -138,62 +143,36 @@ export default {
         {
           name: "Sorenson Center",
           image: "scce.png",
-          link: "http://scce.usu.edu",
+          link: "http://scce.usu.edu"
         },
         {
           name: "Psychology",
           image: "psychology.png",
-          link: "http://psychology.usu.edu",
+          link: "http://psychology.usu.edu"
         },
         {
           name: "Nursing",
           image: "nursing.png",
-          link: "http://nursing.usu.edu",
+          link: "http://nursing.usu.edu"
         },
         {
           name: "Jeffrey R Wangsgard",
           image: "jrwcpatax.png",
-          link: "http://jrwcpatax.com",
+          link: "http://jrwcpatax.com"
         },
         {
           name: "Busy Bee Odd Jobs",
           image: "busy-bee-odd-jobs.png",
-          link: "http://busybeeoddjobs.com",
+          link: "http://busybeeoddjobs.com"
         },
         {
           name: "Bingo Caller",
           image: "bingo.png",
-          link: "http://bingo.nathanblaylock.com",
-        },
-      ],
-      testimonials: [
-        {
-          name: "Jeff Wangsgard",
-          image: "/img/people/jeff.png",
-          quote:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi dolorum aperiam voluptate, nisi maiores quos, ea, debitis esse veniam at natus molestias.",
-        },
-        {
-          name: "John Cockett",
-          image: "/img/people/john.png",
-          quote:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi dolorum aperiam voluptate, nisi maiores quos, ea, debitis esse veniam at natus molestias.",
-        },
-        {
-          name: "Jason Barnett",
-          image: "/img/people/no-photo-300.png",
-          quote:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi dolorum aperiam voluptate, nisi maiores quos, ea, debitis esse veniam at natus molestias.",
-        },
-        {
-          name: "Wayne B",
-          image: "/img/people/no-photo-300.png",
-          quote:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi dolorum aperiam voluptate, nisi maiores quos, ea, debitis esse veniam at natus molestias.",
-        },
-      ],
+          link: "http://bingo.nathanblaylock.com"
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
@@ -205,5 +184,21 @@ export default {
     rgba(25, 24, 22, 1) 0%,
     rgb(37, 35, 34) 100%
   );
+}
+.testimonial {
+  color: #e9e9e9;
+  position: absolute;
+  font-size: 5em;
+  &.testimonial-start {
+    left: -0.6em;
+    top: 0;
+  }
+  &.testimonial-end {
+    bottom: 0.5em;
+    right: -0.6em;
+  }
+  & ~ p {
+    position: relative;
+  }
 }
 </style>
