@@ -98,7 +98,7 @@
             </div>
             <p
               class="lead"
-            >When I separated from my prior partnership and formed my own CPA firm I knew that one of the first things I would need was a website. I turned to Nathan to help me get my website up and going. Nathan was able to get it up and going in the short time frame I had to work with.</p>
+            >When I separated from my prior partnership and formed my own CPA firm I knew that one of the first things I would need was a website. Nathan helped me get my website up and going in the short time frame I had to work with.</p>
             <p>He has also been very responsive to website changes. Our firm and many of our clients have been very pleased with the look and functionality of the website. I would definitely recommend using Nathan to develop a website for any purpose.</p>
             <div class="d-flex align-items-center">
               <img
