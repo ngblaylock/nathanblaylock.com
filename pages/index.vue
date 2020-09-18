@@ -137,6 +137,18 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: 'Home',
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "My custom description"
+        }
+      ]
+    };
+  },
   data() {
     return {
       projects: [

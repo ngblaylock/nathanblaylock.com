@@ -1,8 +1,10 @@
 export default {
   mode: 'universal',
   head: {
-    title: '',
-    titleTemplate: '%s Nathan Blaylock Media',
+    titleTemplate: (titleChunk) => {
+      // If undefined or blank then we don't need the hyphen
+      return titleChunk ? `${titleChunk} | Nathan Blaylock Media` : 'Nathan Blaylock Media';
+    },
     meta: [{
         charset: 'utf-8'
       },
