@@ -110,15 +110,27 @@
 
 <script>
 export default {
-  head: {
-    title: "Busy Bee Odd Jobs Project",
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content: "My project for Busy Bee Odd Jobs was for a small business who needed a new logo and working website.",
-      },
-    ],
+  head: function() {
+    return {
+      title: "Busy Bee Odd Jobs Project",
+      meta: [
+        {
+          hid: "description",
+          content: "A project by Nathan Blaylock for Busy Bee Odd Jobs who needed help with branding and a website. See a brief overview of the project.",
+          name: "description",
+        },
+        {
+          hid: "og:description",
+          content: "A project by Nathan Blaylock for Busy Bee Odd Jobs who needed help with branding and a website. See a brief overview of the project.",
+          property: "og:description",
+        },
+        {
+          hid: "og:title",
+          content: "Busy Bee Odd Jobs Project",
+          property: "og:title",
+        },
+      ],
+    };
   },
 };
 </script>
