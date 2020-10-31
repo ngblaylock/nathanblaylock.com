@@ -71,17 +71,24 @@
     <div class="container py-5">
       <div class="row">
         <div class="col-sm-12">
-          <h2 class="text-center pb-4">My Work</h2>
+          <h2 class="text-center pb-4">Featured Projects</h2>
         </div>
 
         <div class="col-sm-4 pb-4" v-for="project in projects" :key="project.id">
-          <a :href="project.link" target="_blank">
+          <a v-if="project.link[0] != '/'" :href="project.link" target="_blank">
             <img
               :src="'/img/' + project.image"
               :alt="project.name + ' Webpage Graphic'"
               class="img-fluid"
             />
           </a>
+          <nuxt-link v-else :to="project.link">
+            <img
+              :src="'/img/' + project.image"
+              :alt="project.name + ' Webpage Graphic'"
+              class="img-fluid"
+            />
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -175,7 +182,7 @@ export default {
         {
           name: "Busy Bee Odd Jobs",
           image: "busy-bee-odd-jobs.png",
-          link: "http://busybeeoddjobs.com"
+          link: "/projects/busy-bee-odd-jobs"
         },
         {
           name: "Bingo Caller",
