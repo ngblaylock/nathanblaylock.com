@@ -27,7 +27,7 @@
         a little wave to the font, and really liked it. As for the color, purple
         seemed to do the trick. I tried out a few, but liked the vibrance a lot.
       </p>
-      <img src="http://placehold.it/600x400" class="img-fluid d-block mx-auto mb-3" alt="">
+      <img src="/img/projects/bingo/bingo-screenshot.png" class="img-fluid d-block mx-auto mb-3" alt="">
       <p>
         I have had a few people use it, and am glad that they enjoy using it. I
         have a few ideas in the future, such as adding audio, and maybe adding

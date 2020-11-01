@@ -181,13 +181,13 @@ export default {
         },
         {
           name: "Busy Bee Odd Jobs",
-          image: "busy-bee-odd-jobs.png",
+          image: "/img/projects/bboj/busy-bee-odd-jobs.png",
           link: "/projects/busy-bee-odd-jobs"
         },
         {
           name: "Bingo Caller",
-          image: "bingo.png",
-          link: "http://bingo.nathanblaylock.com"
+          image: "/img/projects/bingo/bingo.png",
+          link: "/projects/bingo-caller"
         }
       ]
     };
