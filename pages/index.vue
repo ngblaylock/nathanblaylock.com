@@ -84,7 +84,7 @@
           </a>
           <nuxt-link v-else :to="project.link">
             <img
-              :src="'/img/' + project.image"
+              :src="project.image"
               :alt="project.name + ' Webpage Graphic'"
               class="img-fluid"
             />
