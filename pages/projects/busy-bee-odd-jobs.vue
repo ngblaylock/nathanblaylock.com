@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pb-5">
     <img src="/img/projects/bboj/BBOJ-hero.png" class="img-fluid" alt="" />
     <div class="container-sm">
       <h1>
