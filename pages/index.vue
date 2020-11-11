@@ -176,8 +176,8 @@ export default {
         },
         {
           name: "Jeffrey R Wangsgard",
-          image: "jrwcpatax.png",
-          link: "http://jrwcpatax.com"
+          image: "/img/projects/jrwcpatax/jrwcpatax.png",
+          link: "/projects/jrwcpatax"
         },
         {
           name: "Busy Bee Odd Jobs",
