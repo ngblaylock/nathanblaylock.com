@@ -87,26 +87,26 @@
 
 <script>
 export default {
-  head: function () {
+  head: function() {
     return {
-      title: "Busy Bee Odd Jobs Project",
+      title: "Jeffrey R. Wangsgard & Associates",
       meta: [
         {
           hid: "description",
           content:
-            "A project by Nathan Blaylock for Busy Bee Odd Jobs who needed help with branding and a website. See a brief overview of the project.",
+            "A project by Nathan Blaylock for Jeffrey R. Wangsgard and Associates, who needed help with branding and a website. See a brief overview of the project.",
           name: "description",
+        },
+        {
+          hid: "og:title",
+          content: "Jeffrey R. Wangsgard & Associates",
+          property: "og:title",
         },
         {
           hid: "og:description",
           content:
-            "A project by Nathan Blaylock for Busy Bee Odd Jobs who needed help with branding and a website. See a brief overview of the project.",
+            "A project by Nathan Blaylock for Jeffrey R. Wangsgard and Associates, who needed help with branding and a website. See a brief overview of the project.",
           property: "og:description",
-        },
-        {
-          hid: "og:title",
-          content: "Busy Bee Odd Jobs Project",
-          property: "og:title",
         },
       ],
     };
@@ -119,21 +119,35 @@ export default {
             "https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2",
           thumbnail:
             "https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2",
-          title: "",
+          title: "Tax Folder & Business Card",
         },
         {
           img:
             "https://static01.nyt.com/images/2020/04/22/science/22VIRUS-PETCATS1/22VIRUS-PETCATS1-mediumSquareAt3X.jpg",
           thumbnail:
             "https://static01.nyt.com/images/2020/04/22/science/22VIRUS-PETCATS1/22VIRUS-PETCATS1-mediumSquareAt3X.jpg",
-          title: "Test",
+          title: "Outdoor Sign",
         },
         {
           img:
             "https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg",
           thumbnail:
             "https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg",
-          title: "Test",
+          title: "Indoor Sign",
+        },
+        {
+          img:
+            "https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg",
+          thumbnail:
+            "https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg",
+          title: "Wordmark Sign",
+        },
+        {
+          img:
+            "https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg",
+          thumbnail:
+            "https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg",
+          title: "Letterhead",
         },
       ],
     };
