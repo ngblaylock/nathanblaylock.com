@@ -73,21 +73,11 @@
 
       <p class="text-center">
         <a
-          href="/img/projects/bboj/BBOJ-website.png"
-          target="_blank"
+          href="https://busybeeoddjobs.com" target="_blank"
           class="btn btn-primary"
-          >Preview Website</a
+          >Visit Website</a
         >
       </p>
-      <div class="alert alert-light">
-        Visit
-        <a href="https://busybeeoddjobs.com" target="_blank"
-          >busybeeoddjobs.com</a
-        >
-        to view the actual website. Please note, that some changes may have been
-        made by others who worked on the project after me, so not every aspect
-        can be attributed to my work.
-      </div>
       <p>
         It was a pleasure to work with Wayne and take on this Busy Bee Odd Jobs
         branding and web development. I was even more pleased to hear about his
