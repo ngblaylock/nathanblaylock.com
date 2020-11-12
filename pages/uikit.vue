@@ -1,5 +1,8 @@
 <template>
   <div class="container pb-5">
+
+    <BaguetteBox />
+
     <div class="row">
       <div class="col-sm-12">
         <h1>Header 1</h1>
