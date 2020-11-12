@@ -19,10 +19,8 @@
         execute it himself. I had drawn up a few sketches for a logo and really
         liked the end result.
       </p>
-      <img
+      <ProjectImg
         src="/img/projects/bboj/BBOJ-old-new.png"
-        alt=""
-        class="d-block mx-auto mb-3 img-fluid"
       />
       <p>
         It is always fun to insert something subtle into a logo, similar to the
@@ -31,10 +29,8 @@
         not the full name of the business, it is part of it and helps tie in the
         logo to the brand.
       </p>
-      <img
+      <ProjectImg
         src="/img/projects/bboj/BBOJ-odd.png"
-        alt=""
-        class="d-block mx-auto mb-3 img-fluid"
       />
       <p>
         In the initial logo concept that Wayne provided, he had a somewhat rough
@@ -45,11 +41,8 @@
         labor-intensive jobs, it supports the fact that they are willing to do
         the messy and tough jobs.
       </p>
-      <img
+      <ProjectImg
         src="/img/projects/bboj/BBOJ-fonts.png"
-        alt=""
-        class="d-block mx-auto mb-3 img-fluid"
-        style="width: 400px;"
       />
       <p>
         Colors were pretty simple to choose for this project. Having a bee for a
@@ -58,10 +51,8 @@
         fantastic. When you incorporate those colors with a honeycomb-hexagon
         pattern, you get a solid, recognizable brand.
       </p>
-      <img
+      <ProjectImg
         src="/img/projects/bboj/BBOJ-colors.png"
-        alt=""
-        class="d-block mx-auto mb-3 img-fluid"
       />
       <p>
         The website was a lot of fun to put together. Wayne didn’t need much on
@@ -76,10 +67,8 @@
         add a cherry on top of the website, we added some animation to help
         improve the customer’s interest.
       </p>
-      <img
+      <ProjectImg
         src="/img/projects/bboj/BBOJ-screenshot.png"
-        alt=""
-        class="d-block mx-auto mb-3 img-fluid"
       />
 
       <p class="text-center">

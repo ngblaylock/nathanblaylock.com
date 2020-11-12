@@ -22,11 +22,7 @@
         Jeffrey goes below the font baseline. I thought that worked really well
         being the first character in the wordmark.
       </p>
-      <img
-        src="/img/projects/jrwcpatax/JRW-wordmarks.png"
-        alt=""
-        class="d-block mx-auto mb-3 img-fluid"
-      />
+      <ProjectImg src="/img/projects/jrwcpatax/JRW-wordmarks.png" />
       <p>
         I played around with a few colors, and chose to go with teal and dark
         teal. To add some contrast, I also added in a golden orange color, which
@@ -37,11 +33,7 @@
         colors and formats (jpg, png, eps), the fonts we used, and the colors
         listed out in HEX, RGB, and CMYK.
       </p>
-      <img
-        src="/img/projects/jrwcpatax/JRW-colors.png"
-        alt=""
-        class="d-block mx-auto mb-3 img-fluid"
-      />
+      <ProjectImg src="/img/projects/jrwcpatax/JRW-colors.png" />
       <p>
         Once Jeffrey gave me the go-ahead, we moved on to some building signage
         and promotional materials. Jeffrey’s business is on Main Street in
@@ -56,12 +48,10 @@
         door). We got some business cards for Jeffrey and his employees, as well
         as a tax folder. Jeffrey was officially ready to start seeing clients.
       </p>
-      <img
-        src="https://placehold.it/600x400?text=Gallery"
-        alt=""
-        class="d-block mx-auto mb-3 img-fluid"
-      />
-      <p class="text-center"><a href="#" class="btn btn-primary">View Gallery</a></p>
+      <ProjectImg />
+      <p class="text-center">
+        <a href="#" class="btn btn-primary">View Gallery</a>
+      </p>
       <p>
         During the same time that we worked on the promotional materials, we
         also got the website up and running. The website reflected his brand
@@ -79,12 +69,12 @@
         they needed to go. We felt like that would provide a better user
         experience.
       </p>
-      <img
-        src="/img/projects/jrwcpatax/JRW-screenshot.png"
-        alt=""
-        class="d-block mx-auto mb-3 img-fluid"
-      />
-      <p class="text-center"><a href="https://jrwcpatax.com" target="_blank" class="btn btn-primary">View Website</a></p>
+      <ProjectImg src="/img/projects/jrwcpatax/JRW-screenshot.png" />
+      <p class="text-center">
+        <a href="https://jrwcpatax.com" target="_blank" class="btn btn-primary"
+          >View Website</a
+        >
+      </p>
       <p>
         It was so much fun to work on this branding and website project with
         Jeffrey. I still continue to help him out with any needs he has with
@@ -109,29 +99,21 @@ export default {
           hid: "description",
           content:
             "A project by Nathan Blaylock for Busy Bee Odd Jobs who needed help with branding and a website. See a brief overview of the project.",
-          name: "description",
+          name: "description"
         },
         {
           hid: "og:description",
           content:
             "A project by Nathan Blaylock for Busy Bee Odd Jobs who needed help with branding and a website. See a brief overview of the project.",
-          property: "og:description",
+          property: "og:description"
         },
         {
           hid: "og:title",
           content: "Busy Bee Odd Jobs Project",
-          property: "og:title",
-        },
-      ],
+          property: "og:title"
+        }
+      ]
     };
-  },
+  }
 };
 </script>
-
-<style lang="scss" scoped>
-.container-sm{
-  img{
-    max-width: 600px;
-  }
-}
-</style>

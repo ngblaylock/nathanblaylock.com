@@ -27,11 +27,7 @@
         a little wave to the font, and really liked it. As for the color, purple
         seemed to do the trick.
       </p>
-      <img
-        src="/img/projects/bingo/bingo-screenshot.png"
-        class="img-fluid d-block mx-auto mb-3"
-        alt=""
-      />
+      <ProjectImg src="/img/projects/bingo/bingo-screenshot.png" />
       <p class="text-center">
         <a
           href="https://bingo.nathanblaylock.com"
