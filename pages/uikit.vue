@@ -1,8 +1,5 @@
 <template>
   <div class="container pb-5">
-
-    <BaguetteBox />
-
     <div class="row">
       <div class="col-sm-12">
         <h1>Header 1</h1>
@@ -108,6 +105,55 @@
           <small class="text-muted">PNG</small>
       </div>
     </div>
+
+    <h2>Gallery <code>&lt;BaguetteBox ></code></h2>
+    <BaguetteBox :gallery="gallery" name="gallery-3" />
+    <div class="text-center">
+      <BaguetteBox :gallery="gallery" button />
+      <BaguetteBox :gallery="gallery" name="gallery-2" button button-text='Launch Gallery 2' button-color="danger" />
+    </div>
+      <table class="table table-sm table-hover mt-3">
+        <thead class="bg-light">
+          <tr>
+            <th>Prop</th>
+            <th>Type</th>
+            <th>Default</th>
+            <th>Required</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>gallery</td>
+            <td>Array of Objects: object.img, object.thumbnail, object.title</td>
+            <td></td>
+            <td>*</td>
+          </tr>
+          <tr>
+            <td>name</td>
+            <td>String</td>
+            <td>"gallery"</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>button</td>
+            <td>Boolean</td>
+            <td>false</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>button-color</td>
+            <td>String</td>
+            <td>"primary"</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>button-text</td>
+            <td>String</td>
+            <td>"Launch Gallery"</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
   </div>
 </template>
 
@@ -115,13 +161,34 @@
 export default {
   name: "UiKit",
   head: {
-    title: "UI Kit |",
+    title: "UI Kit",
     meta: [
       {
         name: "robots",
         content: "noindex,nofollow",
       },
     ],
+  },
+  data: function(){
+    return {
+      gallery: [
+        {
+          img: 'https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2',
+          thumbnail: 'https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2',
+          title: 'Test'
+        },
+        {
+          img: 'https://static01.nyt.com/images/2020/04/22/science/22VIRUS-PETCATS1/22VIRUS-PETCATS1-mediumSquareAt3X.jpg',
+          thumbnail: 'https://static01.nyt.com/images/2020/04/22/science/22VIRUS-PETCATS1/22VIRUS-PETCATS1-mediumSquareAt3X.jpg',
+          title: 'Test'
+        },
+        {
+          img: 'https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg',
+          thumbnail: 'https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg',
+          title: 'Test'
+        },
+      ]
+    }
   },
 };
 </script>

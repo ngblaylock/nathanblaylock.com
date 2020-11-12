@@ -2,9 +2,7 @@
   <div class="pb-5">
     <img src="/img/projects/jrwcpatax/JRW-hero.png" class="img-fluid" alt="" />
     <div class="container-sm">
-      <h1>
-        Jeffrey R. Wangsgard &amp; Associates
-      </h1>
+      <h1>Jeffrey R. Wangsgard &amp; Associates</h1>
       <p>
         Jeffrey Wangsgard is a Certified Public Accountant in Cache Valley, and
         has been working with a partner for a number of years. After he and his
@@ -49,9 +47,7 @@
         as a tax folder. Jeffrey was officially ready to start seeing clients.
       </p>
       <ProjectImg />
-      <p class="text-center">
-        <a href="#" class="btn btn-primary">View Gallery</a>
-      </p>
+      <BaguetteBox class="d-block mb-3 text-center" :gallery="gallery" button />
       <p>
         During the same time that we worked on the promotional materials, we
         also got the website up and running. The website reflected his brand
@@ -91,7 +87,7 @@
 
 <script>
 export default {
-  head: function() {
+  head: function () {
     return {
       title: "Busy Bee Odd Jobs Project",
       meta: [
@@ -99,21 +95,48 @@ export default {
           hid: "description",
           content:
             "A project by Nathan Blaylock for Busy Bee Odd Jobs who needed help with branding and a website. See a brief overview of the project.",
-          name: "description"
+          name: "description",
         },
         {
           hid: "og:description",
           content:
             "A project by Nathan Blaylock for Busy Bee Odd Jobs who needed help with branding and a website. See a brief overview of the project.",
-          property: "og:description"
+          property: "og:description",
         },
         {
           hid: "og:title",
           content: "Busy Bee Odd Jobs Project",
-          property: "og:title"
-        }
-      ]
+          property: "og:title",
+        },
+      ],
     };
-  }
+  },
+  data: function () {
+    return {
+      gallery: [
+        {
+          img:
+            "https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2",
+          thumbnail:
+            "https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2",
+          title: "",
+        },
+        {
+          img:
+            "https://static01.nyt.com/images/2020/04/22/science/22VIRUS-PETCATS1/22VIRUS-PETCATS1-mediumSquareAt3X.jpg",
+          thumbnail:
+            "https://static01.nyt.com/images/2020/04/22/science/22VIRUS-PETCATS1/22VIRUS-PETCATS1-mediumSquareAt3X.jpg",
+          title: "Test",
+        },
+        {
+          img:
+            "https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg",
+          thumbnail:
+            "https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg",
+          title: "Test",
+        },
+      ],
+    };
+  },
 };
 </script>
