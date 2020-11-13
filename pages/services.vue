@@ -191,7 +191,7 @@
                 I do not write any content for the web pages. I have many
                 skills, but writing is not one of my strengths. Content owners
                 are typically expected to provide content. If my clients
-                struggle with writing their own content, I have some connection
+                struggle with writing their own content, I have some connections
                 that I can reach out to that would be willing to help.
               </li>
             </ul>
