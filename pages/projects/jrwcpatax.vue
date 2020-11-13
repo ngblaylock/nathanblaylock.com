@@ -24,7 +24,7 @@
       <p>
         I played around with a few colors, and chose to go with teal and dark
         teal. To add some contrast, I also added in a golden orange color, which
-        actually helps tie in to his previous business color scheme. Once we had
+        actually helps tie in his previous business color scheme. Once we had
         his branding in order, I gathered all of his branding assets into one
         package that he could keep at his business, and use however he needed.
         Some important parts of his package included his logo in different
@@ -36,17 +36,17 @@
         Once Jeffrey gave me the go-ahead, we moved on to some building signage
         and promotional materials. Jeffrey’s business is on Main Street in
         Logan, and he had a space where he could put his logo on an outdoor
-        sign. He connected me with a sign maker in town that he had worked for
+        sign. He connected me with a sign maker in town that he had worked with
         before, and got me the dimensions of the sign. We worked together to
         talk about materials and his process. Before too long, we had his logo
-        up so everyone could see where he was now located. Inside the building,
-        we put up a big window sign on all the exterior windows, and included
-        some instructions to which door was actually the right door to go in (it
-        was a pretty confusing space if you enter the building through the wrong
-        door). We got some business cards for Jeffrey and his employees, as well
-        as a tax folder. Jeffrey was officially ready to start seeing clients.
+        up so everyone could see it. Inside the building, we put up a big window
+        sign on all the exterior windows, and included some instructions to
+        which door was the correct door to go in (it was a pretty confusing
+        space if you enter the building through the wrong door). We got some
+        business cards for Jeffrey and his employees, as well as a tax folder.
+        Jeffrey was officially ready to start seeing clients.
       </p>
-      <ProjectImg />
+      <ProjectImg src="/img/projects/jrwcpatax/JRW-gallery.png" />
       <BaguetteBox class="d-block mb-3 text-center" :gallery="gallery" button />
       <p>
         During the same time that we worked on the promotional materials, we
@@ -55,15 +55,14 @@
         throughout the website, and used the golden orange color for some
         buttons to help them stand out more. For me, the hardest part of
         building a website is getting all the content in order. Fortunately,
-        Jeffrey was able to get me all the content for his site that he needed
-        up. That was very helpful since Jeffrey knew his own content much better
-        than I ever could. One extra feature that we were able to put on his
-        website is a login to a third party software group that Jeffrey uses for
-        his clients. A client would normally go to this company’s website and
-        login from there, but the company gave us some code that would allow the
-        user to log in straight from Jeff’s website, then be redirected to where
-        they needed to go. We felt like that would provide a better user
-        experience.
+        Jeffrey was able to get me all the content quickly. That was very
+        helpful since Jeffrey knew his own content much better than I ever
+        could. One extra feature that we were able to put on his website is a
+        login to a third party software group that Jeffrey uses for his clients.
+        A client would normally go to this company’s website and login from
+        there, but the company gave us some code that would allow the user to
+        log in straight from Jeffery’s website, then be redirected to where they
+        needed to go. We felt like that would provide a better user experience.
       </p>
       <ProjectImg src="/img/projects/jrwcpatax/JRW-screenshot.png" />
       <p class="text-center">
@@ -74,12 +73,10 @@
       <p>
         It was so much fun to work on this branding and website project with
         Jeffrey. I still continue to help him out with any needs he has with
-        Branding. Another thing we worked on was getting his business up on
-        Google Business so those searching for his site on Google would be able
-        to quickly find him. I loved working with Jeffrey, and feel like the
-        work I did for him really helped his business out in many ways. We got
-        lots of compliments from his returning clients on how well the brand was
-        and how easy it was to use.
+        branding. I loved working with Jeffrey, and feel like the work I did for
+        him really helped his business out in many ways. We got lots of
+        compliments from his returning clients on how well the brand turned out
+        and how easy the website was to use.
       </p>
     </div>
   </div>
@@ -111,43 +108,33 @@ export default {
       ],
     };
   },
-  data: function () {
+  data: function() {
     return {
       gallery: [
         {
-          img:
-            "https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2",
-          thumbnail:
-            "https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2",
-          title: "Tax Folder & Business Card",
-        },
-        {
-          img:
-            "https://static01.nyt.com/images/2020/04/22/science/22VIRUS-PETCATS1/22VIRUS-PETCATS1-mediumSquareAt3X.jpg",
-          thumbnail:
-            "https://static01.nyt.com/images/2020/04/22/science/22VIRUS-PETCATS1/22VIRUS-PETCATS1-mediumSquareAt3X.jpg",
+          img: "/img/projects/jrwcpatax/JRW-gallery-1.png",
+          thumbnail: "/img/projects/jrwcpatax/JRW-gallery-1.png",
           title: "Outdoor Sign",
         },
         {
-          img:
-            "https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg",
-          thumbnail:
-            "https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg",
+          img: "/img/projects/jrwcpatax/JRW-gallery-2.png",
+          thumbnail: "/img/projects/jrwcpatax/JRW-gallery-2.png",
           title: "Indoor Sign",
         },
         {
-          img:
-            "https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg",
-          thumbnail:
-            "https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg",
+          img: "/img/projects/jrwcpatax/JRW-gallery-3.png",
+          thumbnail: "/img/projects/jrwcpatax/JRW-gallery-3.png",
           title: "Wordmark Sign",
         },
         {
-          img:
-            "https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg",
-          thumbnail:
-            "https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg",
-          title: "Letterhead",
+          img: "/img/projects/jrwcpatax/JRW-gallery-4.png",
+          thumbnail: "/img/projects/jrwcpatax/JRW-gallery-4.png",
+          title: "Letterhead Design",
+        },
+        {
+          img: "/img/projects/jrwcpatax/JRW-gallery-5.png",
+          thumbnail: "/img/projects/jrwcpatax/JRW-gallery-5.png",
+          title: "Business Card & Tax Folder",
         },
       ],
     };
