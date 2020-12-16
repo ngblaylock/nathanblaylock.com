@@ -1,5 +1,7 @@
 <template>
-  <img :src="src" class="img-fluid d-block mx-auto mb-3" :alt="alt" />
+  <div class="mw-600">
+    <img :src="src" class="d-block mx-auto mb-3" :alt="alt" />
+  </div>
 </template>
 
 <script>
@@ -16,7 +18,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img{
+.mw-600{
   max-width: 600px;
+  margin: 0 auto;
+}
+img{
+  max-width: 100%;
 }
 </style>
