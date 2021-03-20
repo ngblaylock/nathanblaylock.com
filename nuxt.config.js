@@ -98,7 +98,6 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     "bootstrap-vue/nuxt",
-    "@nuxtjs/pwa",
   ],
   bootstrapVue: {
     bootstrapCSS: false,
