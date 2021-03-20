@@ -63,7 +63,7 @@ export default {
         {
           hid: "og:image",
           property: "og:image",
-          content: this.img,
+          content: this.site + this.img,
         },
         {
           hid: "og:site_name",
