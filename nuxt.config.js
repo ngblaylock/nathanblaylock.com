@@ -1,6 +1,7 @@
 export default {
   target: 'static',
   head: {
+    title: '',
     titleTemplate: (titleChunk) => {
       return titleChunk
         ? `${titleChunk} | Nathan Blaylock Media`
@@ -18,11 +19,6 @@ export default {
         hid: "description",
         name: "description",
         content: process.env.npm_package_description || "",
-      },
-      {
-        hid: "og:site_name",
-        property: "og:site_name",
-        content: "Nathan Blaylock Media",
       },
       {
         name: "apple-mobile-web-app-title",

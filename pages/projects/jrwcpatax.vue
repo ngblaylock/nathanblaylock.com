@@ -1,5 +1,6 @@
 <template>
   <div class="pb-5">
+    <Seo title='JRWCPATAX Portfolio' description="Learn how I helped Jeffery Wangsgard with his new start-up by assisting with branding, web development, and photography." />
     <img src="/img/projects/jrwcpatax/JRW-hero.png" class="img-fluid" alt="" />
     <div class="container-sm">
       <h1>Jeffrey R. Wangsgard &amp; Associates</h1>
@@ -84,30 +85,6 @@
 
 <script>
 export default {
-  head: function() {
-    return {
-      title: "Jeffrey R. Wangsgard & Associates",
-      meta: [
-        {
-          hid: "description",
-          content:
-            "A project by Nathan Blaylock for Jeffrey R. Wangsgard and Associates, who needed help with branding and a website. See a brief overview of the project.",
-          name: "description",
-        },
-        {
-          hid: "og:title",
-          content: "Jeffrey R. Wangsgard & Associates",
-          property: "og:title",
-        },
-        {
-          hid: "og:description",
-          content:
-            "A project by Nathan Blaylock for Jeffrey R. Wangsgard and Associates, who needed help with branding and a website. See a brief overview of the project.",
-          property: "og:description",
-        },
-      ],
-    };
-  },
   data: function() {
     return {
       gallery: [

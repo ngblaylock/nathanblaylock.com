@@ -1,5 +1,6 @@
 <template>
   <div class="container my-5">
+    <Seo title="Privacy Policy" description="Nathan Blaylock Media's website does not track any known trackable informaiton from it's visitors." />
     <div class="row">
       <div class="col-md-4 order-md-last">
         <p class="text-center text-muted" style="font-size: 12em;">

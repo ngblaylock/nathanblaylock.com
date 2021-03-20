@@ -1,5 +1,10 @@
 <template>
   <div class="pb-5">
+    <Seo
+      title="Bingo Caller Portfolio"
+      description='Check out my "Just For Fun" project I created; a Bingo Caller to help groups play a game with minimal materials and setup'
+      img="/img/projects/bingo/bingo-screenshot.png"
+    />
     <img src="/img/projects/bingo/bingo-hero.png" class="img-fluid" alt="" />
     <div class="container-sm">
       <h1>
@@ -44,32 +49,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  head: function() {
-    return {
-      title: "Bingo Caller",
-      meta: [
-        {
-          hid: "description",
-          content:
-            "Bingo Caller is a project created and maintained by Nathan Blaylock. It is a free and ad-free web application to help groups of people enjoy a classic game of Bingo.",
-          name: "description",
-        },
-        {
-          hid: "og:description",
-          content:
-            "Bingo Caller is a project created and maintained by Nathan Blaylock. It is a free and ad-free web application to help groups of people enjoy a classic game of Bingo.",
-          property: "og:description",
-        },
-        {
-          hid: "og:title",
-          content: "Bingo Caller",
-          property: "og:title",
-        },
-      ],
-    };
-  },
-};
-</script>

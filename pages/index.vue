@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Seo />
     <div class="hero-dark-bg py-5">
       <div class="container">
         <div class="row align-items-center">
@@ -144,18 +145,6 @@
 
 <script>
 export default {
-  head() {
-    return {
-      title: 'Home',
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content: "My custom description"
-        }
-      ]
-    };
-  },
   data() {
     return {
       projects: [

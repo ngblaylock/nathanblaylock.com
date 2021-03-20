@@ -1,5 +1,6 @@
 <template>
   <div class="pb-5">
+    <Seo title="Busy Bee Odd Jobs Portfolio" description="Learn how I helped Busy Bee Odd Jobs with their updated branding and website needs." />
     <img src="/img/projects/bboj/BBOJ-hero.png" class="img-fluid" alt="" />
     <div class="container-sm">
       <h1>
@@ -86,30 +87,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  head: function() {
-    return {
-      title: "Busy Bee Odd Jobs Project",
-      meta: [
-        {
-          hid: "description",
-          content: "A project by Nathan Blaylock for Busy Bee Odd Jobs who needed help with branding and a website. See a brief overview of the project.",
-          name: "description",
-        },
-        {
-          hid: "og:description",
-          content: "A project by Nathan Blaylock for Busy Bee Odd Jobs who needed help with branding and a website. See a brief overview of the project.",
-          property: "og:description",
-        },
-        {
-          hid: "og:title",
-          content: "Busy Bee Odd Jobs Project",
-          property: "og:title",
-        },
-      ],
-    };
-  },
-};
-</script>

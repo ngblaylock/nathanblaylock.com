@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "short_name": "portfolio",
-  "description": "Nathan Blaylock is a multimedia developer at Utah State University",
   "icons": [],
   "start_url": "/?standalone=true",
   "display": "standalone",

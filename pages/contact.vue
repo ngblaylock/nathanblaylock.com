@@ -1,5 +1,6 @@
 <template>
   <div class="container py-5">
+    <Seo title="Contact" description='Contact Nathan Blaylock regarding pricing, services, or to send an encouraging message.' />
     <div class="row">
       <div class="col-sm-8 col-lg-6 offset-sm-2 offset-lg-3 bg-light p-3">
         <h1>Contact Me</h1>
