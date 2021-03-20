@@ -9,9 +9,9 @@
             class="alert alert-success"
           >Thanks for your submission. I will get back to you as soon as I can.</div>
         </div>
-        <!-- <script type="text/javascript">
+        <script type="text/javascript">
   var submitted = false;
-        </script> -->
+        </script>
         <iframe
           name="hidden_iframe"
           id="hidden_iframe"
