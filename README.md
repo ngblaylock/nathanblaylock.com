@@ -1,5 +1,20 @@
-# Nathan Blaylock Company Portfolio
+# portfolio
 
-## Sprint Link
+## Build Setup
 
-https://docs.google.com/spreadsheets/d/1QRH6jsf_F-BLRnETuaWA5QFUyJsInX7XPFdg6BGS9s0/edit#gid=1533201084
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
