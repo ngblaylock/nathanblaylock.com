@@ -15,7 +15,15 @@ export default {
     ]
   },
   css: [
-    "@assets/nathanblaylock.scss",
   ],
   components: true,
+  buildModules: [
+    '@nuxtjs/tailwindcss',
+  ],
+  modules: [
+    '@nuxt/content',
+  ],
+  content: {},
+  build: {
+  }
 }
