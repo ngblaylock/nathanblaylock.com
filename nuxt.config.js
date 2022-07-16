@@ -1,29 +1,26 @@
+import tailwindConfig from './tailwind.config'
+
 export default {
   target: 'static',
   head: {
     title: 'Portfolio',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: '' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  css: [
-  ],
+  css: [],
   components: true,
-  buildModules: [
-    '@nuxtjs/tailwindcss',
-  ],
-  modules: [
-    '@nuxt/content',
-  ],
+  buildModules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/content'],
   content: {},
-  build: {
-  }
+  build: {},
+  tailwindcss: {
+    config: tailwindConfig,
+  },
 }
