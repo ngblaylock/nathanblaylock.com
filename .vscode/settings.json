@@ -12,4 +12,9 @@
     "strings": true
   },
   "css.validate": false,
+  "cSpell.words": [
+    "crossorigin",
+    "nuxtjs",
+    "tailwindcss"
+  ],
 }

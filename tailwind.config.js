@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -12,6 +14,11 @@ module.exports = {
       light: '#EBEBEB',
       white: '#FFFFFF',
     },
+    extend: {
+      fontFamily: {
+        'sans': ['Lexend', ...defaultTheme.fontFamily.sans],
+      },
+    }
   },
   variants: {
     extend: {},
