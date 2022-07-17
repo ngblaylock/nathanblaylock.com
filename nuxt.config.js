@@ -31,7 +31,7 @@ export default {
   },
   css: [],
   components: true,
-  buildModules: ['@nuxtjs/tailwindcss'],
+  buildModules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
   modules: ['@nuxt/content'],
   content: {},
   build: {},

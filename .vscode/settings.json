@@ -1,4 +1,9 @@
 {
+  "path-autocomplete.pathMappings": {
+    "$root": [
+      "${folder}/static",
+    ],
+  },
   "files.associations": {
     "*.css": "tailwindcss"
   },

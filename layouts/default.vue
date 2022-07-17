@@ -1,5 +1,6 @@
 <template>
   <div>
+    <BgImage/>
     <b-container>
       <Header />
     </b-container>
