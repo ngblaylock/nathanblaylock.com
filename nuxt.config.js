@@ -29,12 +29,9 @@ export default {
       },
     ],
   },
-  css: [],
   components: true,
   buildModules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
   modules: ['@nuxt/content'],
-  content: {},
-  build: {},
   tailwindcss: {
     config: tailwindConfig,
   },
