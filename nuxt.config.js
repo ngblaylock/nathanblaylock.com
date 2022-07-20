@@ -1,8 +1,5 @@
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'portfolio',
     htmlAttrs: {
@@ -16,31 +13,26 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/scss/nathanblaylock.scss'
   ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
+  buildModules: [
+    '@nuxtjs/style-resources',
   ],
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
+  modules: [
+    // 'bootstrap-vue/nuxt',
+  ],
   build: {},
   bootstrapVue: {
-    bootstrapCSS: false, // Or `css: false`
-    // bootstrapVueCSS: false // Or `bvCSS: false`
+    // bootstrapCSS: false,
+    // bootstrapVueCSS: false,
   },
+  styleResources: {
+    scss: [
+      './assets/scss/_ngb-variables.scss',
+      './assets/scss/_bootstrap-required.scss',
+    ],
+   }
 }
