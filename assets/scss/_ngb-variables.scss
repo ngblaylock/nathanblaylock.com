@@ -36,11 +36,15 @@ $secondary: $blue-500;
 $dark: $gray-900;
 $light: $gray-100;
 
+$component-active-bg: $blue-400;
+
 $theme-colors: (
-  'gray': $gray-500,
+  'gray': $gray-600,
 );
 
 $link-color: $blue-500;
 
 $font-family-sans-serif: 'Urbanist', Roboto, 'Helvetica Neue', Arial, sans-serif;
 $font-weight-normal: 500;
+
+$border-radius: .125em;

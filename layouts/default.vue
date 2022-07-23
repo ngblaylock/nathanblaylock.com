@@ -41,5 +41,6 @@ body {
   opacity: 0.15;
   clip-path: polygon(0 0, 67% 0, 100% 100%, 0 100%);
   position: absolute;
+  z-index: -1;
 }
 </style>

@@ -70,6 +70,7 @@
             </li>
             <li>NPM</li>
             <li>Git, GitHub, Bitbucket</li>
+            <li>Jira, Asana, Trello</li>
             <li>Mac, Linux, Windows</li>
             <li>Photoshop, Illustrator, InDesign</li>
           </ul>
