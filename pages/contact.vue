@@ -1,9 +1,6 @@
 <template>
   <b-container>
     <b-row>
-      <div class="col-md-5 order-md-last">
-        <p class="h4 text-gray">Think my work is interesting? Let me know what you think.</p>
-      </div>
       <div class="col-md-7">
         <iframe
           name="hidden_iframe"

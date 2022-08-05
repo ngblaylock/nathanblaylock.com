@@ -18,6 +18,7 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.7.1",
     "@nuxtjs/style-resources": "^1.2.1",
     "eslint-config-prettier": "^8.3.0",
     "node-sass": "^7.0.1",

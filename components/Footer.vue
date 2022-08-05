@@ -35,7 +35,7 @@
             src="https://media.nngroup.com/nng-uxc-badge.png"
             alt="UX Certification Badge from Nielsen Norman Group"
         /></a>
-        <img class="logo" src="/img/logo-red.svg" alt="NB Logo" />
+        <NuxtImg class="logo" src="/img/logo-red-nathan-blaylock-media.svg" alt="NB Logo" />
       </div>
     </b-container>
   </footer>

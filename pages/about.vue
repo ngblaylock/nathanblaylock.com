@@ -2,14 +2,14 @@
   <b-container>
     <b-row>
       <div class="col-8 offset-2 offset-sm-0 col-sm-4 col-lg-3 offset-lg-1 text-center">
-        <img
-          src="https://via.placeholder.com/400"
+        <NuxtImg
+          src="/img/blaylock-nathan-1-square.png"
           class="img-fluid"
           alt="Nathan Blaylock Image"
         />
       </div>
-      <div class="col-sm-8 col-lg-7">
-        <p class="lead mt-4 mt-sm-0">
+      <div class="col-sm-8 col-lg-7 align-self-center">
+        <p class="lead mt-4 mt-sm-0 mb-0">
           I am a User Experience Engineer who solves complex problems. My area
           of focus is on . I am a Frontend Website developer (JAMStack for
           personal projects) I used to be a multimedia specialist so I have
@@ -49,8 +49,8 @@
         <div class="grouping">
           <h4>Utah State University</h4>
           <ul>
-            <li>Master's Degree</li>
-            <li>Bachelor's Degree</li>
+            <li><strong>Master of Arts</strong> - Instructional Technology and Learning Sciences at Utah State University. Area of study: user experience design.</li>
+            <li><strong>Bachelor of Science</strong> - Major in Art and Design, minors in Computer Science and Multimedia Development at Utah State University. Areas of study: graphic design, web development, and other multimedia skills.</li>
           </ul>
         </div>
       </div>
@@ -61,7 +61,7 @@
           <ul>
             <li>Figma, XD, Sketch</li>
             <li>HTML, MD</li>
-            <li>CSS, SCSS</li>
+            <li>CSS, SASS</li>
             <li>Bootstrap 3, 4, 5, Bootstrap Vue, Vuetify</li>
             <li>JS, jQuery, Vue, Nunjucks, Alpine</li>
             <li>Eleventy, Nuxt</li>

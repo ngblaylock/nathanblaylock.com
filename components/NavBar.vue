@@ -11,6 +11,9 @@
         <li>
           <NuxtLink to="/contact">Contact</NuxtLink>
         </li>
+        <li v-if="$config.isDev">
+          <NuxtLink to="/uikit">UI Kit</NuxtLink>
+        </li>
       </ul>
     </nav>
   </b-container>

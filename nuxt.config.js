@@ -66,9 +66,12 @@ export default {
     ],
   },
   css: ['@/assets/scss/nathanblaylock.scss'],
+  publicRuntimeConfig: {
+    isDev: process.env.NODE_ENV !== 'production',
+  },
   plugins: [],
   components: true,
-  buildModules: ['@nuxtjs/style-resources'],
+  buildModules: ['@nuxtjs/style-resources', '@nuxt/image'],
   modules: [
     // 'bootstrap-vue/nuxt',
   ],
