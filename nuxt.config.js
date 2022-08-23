@@ -73,7 +73,7 @@ export default {
   components: true,
   buildModules: ['@nuxtjs/style-resources', '@nuxt/image'],
   modules: [
-    // 'bootstrap-vue/nuxt',
+    '@nuxt/content'
   ],
   build: {},
   bootstrapVue: {

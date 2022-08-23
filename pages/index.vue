@@ -1,8 +1,14 @@
 <template>
   <b-container>
     <b-row>
-      <div v-for="(project, index) in projects" :key="index" class="col-sm-6 col-md-4 mb-4 text-center">
-        <img :src="`https://via.placeholder.com/400x300?text=${project.title}`" class="img-fluid" alt="">
+      <div
+        v-for="(project, index) in projects"
+        :key="index"
+        class="col-sm-6 col-md-4 mb-4 text-center"
+      >
+        <NuxtLink :to="`/projects/${project.slug}`">
+          <NuxtImg :src="project.img" class="img-fluid" :alt="project.title" width="600" height="400" />
+        </NuxtLink>
       </div>
     </b-row>
   </b-container>
@@ -10,50 +16,63 @@
 
 <script>
 export default {
-  data(){
+  data() {
     return {
       projects: [
         {
-          title: 'Busy Bee Odd Jobs'
+          title: 'Busy Bee Odd Jobs',
+          slug: 'busy-bee-odd-jobs',
+          img: '/img/projects/busy-bee-odd-jobs/busy-bee-odd-jobs.png',
         },
         {
-          title: 'Bingo'
+          title: 'Bingo',
+          img: 'https://via.placeholder.com/400x300',
         },
         {
-          title: 'JRWCPRTAX'
+          title: 'JRWCPRTAX',
+          img: 'https://via.placeholder.com/400x300',
         },
         {
-          title: 'Cookbook'
+          title: 'Cookbook',
+          img: 'https://via.placeholder.com/400x300',
         },
         {
-          title: 'Group Sale Tracker'
+          title: 'Group Sale Tracker',
+          img: 'https://via.placeholder.com/400x300',
         },
         {
-          title: 'Smithfield CoC'
+          title: 'Smithfield CoC',
+          img: 'https://via.placeholder.com/400x300',
         },
         {
-          title: 'Psychology'
+          title: 'Psychology',
+          img: 'https://via.placeholder.com/400x300',
         },
         {
-          title: 'SCCE'
+          title: 'SCCE',
+          img: 'https://via.placeholder.com/400x300',
         },
         {
-          title: 'EGS'
+          title: 'EGS',
+          img: 'https://via.placeholder.com/400x300',
         },
         {
-          title: 'Placeholdate'
+          title: 'Placeholdate',
+          img: 'https://via.placeholder.com/400x300',
         },
         {
-          title: 'SmallSat'
+          title: 'SmallSat',
+          img: 'https://via.placeholder.com/400x300',
         },
         {
-          title: 'SDL'
+          title: 'SDL',
+          img: 'https://via.placeholder.com/400x300',
         },
-      ]
+      ],
     }
   },
-  mounted(){
-    $nuxt.$emit('change-page-title', "Projects")
-  }
+  mounted() {
+    $nuxt.$emit('change-page-title', 'Projects')
+  },
 }
 </script>
