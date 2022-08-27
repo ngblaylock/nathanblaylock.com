@@ -26,47 +26,48 @@ export default {
         },
         {
           title: 'Bingo',
-          img: 'https://via.placeholder.com/400x300',
+          img: '/img/projects/bingo/bingo.png',
         },
         {
           title: 'JRWCPRTAX',
-          img: 'https://via.placeholder.com/400x300',
+          slug: 'jrwcpatax',
+          img: '/img/projects/jrwcpatax/jrwcpatax.png',
         },
         {
           title: 'Cookbook',
-          img: 'https://via.placeholder.com/400x300',
+          img: '/img/projects/cookbook/',
         },
         {
           title: 'Group Sale Tracker',
-          img: 'https://via.placeholder.com/400x300',
+          img: '/img/projects/group-sale-tracker/',
         },
         {
           title: 'Smithfield CoC',
-          img: 'https://via.placeholder.com/400x300',
+          img: '/img/projects/smithfield-chamber/',
         },
         {
           title: 'Psychology',
-          img: 'https://via.placeholder.com/400x300',
+          img: '/img/projects/psychology/psychology.png',
         },
         {
           title: 'SCCE',
-          img: 'https://via.placeholder.com/400x300',
+          img: '/img/projects/scce/scce.png',
         },
         {
           title: 'EGS',
-          img: 'https://via.placeholder.com/400x300',
+          img: '/img/projects/extract-gsheet/',
         },
         {
           title: 'Placeholdate',
-          img: 'https://via.placeholder.com/400x300',
+          img: '/img/projects/placeholdate/',
         },
         {
           title: 'SmallSat',
-          img: 'https://via.placeholder.com/400x300',
+          img: '/img/projects/smallsat/',
         },
         {
           title: 'SDL',
-          img: 'https://via.placeholder.com/400x300',
+          img: '/img/projects/',
         },
       ],
     }

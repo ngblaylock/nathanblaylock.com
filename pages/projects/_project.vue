@@ -14,7 +14,7 @@ export default {
   },
   async fetch() {
     let pages = await this.$content()
-      .where({ slug: this.$route.params.projects })
+      .where({ slug: this.$route.params.project })
       .fetch()
     if (pages && pages[0]) this.page = pages[0]
   },

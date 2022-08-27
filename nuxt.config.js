@@ -1,3 +1,46 @@
+const isDev = process.env.NODE_ENV !== 'production'
+const prodFavicons = [
+  {
+    rel: 'icon',
+    type: 'image/x-icon',
+    href: '/favicon.ico',
+  },
+  {
+    rel: 'apple-touch-icon',
+    sizes: '180x180',
+    href: '/favicons/apple-touch-icon.png',
+  },
+  {
+    rel: 'icon',
+    type: 'image/png',
+    sizes: '32x32',
+    href: '/favicons/favicon-32x32.png',
+  },
+  {
+    rel: 'icon',
+    type: 'image/png',
+    sizes: '16x16',
+    href: '/favicons/favicon-16x16.png',
+  },
+  {
+    rel: 'manifest',
+    href: '/favicons/site.webmanifest',
+  },
+  {
+    rel: 'mask-icon',
+    href: '/favicons/safari-pinned-tab.svg',
+    color: '#671110',
+  },
+]
+const devFavicons = [
+  {
+    rel: 'icon',
+    type: 'image/png',
+    href: '/favicons/favicon-dev.png',
+  },
+]
+const favicons = isDev ? devFavicons : prodFavicons;
+
 export default {
   target: 'static',
   head: {
@@ -31,39 +74,10 @@ export default {
         content: '#671110',
       },
     ],
-    link: [
-      {
-        rel: 'icon',
-        type: 'image/x-icon',
-        href: '/favicon.ico',
-      },
-      {
-        rel: 'apple-touch-icon',
-        sizes: '180x180',
-        href: '/favicons/apple-touch-icon.png',
-      },
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '32x32',
-        href: '/favicons/favicon-32x32.png',
-      },
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '16x16',
-        href: '/favicons/favicon-16x16.png',
-      },
-      {
-        rel: 'manifest',
-        href: '/favicons/site.webmanifest',
-      },
-      {
-        rel: 'mask-icon',
-        href: '/favicons/safari-pinned-tab.svg',
-        color: '#671110',
-      },
-    ],
+    link: [...favicons],
+  },
+  publicRuntimeConfig: {
+    isDev
   },
   css: ['@/assets/scss/nathanblaylock.scss'],
   publicRuntimeConfig: {
@@ -72,9 +86,7 @@ export default {
   plugins: [],
   components: true,
   buildModules: ['@nuxtjs/style-resources', '@nuxt/image'],
-  modules: [
-    '@nuxt/content'
-  ],
+  modules: ['@nuxt/content'],
   build: {},
   bootstrapVue: {
     // bootstrapCSS: false,

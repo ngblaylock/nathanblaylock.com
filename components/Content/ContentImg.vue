@@ -1,5 +1,5 @@
 <template>
-  <NuxtImg class="content-img mb-4" :src="src" :width="width" />
+  <NuxtImg class="content-img mb-4 img-fluid" :src="src" :width="width" />
 </template>
 
 <script>
