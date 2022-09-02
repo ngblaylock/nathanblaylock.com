@@ -26,6 +26,7 @@ export default {
         },
         {
           title: 'Bingo',
+          slug: 'bingo',
           img: '/img/projects/bingo/bingo.png',
         },
         {
