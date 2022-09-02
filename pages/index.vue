@@ -7,7 +7,13 @@
         class="col-sm-6 col-md-4 mb-4 text-center"
       >
         <NuxtLink :to="`/projects/${project.slug}`">
-          <NuxtImg :src="project.img" class="img-fluid" :alt="project.title" width="600" height="400" />
+          <NuxtImg
+            :src="project.img"
+            class="img-fluid"
+            :alt="project.title"
+            width="600"
+            height="400"
+          />
         </NuxtLink>
       </div>
     </b-row>
@@ -48,6 +54,7 @@ export default {
         },
         {
           title: 'Psychology',
+          slug: 'psychology',
           img: '/img/projects/psychology/psychology.png',
         },
         {
@@ -67,7 +74,7 @@ export default {
           img: '/img/projects/smallsat/',
         },
         {
-          title: 'SDL',
+          title: 'Enoch Initiative',
           img: '/img/projects/',
         },
       ],

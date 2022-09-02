@@ -1,5 +1,6 @@
 <template>
   <div class="site">
+    <DevBar />
     <div class="bg-angle"></div>
     <NavBar />
     <main>
