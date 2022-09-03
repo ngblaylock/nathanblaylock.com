@@ -3,5 +3,9 @@
     "$root": [
       "${folder}/static"
     ]
-  }
+  },
+  "cSpell.words": [
+    "skillset",
+    "Sorenson"
+  ]
 }

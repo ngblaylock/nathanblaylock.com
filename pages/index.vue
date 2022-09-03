@@ -59,6 +59,7 @@ export default {
         },
         {
           title: 'SCCE',
+          slug: 'scce',
           img: '/img/projects/scce/scce.png',
         },
         {
