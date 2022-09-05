@@ -6,7 +6,7 @@
         :key="index"
         class="col-sm-6 col-md-4 mb-4 text-center"
       >
-        <NuxtLink :to="`/projects/${project.slug}`">
+        <NuxtLink :to="`/projects/${project.slug}`" class="img-link">
           <NuxtImg
             :src="project.img"
             class="img-fluid"
@@ -26,41 +26,12 @@ export default {
     return {
       projects: [
         {
-          title: 'Busy Bee Odd Jobs',
-          slug: 'busy-bee-odd-jobs',
-          img: '/img/projects/busy-bee-odd-jobs/busy-bee-odd-jobs.png',
-        },
-        {
-          title: 'Bingo',
-          slug: 'bingo',
-          img: '/img/projects/bingo/bingo.png',
-        },
-        {
-          title: 'JRWCPRTAX',
-          slug: 'jrwcpatax',
-          img: '/img/projects/jrwcpatax/jrwcpatax.png',
-        },
-        {
           title: 'Cookbook',
           img: '/img/projects/cookbook/',
         },
         {
-          title: 'Group Sale Tracker',
-          img: '/img/projects/group-sale-tracker/',
-        },
-        {
           title: 'Smithfield CoC',
           img: '/img/projects/smithfield-chamber/',
-        },
-        {
-          title: 'Psychology',
-          slug: 'psychology',
-          img: '/img/projects/psychology/psychology.png',
-        },
-        {
-          title: 'SCCE',
-          slug: 'scce',
-          img: '/img/projects/scce/scce.png',
         },
         {
           title: 'EGS',
@@ -75,8 +46,37 @@ export default {
           img: '/img/projects/smallsat/',
         },
         {
+          title: 'Group Sale Tracker',
+          img: '/img/projects/group-sale-tracker/',
+        },
+        {
+          title: 'JRWCPRTAX',
+          slug: 'jrwcpatax',
+          img: '/img/projects/jrwcpatax/jrwcpatax.png',
+        },
+        {
+          title: 'Busy Bee Odd Jobs',
+          slug: 'busy-bee-odd-jobs',
+          img: '/img/projects/busy-bee-odd-jobs/busy-bee-odd-jobs.png',
+        },
+        {
+          title: 'Bingo',
+          slug: 'bingo',
+          img: '/img/projects/bingo/bingo.png',
+        },
+        {
           title: 'Enoch Initiative',
           img: '/img/projects/',
+        },
+        {
+          title: 'SCCE',
+          slug: 'scce',
+          img: '/img/projects/scce/scce.png',
+        },
+        {
+          title: 'Psychology',
+          slug: 'psychology',
+          img: '/img/projects/psychology/psychology.png',
         },
       ],
     }
@@ -86,3 +86,13 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.img-link {
+  display: block;
+  transition: $transition-base;
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+}
+</style>

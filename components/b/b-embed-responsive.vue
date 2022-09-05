@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-3 embed-responsive" :class="`embed-responsive-${size}`">
+  <div class="mb-3 embed-responsive bg-black" :class="`embed-responsive-${size}`">
     <iframe class="embed-responsive-item" :src="src" title="Embedded video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </template>
@@ -20,5 +20,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.bg-black{
+  background: black;
+}
 </style>

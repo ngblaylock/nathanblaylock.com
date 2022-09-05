@@ -20,8 +20,6 @@ During the same time that we worked on the promotional materials, we also got th
 
 <content-img src="/img/projects/jrwcpatax/JRW-screenshot.png"></content-img>
 
-<p class="text-center">
-  <b-btn href="https://jrwcpatax.com/" target="_blank">Visit Website</b-btn>
-</p>
+<content-btn href="https://jrwcpatax.com/">Visit Website</content-btn>
 
 It was so much fun to work on this branding and website project with Jeffrey. I still continue to help him out with any needs he has with branding. I loved working with Jeffrey, and feel like the work I did for him really helped his business out in many ways. We got lots of compliments from his returning clients on how well the brand turned out and how easy the website was to use.

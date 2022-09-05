@@ -29,17 +29,7 @@ Developing a site that is already designed is my recommendation. Development usu
 
 <dev-note>Screenshot</dev-note>
 
-<div class="bg-light p-3 mb-3">
-
-  <p class="text-center">
-    <b-btn href="https://web.archive.org/web/20200206182030/https://psychology.usu.edu/" target="_blank">Visit Website</b-btn>
-  </p>
-  
-  <p class="text-center mb-0">
-    <strong>Note:</strong> this is a web archive of the closest date to the site I developed.
-  </p>
-
-</div>
+<content-btn href="https://web.archive.org/web/20200206182030/https://psychology.usu.edu/" archived>Visit Website</content-btn>
 
 ### Outcome
 

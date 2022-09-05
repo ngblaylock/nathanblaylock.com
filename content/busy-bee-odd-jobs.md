@@ -22,8 +22,6 @@ The website was a lot of fun to put together. Wayne didn’t need much on a webs
 
 <content-img src="/img/projects/busy-bee-odd-jobs/BBOJ-screenshot.png"></content-img>
 
-<p class="text-center">
-  <b-btn href="https://busybeeoddjobs.com/" target="_blank">Visit Website</b-btn>
-</p>
+<content-btn href="https://busybeeoddjobs.com/">Visit Website</content-btn>
 
 It was a pleasure to work with Wayne and take on this Busy Bee Odd Jobs branding and web development. I was even more pleased to hear about his successes in increasing the jobs he saw come through.
