@@ -27,26 +27,32 @@ export default {
       projects: [
         {
           title: 'Cookbook',
+          slug: 'cookbook',
           img: '/img/projects/cookbook/',
         },
         {
-          title: 'Smithfield CoC',
+          title: 'Smithfield Chamber of Commerce',
+          slug: 'smithfield-chamber-of-commerce',
           img: '/img/projects/smithfield-chamber/',
         },
         {
-          title: 'EGS',
+          title: 'Extract GSheet',
+          slug: 'extract-gsheet',
           img: '/img/projects/extract-gsheet/',
         },
         {
           title: 'Placeholdate',
+          slug: 'placeholdate',
           img: '/img/projects/placeholdate/',
         },
         {
           title: 'SmallSat',
+          slug: 'smallsat',
           img: '/img/projects/smallsat/',
         },
         {
           title: 'Group Sale Tracker',
+          slug: 'group-sale-tracker',
           img: '/img/projects/group-sale-tracker/',
         },
         {
@@ -66,6 +72,7 @@ export default {
         },
         {
           title: 'Enoch Initiative',
+          slug: 'enoch-initiative',
           img: '/img/projects/',
         },
         {

@@ -1,7 +1,15 @@
 <template>
   <b-container>
     <b-row>
-      <div class="col-8 offset-2 offset-sm-0 col-sm-4 col-lg-3 offset-lg-1 text-center">
+      <div
+        class="
+          col-8
+          offset-2 offset-sm-0
+          col-sm-4 col-lg-3
+          offset-lg-1
+          text-center
+        "
+      >
         <NuxtImg
           src="/img/blaylock-nathan-1-square.png"
           class="img-fluid"
@@ -9,16 +17,22 @@
         />
       </div>
       <div class="col-sm-8 col-lg-7 align-self-center">
-        <p class="lead mt-4 mt-sm-0 mb-0">
-          I am a User Experience Engineer who solves complex problems. My area
-          of focus is on . I am a Frontend Website developer (JAMStack for
-          personal projects) I used to be a multimedia specialist so I have
-          skills in photography, video, branding, and graphic design. I decided
-          to hone in on my skills as a web developer because that was my
-          favorite. I have a Master’s degree where I studied UX and a bachelors
-          degree where I studied art, computer science, and multimedia
-          development. I like to be well versed in backend dev but frontend is
-          where I shine.
+        <p>
+          I am a User Experience Engineer who didn't quite make the cut for the
+          USU graphic design program. I found out that my design wasn't "Artsy"
+          enough, but as I explored my options I learned that my design style
+          was more problem-solving based rather than visually appealing. Not
+          that I can't make things visually appealing. I do take in mind a lot
+          of functional design. solves complex problems.
+        </p>
+        <p>
+          I am a Frontend Website developer (JAMStack for personal projects) I
+          used to be a multimedia specialist so I have skills in photography,
+          video, branding, and graphic design. I decided to hone in on my skills
+          as a web developer because that was my favorite. I have a Master’s
+          degree where I studied UX and a bachelors degree where I studied art,
+          computer science, and multimedia development. I am also certified in UX Design by the Nielsen Norman Group I like to be well versed
+          in backend dev but frontend is where I shine.
         </p>
       </div>
     </b-row>
@@ -49,8 +63,17 @@
         <div class="grouping">
           <h4>Utah State University</h4>
           <ul>
-            <li><strong>Master of Arts</strong> - Instructional Technology and Learning Sciences at Utah State University. Area of study: user experience design.</li>
-            <li><strong>Bachelor of Science</strong> - Major in Art and Design, minors in Computer Science and Multimedia Development at Utah State University. Areas of study: graphic design, web development, and other multimedia skills.</li>
+            <li>
+              <strong>Master of Arts</strong> - Instructional Technology and
+              Learning Sciences at Utah State University. Area of study: user
+              experience design.
+            </li>
+            <li>
+              <strong>Bachelor of Science</strong> - Major in Art and Design,
+              minors in Computer Science and Multimedia Development at Utah
+              State University. Areas of study: graphic design, web development,
+              and other multimedia skills.
+            </li>
           </ul>
         </div>
       </div>
@@ -116,8 +139,8 @@
 
 <script>
 export default {
-  mounted(){
-    $nuxt.$emit('change-page-title', "About")
-  }
+  mounted() {
+    $nuxt.$emit('change-page-title', 'About')
+  },
 }
 </script>
