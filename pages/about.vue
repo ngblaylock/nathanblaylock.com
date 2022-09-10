@@ -12,7 +12,7 @@
       >
         <NuxtImg
           src="/img/blaylock-nathan-1-square.png"
-          class="img-fluid"
+          class="img-fluid rounded"
           alt="Nathan Blaylock Image"
         />
       </div>

@@ -6,10 +6,10 @@
         :key="index"
         class="col-sm-6 col-md-4 mb-4 text-center"
       >
-        <NuxtLink :to="`/projects/${project.slug}`" class="img-link">
+        <NuxtLink :to="`/projects/${project.slug}`" class="img-link rounded">
           <NuxtImg
             :src="project.img"
-            class="img-fluid"
+            class="img-fluid rounded"
             :alt="project.title"
             width="600"
             height="400"
@@ -28,32 +28,32 @@ export default {
         {
           title: 'Cookbook',
           slug: 'cookbook',
-          img: '/img/projects/cookbook/',
+          img: '/img/projects/cookbook/cookbook.png',
         },
         {
           title: 'Smithfield Chamber of Commerce',
           slug: 'smithfield-chamber-of-commerce',
-          img: '/img/projects/smithfield-chamber/',
+          img: '/img/projects/smithfield-chamber-of-commerce/smithfield-chamber-of-commerce.png',
         },
         {
           title: 'Extract GSheet',
           slug: 'extract-gsheet',
-          img: '/img/projects/extract-gsheet/',
+          img: '/img/projects/extract-gsheet/extract-gsheet.png',
         },
         {
           title: 'Placeholdate',
           slug: 'placeholdate',
-          img: '/img/projects/placeholdate/',
+          img: '/img/projects/placeholdate/placeholdate.png',
         },
         {
           title: 'SmallSat',
           slug: 'smallsat',
-          img: '/img/projects/smallsat/',
+          img: '/img/projects/smallsat/smallsat.png',
         },
         {
           title: 'Group Sale Tracker',
           slug: 'group-sale-tracker',
-          img: '/img/projects/group-sale-tracker/',
+          img: '/img/projects/group-sale-tracker/group-sale-tracker.png',
         },
         {
           title: 'JRWCPRTAX',
@@ -73,7 +73,7 @@ export default {
         {
           title: 'Enoch Initiative',
           slug: 'enoch-initiative',
-          img: '/img/projects/',
+          img: '/img/projects/enoch-initiative/enoch-initiative.png',
         },
         {
           title: 'SCCE',
@@ -98,8 +98,9 @@ export default {
 .img-link {
   display: block;
   transition: $transition-base;
+  box-shadow: $box-shadow;
   &:hover {
-    box-shadow: $box-shadow;
+    box-shadow: $box-shadow-lg;
   }
 }
 </style>
