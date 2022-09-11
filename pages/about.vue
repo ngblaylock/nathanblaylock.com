@@ -100,6 +100,7 @@
           <h4 class="mt-4">Dabbled In</h4>
           <ul>
             <li>Node.js, Express, PHP</li>
+            <li>TypeScript</li>
             <li>Rollup</li>
             <li>Strapi, Firebase, Postgres, MySQL</li>
             <li>Bash</li>

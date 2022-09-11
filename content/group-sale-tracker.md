@@ -1,5 +1,11 @@
 ---
 title: Group Sale Tracker
+icons:
+  - logos:nuxt-icon
+  - logos:bootstrap
+  - logos:sass
+  - logos:adobe-xd
+  - logos:github-icon
 ---
 
 Group Sale Tracker is a web application that can be run on a computer, tablet, or mobile phone that helps groups keep track of sales that they make. Imagine a neighborhood yard sale where different families bring in items and mix them together. How would you know how much money each family made? That is what this app solves.
