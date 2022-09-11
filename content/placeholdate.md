@@ -27,4 +27,4 @@ There was however, one more issue. The development experience was somewhat diffi
 
 <content-btn href="https://www.figma.com/community/plugin/1098444899707858859/Placeholdate">See Plugin</content-btn>
 
-Since this post, I have had over 500 downloads of what I assume are happy customers. I am glad that I have been able to fill in a gap for other UI designers out there.
+Since this post, I have had over 600 downloads of what I assume are happy customers. I am glad that I have been able to fill in a gap for other UI designers out there.

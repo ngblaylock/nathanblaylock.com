@@ -6,6 +6,16 @@
 @import 'bootstrap-overrides';
 @import 'bootstrap-options';
 
+::-moz-selection { /* Code for Firefox */
+  color: $dark;
+  background: rgba($red-100, .8);
+}
+
+::selection {
+  color: $dark;
+  background: rgba($red-100, .8);
+}
+
 body{
   overflow-y: scroll;
 }
