@@ -1,12 +1,12 @@
 ---
 title: Sorenson Center Website
 icons: 
-  - logos:adobe-photoshop
-  - logos:adobe-illustrator
-  - logos:adobe-indesign
-  - logos:sketch
-  - logos:bootstrap
-  - logos:vue
+  - Adobe Photoshop
+  - Adobe Illustrator
+  - Adobe InDesign
+  - Sketch
+  - Bootstrap 3
+  - Vue
 ---
 
 The Sorenson Legacy Foundation Center for Clinical Excellence was one of my continual projects while working for Utah State University. This center is a medical facility where clinicians meet with patients to help improve their health. At the same time they provide university students opportunities to learn in their field with real-life situations. My role with this facility ranged from creating graphics and printed design for raising money for the building, to managing the tv advertisement screens, to designing, developing, and maintaining the website.

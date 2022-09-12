@@ -1,11 +1,11 @@
 ---
 title: Cookbook
 icons:
-  - logos:nuxt-icon
-  - logos:firebase
-  - logos:sass
-  - logos:sketch
-  - logos:github-icon
+  - Nuxt
+  - Firebase
+  - Sass
+  - Sketch
+  - GitHub
 ---
 
 For the longest time, I had been looking for a good app to keep track of my recipes. I had decided a long time ago that I didn't want to use a physical recipe book because if I was traveling and needed a recipe, I didn't know what it was. Or if I had made something I particularly liked and was telling a friend about it, I couldn't share that with them as a link. I had begun to be interested in developing a real web application and decided that this would work really well for a beginner project. 

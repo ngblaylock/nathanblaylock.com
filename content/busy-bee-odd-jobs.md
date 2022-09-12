@@ -1,13 +1,13 @@
 ---
 title: Busy Bee Odd Jobs
 icons: 
-  - logos:adobe-illustrator
-  - logos:eleventy
-  - vscode-icons:file-type-nunjucks
-  - logos:bootstrap
-  - logos:sass
-  - logos:firebase
-  - logos:github-icon
+  - Adobe Illustrator
+  - Eleventy
+  - Nunjucks
+  - Bootstrap 4
+  - Sass
+  - Firebase
+  - GitHub
 ---
 
 When Wayne approached me about his Busy Bee Odd Jobs request, I was excited to take on a branding and website project for a budding small business. There were a few good things going for his business. First thing is that Wayne had a unique business name. Because of this, he didn’t have any issues getting a good website domain; busybeeoddjobs.com. Another thing he had going for him is that he started early in his business to get his branding in order, and he had a good vision for what he wanted his brand to be. First, Wayne needed was a logo. He sent over some clipart and put words around it. He had a general idea for what he wanted his brand to be but wasn’t able to execute it himself. I had drawn up a few sketches for a logo and really liked the end result.

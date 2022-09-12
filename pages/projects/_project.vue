@@ -9,9 +9,8 @@
         <Icon
           v-for="(icon, index) in page.icons"
           :key="index"
-          :icon="icon"
           size="2"
-        />
+        >{{icon}}</Icon>
       </div>
     </div>
   </b-container>

@@ -1,21 +1,25 @@
 <template>
-  <!-- https://icon-sets.iconify.design/ -->
-  <IconifyIcon v-if="icon" :style="`font-size: ${size}em;`" :icon="icon" :inline="true" />
+  <img
+    v-if="iconName"
+    :src="`/icons/${iconFile}.svg`"
+    :alt="iconName"
+    :style="`height: ${size}em; width: auto`"
+  />
 </template>
 
 <script>
-import { Icon as IconifyIcon } from '@iconify/vue2'
-
 export default {
-  components: {
-    IconifyIcon,
-  },
   props: {
-    icon: {
-      required: true,
-    },
     size: {
       default: 1,
+    },
+  },
+  computed: {
+    iconName() {
+      return this.$slots.default[0].text
+    },
+    iconFile() {
+      return this.$slots.default[0].text.toLowerCase().replace(' ', '-')
     },
   },
 }

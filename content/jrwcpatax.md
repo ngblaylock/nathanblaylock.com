@@ -1,12 +1,12 @@
 ---
 title: Jeffrey R. Wangsgard & Associates
 icons: 
-  - logos:eleventy
-  - vscode-icons:file-type-nunjucks
-  - logos:bootstrap
-  - logos:sass
-  - logos:firebase
-  - logos:github-icon
+  - Eleventy
+  - Nunjucks
+  - Bootstrap 4
+  - Sass
+  - Firebase
+  - GitHub
 ---
 
 Jeffrey Wangsgard is a Certified Public Accountant in Cache Valley, and has been working with a partner for a number of years. After he and his partner decided to split the business and go separate directions Jeffrey started looking for branding and a website for his new business. He had a one month timeline between when he contacted me to when he would be in his new office space. It was time to get started.
