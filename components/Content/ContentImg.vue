@@ -6,7 +6,7 @@
 export default {
   props: {
     width: {
-      default: 600,
+      default: 512,
     },
     src: {
       required: true,
