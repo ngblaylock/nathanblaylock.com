@@ -31,7 +31,7 @@ The design phase didn't take too much effort since we had a strong component lib
 
 Developing a site that is already designed is my recommendation. Development usually seems to take some people the longest time to complete, but I have found that developing a site based off of a refined mockup and prototype takes only a few days. In two short working days I had 95% of the site done, with the remaining just a few details that needed some attention from specific people. Soon after beginning this phase we were able to publicly launch the site.
 
-<dev-note>Screenshot</dev-note>
+<content-img src="/img/projects/psychology/psychology-screenshot.png" alt="Screenshot of Psychology website"></content-img>
 
 <content-btn href="https://web.archive.org/web/20200206182030/https://psychology.usu.edu/" archived>Visit Website</content-btn>
 

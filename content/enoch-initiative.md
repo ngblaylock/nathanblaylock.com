@@ -4,9 +4,9 @@ title: Enoch Initiative
 
 The Enoch Initiative is a non-profit who helps individuals and groups become self reliant. I had a friend from my masters program reach out to me since he was involved with this group, and they asked for some help with branding. I was happy to help since I had a lot of experience with branding at Utah State University.
 
-The Enoch Initiative didn't have much to go on. They had a clip-art-ish logo that someone threw together. It entailed two hands reaching for each other, but were awkwardly cut off at about mid arm. It also had a sun ray around the two. They really liked the concept but wanted to try something different. 
+The Enoch Initiative didn't have much to go on. They had a clip-art-ish logo that someone threw together. It entailed two hands reaching for each other, but were awkwardly cut off at about mid arm. It also had a sun ray around the two. They really liked the concept but wanted to try something different.
 
-<dev-note>Add in old logo</dev-note>
+<content-img src="/img/projects/enoch-initiative/enoch-logo-old.png" alt="Old Enoch Initiative logo" style="mix-blend-mode: multiply;" width="300"></content-img>
 
 When I see a logo concept, I try to imagine it in a few different places. 
 
@@ -16,7 +16,7 @@ When I see a logo concept, I try to imagine it in a few different places.
 
 I went through a few iterations of design mostly incorporating in a hand. I put some in the computer, and refined the ones that I liked best. I showed my ideas to the Enoch Initiative and we settled on the wordmark that was all lowercase with a hand used as a negative space inside the 'h'.
 
-<dev-note>New logo options</dev-note>
+<content-img src="/img/projects/enoch-initiative/enoch-logo-new.png" alt="New Enoch Initiative logo" width="300"></content-img>
 
 I went one step further and created 3 variants of the logo and specified where they should be used. One spelled out "Enoch Initiative", another just "Enoch" for smaller or simpler items, and one with just the hand which would be used in very small formats, like the website favicon. I added some carefully selected color combinations and created branding mockups and sent them back to the Enoch Initiative for approval. 
 

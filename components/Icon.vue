@@ -1,5 +1,6 @@
 <template>
   <img
+    :title="iconName"
     v-if="iconName"
     :src="`/icons/${iconFile}.svg`"
     :alt="iconName"
