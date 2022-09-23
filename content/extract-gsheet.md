@@ -45,4 +45,6 @@ One other thing I find extremely helpful when going through documentation is see
 
 <content-img src="/img/projects/extract-gsheet/extract-gsheet-screenshot.png" alt="Extract GSheet Screenshot"></content-img>
 
+<content-btn href="https://ngblaylock.github.io/extract-gsheet/">View Website</content-btn>
+
 It was a really fun project. I don't know if too many people know about it. I did write a blog article called [Extract Date from Google Sheets](https://dev.to/ngblaylock/extract-data-from-google-sheets-13jn) that got a few likes. There is a little more information there.

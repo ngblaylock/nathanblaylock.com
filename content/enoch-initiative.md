@@ -20,6 +20,6 @@ I went through a few iterations of design mostly incorporating in a hand. I put 
 
 I went one step further and created 3 variants of the logo and specified where they should be used. One spelled out "Enoch Initiative", another just "Enoch" for smaller or simpler items, and one with just the hand which would be used in very small formats, like the website favicon. I added some carefully selected color combinations and created branding mockups and sent them back to the Enoch Initiative for approval. 
 
-<dev-note>Gallery of branding guide items</dev-note>
+<content-img src="/img/projects/enoch-initiative/enoch-branding.png" alt="New Enoch Initiative logo"></content-img>
 
 As the organization grows and as I help out, I hope that the branding helps communicate trust, sincerity, and professionalism. It has been great working with such a uplifting and caring group like the Enoch Initiative.
