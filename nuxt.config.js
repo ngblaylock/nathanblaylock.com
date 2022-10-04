@@ -89,6 +89,20 @@ export default {
         href: `https://nathanblaylock.com/`,
       },
     ],
+    script: [
+      {
+        async: true,
+        src: !isDev
+          ? 'https://www.googletagmanager.com/gtag/js?id=G-1GELWP8WME'
+          : '',
+      },
+      {
+        src: !isDev ? '/js/analytics.js' : '',
+      },
+    ],
+  },
+  generate: {
+    dir: 'docs',
   },
   publicRuntimeConfig: {
     isDev,
