@@ -1,5 +1,6 @@
 <template>
   <b-container>
+    <SEO title="About" norobots />
     <b-row>
       <div
         class="

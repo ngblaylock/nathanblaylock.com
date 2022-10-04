@@ -1,5 +1,6 @@
 <template>
   <b-container>
+    <SEO title="Projects" />
     <b-row>
       <div
         v-for="(project, index) in projects"

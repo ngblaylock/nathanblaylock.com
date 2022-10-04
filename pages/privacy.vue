@@ -1,5 +1,6 @@
 <template>
   <b-container class="container my-5">
+    <SEO title="Privacy" />
     <b-row>
       <div class="col-md-12">
         <p>

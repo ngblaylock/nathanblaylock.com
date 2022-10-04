@@ -39,19 +39,26 @@ const devFavicons = [
     href: '/favicons/favicon-dev.png',
   },
 ]
-const favicons = isDev ? devFavicons : prodFavicons;
+const favicons = isDev ? devFavicons : prodFavicons
 
 export default {
   target: 'static',
   head: {
-    title: 'portfolio',
+    titleTemplate: (titleChunk) => {
+      return titleChunk ? `${titleChunk} - Nathan Blaylock` : 'Nathan Blaylock'
+    },
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Nathan Blaylock is a User Experience Engineer who loves to creatively solve complex problems. This portfolio is a showcase of some of his work.',
+      },
       { name: 'format-detection', content: 'telephone=no' },
       {
         name: 'apple-mobile-web-app-title',
@@ -74,10 +81,17 @@ export default {
         content: '#671110',
       },
     ],
-    link: [...favicons],
+    link: [
+      ...favicons,
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: `https://nathanblaylock.com/`,
+      },
+    ],
   },
   publicRuntimeConfig: {
-    isDev
+    isDev,
   },
   css: ['@/assets/scss/nathanblaylock.scss'],
   publicRuntimeConfig: {

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SEO title="UI Kit" norobots />
     <b-container>
       <h3>Colors</h3>
       <b-row class="mb-5">
@@ -66,19 +67,30 @@
               alt=""
               class="img-fluid"
             />
-            <div class="mt-2 text-center">{{logo.extension.toUpperCase()}}</div>
+            <div class="mt-2 text-center">
+              {{ logo.extension.toUpperCase() }}
+            </div>
           </div>
         </div>
       </b-row>
     </b-container>
     <b-container>
-      <h3 class="mt-5">Font - <a href="https://fonts.google.com/specimen/Urbanist?query=urbanist" target="_blank">Urbanist</a></h3>
+      <h3 class="mt-5">
+        Font -
+        <a
+          href="https://fonts.google.com/specimen/Urbanist?query=urbanist"
+          target="_blank"
+          >Urbanist</a
+        >
+      </h3>
       <div class="bg-light p-3">
         <p class="lead mb-0">
-        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br />
-        a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
-        1 2 3 4 5 6 7 8 9 0<br />
-        ! @ # $ % ^ &amp; * ( ) { } [ ] &lt; &gt; ? ~ &grave; &quot; &apos; ; : + = - _</p>
+          A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br />
+          a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
+          1 2 3 4 5 6 7 8 9 0<br />
+          ! @ # $ % ^ &amp; * ( ) { } [ ] &lt; &gt; ? ~ &grave; &quot; &apos; ;
+          : + = - _
+        </p>
       </div>
     </b-container>
     <b-container>

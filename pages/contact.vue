@@ -1,5 +1,6 @@
 <template>
   <b-container>
+    <SEO title="Contact" norobots />
     <b-row>
       <div class="col-md-7">
         <iframe
@@ -7,9 +8,17 @@
           id="hidden_iframe"
           style="display: none"
         ></iframe>
-        <div v-if="submitted" class="mt-4 p-3 rounded border border-secondary text-secondary">
-          <div v-if="solveAnswer == 3">Thanks for your submission. I will get back to you as soon as I can.</div>
-          <div v-else>Looks like you didn't solve the answer correctly. That message is probably lost in space somewhere.</div>
+        <div
+          v-if="submitted"
+          class="mt-4 p-3 rounded border border-secondary text-secondary"
+        >
+          <div v-if="solveAnswer == 3">
+            Thanks for your submission. I will get back to you as soon as I can.
+          </div>
+          <div v-else>
+            Looks like you didn't solve the answer correctly. That message is
+            probably lost in space somewhere.
+          </div>
         </div>
         <form
           v-show="!submitted"

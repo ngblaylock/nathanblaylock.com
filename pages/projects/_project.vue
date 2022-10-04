@@ -1,5 +1,6 @@
 <template>
   <b-container v-if="page" style="max-width: 768px">
+    <SEO :title="page.title" norobots />
     <h2>{{ page.title }}</h2>
     <nuxt-content :document="page" />
     <div v-if="page.icons && page.icons.length" class="text-center">
