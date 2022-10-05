@@ -83,12 +83,12 @@
         <div class="grouping">
           <h4>Proficient In</h4>
           <ul>
-            <li>Figma, XD, Sketch</li>
-            <li>HTML, MD</li>
+            <li>Figma, Adobe XD, Sketch</li>
+            <li>HTML, Markdown</li>
             <li>CSS, SASS</li>
             <li>Bootstrap 3, 4, 5, Bootstrap Vue, Vuetify</li>
             <li>JS, jQuery, Vue, Nunjucks, Alpine</li>
-            <li>Eleventy, Nuxt</li>
+            <li>Eleventy, Nuxt, VuePress</li>
             <li>
               Frontend JS Libraries (day.js, excel.js, chart.js, lodash, etc)
             </li>
@@ -104,7 +104,7 @@
             <li>TypeScript</li>
             <li>Rollup</li>
             <li>Strapi, Firebase, Postgres, MySQL</li>
-            <li>Bash</li>
+            <li>Bash, GitHub Actions</li>
           </ul>
           <h4 class="mt-4">Interested to Try</h4>
           <ul>
