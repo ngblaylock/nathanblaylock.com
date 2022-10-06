@@ -12,9 +12,9 @@ Group Sale Tracker is a web application that can be run on a computer, tablet, o
 
 <content-img src="/img/projects/group-sale-tracker/group-sale-tracker-screenshot.png" alt="Group Sale Tracker screenshot"></content-img>
 
-Okay, now that is out of the way, I don't think anyone (including myself) has ever used this. I thought of it as a fun problem to solve, and I really wanted to learn Nuxt.js a little better, so I put them together and came up with this app. Don't get me wrong, I put a lot of effort into the design and concepts of this, but I also made it keeping in mind that it wouldn't be a big "money-making app". I did spend a lot of time designing it using paper prototypes, then moving it in to Adobe XD before finally developing it.
+Okay, now that is out of the way, I don't think anyone (including myself) has ever used this. I thought of it as a fun problem to solve, and I really wanted to learn Nuxt.js a little better, so I put them together and came up with this app. Don't get me wrong, I put a lot of effort into the design and concepts of this, but I also developed it knowing that it wouldn't be a big "money-making app". I did spend a lot of time designing it using paper prototypes, then moving it in to Adobe XD before finally developing it.
 
-Instead of writing out what this app does, here is a short video of how the app works.
+Instead of writing out what this app does, here is a video of how the app works.
 
 <b-embed-responsive src="https://www.youtube.com/embed/8ZreBYWXQVw"></b-embed-responsive>
 

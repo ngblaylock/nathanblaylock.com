@@ -12,28 +12,30 @@
         "
       >
         <NuxtImg
-          src="/img/blaylock-nathan-1-square.png"
+          src="/img/blaylock-nathan-1.png"
           class="img-fluid rounded"
           alt="Nathan Blaylock Image"
         />
       </div>
       <div class="col-sm-8 col-lg-7 align-self-center">
         <p>
-          I am a User Experience Engineer who didn't quite make the cut for the
-          USU graphic design program. I found out that my design wasn't "Artsy"
-          enough, but as I explored my options I learned that my design style
-          was more problem-solving based rather than visually appealing. Not
-          that I can't make things visually appealing. I do take in mind a lot
-          of functional design. solves complex problems.
+          Nathan Blaylock is a User Experience Engineer who loves finding
+          creative solutions for complex problems. Nathan began his journey as a
+          graphic designer who found his passion for designing usable and
+          functional websites. Combining that design skill with his interest in
+          web development has truly set him apart among his peers. In website
+          development, Nathan has worked extensively with
+          <a href="https://jamstack.org/" target="_blank">Jamstack</a>
+          technology in both professional and personal projects.
         </p>
         <p>
-          I am a Frontend Website developer (JAMStack for personal projects) I
-          used to be a multimedia specialist so I have skills in photography,
-          video, branding, and graphic design. I decided to hone in on my skills
-          as a web developer because that was my favorite. I have a Master’s
-          degree where I studied UX and a bachelors degree where I studied art,
-          computer science, and multimedia development. I am also certified in UX Design by the Nielsen Norman Group I like to be well versed
-          in backend dev but frontend is where I shine.
+          Nathan has experience with a variety of multimedia skills including
+          graphic design, photography, branding, videography, and more. Nathan
+          has a Master's of Arts from Utah State University where he studied
+          User Experience Design. Nathan is also UX Certified by the
+          <a href="https://www.nngroup.com/" target="_blank"
+            >Nielsen Norman Group</a
+          >, the world leader in research-based user experience design.
         </p>
       </div>
     </b-row>
@@ -43,37 +45,49 @@
         <div class="grouping">
           <h4>Space Dynamics Laboratory</h4>
           <ul>
-            <li>Internal Websites</li>
-            <li>External Websites</li>
-            <li>SmallSat Website (Virtual)</li>
-            <li>Team UX/UI Lead</li>
+            <li>
+              Developed and designed internal web applications and external
+              websites.
+            </li>
+            <li>
+              Implemented the Small Satellite Conference virtual conference
+              website for 2020 and 2021 during the pandemic.
+            </li>
+            <li>Lead the UX/UI team</li>
           </ul>
           <h4 class="mt-4">Utah State University</h4>
           <ul>
-            <li>Multimedia Lead</li>
-            <li>Branding</li>
-            <li>Websites</li>
-            <li>Photography</li>
+            <li>
+              Lead multimedia efforts through graphic design, videography,
+              branding, basic tech support, and photography.
+            </li>
+            <li>
+              Lead design and development on various department and program
+              websites.
+            </li>
           </ul>
           <h4 class="mt-4">Freelance</h4>
           <ul>
-            <li>Help small to medium size businesses with websites</li>
+            <li>
+              Designed and developed small to medium size websites for
+              businesses.
+            </li>
+            <li>Delivered quality branding and graphic design when needed.</li>
           </ul>
         </div>
-        <h3>Education</h3>
+        <h3 class="mt-5">Education</h3>
         <div class="grouping">
           <h4>Utah State University</h4>
           <ul>
             <li>
               <strong>Master of Arts</strong> - Instructional Technology and
-              Learning Sciences at Utah State University. Area of study: user
-              experience design.
+              Learning Sciences. Area of study: User Experience Design.
             </li>
             <li>
               <strong>Bachelor of Science</strong> - Major in Art and Design,
-              minors in Computer Science and Multimedia Development at Utah
-              State University. Areas of study: graphic design, web development,
-              and other multimedia skills.
+              double minor in Computer Science and Multimedia Development. Areas
+              of study: Graphic Design, Web Development, and other multimedia
+              skills.
             </li>
           </ul>
         </div>
@@ -97,6 +111,7 @@
             <li>Jira, Asana, Trello</li>
             <li>Mac, Linux, Windows</li>
             <li>Photoshop, Illustrator, InDesign</li>
+            <li>Visual Studio Code</li>
           </ul>
           <h4 class="mt-4">Dabbled In</h4>
           <ul>
@@ -111,6 +126,7 @@
             <li>Svelte, React, Angular</li>
             <li>SvelteKit, Gatsby, Astro</li>
             <li>Vite, Snowpack</li>
+            <li>Electron, NodeGUI</li>
             <li>MongoDB</li>
           </ul>
         </div>
@@ -125,6 +141,7 @@
   padding-left: 24px;
   padding-top: 6px;
   h4 {
+    margin-top: 0.25em;
     &::before {
       content: '';
       position: absolute;

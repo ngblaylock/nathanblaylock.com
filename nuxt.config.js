@@ -104,6 +104,9 @@ export default {
   generate: {
     dir: 'docs',
   },
+  server: {
+    host: '0' // default: localhost
+  },
   publicRuntimeConfig: {
     isDev,
   },
