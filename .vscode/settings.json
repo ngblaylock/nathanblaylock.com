@@ -1,0 +1,15 @@
+{
+  "path-autocomplete.pathMappings": {
+    "$root": [
+      "${folder}/static"
+    ]
+  },
+  "cSpell.words": [
+    "Alegreya",
+    "Placeholdate",
+    "skillset",
+    "Sorenson",
+    "Wangsgard",
+    "wordmark"
+  ]
+}
