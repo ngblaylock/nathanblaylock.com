@@ -5,6 +5,7 @@ icons:
   - Eleventy
   - Nunjucks
   - Bootstrap 4
+  - jQuery
   - Sass
   - Firebase
   - GitHub
