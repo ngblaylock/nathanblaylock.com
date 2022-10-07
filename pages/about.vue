@@ -13,7 +13,7 @@
       >
         <NuxtImg
           src="/img/blaylock-nathan-1.png"
-          class="img-fluid rounded"
+          class="img-fluid rounded mb-3"
           alt="Nathan Blaylock Image"
         />
       </div>
@@ -92,7 +92,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 mt-5 mt-md-0">
         <h3>Tools &amp; Technology</h3>
         <div class="grouping">
           <h4>Proficient In</h4>

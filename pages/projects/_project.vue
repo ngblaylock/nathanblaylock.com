@@ -6,7 +6,7 @@
     <div v-if="page.icons && page.icons.length" class="text-center">
       <hr style="max-width: 600px;" class="mt-5">
       <h2 class="h3 mt-4 mb-4">Key Technology Used:</h2>
-      <div class="d-flex gap justify-content-center pt-2">
+      <div class="d-flex flex-wrap gap justify-content-center pt-2">
         <Icon
           v-for="(icon, index) in page.icons"
           :key="index"
