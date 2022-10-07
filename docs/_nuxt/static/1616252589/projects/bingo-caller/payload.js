@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/projects/bingo-caller", {data:[{}],fetch:[],mutations:void 0});
