@@ -23,7 +23,7 @@ We started out with an outline of the content. This was a simple document with m
 
 ### Design
 
-The design phase didn't take too much effort since we had a strong component library provided by the university for us to use. I used pre-built Adobe XD component library that I had made for other projects and arranged the content for each page. XD was also helpful in prototyping out my designs so I could put it out in front of stakeholders and demonstrate the functionality. We were also able to take a variety of purposeful photos and create custom graphics for the site, which dramatically improved the overall design. After completing the design and getting it signed off by the key stakeholders, we moved on to development.
+The design phase didn't take too much effort since we had a strong component library provided by the university for us to use. I used pre-built Adobe XD component library that I had made for other projects and arranged the content for each page. XD was also helpful in prototyping out my designs so I could put it out in front of stakeholders and demonstrate the functionality. We took a variety of purposeful photos and created custom graphics for the site, which dramatically improved the overall design. After completing the design and getting it signed off by the key stakeholders, we moved on to development.
 
 <content-img src="/img/projects/psychology/psychology-mockup.png" alt="Screenshot of Psychology website"></content-img>
 

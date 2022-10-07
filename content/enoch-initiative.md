@@ -2,7 +2,7 @@
 title: Enoch Initiative
 ---
 
-The Enoch Initiative is a non-profit who helps individuals and groups become self reliant. I had a friend from my masters program reach out to me since he was involved with this group, and they asked for some help with branding. I was happy to help since I had a lot of experience with branding at Utah State University.
+The Enoch Initiative is a non-profit group who helps individuals and groups become self reliant. I had a friend from my masters program reach out to me since he was involved with this group, and they asked for some help with branding. I was happy to help since I had a lot of experience with branding at Utah State University.
 
 The Enoch Initiative didn't have much to go on. They had a clip-art-ish logo that someone threw together. It entailed two hands reaching for each other, but were awkwardly cut off at about mid arm. It also had a sun ray around the two. They really liked the concept but wanted to try something different.
 
