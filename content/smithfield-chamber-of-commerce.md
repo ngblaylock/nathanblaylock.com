@@ -12,7 +12,7 @@ icons:
   - GitHub
 ---
 
-The Smithfield Chamber of Commerce is a group of companies in or around Smithfield Utah who come together to raise money for the community. They have a golf tournament to help support local elementary schools, and Easter egg hunt for all the kids in the community, and a Christmas auction to help families in need.
+The Smithfield Chamber of Commerce is a group of companies in and around Smithfield, Utah who come together to raise money for the community. They have a golf tournament to help support local elementary schools, an Easter egg hunt for all the kids in the community, and a Christmas auction to help families in need.
 
 I had heard about the chamber of commerce from a neighbor who was handling their website. He was currently managing the site, but wasn't a web developer, so it was a little out of his comfort zone. After some discussion with the chamber, I decided to take on managing the site. The main reason why I wanted to work on the website was because I had a lot of professional experience developing websites, but not much freelance experience. This was also a nice site that I could use as an experiment. There are a few technologies that interested me at the time that I wanted to try out. This seemed like a really good fit.
 
