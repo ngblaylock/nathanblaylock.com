@@ -103,6 +103,7 @@ export default {
   },
   generate: {
     dir: 'docs',
+    fallback: '404.html'
   },
   server: {
     host: '0' // default: localhost
