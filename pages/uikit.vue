@@ -104,6 +104,9 @@
         <h6>Header 6</h6>
       </div>
     </b-container>
+    <b-container>
+      <Debug>{{$router.options}}</Debug>
+    </b-container>
   </div>
 </template>
 

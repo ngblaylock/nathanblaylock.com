@@ -158,6 +158,7 @@
 
 <script>
 export default {
+  name: "about-me",
   mounted() {
     $nuxt.$emit('change-page-title', 'About')
   },
