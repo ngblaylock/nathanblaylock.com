@@ -23,18 +23,19 @@ SmallSat changes the theme of their design every year with posters, brochures, m
 <a href="https://web.archive.org/web/20200722050834/https://smallsat.org/" target="_blank" class="btn btn-secondary">2020</a>
 <a href="https://web.archive.org/web/20210616142210/https://smallsat.org/" target="_blank" class="btn btn-secondary">2021</a>
 <a href="https://web.archive.org/web/20220602214552/https://smallsat.org/" target="_blank" class="btn btn-secondary">2022</a>
+<a href="https://smallsat.org/" target="_blank" class="btn btn-secondary">2023</a>
   
 </div>
 
-For changing the theme, I find that Bootstrap is a great tool to use. If you have seen my other projects you will know that I am a huge fan of Bootstrap. One of the main complaints about Bootstrap is that all websites that use it look the same. But, if you take the source Sass files, you can easily change just a few variables and your site will really take shape to something very different. The other reason I like Bootstrap is that they have a simple naming convention, a thorough grid system, and an amazing list of utility classes. Combining these features makes modifying a website style every year a breeze. 
+For changing the theme, I find that Bootstrap is a great tool to use. If you have seen my other projects you will know that I am a huge fan of Bootstrap. One of the community's main complaint about Bootstrap is that all websites that use it look the same. But, if you take the source Sass files, you can easily change just a few variables and your site style will quickly change. The other reason I like Bootstrap is that they have a simple naming convention, a thorough grid system, and an amazing list of utility classes. Combining these features makes modifying a website style every year a breeze. 
 
 Another particular challenge we faced with SmallSat was the COVID-19 pandemic. Like many events, SmallSat was affected in both 2020 and 2021. The SmallSat team was determined to still hold a conference, but this time virtual. They did a lot of amazing work in organizing the entire event and coordinating with the University with their assets, but when it came to implementing a virtual conference on a website, it put a lot of pressure on me and my team.
 
-There were a lot of little hurdles that we had to jump as we developed, like incorporating a new type of schedule, how to show videos, and how to authenticate these users who had signed up for the conference. Taking a few ideas from other personal projects I had worked on, we came up with some creative solutions that couldn't have worked out better. 
+There were a lot of hurdles that we had to jump as we developed such as incorporating a new type of schedule, how to show videos, and how to authenticate these users who had signed up for the conference. Taking a few ideas from other personal projects I had worked on, we came up with some creative solutions that couldn't have worked out better. 
 
 No one wanted to do a virtual conference, but considering the circumstances things worked out really well for the SmallSat team. I may not have played a huge role in the conference as a whole, but my skills, knowledge, and creativity certainly helped ensure that the flow and usability of a new conference format worked well.
 
-<content-img src="/img/projects/smallsat/smallsat-screenshot.png" alt="SmallSat Posters"></content-img>
+<content-img src="/img/projects/smallsat/smallsat-screenshot.png" alt="SmallSat Website Screenshot"></content-img>
 
 <content-btn href="https://smallsat.org">Visit Website</content-btn>
 

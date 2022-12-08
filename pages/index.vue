@@ -27,6 +27,11 @@ export default {
     return {
       projects: [
         {
+          title: 'Space Dynamics Laboratory',
+          slug: 'sdl',
+          img: '/img/projects/sdl/sdl.png',
+        },
+        {
           title: 'Cookbook',
           slug: 'cookbook',
           img: '/img/projects/cookbook/cookbook.png',
