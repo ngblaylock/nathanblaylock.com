@@ -32,28 +32,38 @@
         </div>
       </b-row>
     </b-container>
-    <b-container>
+    <b-container class="mb-n4">
       <h3 class="mt-5">Images</h3>
       <b-row>
-        <div class="col-sm-3">
+        <div class="col-sm-4 mb-4">
           <NuxtImg
-            src="/img/blaylock-nathan-1-square.png"
+            src="/img/blaylock-nathan-square.jpg"
             alt=""
             class="img-fluid"
           />
         </div>
-        <div class="col-sm-3">
-          <NuxtImg src="/img/blaylock-nathan-1.png" alt="" class="img-fluid" />
-        </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4 mb-4">
           <NuxtImg
             src="/img/blaylock-nathan-2-square.png"
             alt=""
             class="img-fluid"
           />
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4 mb-4">
+          <NuxtImg
+            src="/img/blaylock-nathan-1-square.png"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-sm-4 mb-4">
+          <NuxtImg src="/img/blaylock-nathan.jpg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-sm-4 mb-4">
           <NuxtImg src="/img/blaylock-nathan-2.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-sm-4 mb-4">
+          <NuxtImg src="/img/blaylock-nathan-1.png" alt="" class="img-fluid" />
         </div>
       </b-row>
     </b-container>

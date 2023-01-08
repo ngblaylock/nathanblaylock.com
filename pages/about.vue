@@ -4,20 +4,17 @@
     <b-row>
       <div
         class="
-          col-8
-          offset-2 offset-sm-0
           col-sm-4 col-lg-3
-          offset-lg-1
           text-center
         "
       >
         <NuxtImg
-          src="/img/blaylock-nathan-1.png"
+          src="/img/blaylock-nathan.jpg"
           class="img-fluid rounded mb-3"
           alt="Nathan Blaylock Image"
         />
       </div>
-      <div class="col-sm-8 col-lg-7 align-self-center">
+      <div class="col-sm-8 col-lg-9 align-self-center">
         <p>
           Nathan Blaylock is a User Experience Engineer who loves finding
           creative solutions for complex problems. Nathan began his journey as a
