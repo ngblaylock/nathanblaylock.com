@@ -42,6 +42,11 @@ export default {
           img: '/img/projects/smithfield-chamber-of-commerce/smithfield-chamber-of-commerce.png',
         },
         {
+          title: 'Scoresheet',
+          slug: 'scoresheet',
+          img: '/img/projects/scoresheet/scoresheet.jpg',
+        },
+        {
           title: 'Extract GSheet',
           slug: 'extract-gsheet',
           img: '/img/projects/extract-gsheet/extract-gsheet.png',
@@ -77,20 +82,20 @@ export default {
           img: '/img/projects/bingo/bingo.png',
         },
         {
-          title: 'Enoch Initiative',
-          slug: 'enoch-initiative',
-          img: '/img/projects/enoch-initiative/enoch-initiative.png',
-        },
-        {
           title: 'SCCE',
           slug: 'scce',
           img: '/img/projects/scce/scce.png',
         },
-        {
-          title: 'Psychology',
-          slug: 'psychology',
-          img: '/img/projects/psychology/psychology.png',
-        },
+        // {
+        //   title: 'Enoch Initiative',
+        //   slug: 'enoch-initiative',
+        //   img: '/img/projects/enoch-initiative/enoch-initiative.png',
+        // },
+        // {
+        //   title: 'Psychology',
+        //   slug: 'psychology',
+        //   img: '/img/projects/psychology/psychology.png',
+        // },
       ],
     }
   },
