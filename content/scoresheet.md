@@ -1,9 +1,9 @@
 ---
 title: Scoresheet App
 icons:
-  - Svelte
   - Figma
   - Tailwind
+  - Svelte
 ---
 
 Growing up, my family played games frequently, especially card games. We would often find ourselves scrambling to come up with some scratch paper to write down scores. It was also an argument on who would be the scorekeeper because no one wanted to do the math that came with it. The Scoresheet app is the answer to handle this tedious task. I wanted to develop an app that would allow the user to easily add players and scores without needing to worry about adding any scores. It also needed to primarily work on a phone for ease of use.

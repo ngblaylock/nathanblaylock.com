@@ -50,7 +50,7 @@
               Implemented the Small Satellite Conference virtual conference
               website for 2020 and 2021 during the pandemic.
             </li>
-            <li>Lead the UX/UI team</li>
+            <li>UX/UI Lead</li>
           </ul>
           <h4 class="mt-4">Utah State University</h4>
           <ul>
@@ -112,6 +112,7 @@
           </ul>
           <h4 class="mt-4">Dabbled In</h4>
           <ul>
+            <li>Svelte, SvelteKit</li>
             <li>Node.js, Express, PHP</li>
             <li>TypeScript</li>
             <li>Rollup</li>
@@ -120,8 +121,8 @@
           </ul>
           <h4 class="mt-4">Interested to Try</h4>
           <ul>
-            <li>Svelte, React, Angular</li>
-            <li>SvelteKit, Gatsby, Astro</li>
+            <li>React, Angular</li>
+            <li>Gatsby, Astro</li>
             <li>Vite, Snowpack</li>
             <li>Electron, NodeGUI</li>
             <li>MongoDB</li>
