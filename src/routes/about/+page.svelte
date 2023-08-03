@@ -2,4 +2,4 @@
 	import PageTitle from "$components/PageTitle.svelte";
 
 </script>
-<PageTitle title="Projects" />
+<PageTitle title="About" />
