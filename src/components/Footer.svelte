@@ -14,12 +14,15 @@
         class="uxc"
       /></a
     >
-    logo
+    <img src="/images/logo-red-nathan-blaylock-media.svg" alt="Nathan Blaylock Media Logo" class="logo">
   </footer>
 </div>
 
 <style lang="scss">
   .uxc{
     max-height: 100px;
+  }
+  .logo{
+    max-height: 50px;
   }
 </style>

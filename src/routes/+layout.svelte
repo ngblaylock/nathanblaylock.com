@@ -10,7 +10,7 @@
 		@import '../sass/style';
 		body {
 			overflow-y: scroll;
-			background-image: url('/images/thumb_bg-texture.jpg');
+			background-image: url('/images/optimized/thumb_bg-texture.jpg');
 			background-position: top;
 			background-repeat: no-repeat;
 			background-size: 100%;
@@ -62,7 +62,6 @@
 	h1 {
 		bottom: -1.2em;
 		color: $primary;
-		font-size: 2.35em;
 		font-weight: 400;
 		position: absolute;
 		right: 0;

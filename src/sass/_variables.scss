@@ -38,6 +38,11 @@ $light: $gray-100;
 
 $dev: #015209;
 
+$theme-colors: ();
+$custom-colors: (
+  "dev": $dev,
+);
+
 $link-color: $blue-500;
 
 $colors: (

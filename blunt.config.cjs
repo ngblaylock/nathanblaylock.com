@@ -1,7 +1,7 @@
 module.exports = [
   {
     input: "./src/raw-images",
-    output: "./static/images",
+    output: "./static/images/optimized",
     sizes: [
       {
         width: 1400,
