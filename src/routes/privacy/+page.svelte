@@ -1,5 +1,5 @@
 <script>
-	import PageTitle from "$components/PageTitle.svelte";
+	import SEO from "$components/SEO.svelte";
 
 </script>
-<PageTitle title="Privacy" />
+<SEO title="Privacy" />

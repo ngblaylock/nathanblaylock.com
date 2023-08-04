@@ -1,7 +1,7 @@
 <script>
-	import PageTitle from "$components/PageTitle.svelte";
+	import SEO from "$components/SEO.svelte";
 
 </script>
-<PageTitle title="UI Kit" />
+<SEO title="UI Kit" />
 
 <h2>Colors</h2>
