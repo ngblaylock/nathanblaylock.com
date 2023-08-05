@@ -3,5 +3,17 @@
     "$root": [
       "${folder}/static"
     ]
-  }
+  },
+  "cSpell.words": [
+    "jrwcpatax",
+    "mdsvex",
+    "Placehold",
+    "Placeholdate",
+    "scce",
+    "Scoresheet",
+    "smallsat",
+    "Sorenson",
+    "Wangsgard",
+    "wordmark"
+  ]
 }
