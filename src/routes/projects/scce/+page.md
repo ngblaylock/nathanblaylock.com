@@ -1,5 +1,14 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectIcons from "$components/ProjectIcons.svelte"
+  let icons = [
+    'Adobe-Photoshop', 
+    'Adobe-Illustrator', 
+    'Adobe-InDesign', 
+    'Sketch', 
+    'Bootstrap-3', 
+    'Vue'
+  ]
 </script>
 
 <SEO title="Sorenson Center Website" />
@@ -24,3 +33,4 @@ Because of this new (to Utah State University) strategy I was asked to present a
 
 Working with the Sorenson Center has always been one of my favorite parts of working with Utah State University. The things mentioned here is only a small part of the things I did to enhance the communication and design of the center. There were a lot of wonderful learning experiences that have helped shape me into the user experience engineer that I am today.
 
+<ProjectIcons {icons} />

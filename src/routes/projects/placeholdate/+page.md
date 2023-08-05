@@ -1,5 +1,8 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectIcons from "$components/ProjectIcons.svelte"
+  let icons = [
+  ]
 </script>
 
 <SEO title="Placeholdate Figma Plugin" />
@@ -28,3 +31,5 @@ There was however, one more issue. The development experience was somewhat diffi
 <!-- Placeholdate Plugin screenshot -->
 
 Since this post, I have had over 750 downloads of what I assume are happy customers. I am glad that I have been able to fill in a gap for other UI designers around the world.
+
+<ProjectIcons {icons} />

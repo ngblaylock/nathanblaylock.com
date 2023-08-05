@@ -1,5 +1,8 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectIcons from "$components/ProjectIcons.svelte"
+  let icons = [
+  ]
 </script>
 
 <SEO title="Scoresheet App" />
@@ -19,3 +22,5 @@ Developing the app was a little bit of a learning curve, but I really enjoyed Sv
 Overall the app has been very successful. As always, there are a few things I would like to improve on it but for now it gets the job done. This app is available to anyone so give it a try.
 
 <!-- Screenshot of the total scores after round 3 -->
+
+<ProjectIcons {icons} />

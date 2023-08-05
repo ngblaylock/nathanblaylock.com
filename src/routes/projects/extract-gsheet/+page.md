@@ -1,5 +1,8 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectIcons from "$components/ProjectIcons.svelte"
+  let icons = [
+  ]
 </script>
 
 <SEO title="Extract GSheet" />
@@ -37,3 +40,6 @@ One other thing I find extremely helpful when going through other documentation 
 
 Extract GSheet was a really fun personal project to work on. For more information about this project I wrote a blog article called [Extract Data from Google Sheets](https://dev.to/ngblaylock/extract-data-from-google-sheets-13jn) that you can find on dev.to.
 
+
+
+<ProjectIcons {icons} />

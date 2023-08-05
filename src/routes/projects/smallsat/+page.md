@@ -1,5 +1,8 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectIcons from "$components/ProjectIcons.svelte"
+  let icons = [
+  ]
 </script>
 
 <SEO title="Small Satellite Conference" />
@@ -23,3 +26,5 @@ No one wanted to do a virtual conference, but considering the circumstances thin
 <!-- SmallSat Website Screenshot -->
 
 As I continue to work with SmallSat, I enjoy finding new solutions to some problems that the the team didn't really know they had. For example, I have helped with streamlining the content publishing flow in a way that reduced the amount of time to edit a webpage to be 10x faster, and much more accurate way. Although my interest in developing web applications have grown, developing static websites still brings me a lot of joy.
+
+<ProjectIcons {icons} />

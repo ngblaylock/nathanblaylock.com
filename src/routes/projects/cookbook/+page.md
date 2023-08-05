@@ -1,5 +1,8 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectIcons from "$components/ProjectIcons.svelte"
+  let icons = [
+  ]
 </script>
 
 <SEO title="Cookbook" />
@@ -21,3 +24,5 @@ On the surface, what you can see is a list of recipes listed in alphabetical ord
 Some people ask me why I designed this app without categorizing the items like main dishes or deserts or something like that. Well, I asked others, specifically in my family if they would use this app if I made it for them, and they all said no. So I decided that if I was the only one who would use this app, why not just do what I wanted to do. And I have been very happy with it since. I have made a few minor modifications but for the most part, I think it was a huge success.
 
 <!-- Homepage Screenshot -->
+
+<ProjectIcons {icons} />

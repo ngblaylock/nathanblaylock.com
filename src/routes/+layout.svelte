@@ -4,6 +4,7 @@
 	import Navbar from '$components/Navbar.svelte';
 	import Favicons from '$components/Favicons.svelte';
 	import BgAngle from '$components/BgAngle.svelte';
+	import MqHelper from '$components/MqHelper.svelte';
 </script>
 
 <svelte:head>
@@ -21,6 +22,7 @@
 </svelte:head>
 <Favicons />
 <BgAngle />
+<MqHelper />
 
 <div class="site">
 	<Navbar />

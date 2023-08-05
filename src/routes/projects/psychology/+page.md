@@ -1,5 +1,11 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectIcons from "$components/ProjectIcons.svelte"
+  let icons = [
+    "Adobe-Photoshop",
+    "Adobe-XD",
+    "Bootstrap-3"
+  ]
 </script>
 
 <SEO title="Department of Psychology Website" />
@@ -34,3 +40,6 @@ Developing a site that is already designed is my recommendation. Development usu
 ### Outcome
 
 The stakeholders were thrilled with the final product and also passed on some very encouraging feedback they had received as well. The project was a smashing success in both delivery time and in addressing the issues we had found in the critique phase.
+
+
+<ProjectIcons {icons} />

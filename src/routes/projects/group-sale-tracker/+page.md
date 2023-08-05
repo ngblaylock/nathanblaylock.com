@@ -1,5 +1,8 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectIcons from "$components/ProjectIcons.svelte"
+  let icons = [
+  ]
 </script>
 
 <SEO title="Group Sale Tracker" />
@@ -16,3 +19,4 @@ Instead of writing out what this app does, here is a video of how the app works.
 
 More than anything, this was just a fun pet project that I worked on. I learned a lot not only by using Nuxt.js, but also using client-side storage, and exporting and uploading JSON data.
 
+<ProjectIcons {icons} />

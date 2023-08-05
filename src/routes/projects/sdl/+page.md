@@ -1,5 +1,14 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectIcons from "$components/ProjectIcons.svelte"
+  let icons = [
+    "Nuxt",
+    "Figma",
+    "Bootstrap-Vue",
+    "Sass",
+    "Node-JS",
+    "Bash"
+  ]
 </script>
 
 <SEO title="Space Dynamics Laboratory" />
@@ -19,3 +28,5 @@ Another neat feature I developed was a site-wide keyword search. We wanted a way
 <!-- SDL Website Screenshot -->
 
 The new website was released in November 2022 and has been one of my favorite projects to work on. It took a lot of teamwork and collaboration but we couldn't have been happier with the result.
+
+<ProjectIcons {icons} />

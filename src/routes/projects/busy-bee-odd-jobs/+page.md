@@ -1,5 +1,8 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectIcons from "$components/ProjectIcons.svelte"
+  let icons = [
+  ]
 </script>
 
 <SEO title="Busy Bee Odd Jobs" />
@@ -17,3 +20,5 @@ The website was a lot of fun to put together. Wayne didn’t need much on a webs
 I had used 11ty for some other projects and really liked it for a simple static site that has very little interactivity. I used a Sass-modified version of Bootstrap to build out the style of the site. Because it is a simple site it makes it extremely easy to maintain.
 
 It was a pleasure to work with Wayne and take on this Busy Bee Odd Jobs branding and web development. I was even more pleased to hear that the website has helped his business bring in more clients.
+
+<ProjectIcons {icons} />

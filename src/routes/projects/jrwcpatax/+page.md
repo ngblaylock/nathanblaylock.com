@@ -1,5 +1,8 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectIcons from "$components/ProjectIcons.svelte"
+  let icons = [
+  ]
 </script>
 
 <SEO title="Jeffrey R. Wangsgard & Associates" />
@@ -24,3 +27,5 @@ During the same time that we worked on the promotional materials, we also got th
 <!-- website screenshot -->
 
 It was so much fun to work on this branding and website project with Jeff. I still continue to help him out with any needs he has with branding and website development. It didn't take long before we started hearing some positive reviews from his clients on how well the brand turned out and how easy the website was to use.
+
+<ProjectIcons {icons} />

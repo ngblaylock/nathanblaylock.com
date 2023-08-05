@@ -1,5 +1,8 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectIcons from "$components/ProjectIcons.svelte"
+  let icons = [
+  ]
 </script>
 
 <SEO title="Enoch Initiative" />
@@ -25,3 +28,5 @@ I went one step further and created 3 variants of the logo and specified where t
 <!-- <content-img src="/img/projects/enoch-initiative/enoch-branding.png" alt="New Enoch Initiative logo"></content-img> -->
 
 As the organization grows and as I help out, I hope that the branding helps communicate trust, sincerity, and professionalism. It has been great working with such a uplifting and caring group like the Enoch Initiative.
+
+<ProjectIcons {icons} />

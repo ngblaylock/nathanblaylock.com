@@ -1,5 +1,8 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectIcons from "$components/ProjectIcons.svelte"
+  let icons = [
+  ]
 </script>
 
 <SEO title="Bingo Caller" />
@@ -13,3 +16,5 @@ As for the branding, I didn’t spend a lot of time on it, but I thought it stil
 <!-- bingo caller screenshot -->
 
 I have had a few people use my bingo caller, and am glad that they enjoy using it. I have a few ideas in the future, such as adding audio, and maybe adding in some auto generated cards that the user can print off.
+
+<ProjectIcons {icons} />

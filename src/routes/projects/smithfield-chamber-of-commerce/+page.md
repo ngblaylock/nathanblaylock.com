@@ -1,5 +1,8 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectIcons from "$components/ProjectIcons.svelte"
+  let icons = [
+  ]
 </script>
 
 <SEO title="Smithfield Chamber of Commerce" />
@@ -17,3 +20,5 @@ One big part of the site that I needed to figure out was adding in meeting minut
 <!-- website screenshot -->
 
 We quickly got the new website launched using Firebase hosting. The Smithfield Chamber of Commerce has been very happy with a professional quality website that users can come and quickly find information about the events going on. I have personally found it very fulfilling to support a group that cares for the community while being able to continually play around with some new ideas and technology.
+
+<ProjectIcons {icons} />
