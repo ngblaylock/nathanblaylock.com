@@ -2,10 +2,17 @@
   import SEO from "$components/SEO.svelte"
   import ProjectIcons from "$components/ProjectIcons.svelte"
   let icons = [
+    "Nuxt",
+    "Bootstrap-Vue",
+    "Sass",
+    "Adobe-XD",
+    "GitHub",
   ]
 </script>
 
-<SEO title="Group Sale Tracker" />
+<SEO title="Group Sale Tracker" hideHeader  />
+
+# Group Sale Tracker
 
 Group Sale Tracker is a web application that can be run on a computer, tablet, or mobile phone that helps groups keep track of sales that they make. Imagine a neighborhood yard sale where different families bring in items and mix them together. How would you know how much money each family made? That is what this app solves.
 

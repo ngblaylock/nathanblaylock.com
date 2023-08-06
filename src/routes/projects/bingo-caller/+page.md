@@ -2,10 +2,15 @@
   import SEO from "$components/SEO.svelte"
   import ProjectIcons from "$components/ProjectIcons.svelte"
   let icons = [
+    "jQuery",
+    "Sass",
+    "GitHub"
   ]
 </script>
 
-<SEO title="Bingo Caller" />
+<SEO title="Bingo Caller" hideHeader />
+
+# Bingo Caller
 
 This project was initially inspired from an activity where I helped run a bingo game. One person called out the numbers, and I wrote the numbers called in a word document that was projected for everyone to see. As I ran the word document, I realized that there was a better way to do it where it would only need one person to manage the game. I decided to make my own system.
 

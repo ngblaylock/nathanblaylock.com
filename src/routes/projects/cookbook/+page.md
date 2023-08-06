@@ -2,10 +2,17 @@
   import SEO from "$components/SEO.svelte"
   import ProjectIcons from "$components/ProjectIcons.svelte"
   let icons = [
+    "Nuxt",
+    "Firebase",
+    "Sass",
+    "Sketch",
+    "GitHub"
   ]
 </script>
 
-<SEO title="Cookbook" />
+<SEO title="Cookbook" hideHeader  />
+
+# Cookbook
 
 For the longest time, I had been looking for a good app to keep track of my recipes. I had decided a long time ago that I didn't want to use a physical recipe book because if I was traveling and needed a recipe, I didn't know what it was. Or if I had made something I particularly liked and was telling a friend about it, I couldn't share that with them as a link. I was interested in developing a real web application and decided that this would work really well for a beginner project.
 

@@ -2,10 +2,22 @@
   import SEO from "$components/SEO.svelte"
   import ProjectIcons from "$components/ProjectIcons.svelte"
   let icons = [
+    "Node-JS",
+    "Rollup",
+    "NPM",
+    "Figma",
+    "Eleventy",
+    "Nunjucks",
+    "Markdown",
+    "Bootstrap-4",
+    "Sass",
+    "GitHub"
   ]
 </script>
 
-<SEO title="Extract GSheet" />
+<SEO title="Extract GSheet" hideHeader  />
+
+# Extract GSheet
 
 Extract GSheet is a script that allows a developer to pull information straight out of a published Google Sheet. Think of this as a sort of get request for an API. There is no way to send data to Google Sheets, just retrieve it. This project came about due to Tabletop.js by jsoma no longer able to function. I had relied on that script for quite some time and when it stopped working, I looked at a bunch of other options. Unsatisfied with each of them, I decided to write my own.
 

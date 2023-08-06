@@ -2,10 +2,17 @@
   import SEO from "$components/SEO.svelte"
   import ProjectIcons from "$components/ProjectIcons.svelte"
   let icons = [
+    "TypeScript",
+    "Node-JS",
+    "Alpine",
+    "Sass",
+    "Figma"
   ]
 </script>
 
-<SEO title="Placeholdate Figma Plugin" />
+<SEO title="Placeholdate Figma Plugin" hideHeader  />
+
+# Placeholdate Figma Plugin
 
 Placeholdate is a Figma plugin that adds placeholder data for dates. The Figma community has a lot of extensions that can add in a variety of placeholder data, such as words, sentences, paragraphs, names, addresses, images, and so on. Plugins have been a crucial part of my interface design process by quickly mocking up ideas for my customers, but there was one area that I could not find a suitable solution. As many plugins as there were, none of them really handled date data the way I needed. Unlike sentences or names, dates have so many options on how to display it. Do you write 2022-02-01 or February 1, 2022 or Feb. 01, 2022? I decided to solve that issue.
 
@@ -30,6 +37,6 @@ There was however, one more issue. The development experience was somewhat diffi
 
 <!-- Placeholdate Plugin screenshot -->
 
-Since this post, I have had over 750 downloads of what I assume are happy customers. I am glad that I have been able to fill in a gap for other UI designers around the world.
+I am glad that I have been able to fill in a gap for thousands of UI designers around the world.
 
 <ProjectIcons {icons} />

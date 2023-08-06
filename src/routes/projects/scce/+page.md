@@ -11,7 +11,9 @@
   ]
 </script>
 
-<SEO title="Sorenson Center Website" />
+<SEO title="Sorenson Center Website" hideHeader  />
+
+# Sorenson Center Website
 
 The Sorenson Legacy Foundation Center for Clinical Excellence was one of my ongoing projects while working for Utah State University. This center is a medical facility where clinicians meet with patients to help improve their health. At the same time they provide university students opportunities to learn in their field with real-life situations. My role with this facility included creating graphics and printed design for raising money for the building, managing the TV advertisement screens, and designing, developing, and maintaining the website.
 

@@ -11,7 +11,9 @@
   ]
 </script>
 
-<SEO title="Space Dynamics Laboratory" />
+<SEO title="Space Dynamics Laboratory" hideHeader  />
+
+# Space Dynamics Laboratory
 
 Space Dynamics Laboratory (SDL) is a nonprofit organization owned by Utah State University that develops technology for government, military, space, and more. SDL's website which was developed in 2015 was long overdue for a style change and content update. The marketing team at SDL got the go-ahead to redesign the company website and began research and designing. As the primary UX/UI designer on other projects, I was able to help guide the marketing team to create a top-notch design that would work well as an online format. As part of guiding the design, I also trained the designers to use Figma, which is a fantastic tool for mockups and prototypes.
 

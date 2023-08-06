@@ -2,11 +2,20 @@
   import SEO from "$components/SEO.svelte"
   import ProjectIcons from "$components/ProjectIcons.svelte"
   let icons = [
+    "Eleventy",
+    "Nunjucks",
+    "Bootstrap-4",
+    "Sass",
+    "Firebase",
+    "GitHub",
+    "Adobe-Illustrator",
+    "Adobe-Photoshop",
   ]
 </script>
 
-<SEO title="Jeffrey R. Wangsgard & Associates" />
+<SEO title="Jeffrey R. Wangsgard & Associates" hideHeader  />
 
+# Jeffrey R. Wangsgard & Associates
 
 Jeff Wangsgard is a Certified Public Accountant in Cache Valley, and was working with a partner for a number of years before deciding to split the business. Jeff started looking for branding and a website for his new business. He had a one month timeline between when he contacted me to when he would be in his new office space. It was time to get started.
 

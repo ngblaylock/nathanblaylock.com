@@ -16,6 +16,6 @@
 <style lang="scss">
 	img {
 		max-height: 35px;
-		max-width: 50px;
+		max-width: 40px;
 	}
 </style>

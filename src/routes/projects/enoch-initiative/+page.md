@@ -2,10 +2,15 @@
   import SEO from "$components/SEO.svelte"
   import ProjectIcons from "$components/ProjectIcons.svelte"
   let icons = [
+    "Affinity-Photo",
+    "Affinity-Designer",
+    "Affinity-Publisher",
   ]
 </script>
 
-<SEO title="Enoch Initiative" />
+<SEO title="Enoch Initiative" hideHeader  />
+
+# Enoch Initiative
 
 The Enoch Initiative is a non-profit group who helps individuals and groups become self reliant. I had a friend from my masters program reach out to me since he was involved with this group, and they asked for some help with branding. I was happy to help since I had a lot of experience with branding at Utah State University.
 

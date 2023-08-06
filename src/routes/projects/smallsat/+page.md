@@ -2,10 +2,18 @@
   import SEO from "$components/SEO.svelte"
   import ProjectIcons from "$components/ProjectIcons.svelte"
   let icons = [
+    "Nuxt",
+    "Figma",
+    "Bootstrap-Vue",
+    "Sass",
+    "Node-JS",
+    "Bash",
   ]
 </script>
 
-<SEO title="Small Satellite Conference" />
+<SEO title="Small Satellite Conference" hideHeader  />
+
+# Small Satellite Conference
 
 The Small Satellite Conference is an event hosted at Utah State University that attracts over 3000 engineers and scientists from around 40 countries. For one week they gather to discuss new technologies and trends of small satellites and their role in government and business. I have had a wonderful opportunity to work with a team to develop this website every year.
 

@@ -2,10 +2,21 @@
   import SEO from "$components/SEO.svelte"
   import ProjectIcons from "$components/ProjectIcons.svelte"
   let icons = [
+    "Adobe-XD",
+    "Eleventy",
+    "Nunjucks",
+    "Bootstrap-4",
+    "Markdown",
+    "Vue",
+    "Sass",
+    "Firebase",
+    "GitHub",
   ]
 </script>
 
-<SEO title="Smithfield Chamber of Commerce" />
+<SEO title="Smithfield Chamber of Commerce" hideHeader  />
+
+# Smithfield Chamber of Commerce
 
 The Smithfield Chamber of Commerce is a group of companies in and around Smithfield, Utah who come together to raise money for the community. They have a golf tournament to help support local elementary schools, an Easter egg hunt for all the kids in the community, and a Christmas auction to help families in need.
 

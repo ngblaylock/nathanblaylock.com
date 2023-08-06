@@ -8,7 +8,9 @@
   ]
 </script>
 
-<SEO title="Department of Psychology Website" />
+<SEO title="Department of Psychology Website" hideHeader  />
+
+# Department of Psychology Website
 
 In 2019 while I was working for Utah State University, my team was tasked with rewriting the psychology department's website. As the lead developer on the project I worked closely with the communication specialist to determine what was working with the current site, and what needed some help. The process for development followed 4 phases; website critique, information organization, design, and development.
 
