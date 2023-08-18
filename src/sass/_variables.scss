@@ -35,11 +35,17 @@ $primary: $red-600;
 $secondary: $blue-500;
 $dark: $gray-900;
 $light: $gray-100;
+$gray: $gray-500;
 
 $dev: #015209;
 
 $theme-colors: ();
 $custom-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "dark": $dark,
+  "light": $light,
+  "gray": $gray,
   "dev": $dev,
 );
 

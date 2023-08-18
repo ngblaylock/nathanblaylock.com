@@ -13,6 +13,7 @@ module.exports = [
   {
     input: "./src/raw-images/projects",
     output: "./static/images/optimized",
+    preserveFileStructure: true,
     sizes: [
       {
         width: 600,
@@ -27,6 +28,9 @@ module.exports = [
         prefix: "xs",
       },
     ],
+    sharpOptions: {
+      withoutEnlargement: true,
+    }
     // See: https://sharp.pixelplumbing.com/api-resize
   },
 ];

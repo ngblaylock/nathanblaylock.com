@@ -50,14 +50,14 @@
 			alt: 'Sorenson Center',
 			route: 'scce',
 		},
-		{
-			alt: 'Psychology Department Website',
-			route: 'psychology',
-		},
-		{
-			alt: 'Enoch Initiative',
-			route: 'enoch-initiative',
-		},
+		// {
+		// 	alt: 'Psychology Department Website',
+		// 	route: 'psychology',
+		// },
+		// {
+		// 	alt: 'Enoch Initiative',
+		// 	route: 'enoch-initiative',
+		// },
 	];
 </script>
 
@@ -68,7 +68,7 @@
 		<div class="col-sm-4 mb-4">
 			<a href="/projects/{project.route}"
 				><img
-					src="/images/optimized/lg_{project.route}.jpg"
+					src="/images/optimized/{project.route}/lg_{project.route}.jpg"
 					alt={project.alt}
 					class="img-fluid rounded shadow"
 				/></a

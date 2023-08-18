@@ -15,6 +15,8 @@
 
 <style lang="scss">
 	img {
+		display: flex;
+		margin: 0;
 		max-height: 35px;
 		max-width: 40px;
 	}

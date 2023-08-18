@@ -1,5 +1,6 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
+  import ProjectWebArchive from "$components/ProjectWebArchive.svelte"
   import ProjectIcons from "$components/ProjectIcons.svelte"
   let icons = [
     "Adobe-Photoshop",
@@ -31,13 +32,15 @@ We started out with an outline of the content. This was a simple document with m
 
 The design phase didn't take too much effort since we had a strong component library provided by the university for us to use. I used pre-built Adobe XD component library that I had made for other projects and arranged the content for each page. XD was also helpful in prototyping out my designs so I could put it out in front of stakeholders and demonstrate the functionality. We took a variety of purposeful photos and created custom graphics for the site, which dramatically improved the overall design. After completing the design and getting it signed off by the key stakeholders, we moved on to development.
 
-<!-- screenshot -->
+<img src="/images/optimized/psychology/lg_psychology-mockup.png" alt="Mockup of Psychology site in Adobe XD" />
 
 ### Development
 
 Developing a site that is already designed is my recommendation. Development usually seems to take some people the longest time to complete, but I have found that developing a site based off of a refined mockup and prototype takes only a few days. In two short working days I had 95% of the site done, with the remaining just a few details that needed some attention from specific people. Soon after beginning this phase we were able to publicly launch the site.
 
-<!-- screenshot -->
+<img src="/images/optimized/psychology/lg_psychology-screenshot.png" alt="Screenshot of Psychology homepage" />
+
+<ProjectWebArchive href="https://web.archive.org/web/20200206182030/https://psychology.usu.edu/" />
 
 ### Outcome
 

@@ -5,3 +5,11 @@
     </div>
   </div>
 </div>
+
+<style lang="scss">
+  :global(img){
+    display: block;
+    margin: 0 auto 16px auto;
+    max-width: 100%;
+  }
+</style>

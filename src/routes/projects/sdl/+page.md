@@ -1,6 +1,7 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
   import ProjectIcons from "$components/ProjectIcons.svelte"
+  import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let icons = [
     "Nuxt",
     "Figma",
@@ -27,7 +28,9 @@ For development I went to my favorite stack; Bootstrap Vue, Nuxt, and Sass. Sett
 
 Another neat feature I developed was a site-wide keyword search. We wanted a way for users to quickly find information on the site without needing to click on every link. I developed a node script that would crawl each page and extract the page title, description, and any keywords we wanted to provide. It creates a JSON file that returns results with words highlighted as the user types in the searchbox. It also ranks the search results to give the user the best matches on top. If there are no results there is an advanced search available that runs a Google search within our site.
 
-<!-- SDL Website Screenshot -->
+<img src="/images/optimized/sdl/lg_sdl-screenshot.png" alt="Screenshot of SDL Website" />
+
+<ProjectBtnLink href="https://sdl.usu.edu" />
 
 The new website was released in November 2022 and has been one of my favorite projects to work on. It took a lot of teamwork and collaboration but we couldn't have been happier with the result.
 
