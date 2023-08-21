@@ -1,6 +1,8 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
   import ProjectIcons from "$components/ProjectIcons.svelte"
+  import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
+  import ProjectSmallSatArchive from "$components/ProjectSmallSatArchive.svelte"
   let icons = [
     "Nuxt",
     "Figma",
@@ -19,9 +21,7 @@ The Small Satellite Conference is an event hosted at Utah State University that 
 
 SmallSat changes the theme of their design every year with posters, brochures, marketing materials, and that extends to their website. Although often times the content doesn't change much year by year, the design style does. My role in working on this website is to take some design files from the graphic design team and translate that into how the website works. There have been multiple themes that I have worked with and the website has been very spot on with the branding and vision set by the designers.
 
-<!-- SmallSat Posters -->
-
-<!-- Archived Sites -->   
+<ProjectSmallSatArchive /> 
 
 For changing the theme, I find that Bootstrap is a great tool to use. If you have seen my other projects you will know that I am a huge fan of Bootstrap. One of the community's main complaint about Bootstrap is that all websites that use it look the same. But, if you take the source Sass files, you can easily change just a few variables and your site style will quickly change. The other reason I like Bootstrap is that they have a simple naming convention, a thorough grid system, and an amazing list of utility classes. Combining these features makes modifying a website style every year a breeze.
 
@@ -31,7 +31,9 @@ There were a lot of hurdles that we had to jump as we developed such as incorpor
 
 No one wanted to do a virtual conference, but considering the circumstances things worked out really well for the SmallSat team. I may not have played a huge role in the conference as a whole, but my skills, knowledge, and creativity certainly helped ensure that the flow and usability of a new conference format worked well.
 
-<!-- SmallSat Website Screenshot -->
+<img src="/images/optimized/smallsat/lg_smallsat-screenshot.png" alt="Screenshot" />
+
+<ProjectBtnLink href="https://smallsat.org"></ProjectBtnLink>
 
 As I continue to work with SmallSat, I enjoy finding new solutions to some problems that the the team didn't really know they had. For example, I have helped with streamlining the content publishing flow in a way that reduced the amount of time to edit a webpage to be 10x faster, and much more accurate way. Although my interest in developing web applications have grown, developing static websites still brings me a lot of joy.
 

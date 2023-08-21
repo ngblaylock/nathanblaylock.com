@@ -1,6 +1,7 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
   import ProjectIcons from "$components/ProjectIcons.svelte"
+  import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let icons = [
     "Nuxt",
     "Firebase",
@@ -22,14 +23,16 @@ I found a really neat module for Nuxt that allows you to integrate Firebase easi
 
 I knew that when I was in the kitchen I probably wouldn't have my laptop with me. I made sure that the website would work well for a mobile screen. I also found that you can create a shortcut for the app to your mobile device screen, and when the page opens, it doesn't include the Safari search bar. That was really what I was going for. Adding in a simple icon with a specific name let my device know what image to use for the app icon.
 
-<!-- Cookbook App Icon -->
+<img src="/images/optimized/cookbook/lg_app-icon.png" alt="Cookbook App Icon" />
 
 On the surface, what you can see is a list of recipes listed in alphabetical order. You can click on the recipe and get the details for each one. What you don't see unless you are signed in is that you can add a recipe and edit existing recipes. You get your basic information like the recipe title, source, servings, and prep time, then a list of ingredients that you want to add and order. You can even break ingredients out into separate sections if you choose. Then any directions or notes can be added below.
 
-<!-- Edit Screenshot -->
+<img src="/images/optimized/cookbook/lg_cookbook-edit-screenshot.png" alt="Cookbook App Edit Page" />
 
 Some people ask me why I designed this app without categorizing the items like main dishes or deserts or something like that. Well, I asked others, specifically in my family if they would use this app if I made it for them, and they all said no. So I decided that if I was the only one who would use this app, why not just do what I wanted to do. And I have been very happy with it since. I have made a few minor modifications but for the most part, I think it was a huge success.
 
-<!-- Homepage Screenshot -->
+<img src="/images/optimized/cookbook/lg_cookbook-screenshot.png" alt="Cookbook App" />
+
+<ProjectBtnLink href="https://cookbook.nathanblaylock.com">Visit Cookbook App</ProjectBtnLink>
 
 <ProjectIcons {icons} />
