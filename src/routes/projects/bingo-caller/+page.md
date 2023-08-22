@@ -1,6 +1,7 @@
 <script lang="ts">
   import SEO from "$components/SEO.svelte"
   import ProjectIcons from "$components/ProjectIcons.svelte"
+  import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let icons = [
     "jQuery",
     "Sass",
@@ -18,7 +19,9 @@ There are several different bingo callers out there, however this one is free to
 
 As for the branding, I didn’t spend a lot of time on it, but I thought it still turned out pretty good. I went with the font Pacifico. I added a little wave to the font, and really liked it. As for the color, purple seemed to do the trick.
 
-<!-- bingo caller screenshot -->
+<img src="/images/optimized/bingo-caller/lg_bingo-screenshot.png" alt="Website Screenshot" />
+
+<ProjectBtnLink href="https://bingo.nathanblaylock.com" />
 
 I have had a few people use my bingo caller, and am glad that they enjoy using it. I have a few ideas in the future, such as adding audio, and maybe adding in some auto generated cards that the user can print off.
 

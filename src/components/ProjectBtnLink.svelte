@@ -1,3 +1,9 @@
+<!--
+  @component
+  ## Title
+	You can use `markdown` in this.
+-->
+
 <script lang="ts">
 	export let href: string;
 </script>
