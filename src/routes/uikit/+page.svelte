@@ -31,7 +31,7 @@
 <div class="row">
 	{#each theme as color}
 		<div class="col">
-			<div class="text-bg-{color} p-4">
+			<div class="card card-body text-bg-{color}">
 				<p class="lead">${color}</p>
 				<div>{getHex(color)}</div>
 			</div>
