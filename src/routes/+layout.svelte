@@ -12,7 +12,7 @@
 		@import '../sass/style';
 		body {
 			overflow-y: scroll;
-			background-image: url('/images/optimized/bg_texture.jpg');
+			background-image: url('/images/optimized/bg/bg_texture.jpg');
 			background-position: top;
 			background-repeat: no-repeat;
 			background-size: 100%;

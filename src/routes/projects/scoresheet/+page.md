@@ -17,7 +17,7 @@ Growing up, my family played games frequently, especially card games. We would o
 
 After I made some mockups and a prototype in Figma, I passed it around my family to see if they would actually use this if I made it. I got the green light from them and headed to my development phase.
 
-<img src="/images/optimized/scoresheet/lg_screenshot-mockup.png" alt="Scoresheet Mockup" />
+<img src="/images/optimized/projects/scoresheet/lg_screenshot-mockup.png" alt="Scoresheet Mockup" />
 
 This was my first project using Svelte and SvelteKit. It ended up being pretty good timing since SvelteKit 1.0.0 was just released. I knew there wouldn't be many resources online for how to do something in SvelteKit, but I figured this project was low-risk if it didn't turn out.
 
@@ -27,7 +27,7 @@ Developing the app was a little bit of a learning curve, but I really enjoyed Sv
 
 Overall the app has been very successful. As always, there are a few things I would like to improve on it but for now it gets the job done. This app is available to anyone so give it a try.
 
-<img src="/images/optimized/scoresheet/lg_screenshot.png" alt="Scoresheet Mockup on a Phone" />
+<img src="/images/optimized/projects/scoresheet/lg_screenshot.png" alt="Scoresheet Mockup on a Phone" />
 
 <ProjectBtnLink href="https://scoresheet.nathanblaylock.com">Visit Scoresheet App</ProjectBtnLink>
 

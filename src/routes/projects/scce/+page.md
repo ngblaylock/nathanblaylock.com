@@ -21,14 +21,14 @@ The Sorenson Legacy Foundation Center for Clinical Excellence was one of my ongo
 
 As I began my job with the university, the Sorenson Center was really just in a planning phase. The university had met with architects and created plans and renderings, but the building was still a ways out from being built. During this time I worked with the development office to create brochures, flyers, and other materials that they could take for their efforts to raise funds for the building.
 
-<img src="/images/optimized/scce/lg_scce-main-branding.png" alt="SCCE Branding" style="mix-blend-mode: multiply;" />
+<img src="/images/optimized/projects/scce/lg_scce-main-branding.png" alt="SCCE Branding" style="mix-blend-mode: multiply;" />
 
 As time went on and the center was built and completed there was a need for more cohesive branding. This was a collaborative project between me, the Sorenson Center administrators, and the university trademark and licensing team. We were able to pull some design elements from the physical building and create a design style guide for the center's content while aligning it to the university branding guide.
 
 My favorite project to work on was the website. We had a unique opportunity to create a website for the center which would be focused on clients within the community, where other websites were typically geared toward education. The one thing I was especially proud of with this project was using Sketch to design out the website before building it. At that time, this was not a common practice at the university. Most developers would just go straight to coding a website based off of information from a word document.
 
 <!-- Sorenson Center website -->
-<img src="/images/optimized/scce/lg_scce-screenshot.png" alt="Website Screenshot" />
+<img src="/images/optimized/projects/scce/lg_scce-screenshot.png" alt="Website Screenshot" />
 
 <ProjectWebArchive href="https://web.archive.org/web/20190810221216/https://scce.usu.edu/" />
 

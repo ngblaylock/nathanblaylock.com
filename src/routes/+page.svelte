@@ -68,7 +68,7 @@
 		<div class="col-sm-4 mb-4">
 			<a href="/projects/{project.route}"
 				><img
-					src="/images/optimized/{project.route}/lg_{project.route}.jpg"
+					src="/images/optimized/projects/{project.route}/lg_{project.route}.jpg"
 					alt={project.alt}
 					class="img-fluid rounded shadow"
 				/></a

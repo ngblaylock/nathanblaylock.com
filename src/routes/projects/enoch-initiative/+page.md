@@ -16,7 +16,7 @@ The Enoch Initiative is a non-profit group who helps individuals and groups beco
 
 The Enoch Initiative didn't have much to go on. They had a clip-art-ish logo that someone threw together. It entailed two hands reaching for each other, but were awkwardly cut off at about mid arm. It also had a sun ray around the two. They really liked the concept but wanted to try something different.
 
-<img src="/images/optimized/enoch-initiative/sm_enoch-logo-old.png" alt="Old Enoch Initiative logo" style="mix-blend-mode: multiply;" />
+<img src="/images/optimized/projects/enoch-initiative/sm_enoch-logo-old.png" alt="Old Enoch Initiative logo" style="mix-blend-mode: multiply;" />
 
 When I see a logo concept, I try to imagine it in a few different places.
 
@@ -26,11 +26,11 @@ When I see a logo concept, I try to imagine it in a few different places.
 
 I went through a few iterations of design mostly incorporating in a hand. I put some in the computer, and refined the ones that I liked best. I showed my ideas to the Enoch Initiative and we settled on the wordmark that was all lowercase with a hand used as a negative space inside the 'h'.
 
-<img src="/images/optimized/enoch-initiative/sm_enoch-logo-new.png" alt="New Enoch Initiative logo" />
+<img src="/images/optimized/projects/enoch-initiative/sm_enoch-logo-new.png" alt="New Enoch Initiative logo" />
 
 I went one step further and created 3 variants of the logo and specified where they should be used. One spelled out "Enoch Initiative", another just "Enoch" for smaller or simpler items, and one with just the hand which would be used in very small formats, like the website favicon. I added some carefully selected color combinations and created branding mockups and sent them back to the Enoch Initiative for approval.
 
-<img src="/images/optimized/enoch-initiative/lg_enoch-branding.png" alt="New Enoch Initiative logo" />
+<img src="/images/optimized/projects/enoch-initiative/lg_enoch-branding.png" alt="New Enoch Initiative logo" />
 
 As the organization grows and as I help out, I hope that the branding helps communicate trust, sincerity, and professionalism. It has been great working with such a uplifting and caring group like the Enoch Initiative.
 

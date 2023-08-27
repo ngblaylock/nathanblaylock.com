@@ -19,7 +19,7 @@ There are several different bingo callers out there, however this one is free to
 
 As for the branding, I didn’t spend a lot of time on it, but I thought it still turned out pretty good. I went with the font Pacifico. I added a little wave to the font, and really liked it. As for the color, purple seemed to do the trick.
 
-<img src="/images/optimized/bingo-caller/lg_bingo-screenshot.png" alt="Website Screenshot" />
+<img src="/images/optimized/projects/bingo-caller/lg_bingo-screenshot.png" alt="Website Screenshot" />
 
 <ProjectBtnLink href="https://bingo.nathanblaylock.com" />
 

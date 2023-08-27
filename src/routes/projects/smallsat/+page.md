@@ -31,7 +31,7 @@ There were a lot of hurdles that we had to jump as we developed such as incorpor
 
 No one wanted to do a virtual conference, but considering the circumstances things worked out really well for the SmallSat team. I may not have played a huge role in the conference as a whole, but my skills, knowledge, and creativity certainly helped ensure that the flow and usability of a new conference format worked well.
 
-<img src="/images/optimized/smallsat/lg_smallsat-screenshot.png" alt="Screenshot" />
+<img src="/images/optimized/projects/smallsat/lg_smallsat-screenshot.png" alt="Screenshot" />
 
 <ProjectBtnLink href="https://smallsat.org"></ProjectBtnLink>
 

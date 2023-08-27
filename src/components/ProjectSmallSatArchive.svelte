@@ -4,7 +4,7 @@
 </script>
 
 <div class="bg-light rounded p-5 pb-3 mb-4">
-	<img src="/images/optimized/smallsat/lg_smallsat-posters.png" alt="SmallSat Posters" />
+	<img src="/images/optimized/projects/smallsat/lg_smallsat-posters.png" alt="SmallSat Posters" />
 
 	<div class="text-center mb-3"><strong>Archived Sites</strong></div>
 	<div class="d-flex justify-content-center gap-2">
