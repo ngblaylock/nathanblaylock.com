@@ -1,7 +1,7 @@
 module.exports = [
   {
     input: "./src/raw-images/bg",
-    output: "./static/images/optimized",
+    output: "./static/images/optimized/bg",
     sizes: [
       {
         width: 1400,
@@ -12,7 +12,7 @@ module.exports = [
   },
   {
     input: "./src/raw-images/projects",
-    output: "./static/images/optimized",
+    output: "./static/images/optimized/projects",
     preserveFileStructure: true,
     sizes: [
       {
@@ -33,4 +33,18 @@ module.exports = [
     }
     // See: https://sharp.pixelplumbing.com/api-resize
   },
+  {
+    input: "./src/raw-images/profile",
+    output: "./static/images/optimized/profile",
+    includeOriginal: true,
+    sizes: [
+      {
+        width: 400,
+        prefix: 'sm'
+      }
+    ],
+    sharpOptions: {
+      withoutEnlargement: true,
+    }
+  }
 ];
