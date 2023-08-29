@@ -14,7 +14,7 @@
         class="uxc"
       /></a
     >
-    <img src="/images/logo-red-nathan-blaylock-media.svg" alt="Nathan Blaylock Media Logo" class="logo">
+    <img src="/images/logos/logo-red-nathan-blaylock-media.svg" alt="Nathan Blaylock Media Logo" class="logo">
   </footer>
 </div>
 

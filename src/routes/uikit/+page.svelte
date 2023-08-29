@@ -4,6 +4,8 @@
 	import chroma from 'chroma-js';
 	let theme = ['primary', 'secondary', 'light', 'dark', 'gray'];
 	let colors = ['red', 'blue', 'gray'];
+	let images = ['blaylock-nathan.jpg', 'blaylock-nathan-1.png', 'blaylock-nathan-2.png'];
+	let logoColors = ['red', 'black', 'white'];
 
 	const getHex = (color: string) => {
 		if (browser) {
@@ -21,7 +23,7 @@
 				? { color: 'dark', contrast: darkContrast }
 				: { color: 'light', contrast: lightContrast };
 		}
-		return {color: 'dark', contrast: 0};
+		return { color: 'dark', contrast: 0 };
 	};
 </script>
 
@@ -51,8 +53,10 @@
 					<div>
 						<span>{fullColor}</span>
 						{#if getContrastColor(fullColor).contrast < 4.5}
-							 <!-- content here -->
-							 <span class="badge text-bg-light ms-2">Poor Contrast - {getContrastColor(fullColor).contrast.toFixed(1)}</span>
+							<!-- content here -->
+							<span class="badge text-bg-light ms-2"
+								>Poor Contrast - {getContrastColor(fullColor).contrast.toFixed(1)}</span
+							>
 						{/if}
 					</div>
 					<span>{getHex(fullColor)}</span>
@@ -63,8 +67,46 @@
 </div>
 
 <h2 class="mt-5">Images</h2>
+<div class="row">
+	{#each images as image, index}
+		<div class="col-md-4 text-center">
+			<img src="/images/optimized/profile/{image}" alt="profile {index}" class="img-fluid mb-4" />
+			<img
+				src="/images/optimized/profile/{image.replace('.', '-square.')}"
+				alt="square profile {index}"
+				class="img-fluid"
+			/>
+		</div>
+	{/each}
+</div>
 
 <h2 class="mt-5">Logos</h2>
+<div class="row mb-n4">
+	{#each logoColors as color}
+		<div class="col-md-4 text-center">
+			<div class="card card-body bg-light mb-4">
+				<div class="row">
+					<div class="col-6">
+							<img
+								src="/images/logos/logo-{color}-nathan-blaylock-media.png"
+								alt="{color} PNG logo"
+								class="img-fluid"
+							/>
+							<div class="mt-4">PNG</div>
+					</div>
+					<div class="col-6">
+							<img
+								src="/images/logos/logo-{color}-nathan-blaylock-media.svg"
+								alt="{color} SVG logo"
+								class="img-fluid"
+							/>
+							<div class="mt-4">SVG</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{/each}
+</div>
 
 <h2 class="mt-5">Font</h2>
 <div class="card card-body bg-light lead">

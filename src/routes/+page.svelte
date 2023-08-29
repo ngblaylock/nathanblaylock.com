@@ -65,7 +65,7 @@
 
 <div class="row mb-5">
 	{#each projects as project}
-		<div class="col-sm-4 mb-4">
+		<div class="col-sm-4 mb-2">
 			<a href="/projects/{project.route}"
 				><img
 					src="/images/optimized/projects/{project.route}/lg_{project.route}.jpg"
