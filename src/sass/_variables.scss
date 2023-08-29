@@ -88,5 +88,15 @@ $card-border-color: transparent;
 $input-btn-padding-y: 0.375rem;
 $input-btn-padding-x: 1.25rem;
 
+// Layout
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1140px,
+);
+
 // Enables
 $enable-negative-margins: true;
+$enable-smooth-scroll: false;
