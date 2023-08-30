@@ -2,6 +2,7 @@
 
 
 @import "bootstrap-setup";
+@import "cognito-form";
 
 ::-moz-selection { /* Code for Firefox */
   color: $dark;
@@ -22,7 +23,11 @@ ul{
 p, li, label, input, textarea{
   font-size: 1.125em;
 }
-label{
+.form-label{
   font-weight: 600;
   margin-bottom: 0;
+  padding-top: 0;
+  display: block;
+  font-size: 1.125em;
+  line-height: var(--bs-body-line-height);
 }
