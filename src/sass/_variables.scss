@@ -1,0 +1,102 @@
+$red-100: #faecec;
+$red-200: #dcbebe;
+$red-300: #c09292;
+$red-400: #a36565;
+$red-500: #863838;
+$red-600: #680909; // primary
+$red-700: #4f0909;
+$red-800: #350808;
+$red-900: #170706;
+
+$blue-100: #e5e8f3;
+$blue-200: #b7bed9;
+$blue-300: #8b96c0;
+$blue-400: #6271a8;
+$blue-500: #3a4c91;
+$blue-600: #14297b; // Secondary
+$blue-700: #11205c;
+$blue-800: #0d173d;
+$blue-900: #080e1e;
+
+$gray-100: #ebebeb; // light
+$gray-200: #d4d4d5;
+$gray-300: #bdbebe;
+$gray-400: #a6a7a8;
+$gray-500: #8f9192; // gray
+$gray-600: #787a7b;
+$gray-700: #616365;
+$gray-800: #4a4d4e;
+$gray-900: #333638; // dark
+
+$primary: $red-600;
+$secondary: $blue-600;
+$dark: $gray-900;
+$light: $gray-100;
+$gray: $gray-400;
+
+$dev: #015209;
+
+$theme-colors: ();
+$custom-colors: (
+	'primary': $primary,
+	'secondary': $secondary,
+	'dark': $dark,
+	'light': $light,
+	'gray': $gray,
+	'dev': $dev,
+);
+
+$link-color: $blue-500;
+
+$colors: (
+	'red-900': $red-900,
+	'red-800': $red-800,
+	'red-700': $red-700,
+	'red-600': $red-600,
+	'red-500': $red-500,
+	'red-400': $red-400,
+	'red-300': $red-300,
+	'red-200': $red-200,
+	'red-100': $red-100,
+
+	'blue-900': $blue-900,
+	'blue-800': $blue-800,
+	'blue-700': $blue-700,
+	'blue-600': $blue-600,
+	'blue-500': $blue-500,
+	'blue-400': $blue-400,
+	'blue-300': $blue-300,
+	'blue-200': $blue-200,
+	'blue-100': $blue-100,
+);
+
+$color-contrast-dark: $dark;
+$color-contrast-light: $light;
+
+// Typography
+$font-family-sans-serif: 'Urbanist', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-weight-normal: 500;
+$lead-font-weight: $font-weight-normal;
+
+// Radius
+$border-radius: 2px;
+
+// Cards
+$card-border-color: transparent;
+
+// Inputs
+$input-btn-padding-y: 0.375rem;
+$input-btn-padding-x: 1.25rem;
+
+// Layout
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1140.01px,
+);
+
+// Enables
+$enable-negative-margins: true;
+$enable-smooth-scroll: false;

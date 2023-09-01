@@ -1,0 +1,52 @@
+#cognito-form {
+	header,
+	.cog-abuse.cog-wrapper,
+	.cog-branding.cog-branding--minimal {
+		display: none;
+	}
+	[class^='cog-'],
+	[class*=' cog-'] {
+		margin: 0;
+		padding: 0;
+	}
+	.cog-form {
+		.cog-asterisk {
+			color: $primary;
+      padding-left: 4px;
+		}
+		textarea {
+			height: 8em;
+		}
+		.cog-label {
+			@extend .form-label;
+		}
+		.el-input__inner,
+		.el-textarea__inner {
+			@extend .form-control;
+		}
+		.el-textarea__inner {
+			// height: 6em !important;
+			resize: vertical !important;
+			min-height: 8em !important;
+		}
+		.cog-button {
+			@extend .btn, .btn-secondary;
+		}
+		.cog-row {
+			@extend .mb-2;
+		}
+    .cog-page__navigation{
+      @extend .mt-3;
+    }
+    .cog-error-message{
+      background: transparent;
+      color: $primary;
+      padding-left: $spacer  * .25;
+      padding-top: $spacer * .25;
+    }
+    .cog-confirmation__message{
+      color: $secondary;
+      font-size: 1.2rem;
+    }
+	}
+}

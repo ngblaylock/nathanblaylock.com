@@ -1,18 +1,38 @@
-# Nathan Blaylock Portfolio
+# create-svelte
 
-This project uses Nuxt to create a portfolio site. The only page that should be found via SEO is the homepage. Everything else is intensionally disabled from crawling. It is also a simple website that should be easy to maintain and really just showcase my abilities as a developer.
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Develop Site
+## Creating a project
 
-Run `npm run dev` to develop the site. You will get a green toolbar at the top of the site and a green favicon to indicate that you are in development mode.
+If you're seeing this, you've probably already done this step. Congrats!
 
-Important Things to Remember:
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-- The CSS framework is Bootstrap 4, but because this has little to no JS needs, I do not include Bootstrap's JS files, and do not use BootstrapVue.
-- There is a Figma file with most of the raw imagery that you can continue to manipulate new assets.
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-## Deploy Process
+## Developing
 
-Run `npm run generate` to build files to the `docs` directory. GitHub is configured to use this page for hosting on GitHub Pages.
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-The final website will be available at https://nathanblaylock.com
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

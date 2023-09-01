@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/about", {data:[{_img:{"/_ipx/_/img/blaylock-nathan.jpg":"\u002F_nuxt\u002Fimage\u002Fa1dfa8.jpg","/_ipx/_/img/logo-red-nathan-blaylock-media.svg":"\u002F_nuxt\u002Fimage\u002F4de260.svg"}}],fetch:{},mutations:void 0});

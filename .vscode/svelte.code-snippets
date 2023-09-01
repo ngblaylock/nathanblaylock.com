@@ -1,0 +1,41 @@
+{
+  "+Page Template": {
+    "prefix": "s-page-template",
+    "body": [
+      "<script lang=\"ts\">",
+      "  import Seo from '\\$components/Seo.svelte';",
+      "</script>",
+      "",
+      "<Seo title=\"${1:New Page}\" />",
+    ],
+    "description": "Basic page layout for all +page routes with SEO built in",
+    "scope": "svelte"
+  },
+  "TS Script": {
+    "prefix": "s-ts",
+    "body": [
+      "<script lang=\"ts\">",
+      "  $1",
+      "</script>",
+      "",
+    ],
+    "scope": "svelte"
+  },
+  "SCSS Style": {
+    "prefix": "s-scss",
+    "body": [
+      "<style lang=\"scss\">",
+      "  $1",
+      "</style>",
+    ],
+    "scope": "svelte"
+  },
+  "Debug": {
+    "prefix": "s-debug",
+    "description": "Quickly see current data in the dom in JSON format.",
+    "body": [
+      "<pre>{JSON.stringify($1, null, 2)}</pre>"
+    ],
+    "scope": "svelte"
+  }
+}
