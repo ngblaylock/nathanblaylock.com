@@ -35,7 +35,7 @@ My favorite project to work on was the website. We had a unique opportunity to c
 Because of this new (to Utah State University) strategy I was asked to present at a web conference that the university put on for all of the university website managers and developers. My presentation titled "Designing Audience-Focused Websites" shared my process on how I designed and developed the website, and encouraged others to follow a similar path. After the presentation I was also given the opportunity to run a workshop on designing websites with the university template, and how to convert those designs into a clickable prototype.
 
 <div class="ratio ratio-16x9 mb-4">
-  <iframe src="https://cdnapisec.kaltura.com/html5/html5lib/v2.95/mwEmbedFrame.php/p/1560811/uiconf_id/18216181/entry_id/0_quw2f0cp?wid=1_3rxdrjx9&iframeembed=true&playerId=kaltura_player&entry_id=0_quw2f0cp&widget_id=1_3rxdrjx9" allowfullscreen></iframe>
+  <iframe title="kaltura-player" src="https://cdnapisec.kaltura.com/html5/html5lib/v2.95/mwEmbedFrame.php/p/1560811/uiconf_id/18216181/entry_id/0_quw2f0cp?wid=1_3rxdrjx9&iframeembed=true&playerId=kaltura_player&entry_id=0_quw2f0cp&widget_id=1_3rxdrjx9" allowfullscreen></iframe>
 </div>
 
 <ProjectBtnLink href="/documents/Designing Audience-Focused Websites.pdf">View Slides</ProjectBtnLink>
