@@ -29,7 +29,7 @@
 
 <SEO title="UI Kit" />
 
-<h2>Colors</h2>
+<h2>Colors -- Testing</h2>
 <div class="row">
 	{#each theme as color}
 		<div class="col">
