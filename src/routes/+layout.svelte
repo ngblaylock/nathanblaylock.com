@@ -5,6 +5,8 @@
 	import Favicons from '$components/Favicons.svelte';
 	import BgAngle from '$components/BgAngle.svelte';
 	import MqHelper from '$components/MqHelper.svelte';
+	import Analytics from '$components/Analytics.svelte';
+
 </script>
 
 <svelte:head>
@@ -20,6 +22,7 @@
 		}
 	</style>
 </svelte:head>
+<Analytics />
 <Favicons />
 <BgAngle />
 <MqHelper />
