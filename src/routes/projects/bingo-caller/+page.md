@@ -3,9 +3,9 @@
   import ProjectIcons from "$components/ProjectIcons.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let icons = [
-    "jQuery",
-    "Sass",
-    "GitHub"
+    // "jQuery",
+    // "Sass",
+    // "GitHub"
   ]
 </script>
 
