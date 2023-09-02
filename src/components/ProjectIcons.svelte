@@ -7,7 +7,7 @@
 		<h2 class="mb-4">Key Technology Used</h2>
 		<div class="d-flex flex-wrap gap-3 justify-content-center">
 			{#each icons as icon}
-				<img src="/icons/{icon}-1.svg" alt={icon.replace('-', ' ')} title={icon.replace('-', ' ')} />
+				<img src="/icons/{icon}.svg" alt={icon.replace('-', ' ')} title={icon.replace('-', ' ')} />
 			{/each}
 		</div>
 	</div>
