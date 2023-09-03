@@ -17,7 +17,12 @@ const config = {
     mdsvex({ extensions: ['.svelte.md', '.md', '.svx'] }),
     preprocess({
       scss: {
-        prependData: `@import './src/sass/_variables.scss';`,
+        prependData: `
+          @import './src/sass/_variables.scss';
+          @import './node_modules/bootstrap/scss/_functions.scss';
+          @import './node_modules/bootstrap/scss/_variables.scss';
+          @import './node_modules/bootstrap/scss/_mixins.scss';
+        `,
       },
     }),
   ],

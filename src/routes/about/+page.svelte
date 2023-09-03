@@ -84,8 +84,8 @@
 				<li>HTML, Markdown</li>
 				<li>CSS, SASS</li>
 				<li>Bootstrap 3, 4, 5, Bootstrap Vue, Vuetify</li>
-				<li>JS, jQuery, Vue, Nunjucks, Alpine</li>
-				<li>Eleventy, Nuxt, VuePress</li>
+				<li>JS, jQuery, Vue, Svelte, Nunjucks, Alpine</li>
+				<li>Eleventy, Nuxt, SvelteKit</li>
 				<li>Frontend JS Libraries (day.js, excel.js, chart.js, lodash, etc)</li>
 				<li>NPM</li>
 				<li>Git, GitHub, Bitbucket</li>
@@ -96,7 +96,6 @@
 			</ul>
 			<h4 class="mt-4">Dabbled In</h4>
 			<ul>
-				<li>Svelte, SvelteKit</li>
 				<li>Node.js, Express, PHP</li>
 				<li>TypeScript</li>
 				<li>Rollup</li>
