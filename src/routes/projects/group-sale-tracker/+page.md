@@ -27,7 +27,7 @@ Instead of writing out what this app does, here is a video of how the app works.
   <iframe width="560" height="315" src="https://www.youtube.com/embed/8ZreBYWXQVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-<ProjectBtnLink href="https://groupsaletracker.nathanblaylock.com/"></ProjectBtnLink>
+<ProjectBtnLink href="https://ngblaylock.github.io/group-sale-tracker/docs/"></ProjectBtnLink>
 
 More than anything, this was just a fun pet project that I worked on. I learned a lot not only by using Nuxt.js, but also using client-side storage, and exporting and uploading JSON data.
 
