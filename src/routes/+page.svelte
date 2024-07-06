@@ -7,6 +7,10 @@
       route: 'sdl',
     },
     {
+      alt: 'Grammy Tammy\'s Delights',
+      route: 'gtd',
+    },
+    {
       alt: 'Cookbook',
       route: 'cookbook',
     },
@@ -51,10 +55,10 @@
     // 	alt: 'Psychology Department Website',
     // 	route: 'psychology',
     // },
-    {
-      alt: 'Enoch Initiative',
-      route: 'enoch-initiative',
-    },
+    // {
+    //   alt: 'Enoch Initiative',
+    //   route: 'enoch-initiative',
+    // },
     // {
     // 	alt: 'Group Sale Tracker',
     // 	route: 'group-sale-tracker',
