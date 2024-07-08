@@ -1,11 +1,23 @@
 <script lang="ts">
   import { pageTitle } from '$lib/stores';
+  import { onMount } from 'svelte';
   import Footer from '$components/Footer.svelte';
   import Navbar from '$components/Navbar.svelte';
   import Favicons from '$components/Favicons.svelte';
   import BgAngle from '$components/BgAngle.svelte';
   import MqHelper from '$components/MqHelper.svelte';
   import Analytics from '$components/Analytics.svelte';
+
+  // Animate On Scroll
+  import 'aos/dist/aos.css';
+  import AOS from 'aos';
+
+  onMount(() => {
+    AOS.init({
+      once: true,
+      offset: 100,
+    });
+  });
 </script>
 
 <svelte:head>

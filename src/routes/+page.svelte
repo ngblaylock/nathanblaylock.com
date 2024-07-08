@@ -1,83 +1,22 @@
 <script>
   import SEO from '$components/SEO.svelte';
-
-  let projects = [
-    {
-      alt: 'Space Dynamics Laboratory',
-      route: 'sdl',
-    },
-    {
-      alt: 'Grammy Tammy\'s Delights',
-      route: 'gtd',
-    },
-    {
-      alt: 'Cookbook',
-      route: 'cookbook',
-    },
-    {
-      alt: 'Greater Smithfield Chamber of Commerce',
-      route: 'smithfield-chamber-of-commerce',
-    },
-    {
-      alt: 'Scoresheet App',
-      route: 'scoresheet',
-    },
-    {
-      alt: 'Extract GSheet',
-      route: 'extract-gsheet',
-    },
-    {
-      alt: 'Placeholdate Figma Plugin',
-      route: 'placeholdate',
-    },
-    {
-      alt: 'Small Satellite Conference',
-      route: 'smallsat',
-    },
-    {
-      alt: 'Jeffrey R. Wangsgard and Associates',
-      route: 'jrwcpatax',
-    },
-    {
-      alt: 'Busy Bee Odd Jobs',
-      route: 'busy-bee-odd-jobs',
-    },
-    {
-      alt: 'Bingo Caller',
-      route: 'bingo-caller',
-    },
-    {
-      alt: 'Sorenson Center',
-      route: 'scce',
-    },
-    // // ARCHIVED PROJECTS
-    // {
-    // 	alt: 'Psychology Department Website',
-    // 	route: 'psychology',
-    // },
-    // {
-    //   alt: 'Enoch Initiative',
-    //   route: 'enoch-initiative',
-    // },
-    // {
-    // 	alt: 'Group Sale Tracker',
-    // 	route: 'group-sale-tracker',
-    // },
-  ];
+  import { projects } from '$lib/projectList';
 </script>
 
 <SEO title="Projects" robots />
 
 <div class="row mb-5">
   {#each projects as project}
-    <div class="col-sm-4 mb-2">
-      <a href="/projects/{project.route}"
-        ><img
-          src="/images/optimized/projects/{project.route}/lg_{project.route}.jpg"
-          alt={project.alt}
-          class="img-fluid rounded shadow"
-        /></a
-      >
+    <div class="col-sm-4" data-aos="fade-up">
+      <div class="shadow mb-4">
+        <a href="/projects/{project.route}"
+          ><img
+            src="/images/optimized/projects/{project.route}/lg_{project.route}.jpg"
+            alt={project.alt}
+            class="img-fluid rounded"
+          /></a
+        >
+      </div>
     </div>
   {/each}
 </div>
