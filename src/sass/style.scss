@@ -3,6 +3,8 @@
 
 @import "bootstrap-setup";
 @import "cognito-form";
+@import "../../node_modules/@ngblaylock/bootstrap-extensions/dist/bootstrap-5/scss/_icon-buttons.scss";
+
 
 ::-moz-selection { /* Code for Firefox */
   color: $dark;

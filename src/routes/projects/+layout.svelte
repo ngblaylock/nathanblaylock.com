@@ -3,6 +3,7 @@
   import { page } from '$app/stores';
   import { projects } from '$lib/projectList';
   import Debug from '$components/Debug.svelte';
+  import Icon from '$components/Icon.svelte';
 
   onMount(() => {
     // Set all external anchor links to go to a new tab. Markdown doesn't support it.
@@ -58,11 +59,16 @@
       <slot />
       {#if getPrevProject().route && getNextProject().route}
         <div class="d-flex justify-content-between mt-5">
-          <a href="/projects/{getPrevProject().route}" class="btn btn-outline-dark text-end"
-            >{getPrevProject().alt}</a
+          <a
+            href="/projects/{getPrevProject().route}"
+            class="btn btn-outline-dark btn-inner-icon text-end"
           >
-          <a href="/projects/{getNextProject().route}" class="btn btn-outline-dark text-end"
-            >{getNextProject().alt}</a
+            <Icon name="arrowLeft" />
+            {getPrevProject().alt}</a
+          >
+          <a href="/projects/{getNextProject().route}" class="btn btn-outline-dark btn-inner-icon text-end">
+            {getNextProject().alt}
+            <Icon name="arrowRight" /></a
           >
         </div>
       {/if}

@@ -1,6 +1,6 @@
 {
 	"name": "nathanblaylock.com",
-	"version": "2.0.4",
+	"version": "2.0.5",
 	"private": true,
 	"scripts": {
 		"blunt": "node ./node_modules/@ngblaylock/blunt-images ./blunt.config.cjs",
@@ -13,7 +13,9 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@mdi/js": "^7.4.47",
 		"@ngblaylock/blunt-images": "^1.0.0-beta.5",
+		"@ngblaylock/bootstrap-extensions": "^0.1.0-beta.10",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^1.20.4",
