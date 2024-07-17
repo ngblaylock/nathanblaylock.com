@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SEO from "$components/SEO.svelte"
+  import * as E from "$components/Elemental";
   import ProjectIcons from "$components/ProjectIcons.svelte"
   let icons = [
     "Adobe-Illustrator",
@@ -13,7 +13,7 @@
   ]
 </script>
 
-<SEO title="Busy Bee Odd Jobs" hideHeader  />
+<E.SEO title="Busy Bee Odd Jobs" hideHeader  />
 
 # Busy Bee Odd Jobs
 

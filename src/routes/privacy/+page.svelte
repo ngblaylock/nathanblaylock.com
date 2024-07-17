@@ -1,9 +1,9 @@
 <script>
-  import SEO from '$components/SEO.svelte';
+  import * as E from '$components/Elemental';
 </script>
 
 <div data-aos="fade-up">
-  <SEO title="Privacy" />
+  <E.SEO title="Privacy" />
 
   <p>
     Our main priorities is the privacy of our visitors. This Privacy Policy document contains types

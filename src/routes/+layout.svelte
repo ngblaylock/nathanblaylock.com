@@ -3,7 +3,7 @@
   import { onMount } from 'svelte';
   import Footer from '$components/Footer.svelte';
   import Navbar from '$components/Navbar.svelte';
-  import Favicons from '$components/Favicons.svelte';
+  import Meta from '$components/Meta.svelte';
   import BgAngle from '$components/BgAngle.svelte';
   import MqHelper from '$components/MqHelper.svelte';
   import Analytics from '$components/Analytics.svelte';
@@ -34,7 +34,7 @@
   </style>
 </svelte:head>
 <Analytics />
-<Favicons />
+<Meta />
 <BgAngle />
 <MqHelper />
 

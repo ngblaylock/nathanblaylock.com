@@ -3,10 +3,11 @@
     "prefix": "s-page-template",
     "body": [
       "<script lang=\"ts\">",
-      "  import SEO from '\\$components/SEO.svelte';",
+      "  import * as E from '\\$components/Elemental';",
+      "  $1",
       "</script>",
       "",
-      "<SEO title=\"${1:New Page}\" />",
+      "<E.SEO title=\"${1:New Page}\" />",
     ],
     "description": "Basic page layout for all +page routes with SEO built in",
     "scope": "svelte"
@@ -15,6 +16,7 @@
     "prefix": "s-ts",
     "body": [
       "<script lang=\"ts\">",
+      "  import * as E from '\\$components/Elemental';",
       "  $1",
       "</script>",
       "",
@@ -30,12 +32,34 @@
     ],
     "scope": "svelte"
   },
-  "Debug": {
-    "prefix": "s-debug",
-    "description": "Quickly see current data in the dom in JSON format.",
+
+  // Elemental Snippets
+  "Button": {
+    "prefix": "E.Btn",
     "body": [
-      "<pre>{JSON.stringify($1, null, 2)}</pre>"
+      "<E.Btn theme=\"${2:primary}\">$1</E.Btn>"
     ],
     "scope": "svelte"
-  }
+  },
+  "Debug": {
+    "prefix": "E.Debug",
+    "body": [
+      "<E.Debug data={$1} />"
+    ],
+    "scope": "svelte"
+  },
+  "Icon": {
+    "prefix": "E.Icon",
+    "body": [
+      "<E.Icon name=\"${2:home}\" />"
+    ],
+    "scope": "svelte"
+  },
+  "SEO": {
+    "prefix": "E.SEO",
+    "body": [
+      "<E.SEO title=\"${1:home}\" description=\"$2\" ${3:robots} />"
+    ],
+    "scope": "svelte"
+  },
 }

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SEO from "$components/SEO.svelte"
+  import * as E from "$components/Elemental";
   import ProjectIcons from "$components/ProjectIcons.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let icons = [
@@ -16,7 +16,7 @@
   ]
 </script>
 
-<SEO title="Extract GSheet" hideHeader  />
+<E.SEO title="Extract GSheet" hideHeader  />
 
 # Extract GSheet
 

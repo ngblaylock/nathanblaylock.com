@@ -1,8 +1,8 @@
 <script>
-  import SEO from '$components/SEO.svelte';
+  import * as E from '$components/Elemental';
 </script>
 
-<SEO title="About" />
+<E.SEO title="About" />
 
 <div class="row align-items-center" data-aos="fade-up">
   <div class="col-sm-3">
