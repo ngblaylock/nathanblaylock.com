@@ -11,6 +11,7 @@ const config = {
     }),
     alias: {
       $components: 'src/components',
+      $img: 'src/img',
     },
   },
   preprocess: [

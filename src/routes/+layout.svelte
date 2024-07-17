@@ -7,16 +7,19 @@
   import BgAngle from '$components/BgAngle.svelte';
   import MqHelper from '$components/MqHelper.svelte';
   import Analytics from '$components/Analytics.svelte';
+  import bg from '$img/bg/texture.jpg';
 
   // Animate On Scroll
   import 'aos/dist/aos.css';
   import AOS from 'aos';
+    import MySvg from '$components/MySvg.svelte';
 
   onMount(() => {
     AOS.init({
       once: true,
       offset: 100,
     });
+    document.body.style.backgroundImage = `url("${bg}")`
   });
 </script>
 
@@ -25,7 +28,6 @@
     @import '../sass/style';
     body {
       overflow-y: scroll;
-      background-image: url('/images/optimized/bg/bg_texture.jpg');
       background-position: top;
       background-repeat: no-repeat;
       background-size: 100%;

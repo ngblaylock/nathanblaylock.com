@@ -6,8 +6,8 @@
 
 <div class="row align-items-center" data-aos="fade-up">
   <div class="col-sm-3">
-    <img
-      src="/images/optimized/profile/sm_blaylock-nathan.jpg"
+    <enhanced:img
+      src="$img/profile/blaylock-nathan.jpg"
       alt="Nathan Blaylock Portrait"
       class="rounded img-fluid"
     />

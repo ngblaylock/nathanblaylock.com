@@ -17,8 +17,8 @@
           class="uxc"
         /></a
       >
-      <img
-        src="/images/logos/logo-red-nathan-blaylock-media.svg"
+      <enhanced:img
+        src="$img/logos/logo-red-nathan-blaylock-media.svg"
         alt="Nathan Blaylock Media Logo"
         class="logo"
       />

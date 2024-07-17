@@ -2,7 +2,16 @@
   "path-autocomplete.pathMappings": {
     "$root": [
       "${folder}/static"
-    ]
+    ],
+    "$components": [
+      "${folder}/src/components"
+    ],
+    "$img": [
+      "${folder}/static/img"
+    ],
+    "$lib": [
+      "${folder}/src/lib"
+    ],
   },
   "cSpell.words": [
     "Asana",
