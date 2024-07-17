@@ -21,7 +21,6 @@
 	<meta name="description" content={description} />
 	<meta property="og:title" content={titleTemplate} />
 	<meta property="og:description" content={description} />
-	<meta property="og:image" content="https://nathanblaylock.com/images/og-img.jpg" />
 	<meta property="og:url" content="https://nathanblaylock.com{$page.route.id}" />
 	{#if !robots}
 		<meta name="robots" content="noindex,nofollow" />

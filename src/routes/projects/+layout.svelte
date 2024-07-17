@@ -2,8 +2,7 @@
   import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import { projects } from '$lib/projectList';
-  import Debug from '$components/Debug.svelte';
-  import Icon from '$components/Icon.svelte';
+  import * as E from '$components/Elemental';
 
   onMount(() => {
     // Set all external anchor links to go to a new tab. Markdown doesn't support it.
@@ -63,12 +62,12 @@
             href="/projects/{getPrevProject().route}"
             class="btn btn-outline-dark btn-inner-icon text-end"
           >
-            <Icon name="arrowLeft" />
+            <E.Icon name="arrowLeft" />
             {getPrevProject().alt}</a
           >
           <a href="/projects/{getNextProject().route}" class="btn btn-outline-dark btn-inner-icon text-end">
             {getNextProject().alt}
-            <Icon name="arrowRight" /></a
+            <E.Icon name="arrowRight" /></a
           >
         </div>
       {/if}

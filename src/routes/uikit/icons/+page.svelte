@@ -1,10 +1,9 @@
 <script lang="ts">
-  import Icon from '$components/Icon.svelte';
-  import SEO from '$components/SEO.svelte';
+  import * as E from '$components/Elemental';
   import icons from '$lib/icons';
 
   function copy(iconName:string) {
-    navigator.clipboard.writeText(`<Icon name="${iconName}" />`)
+    navigator.clipboard.writeText(`<E.Icon name="${iconName}" />`)
       .then(() => {
         alert('Icon copied to the clipboard');
       })
@@ -14,18 +13,18 @@
   }
 </script>
 
-<SEO title="Icons" />
+<E.SEO title="Icons" />
 
 <div class="row">
   {#each Object.entries(icons) as [icon, key]}
     <div class="col-sm-4 mb-3">
       <button class="btn btn-dark btn-copy w-100 hstack gap-3 justify-content-between" on:click={() => copy(icon)}>
         <div>
-          <Icon name={icon} />
+          <E.Icon name={icon} />
           <span>{icon}</span>
         </div>
         <div class="copy">
-          <Icon name="copy" />
+          <E.Icon name="copy" />
         </div>
       </button>
     </div>

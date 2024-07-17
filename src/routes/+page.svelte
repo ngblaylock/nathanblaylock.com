@@ -1,9 +1,9 @@
 <script>
-  import SEO from '$components/SEO.svelte';
+  import * as E from '$components/Elemental';
   import { projects } from '$lib/projectList';
 </script>
 
-<SEO title="Projects" robots />
+<E.SEO title="Projects" robots />
 
 <div class="row mb-5">
   {#each projects as project}
