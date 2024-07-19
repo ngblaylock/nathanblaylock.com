@@ -25,12 +25,12 @@
   nav {
     display: block;
     font-weight: 600;
-    a {
+    a:not(.btn) {
       text-decoration: none;
       border-bottom: 2px solid transparent;
       border-top: 2px solid transparent;
       &.active {
-        border-bottom: 2px solid $secondary;
+        border-bottom: 2px solid currentColor;
       }
     }
   }

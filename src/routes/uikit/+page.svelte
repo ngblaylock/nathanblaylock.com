@@ -54,7 +54,7 @@
             <span>{fullColor}</span>
             {#if getContrastColor(fullColor).contrast < 4.5}
               <!-- content here -->
-              <span class="badge text-bg-light ms-2"
+              <span class="badge text-text-bg-base-3 ms-2"
                 >Poor Contrast - {getContrastColor(fullColor).contrast.toFixed(1)}</span
               >
             {/if}
@@ -84,7 +84,7 @@
 <div class="row mb-n4">
   {#each logoColors as color}
     <div class="col-md-4 text-center">
-      <div class="card card-body bg-light mb-4">
+      <div class="card card-body mb-4">
         <div class="row">
           <div class="col-6">
             <img
@@ -109,7 +109,7 @@
 </div>
 
 <h2 class="mt-5">Font</h2>
-<div class="card card-body bg-light lead">
+<div class="card card-body lead">
   A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br />
   a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
   1 2 3 4 5 6 7 8 9 0<br />
@@ -117,7 +117,7 @@
 </div>
 
 <h2 class="mt-5">Typography</h2>
-<div class="card card-body bg-light">
+<div class="card card-body">
   <h1>Header 1</h1>
   <h2>Header 2</h2>
   <h3>Header 3</h3>

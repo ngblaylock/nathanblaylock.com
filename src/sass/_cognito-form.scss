@@ -13,6 +13,9 @@
 		.cog-asterisk {
 			color: $primary;
       padding-left: 4px;
+			[data-bs-theme='dark'] & {
+				color: $red-300;
+			}
 		}
 		textarea {
 			height: 8em;

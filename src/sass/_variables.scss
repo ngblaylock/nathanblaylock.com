@@ -38,36 +38,39 @@ $dev: #015209;
 
 $theme-colors: ();
 $custom-colors: (
-	'primary': $primary,
-	'secondary': $secondary,
-	'dark': $dark,
-	'light': $light,
-	'gray': $gray,
-	'dev': $dev,
+  'primary': $primary,
+  'secondary': $secondary,
+  'dark': $dark,
+  'light': $light,
+  'gray': $gray,
+  'dev': $dev,
 );
 
+$body-color-dark: $gray-100;
+
 $link-color: $blue-500;
+$link-color-dark: $red-200;
 
 $colors: (
-	'red-900': $red-900,
-	'red-800': $red-800,
-	'red-700': $red-700,
-	'red-600': $red-600,
-	'red-500': $red-500,
-	'red-400': $red-400,
-	'red-300': $red-300,
-	'red-200': $red-200,
-	'red-100': $red-100,
+  'red-900': $red-900,
+  'red-800': $red-800,
+  'red-700': $red-700,
+  'red-600': $red-600,
+  'red-500': $red-500,
+  'red-400': $red-400,
+  'red-300': $red-300,
+  'red-200': $red-200,
+  'red-100': $red-100,
 
-	'blue-900': $blue-900,
-	'blue-800': $blue-800,
-	'blue-700': $blue-700,
-	'blue-600': $blue-600,
-	'blue-500': $blue-500,
-	'blue-400': $blue-400,
-	'blue-300': $blue-300,
-	'blue-200': $blue-200,
-	'blue-100': $blue-100,
+  'blue-900': $blue-900,
+  'blue-800': $blue-800,
+  'blue-700': $blue-700,
+  'blue-600': $blue-600,
+  'blue-500': $blue-500,
+  'blue-400': $blue-400,
+  'blue-300': $blue-300,
+  'blue-200': $blue-200,
+  'blue-100': $blue-100,
 );
 
 $color-contrast-dark: $dark;
@@ -78,23 +81,31 @@ $font-family-sans-serif: 'Urbanist', Roboto, 'Helvetica Neue', Arial, sans-serif
 $font-weight-normal: 500;
 $lead-font-weight: $font-weight-normal;
 
-// Radius
+// Border
+$border-width: 2px;
 $border-radius: 2px;
 
 // Cards
 $card-border-color: transparent;
+$card-bg: var(--bs-base-3);
 
 // Inputs
 $input-btn-padding-y: 0.375rem;
 $input-btn-padding-x: 1.25rem;
 
 // Layout
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
 $container-max-widths: (
-	sm: 540px,
-	md: 720px,
-	lg: 960px,
-	xl: 1140px,
-	xxl: 1140.01px,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
 );
 
 // Enables
