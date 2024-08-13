@@ -3,8 +3,11 @@
 
 @import "bootstrap-setup";
 @import "cognito-form";
-@import "../../node_modules/@ngblaylock/bootstrap-extensions/dist/bootstrap-5/scss/icon-buttons";
-@import "../../node_modules/@ngblaylock/bootstrap-extensions/dist/bootstrap-5/scss/base-theme";
+@import "../../node_modules/@ngblaylock/bootstrap-extensions/src/scss/icon-buttons";
+@import "../../node_modules/@ngblaylock/bootstrap-extensions/src/scss/base-theme";
+@import "../../node_modules/@ngblaylock/bootstrap-extensions/src/scss/btn-contrast";
+@import "../../node_modules/@ngblaylock/bootstrap-extensions/src/scss/theme-switch";
+
 
 ::-moz-selection { /* Code for Firefox */
   color: $dark;

@@ -18,21 +18,21 @@ $blue-700: #11205c;
 $blue-800: #0d173d;
 $blue-900: #080e1e;
 
-$gray-100: #ebebeb; // light
-$gray-200: #d4d4d5;
-$gray-300: #bdbebe;
-$gray-400: #a6a7a8;
-$gray-500: #8f9192; // gray
-$gray-600: #787a7b;
-$gray-700: #616365;
-$gray-800: #4a4d4e;
-$gray-900: #333638; // dark
+$gray-100: #F1F2F7; // light
+$gray-200: #E5E6EB;
+$gray-300: #CACBCF;
+$gray-400: #ABACB0;
+$gray-500: #85868A;
+$gray-600: #646568; // gray
+$gray-700: #434447;
+$gray-800: #2B2C2E;
+$gray-900: #141518; // dark
 
 $primary: $red-600;
 $secondary: $blue-600;
+$gray: $gray-600;
 $dark: $gray-900;
 $light: $gray-100;
-$gray: $gray-400;
 
 $dev: #015209;
 
@@ -49,7 +49,7 @@ $custom-colors: (
 $body-color-dark: $gray-100;
 
 $link-color: $blue-500;
-$link-color-dark: $red-200;
+$link-color-dark: $blue-200;
 
 $colors: (
   'red-900': $red-900,
@@ -111,3 +111,4 @@ $container-max-widths: (
 // Enables
 $enable-negative-margins: true;
 $enable-smooth-scroll: false;
+$enable-btn-base: false;

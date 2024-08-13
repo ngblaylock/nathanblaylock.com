@@ -1,17 +1,22 @@
 <script>
-  import ThemeSwitcher from './ThemeSwitcher.svelte';
 </script>
 
-<div class="container">
-  <footer class="border-top d-flex flex-wrap gap-3 justify-content-center align-items-center py-3">
-    <div class="d-flex justify-content-center">© Nathan Blaylock {new Date().getFullYear()}</div>
+<svelte:head>
+  <script
+    src="../../node_modules/@ngblaylock/bootstrap-extensions/dist/js/bootstrap-extensions.js"
+  ></script>
+</svelte:head>
 
-    <div class="d-flex flex-wrap gap-3 justify-content-center">
+<div class="container">
+  <footer class="border-top hstack flex-wrap gap-3 justify-content-center py-3">
+    <div>© Nathan Blaylock {new Date().getFullYear()}</div>
+
+    <div class="hstack gap-3 justify-content-center">
       <a href="https://docs.nathanblaylock.com/" target="_blank">Documentation</a>
       <a href="https://github.com/ngblaylock" target="_blank">GitHub</a>
       <a href="https://dev.to/ngblaylock" target="_blank">Dev.to Blog</a>
       <a href="/privacy">Privacy</a>
-      <ThemeSwitcher />
+      <input type="checkbox" aria-label="Switch Theme" class="theme-switch" data-bse-theme-switch />
     </div>
 
     <div class="hstack gap-2 ms-lg-auto">
@@ -43,7 +48,7 @@
   .uxc {
     max-height: 100px;
   }
-  .logo svg{
+  .logo svg {
     max-height: 50px;
     width: auto;
     fill: $primary;

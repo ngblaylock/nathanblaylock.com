@@ -11,6 +11,42 @@
         console.error('Failed to copy text to clipboard:', err);
       });
   }
+  
+  const projectIcons = [
+    'Adobe-Illustrator',
+    'Adobe-InDesign',
+    'Adobe-Photoshop',
+    'Adobe-XD',
+    'Affinity-Designer',
+    'Affinity-Photo',
+    'Affinity-Publisher',
+    'Alpine',
+    'Bash',
+    'Bootstrap-3',
+    'Bootstrap-4',
+    'Bootstrap-5',
+    'Bootstrap-Vue',
+    'CSS',
+    'Eleventy',
+    'Figma',
+    'Firebase',
+    'GitHub',
+    'HTML',
+    'JavaScript',
+    'jQuery',
+    'Markdown',
+    'Node-JS',
+    'NPM',
+    'Nunjucks',
+    'Nuxt',
+    'Rollup',
+    'Sass',
+    'Sketch',
+    'SvelteKit',
+    'Tailwind',
+    'TypeScript',
+    'Vue',
+  ]
 </script>
 
 <E.SEO title="Icons" />
@@ -29,6 +65,15 @@
       </button>
     </div>
   {/each}
+
+  <div class="my-4">
+    <h2>Project Icons</h2>
+    <div class="hstack gap-2 flex-wrap">
+      {#each projectIcons as icon}
+         <img src="/icons/{icon}.svg" alt="{icon}" style="max-width: 45px; height: 40px;">
+      {/each}
+    </div>
+  </div>
 </div>
 
 <style lang="scss">
