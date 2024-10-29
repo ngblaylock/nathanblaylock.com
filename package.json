@@ -1,6 +1,6 @@
 {
 	"name": "nathanblaylock.com",
-	"version": "2.0.6",
+	"version": "2.0.7",
 	"private": true,
 	"scripts": {
 		"blunt": "node ./node_modules/@ngblaylock/blunt-images ./blunt.config.cjs",
