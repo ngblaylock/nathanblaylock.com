@@ -22,7 +22,7 @@ Jeff Wangsgard is a Certified Public Accountant in Cache Valley, and was working
 
 The first thing to start on was branding. I did some brand research and tried out a few options, and ended up with a wordmark. The font I chose was Alegreya Sans SC. It is professional, clean, and not a common font. I especially liked it because it was designed to be a small cap font. Another thing that I liked about the font was that the “J” in Jeffrey goes below the font baseline. I thought that worked really well being the first character in the wordmark.
 
-<img src="/images/optimized/projects/jrwcpatax/lg_JRW-wordmarks.png" alt="wordmark for Jeffrey R. Wangsgard and Associates " />
+<div class="card card-body bg-light mb-4"><img src="/images/optimized/projects/jrwcpatax/lg_JRW-wordmarks.png" alt="wordmark for Jeffrey R. Wangsgard and Associates " class="mb-0" /></div>
 
 I played around with a few colors, and chose to go with teal color scheme. To add some contrast, I also added in a golden orange color, which also helps tie in his previous business branding. Once we had his branding in order I gathered all of his branding assets into one package that he could keep at his business, and use however he needed. Some important parts of his package included his logo in different colors and formats, the fonts we used, and the colors listed out in HEX, RGB, and CMYK.
 

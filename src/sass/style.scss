@@ -3,7 +3,11 @@
 
 @import "bootstrap-setup";
 @import "cognito-form";
-@import "../../node_modules/@ngblaylock/bootstrap-extensions/dist/bootstrap-5/scss/_icon-buttons.scss";
+@import "../../node_modules/@ngblaylock/bootstrap-extensions/src/scss/icon-buttons";
+@import "../../node_modules/@ngblaylock/bootstrap-extensions/src/scss/base-theme";
+@import "../../node_modules/@ngblaylock/bootstrap-extensions/src/scss/btn-contrast";
+@import "../../node_modules/@ngblaylock/bootstrap-extensions/src/scss/theme-switch";
+@import "node_modules/@ngblaylock/bootstrap-extensions/src/scss/dev-tools";
 
 
 ::-moz-selection { /* Code for Firefox */
@@ -22,6 +26,10 @@ ul{
   }
 }
 
+a{
+  text-underline-offset: 4px;
+}
+
 p, li, label, input, textarea{
   font-size: 1.125em;
 }
@@ -32,4 +40,10 @@ p, li, label, input, textarea{
   display: block;
   font-size: 1.125em;
   line-height: var(--bs-body-line-height);
+}
+
+[data-bs-theme='dark']{
+  .btn{
+    border: $border-width solid rgba(white, 0.1);
+  }
 }

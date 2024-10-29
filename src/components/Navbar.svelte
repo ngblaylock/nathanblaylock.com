@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { dev } from '$app/environment';
   import { page } from '$app/stores';
   let currentRoute: string;
   const isCurrentRoute = (route: string) => {
@@ -15,9 +14,6 @@
     <a href="/" class={currentRoute == '/' ? 'active' : ''}>Projects</a>
     <a href="/about" class={currentRoute == '/about' ? 'active' : ''}>About Nathan</a>
     <a href="/contact" class={currentRoute == '/contact' ? 'active' : ''}>Contact</a>
-    {#if dev}
-      <a href="/uikit" class="{currentRoute == '/uikit' ? 'active' : ''} btn btn-dev">UI Kit</a>
-    {/if}
   </div>
 </nav>
 
@@ -25,12 +21,12 @@
   nav {
     display: block;
     font-weight: 600;
-    a {
+    a:not(.btn) {
       text-decoration: none;
       border-bottom: 2px solid transparent;
       border-top: 2px solid transparent;
       &.active {
-        border-bottom: 2px solid $secondary;
+        border-bottom: 2px solid currentColor;
       }
     }
   }

@@ -130,6 +130,9 @@
         border-radius: 20px;
         background: $primary;
         margin-left: -32px;
+        [data-bs-theme=dark] & {
+          background: $red-500;
+        }
       }
     }
   }

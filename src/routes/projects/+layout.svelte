@@ -60,12 +60,12 @@
         <div class="d-flex justify-content-between mt-5">
           <a
             href="/projects/{getPrevProject().route}"
-            class="btn btn-outline-dark btn-inner-icon text-end"
+            class="btn btn-outline-contrast btn-inner-icon text-end"
           >
             <E.Icon name="arrowLeft" />
             {getPrevProject().alt}</a
           >
-          <a href="/projects/{getNextProject().route}" class="btn btn-outline-dark btn-inner-icon text-end">
+          <a href="/projects/{getNextProject().route}" class="btn btn-outline-contrast btn-inner-icon text-end">
             {getNextProject().alt}
             <E.Icon name="arrowRight" /></a
           >
