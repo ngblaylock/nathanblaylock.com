@@ -20,6 +20,9 @@
     <ProjectBtnLink href="https://web.archive.org/web/20230627174913/https://smallsat.org/"
       >2024</ProjectBtnLink
     >
-    <ProjectBtnLink href="https://smallsat.org/">2024</ProjectBtnLink>
+    <ProjectBtnLink href="https://web.archive.org/web/20240712153208/https://smallsat.org/"
+      >2024</ProjectBtnLink
+    >
+    <ProjectBtnLink href="https://smallsat.org/">2025</ProjectBtnLink>
   </div>
 </div>

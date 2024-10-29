@@ -5,8 +5,8 @@
   import Navbar from '$components/Navbar.svelte';
   import Meta from '$components/Meta.svelte';
   import BgAngle from '$components/BgAngle.svelte';
-  import MqHelper from '$components/MqHelper.svelte';
   import Analytics from '$components/Analytics.svelte';
+  import DevToolbar from '$components/DevToolbar.svelte';
 
   // Animate On Scroll
   import 'aos/dist/aos.css';
@@ -36,11 +36,16 @@
       background-image: url('/images/optimized/bg/bg_texture-dark.jpg');
     }
   </style>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
 </svelte:head>
 <Analytics />
 <Meta />
+<DevToolbar />
 <BgAngle />
-<MqHelper />
 
 <div class="site">
   <Navbar />
@@ -81,7 +86,7 @@
     font-weight: 700;
     line-height: 0.85em;
     :global([data-bs-theme='dark']) & {
-      color: var(--bs-base-i1);
+      color: var(--bse-base-i1);
     }
   }
   @include media-breakpoint-up(sm) {
@@ -96,7 +101,7 @@
     position: absolute;
     right: 0;
     :global([data-bs-theme='dark']) & {
-      color: var(--bs-base-i1);
+      color: var(--bse-base-i1);
     }
   }
 </style>

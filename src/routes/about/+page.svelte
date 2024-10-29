@@ -128,10 +128,10 @@
         width: 16px;
         height: 16px;
         border-radius: 20px;
-        background: $red;
+        background: $primary;
         margin-left: -32px;
         [data-bs-theme=dark] & {
-          background: $gray-600;
+          background: $red-500;
         }
       }
     }

@@ -1,11 +1,11 @@
 <script>
+  import { themeSwitcher } from '@ngblaylock/bootstrap-extensions';
+  if (import.meta.hot) {
+    import.meta.hot.accept(() => {
+      themeSwitcher.initTheme();
+    });
+  }
 </script>
-
-<svelte:head>
-  <script
-    src="../../node_modules/@ngblaylock/bootstrap-extensions/dist/js/bootstrap-extensions.js"
-  ></script>
-</svelte:head>
 
 <div class="container">
   <footer class="border-top hstack flex-wrap gap-3 justify-content-center py-3">
@@ -47,13 +47,14 @@
 <style lang="scss">
   .uxc {
     max-height: 100px;
+    margin: 0;
   }
   .logo svg {
     max-height: 50px;
     width: auto;
     fill: $primary;
     :global([data-bs-theme='dark']) & {
-      fill: var(--bs-base-i1);
+      fill: var(--bse-base-i1);
     }
   }
 </style>
