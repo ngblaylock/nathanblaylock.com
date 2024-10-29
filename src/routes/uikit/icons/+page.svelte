@@ -2,6 +2,7 @@
   import * as E from '$components/Elemental';
   import ProjectIcon from '$components/ProjectIcon.svelte';
   import icons from '$lib/icons';
+  import { projectIcons } from '$lib/assets/icons';
 
   function copy(iconName: string, componentName: string) {
     navigator.clipboard
@@ -13,42 +14,6 @@
         console.error('Failed to copy text to clipboard:', err);
       });
   }
-
-  const projectIcons = [
-    'Adobe-Illustrator',
-    'Adobe-InDesign',
-    'Adobe-Photoshop',
-    'Adobe-XD',
-    'Affinity-Designer',
-    'Affinity-Photo',
-    'Affinity-Publisher',
-    'Alpine',
-    'Bash',
-    'Bootstrap-3',
-    'Bootstrap-4',
-    'Bootstrap-5',
-    'Bootstrap-Vue',
-    'CSS',
-    'Eleventy',
-    'Figma',
-    'Firebase',
-    'GitHub',
-    'HTML',
-    'JavaScript',
-    'jQuery',
-    'Markdown',
-    'Node-JS',
-    'NPM',
-    'Nunjucks',
-    'Nuxt',
-    'Rollup',
-    'Sass',
-    'Sketch',
-    'SvelteKit',
-    'Tailwind',
-    'TypeScript',
-    'Vue',
-  ];
 </script>
 
 <E.SEO title="Icons" />

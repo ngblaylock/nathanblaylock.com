@@ -5,7 +5,7 @@
   let icons = [
     "Adobe-Photoshop",
     "Adobe-XD",
-    "Bootstrap-3"
+    "Bootstrap"
   ]
 </script>
 

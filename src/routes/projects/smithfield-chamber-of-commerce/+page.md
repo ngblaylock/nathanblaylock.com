@@ -6,7 +6,7 @@
     "Adobe-XD",
     "Eleventy",
     "Nunjucks",
-    "Bootstrap-4",
+    "Bootstrap",
     "Markdown",
     "Vue",
     "Sass",

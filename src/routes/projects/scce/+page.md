@@ -8,7 +8,7 @@
     'Adobe-Illustrator', 
     'Adobe-InDesign', 
     'Sketch', 
-    'Bootstrap-3', 
+    'Bootstrap', 
     'Vue'
   ]
 </script>

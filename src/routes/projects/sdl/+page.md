@@ -8,7 +8,8 @@
     "Bootstrap-Vue",
     "Sass",
     "Node-JS",
-    "Bash"
+    "Bash",
+    "PostgreSQL"
   ]
 </script>
 

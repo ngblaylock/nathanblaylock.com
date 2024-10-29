@@ -5,7 +5,7 @@
     "Adobe-Illustrator",
     "Eleventy",
     "Nunjucks",
-    "Bootstrap-4",
+    "Bootstrap",
     "jQuery",
     "Sass",
     "Firebase",
