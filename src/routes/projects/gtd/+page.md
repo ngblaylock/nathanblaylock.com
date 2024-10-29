@@ -6,7 +6,7 @@
     "SvelteKit",
     "TypeScript",
     "Firebase",
-    "Bootstrap-5",
+    "Bootstrap",
     "Sass",
     "Figma",
     "GitHub",

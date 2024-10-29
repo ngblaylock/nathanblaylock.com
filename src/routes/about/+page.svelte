@@ -1,5 +1,6 @@
 <script>
   import * as E from '$components/Elemental';
+  import MyStack from './MyStack.svelte';
 </script>
 
 <E.SEO title="About" />
@@ -99,7 +100,7 @@
         <li>Node.js, Express, PHP</li>
         <li>TypeScript</li>
         <li>Rollup</li>
-        <li>Strapi, Firebase, Postgres, MySQL</li>
+        <li>Strapi, Firebase, PostgreSQL, MySQL</li>
         <li>Bash, GitHub Actions</li>
       </ul>
       <h4 class="mt-4">Interested to Try</h4>
@@ -111,6 +112,9 @@
         <li>MongoDB</li>
       </ul>
     </div>
+  </div>
+  <div class="col">
+    <MyStack />
   </div>
 </div>
 
@@ -130,7 +134,7 @@
         border-radius: 20px;
         background: $primary;
         margin-left: -32px;
-        [data-bs-theme=dark] & {
+        [data-bs-theme='dark'] & {
           background: $red-500;
         }
       }

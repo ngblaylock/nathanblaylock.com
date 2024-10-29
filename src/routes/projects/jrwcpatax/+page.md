@@ -5,7 +5,7 @@
   let icons = [
     "Eleventy",
     "Nunjucks",
-    "Bootstrap-4",
+    "Bootstrap",
     "Sass",
     "Firebase",
     "GitHub",

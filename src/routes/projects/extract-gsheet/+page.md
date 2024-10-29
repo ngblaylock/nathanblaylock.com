@@ -10,7 +10,7 @@
     "Eleventy",
     "Nunjucks",
     "Markdown",
-    "Bootstrap-4",
+    "Bootstrap",
     "Sass",
     "GitHub"
   ]
