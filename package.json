@@ -15,7 +15,7 @@
 	"devDependencies": {
 		"@mdi/js": "^7.4.47",
 		"@ngblaylock/blunt-images": "^1.0.0-beta.5",
-		"@ngblaylock/bootstrap-extensions": "0.1.0-beta.16",
+		"@ngblaylock/bootstrap-extensions": "0.1.0-beta.19",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^1.20.4",
