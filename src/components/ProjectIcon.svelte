@@ -1,12 +1,16 @@
 <script lang="ts">
-  export let name: string;
-  export let width: string = '50px';
-  export let height: string = '45px';
+  interface Props {
+    name: string;
+    width?: string;
+    height?: string;
+  }
 
-  $: svgStyle = `
+  let { name, width = '50px', height = '45px' }: Props = $props();
+
+  let svgStyle = $derived(`
   max-width: ${width};
   max-height: ${height};
-  `;
+  `);
 </script>
 
 {#await import(`../lib/assets/${name}.svg?raw`) then value}

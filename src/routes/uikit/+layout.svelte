@@ -1,3 +1,13 @@
+<script>
+  /**
+   * @typedef {Object} Props
+   * @property {import('svelte').Snippet} [children]
+   */
+
+  /** @type {Props} */
+  let { children } = $props();
+</script>
+
 <div class="card text-bg-secondary mb-4 overflow-hidden">
   <nav class="navbar navbar-dark navbar-expand-lg">
     <div class="container-fluid">
@@ -21,4 +31,4 @@
     </div>
   </nav>
 </div>
-<slot />
+{@render children?.()}

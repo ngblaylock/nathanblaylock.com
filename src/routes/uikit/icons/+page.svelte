@@ -25,7 +25,7 @@
       <div class="col-sm-4">
         <button
           class="btn btn-base-4 btn-copy w-100 hstack gap-3 justify-content-between"
-          on:click={() => copy(icon, 'E.Icon')}
+          onclick={() => copy(icon, 'E.Icon')}
         >
           <div>
             <E.Icon name={icon} />
@@ -44,7 +44,7 @@
       <div class="col-sm-6">
         <button
           class="btn btn-base-4 btn-copy w-100 hstack gap-3 justify-content-between"
-          on:click={() => copy(projectIcon, 'ProjectIcon')}
+          onclick={() => copy(projectIcon, 'ProjectIcon')}
         >
           <div class="hstack gap-3">
             <ProjectIcon name={projectIcon} />

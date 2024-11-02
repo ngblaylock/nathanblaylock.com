@@ -1,9 +1,13 @@
 <script lang="ts">
   import icons from '$lib/icons';
-  export let name: string;
-  export let size: number = 1;
+  interface Props {
+    name: string;
+    size?: number;
+  }
 
-  $:path = icons[name.trim()] || '';
+  let { name, size = 1 }: Props = $props();
+
+  let path = $derived(icons[name.trim()] || '');
 </script>
 
 {#if path}

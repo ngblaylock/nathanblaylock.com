@@ -1,6 +1,10 @@
 <script lang="ts">
   import ProjectIcon from './ProjectIcon.svelte';
-  export let icons: string[] = [];
+  interface Props {
+    icons?: string[];
+  }
+
+  let { icons = [] }: Props = $props();
 </script>
 
 {#if icons.length}

@@ -3,17 +3,25 @@
 	import { page } from '$app/stores';
 	import { pageTitle } from '$lib/stores';
 	import { onMount } from 'svelte';
-	export let robots: boolean = false;
-	export let title: string = '';
-	export let description: string =
-		'Nathan Blaylock is a User Experience Engineer who loves to creatively solve complex problems. This portfolio is a showcase of some of his work.';
-	export let hideHeader: boolean = false;
+	interface Props {
+		robots?: boolean;
+		title?: string;
+		description?: string;
+		hideHeader?: boolean;
+	}
+
+	let {
+		robots = false,
+		title = '',
+		description = 'Nathan Blaylock is a User Experience Engineer who loves to creatively solve complex problems. This portfolio is a showcase of some of his work.',
+		hideHeader = false
+	}: Props = $props();
 
 	onMount(() => {
 		hideHeader ? pageTitle.update((n) => '') : pageTitle.update((n) => title);
 	});
 
-	$: titleTemplate = title ? title + ' | Nathan Blaylock' : 'Nathan Blaylock';
+	let titleTemplate = $derived(title ? title + ' | Nathan Blaylock' : 'Nathan Blaylock');
 </script>
 
 <svelte:head>

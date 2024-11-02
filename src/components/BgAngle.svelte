@@ -1,4 +1,4 @@
-<div class="bg-angle" />
+<div class="bg-angle"></div>
 
 <style lang="scss">
 	.bg-angle {

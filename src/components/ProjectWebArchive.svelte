@@ -1,5 +1,9 @@
 <script lang="ts">
-	export let href: string;
+	interface Props {
+		href: string;
+	}
+
+	let { href }: Props = $props();
 </script>
 
 <div class="p-4 text-center mb-4">

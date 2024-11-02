@@ -1,10 +1,14 @@
 <script lang="ts">
+  import { run } from 'svelte/legacy';
+
   import { page } from '$app/stores';
-  let currentRoute: string;
+  let currentRoute: string = $state();
   const isCurrentRoute = (route: string) => {
     currentRoute = route;
   };
-  $: isCurrentRoute($page.route.id || '');
+  run(() => {
+    isCurrentRoute($page.route.id || '');
+  });
 </script>
 
 <nav>
@@ -21,7 +25,7 @@
   nav {
     display: block;
     font-weight: 600;
-    a:not(.btn) {
+    a:not(:global(.btn)) {
       text-decoration: none;
       border-bottom: 2px solid transparent;
       border-top: 2px solid transparent;

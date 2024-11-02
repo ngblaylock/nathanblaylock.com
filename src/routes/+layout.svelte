@@ -1,3 +1,4 @@
+<!-- @migration-task Error while migrating Svelte code: end is out of bounds -->
 <script lang="ts">
   import { pageTitle } from '$lib/stores';
   import { onMount } from 'svelte';

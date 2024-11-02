@@ -8,7 +8,7 @@
       <div class="dev-toolbar">
         <div class="dev-toolbar-body">
           Development
-          <span class="flex-fill" />
+          <span class="flex-fill"></span>
           <div class="hstack gap-2">
             <a
               href="https://github.com/ngblaylock/nathanblaylock.com"

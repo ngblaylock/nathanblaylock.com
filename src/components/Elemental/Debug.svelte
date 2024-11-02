@@ -1,6 +1,6 @@
 <script lang="ts">
   import { dev } from '$app/environment';
-  export let data;
+  let { data } = $props();
 </script>
 
 {#if dev}
