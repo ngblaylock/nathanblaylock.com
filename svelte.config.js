@@ -1,6 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
-import preprocess from 'svelte-preprocess';
-import { mdsvex } from 'mdsvex'; // https://youtu.be/RhScu3uqGd0
+import {sveltePreprocess} from 'svelte-preprocess';
+// import { mdsvex } from 'mdsvex'; // https://youtu.be/RhScu3uqGd0
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -14,8 +14,8 @@ const config = {
     },
   },
   preprocess: [
-    mdsvex({ extensions: ['.svelte.md', '.md', '.svx'] }),
-    preprocess({
+    // mdsvex({ extensions: ['.svelte.md', '.md', '.svx'] }),
+    sveltePreprocess({
       scss: {
         prependData: `
           @import './src/sass/_variables.scss';
