@@ -1,11 +1,7 @@
 <script>
   import icons from '$lib/icons';
-  interface Props {
-    name: string;
-    size?: number;
-  }
 
-  let { name, size = 1 }: Props = $props();
+  let { name, size = 1 } = $props();
 
   let path = $derived(icons[name.trim()] || '');
 </script>

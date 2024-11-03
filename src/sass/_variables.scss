@@ -18,14 +18,14 @@ $blue-700: #11205c;
 $blue-800: #0d173d;
 $blue-900: #080e1e;
 
-$gray-100: #F1F2F7; // light
-$gray-200: #E5E6EB;
-$gray-300: #CACBCF;
-$gray-400: #ABACB0;
-$gray-500: #85868A;
+$gray-100: #f1f2f7; // light
+$gray-200: #e5e6eb;
+$gray-300: #cacbcf;
+$gray-400: #abacb0;
+$gray-500: #85868a;
 $gray-600: #646568; // gray
 $gray-700: #434447;
-$gray-800: #2B2C2E;
+$gray-800: #2b2c2e;
 $gray-900: #141518; // dark
 
 $red: $red-600;
@@ -39,7 +39,6 @@ $light: $gray-100;
 
 $dev: #ca192b;
 
-$theme-colors: ();
 $custom-colors: (
   'primary': $primary,
   'secondary': $secondary,
@@ -48,6 +47,9 @@ $custom-colors: (
   'gray': $gray,
   'dev': $dev,
 );
+
+$theme-colors: ();
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 $body-color-dark: $gray-100;
 

@@ -2,19 +2,13 @@
 <script>
 	import { pageTitle } from '$lib/stores';
 	import { onMount } from 'svelte';
-	interface Props {
-		robots?: boolean;
-		title?: string;
-		description?: string;
-		hideHeader?: boolean;
-	}
 
 	let {
 		robots = false,
 		title = '',
 		description = 'Nathan Blaylock is a User Experience Engineer who loves to creatively solve complex problems. This portfolio is a showcase of some of his work.',
 		hideHeader = false
-	}: Props = $props();
+	} = $props();
 
 	onMount(() => {
 		hideHeader ? pageTitle.update((n) => '') : pageTitle.update((n) => title);

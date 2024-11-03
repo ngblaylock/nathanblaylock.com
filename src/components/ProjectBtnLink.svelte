@@ -1,16 +1,5 @@
-<!--
-  @component
-  ## Title
-	You can use `markdown` in this.
--->
-
 <script>
-	interface Props {
-		href: string;
-		children?: import('svelte').Snippet;
-	}
-
-	let { href, children }: Props = $props();
+	let { href, children } = $props();
 </script>
 
 <div class="text-center mb-4">

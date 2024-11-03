@@ -1,5 +1,6 @@
 <!-- @migration-task Error while migrating Svelte code: end is out of bounds -->
 <script>
+  import '../sass/style.scss';
   import { pageTitle } from '$lib/stores';
   import { onMount } from 'svelte';
   import Footer from '$components/Footer.svelte';
@@ -23,7 +24,6 @@
 
 <svelte:head>
   <style lang="scss">
-    @import '../sass/style';
     body {
       overflow-y: scroll;
       background-image: url('/images/optimized/bg/bg_texture.jpg');
@@ -93,14 +93,14 @@
       font-size: 7em;
     }
   }
-  h1 {
-    bottom: -1.2em;
-    color: $primary;
-    font-weight: 400;
-    position: absolute;
-    right: 0;
-    :global([data-bs-theme='dark']) & {
-      color: var(--bse-base-i1);
-    }
-  }
+  // h1 {
+  //   bottom: -1.2em;
+  //   color: $primary;
+  //   font-weight: 400;
+  //   position: absolute;
+  //   right: 0;
+  //   :global([data-bs-theme='dark']) & {
+  //     color: var(--bse-base-i1);
+  //   }
+  // }
 </style>

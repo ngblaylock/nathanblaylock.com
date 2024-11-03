@@ -19,9 +19,10 @@ const config = {
       scss: {
         prependData: `
           @import './src/sass/_variables.scss';
-          @import './node_modules/bootstrap/scss/_functions.scss';
-          @import './node_modules/bootstrap/scss/_variables.scss';
-          @import './node_modules/bootstrap/scss/_mixins.scss';
+          @import './node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+          // @import './node_modules/bootstrap/scss/_functions.scss';
+          // @import './node_modules/bootstrap/scss/_variables.scss';
+          // @import './node_modules/bootstrap/scss/_mixins.scss';
         `,
       },
     }),
