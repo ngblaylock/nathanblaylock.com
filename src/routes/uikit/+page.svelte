@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import { browser } from '$app/environment';
   import * as E from '$components/Elemental';
   import chroma from 'chroma-js';

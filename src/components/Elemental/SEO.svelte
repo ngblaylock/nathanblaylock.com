@@ -1,6 +1,5 @@
 <!-- This is just called SEO for standardization. The only page that should be shown on search engines is the homepage. This also updates the page title -->
-<script lang="ts">
-	import { page } from '$app/stores';
+<script>
 	import { pageTitle } from '$lib/stores';
 	import { onMount } from 'svelte';
 	interface Props {
@@ -29,7 +28,6 @@
 	<meta name="description" content={description} />
 	<meta property="og:title" content={titleTemplate} />
 	<meta property="og:description" content={description} />
-	<meta property="og:url" content="https://nathanblaylock.com{$page.route.id}" />
 	{#if !robots}
 		<meta name="robots" content="noindex,nofollow" />
 	{/if}

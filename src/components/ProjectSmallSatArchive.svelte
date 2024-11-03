@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import ProjectBtnLink from './ProjectBtnLink.svelte';
   import ProjectIcons from './ProjectIcons.svelte';
 </script>

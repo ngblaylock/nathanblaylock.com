@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   interface Props {
     name: string;
     width?: string;

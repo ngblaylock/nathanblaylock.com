@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import * as E from "$components/Elemental";
   import ProjectIcons from "$components/ProjectIcons.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"

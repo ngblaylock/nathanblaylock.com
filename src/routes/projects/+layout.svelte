@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import { projects } from '$lib/projectList';
@@ -27,11 +27,7 @@
     route: '',
     alt: '',
   };
-  let currentProject = $derived($page.route.id?.replace('/projects/', ''));
   let getNextProject = $derived(() => {
-    if (!currentProject) {
-      return defaultProject;
-    }
     const currentProjectIndex = projects.findIndex((project) => project.route === currentProject);
     if (currentProjectIndex == -1) {
       return defaultProject;

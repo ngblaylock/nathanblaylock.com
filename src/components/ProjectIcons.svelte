@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import ProjectIcon from './ProjectIcon.svelte';
   interface Props {
     icons?: string[];

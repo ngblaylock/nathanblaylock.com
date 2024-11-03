@@ -52,7 +52,7 @@
   .logo svg {
     max-height: 50px;
     width: auto;
-    fill: $primary;
+    // fill: $primary;
     :global([data-bs-theme='dark']) & {
       fill: var(--bse-base-i1);
     }

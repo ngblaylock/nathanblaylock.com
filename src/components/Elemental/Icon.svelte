@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import icons from '$lib/icons';
   interface Props {
     name: string;

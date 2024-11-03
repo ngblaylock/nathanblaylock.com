@@ -4,7 +4,7 @@
 	You can use `markdown` in this.
 -->
 
-<script lang="ts">
+<script>
 	interface Props {
 		href: string;
 		children?: import('svelte').Snippet;

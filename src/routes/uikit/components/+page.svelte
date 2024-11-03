@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import * as E from '$components/Elemental';
 </script>
 

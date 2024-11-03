@@ -1,23 +1,10 @@
-<script lang="ts">
-  import { run } from 'svelte/legacy';
-
-  import { page } from '$app/stores';
-  let currentRoute: string = $state();
-  const isCurrentRoute = (route: string) => {
-    currentRoute = route;
-  };
-  run(() => {
-    isCurrentRoute($page.route.id || '');
-  });
-</script>
-
 <nav>
   <div
     class="container py-3 d-flex flex-wrap align-items-center gap-3 justify-content-center justify-content-sm-end"
   >
-    <a href="/" class={currentRoute == '/' ? 'active' : ''}>Projects</a>
-    <a href="/about" class={currentRoute == '/about' ? 'active' : ''}>About Nathan</a>
-    <a href="/contact" class={currentRoute == '/contact' ? 'active' : ''}>Contact</a>
+    <a href="/">Projects</a>
+    <a href="/about">About Nathan</a>
+    <a href="/contact">Contact</a>
   </div>
 </nav>
 
@@ -34,9 +21,9 @@
       }
     }
   }
-  @include media-breakpoint-up(sm) {
-    nav {
-      font-size: 1.25rem;
-    }
-  }
+  // @include media-breakpoint-up(sm) {
+  //   nav {
+  //     font-size: 1.25rem;
+  //   }
+  // }
 </style>

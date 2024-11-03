@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import { dev } from '$app/environment';
   let { data } = $props();
 </script>

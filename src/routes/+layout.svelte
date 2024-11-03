@@ -1,5 +1,5 @@
 <!-- @migration-task Error while migrating Svelte code: end is out of bounds -->
-<script lang="ts">
+<script>
   import { pageTitle } from '$lib/stores';
   import { onMount } from 'svelte';
   import Footer from '$components/Footer.svelte';
@@ -12,7 +12,6 @@
   // Animate On Scroll
   import 'aos/dist/aos.css';
   import AOS from 'aos';
-  import { NODE_ENV } from '$env/static/private';
 
   onMount(() => {
     AOS.init({
@@ -57,7 +56,6 @@
         <div class="display">
           Nathan<br />Blaylock
         </div>
-        <h1>{$pageTitle}</h1>
       </div>
       <slot />
     </div>
