@@ -1,7 +1,7 @@
 <!-- @migration-task Error while migrating Svelte code: end is out of bounds -->
 <script>
   import '../sass/style.scss';
-  import { pageTitle } from '$lib/stores';
+  import { global } from '$lib/global.svelte';
   import { onMount } from 'svelte';
   import Footer from '$components/Footer.svelte';
   import Navbar from '$components/Navbar.svelte';
@@ -13,6 +13,8 @@
   // Animate On Scroll
   import 'aos/dist/aos.css';
   import AOS from 'aos';
+
+  let { children } = $props();
 
   onMount(() => {
     AOS.init({
@@ -42,6 +44,7 @@
     crossorigin="anonymous"
   ></script>
 </svelte:head>
+
 <Analytics />
 <Meta />
 <DevToolbar />
@@ -49,18 +52,19 @@
 
 <div class="site">
   <Navbar />
-
   <main>
     <div class="container">
       <div class="title-container">
         <div class="display">
           Nathan<br />Blaylock
         </div>
+        {#if global.pageTitle}
+          <h1>{global.pageTitle}</h1>
+        {/if}
       </div>
-      <slot />
+      {@render children?.()}
     </div>
   </main>
-
   <Footer />
 </div>
 
@@ -93,14 +97,14 @@
       font-size: 7em;
     }
   }
-  // h1 {
-  //   bottom: -1.2em;
-  //   color: $primary;
-  //   font-weight: 400;
-  //   position: absolute;
-  //   right: 0;
-  //   :global([data-bs-theme='dark']) & {
-  //     color: var(--bse-base-i1);
-  //   }
-  // }
+  h1 {
+    bottom: -1.2em;
+    color: $primary;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    :global([data-bs-theme='dark']) & {
+      color: var(--bse-base-i1);
+    }
+  }
 </style>

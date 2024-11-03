@@ -1,8 +1,7 @@
 <script>
   import * as E from '$components/Elemental';
-  /**
-   * 
-   */
+
+  /** @type {{children: import('svelte').Snippet}} */
   let { children } = $props();
 </script>
 

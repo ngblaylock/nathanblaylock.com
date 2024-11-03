@@ -1,6 +1,6 @@
 <!-- This is just called SEO for standardization. The only page that should be shown on search engines is the homepage. This also updates the page title -->
 <script>
-	import { pageTitle } from '$lib/stores';
+	import { global } from '$lib/global.svelte';
 	import { onMount } from 'svelte';
 
 	let {
@@ -11,7 +11,7 @@
 	} = $props();
 
 	onMount(() => {
-		hideHeader ? pageTitle.update((n) => '') : pageTitle.update((n) => title);
+		hideHeader ? global.pageTitle = '' : global.pageTitle = title;
 	});
 
 	let titleTemplate = $derived(title ? title + ' | Nathan Blaylock' : 'Nathan Blaylock');

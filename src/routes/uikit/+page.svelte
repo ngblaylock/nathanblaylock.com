@@ -7,12 +7,21 @@
   let images = ['blaylock-nathan.jpg', 'blaylock-nathan-1.png', 'blaylock-nathan-2.png'];
   let logoColors = ['red', 'black', 'white'];
 
-  const getHex = (color: string) => {
+  /**
+   * Gets the hex value for the theme color
+   * @param {string} color The theme color
+   */
+  const getHex = (color) => {
     if (browser) {
       return getComputedStyle(document.documentElement).getPropertyValue(`--bs-${color}`);
     } else return '';
   };
-  const getContrastColor = (color: string) => {
+
+  /**
+   * Gets the appropriate color contrast for a theme color
+   * @param {string} color The theme color
+   */
+  const getContrastColor = (color) => {
     if (browser) {
       const dark = getHex('dark');
       const light = getHex('light');

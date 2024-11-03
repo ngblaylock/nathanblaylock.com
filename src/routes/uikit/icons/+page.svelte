@@ -4,7 +4,12 @@
   import icons from '$lib/icons';
   import { projectIcons } from '$lib/assets/icons';
 
-  function copy(iconName: string, componentName: string) {
+  /**
+   * Copies the icon component
+   * @param {string} iconName The name prop of the icon
+   * @param {'E.Icon' | 'ProjectIcon'} componentName The icon component name
+   */
+  function copy(iconName, componentName) {
     navigator.clipboard
       .writeText(`<${componentName} name="${iconName}" />`)
       .then(() => {

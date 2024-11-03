@@ -1,4 +1,5 @@
 <script>
+  // @ts-nocheck
   import { dev } from '$app/environment';
   import { afterNavigate } from '$app/navigation';
 
