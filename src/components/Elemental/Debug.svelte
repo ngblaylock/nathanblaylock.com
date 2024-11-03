@@ -1,5 +1,10 @@
 <script>
   import { dev } from '$app/environment';
+  /**
+   * @type {{
+   *  data: any
+   * }}
+   */
   let { data } = $props();
 </script>
 

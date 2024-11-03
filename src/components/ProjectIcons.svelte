@@ -1,6 +1,11 @@
 <script>
   import ProjectIcon from './ProjectIcon.svelte';
 
+  /**
+   * @type {{
+   *  icons: string[]
+   * }}
+   */
   let { icons = [] } = $props();
 </script>
 

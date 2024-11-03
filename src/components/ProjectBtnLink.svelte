@@ -1,4 +1,10 @@
 <script>
+	/**
+	 * @type {{
+	 * 	href: string,
+	 * 	children: import('svelte').Snippet
+	 * }}
+	 */
 	let { href, children } = $props();
 </script>
 

@@ -1,9 +1,17 @@
 <script>
-  let { href = '', theme = 'primary', children, ...rest } = $props();
+  /**
+   * @type {{
+   *  href: string,
+   *  theme: string,
+   *  children: import('svelte').Snippet
+   *  class?: string
+   * }}
+   */
+  let { href = '', theme = 'primary', children, class: classList = '' } = $props();
 </script>
 
 {#if href}
-   <a class="btn btn-{theme} {rest.class || ''}" href="{href}">{@render children?.()}</a>
+  <a class="btn btn-{theme} {classList}" {href}>{@render children?.()}</a>
 {:else}
-  <button class="btn btn-{theme} {rest.class || ''}">{@render children?.()}</button>
+  <button class="btn btn-{theme} {classList}">{@render children?.()}</button>
 {/if}

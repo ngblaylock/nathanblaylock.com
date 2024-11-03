@@ -47,7 +47,7 @@ export const projects = [
     alt: 'Sorenson Center',
     route: 'scce',
   },
-  // // ARCHIVED PROJECTS
+  // /* ARCHIVED PROJECTS */
   // {
   // 	alt: 'Psychology Department Website',
   // 	route: 'psychology',

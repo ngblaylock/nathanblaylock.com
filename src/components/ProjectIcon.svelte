@@ -1,4 +1,11 @@
 <script>
+  /**
+   * @type {{
+   *  name: string,
+   *  width?: string,
+   *  height?: string
+   * }}
+   */
   let { name, width = '50px', height = '45px' } = $props();
 
   let svgStyle = $derived(`

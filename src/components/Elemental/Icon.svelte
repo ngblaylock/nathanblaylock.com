@@ -1,6 +1,10 @@
 <script>
   import icons from '$lib/icons';
 
+  /** @type {{
+   *  name: string, 
+   *  size: number
+   * }}*/
   let { name, size = 1 } = $props();
 
   let path = $derived(icons[name.trim()] || '');
