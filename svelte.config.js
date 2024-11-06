@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapterStatic from '@sveltejs/adapter-static';
 import {sveltePreprocess} from 'svelte-preprocess';
 // import { mdsvex } from 'mdsvex'; // https://youtu.be/RhScu3uqGd0
 
@@ -6,11 +6,11 @@ import {sveltePreprocess} from 'svelte-preprocess';
 const config = {
   extensions: ['.svelte', '.md'],
   kit: {
-    adapter: adapter({
+    adapter: adapterStatic({
       fallback: '404.html',
     }),
     alias: {
-      $components: 'src/components',
+      $components: 'src/lib/components',
     },
   },
   preprocess: [

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { themeSwitcher } from '@ngblaylock/bootstrap-extensions';
   if (import.meta.hot) {
     import.meta.hot.accept(() => {

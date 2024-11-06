@@ -1,5 +1,5 @@
 <script>
-  import * as E from '$components/Elemental';
+  import * as E from '$lib/components/Elemental';
 
   /** @type {{children: import('svelte').Snippet}} */
   let { children } = $props();

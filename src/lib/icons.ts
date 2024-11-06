@@ -13,7 +13,7 @@ import {
   mdiMenu,
 } from '@mdi/js';
 
-const icons: { [key: string]: string } = {
+const icons = {
   arrowDown: mdiArrowDown,
   arrowLeft: mdiArrowLeft,
   arrowRight: mdiArrowRight,
@@ -29,3 +29,4 @@ const icons: { [key: string]: string } = {
 };
 
 export default icons;
+export type IconName = keyof typeof icons;

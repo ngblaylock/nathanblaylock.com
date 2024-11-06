@@ -1,5 +1,5 @@
 <script>
-  import * as E from '$components/Elemental';
+  import * as E from '$lib/components/Elemental';
 </script>
 
 <E.SEO title="Components" />
@@ -11,15 +11,15 @@
       <p>Creates links or buttons</p>
       <div class="vstack gap-2">
         <div>
-          <E.Btn theme="primary" on:click={() => console.log('hi')}>Button</E.Btn>
-          <E.Btn theme="primary" href="/">Link</E.Btn>
+          <E.Btn onclick={() => console.log('hi')}>Button</E.Btn>
+          <E.Btn href="/">Link</E.Btn>
         </div>
         <div>
-          <E.Btn theme="primary">Button</E.Btn>
-          <E.Btn theme="secondary">Button</E.Btn>
-          <E.Btn theme="light">Button</E.Btn>
-          <E.Btn theme="gray">Button</E.Btn>
-          <E.Btn theme="dark">Button</E.Btn>
+          <E.Btn variant="primary">Button</E.Btn>
+          <E.Btn variant="secondary">Button</E.Btn>
+          <E.Btn variant="light">Button</E.Btn>
+          <E.Btn variant="gray">Button</E.Btn>
+          <E.Btn variant="dark">Button</E.Btn>
         </div>
       </div>
     </div>

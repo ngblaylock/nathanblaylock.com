@@ -1,6 +1,6 @@
 <script>
-  import * as E from '$components/Elemental';
-  import ProjectIcon from '$components/ProjectIcon.svelte';
+  import * as E from '$lib/components/Elemental';
+  import ProjectIcon from '$lib/components/ProjectIcon.svelte';
   import { projectIcons } from '$lib/assets/icons';
 </script>
 

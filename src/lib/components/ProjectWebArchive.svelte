@@ -1,10 +1,9 @@
-<script>
-  /**
-   * @type {{
-   *  href: string,
-   * }}
-   */
-  let { href } = $props();
+<script lang="ts">
+  interface Props {
+    href: string;
+  }
+
+  let { href }: Props = $props();
 </script>
 
 <div class="p-4 text-center mb-4">

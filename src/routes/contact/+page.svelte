@@ -1,5 +1,5 @@
 <script>
-	import * as E from '$components/Elemental';
+	import * as E from '$lib/components/Elemental';
 	import { onMount } from 'svelte';
 
 	onMount(() => { // Load the cognito form

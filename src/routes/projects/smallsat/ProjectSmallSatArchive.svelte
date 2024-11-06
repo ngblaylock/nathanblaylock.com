@@ -1,5 +1,5 @@
 <script>
-  import ProjectBtnLink from '../../../components/ProjectBtnLink.svelte';
+  import ProjectBtnLink from '../../../lib/components/ProjectBtnLink.svelte';
 </script>
 
 <div class="bg-light rounded p-5 pb-3 mb-4">

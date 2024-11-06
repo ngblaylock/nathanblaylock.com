@@ -1,13 +1,13 @@
-<script>
-  import icons from '$lib/icons';
+<script lang="ts">
+  import icons, {type IconName} from '$lib/icons';
 
-  /** @type {{
-   *  name: string, 
-   *  size: number
-   * }}*/
-  let { name, size = 1 } = $props();
+  interface Props {
+    name: IconName,
+    size?: number,
+  }
+  let { name, size = 1 } : Props = $props();
 
-  let path = $derived(icons[name.trim()] || '');
+  let path = $derived(icons[name] || '');
 </script>
 
 {#if path}

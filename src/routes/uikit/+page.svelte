@@ -1,6 +1,6 @@
 <script>
   import { browser } from '$app/environment';
-  import * as E from '$components/Elemental';
+  import * as E from '$lib/components/Elemental';
   import chroma from 'chroma-js';
   let theme = ['primary', 'secondary', 'light', 'dark', 'gray'];
   let colors = ['red', 'blue', 'gray'];

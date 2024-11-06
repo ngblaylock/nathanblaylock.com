@@ -1,11 +1,10 @@
-<script>
+<script lang="ts">
   import { dev } from '$app/environment';
-  /**
-   * @type {{
-   *  data: any
-   * }}
-   */
-  let { data } = $props();
+
+  interface Props {
+    data: any;
+  }
+  let { data } : Props = $props();
 </script>
 
 {#if dev}

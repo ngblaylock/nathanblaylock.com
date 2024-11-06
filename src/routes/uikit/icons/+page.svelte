@@ -1,15 +1,10 @@
-<script>
-  import * as E from '$components/Elemental';
-  import ProjectIcon from '$components/ProjectIcon.svelte';
-  import icons from '$lib/icons';
+<script lang="ts">
+  import * as E from '$lib/components/Elemental';
+  import ProjectIcon from '$lib/components/ProjectIcon.svelte';
+  import icons, {type IconName} from '$lib/icons';
   import { projectIcons } from '$lib/assets/icons';
 
-  /**
-   * Copies the icon component
-   * @param {string} iconName The name prop of the icon
-   * @param {'E.Icon' | 'ProjectIcon'} componentName The icon component name
-   */
-  function copy(iconName, componentName) {
+  function copy(iconName: string, componentName: 'E.Icon' | 'ProjectIcon') {
     navigator.clipboard
       .writeText(`<${componentName} name="${iconName}" />`)
       .then(() => {
@@ -33,7 +28,7 @@
           onclick={() => copy(icon, 'E.Icon')}
         >
           <div>
-            <E.Icon name={icon} />
+            <E.Icon name={icon as IconName} />
             <span>{icon}</span>
           </div>
           <div class="copy">

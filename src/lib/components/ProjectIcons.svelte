@@ -1,12 +1,10 @@
-<script>
+<script lang="ts">
   import ProjectIcon from './ProjectIcon.svelte';
 
-  /**
-   * @type {{
-   *  icons: string[]
-   * }}
-   */
-  let { icons = [] } = $props();
+  interface Props {
+    icons: string[];
+  }
+  let { icons = [] } : Props = $props();
 </script>
 
 {#if icons.length}
