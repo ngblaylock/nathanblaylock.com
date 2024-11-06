@@ -30,8 +30,11 @@ export const projectIcons = [
   'Rollup',
   'Sass',
   'Sketch',
+  'Strapi',
   'SvelteKit',
   'Tailwind',
   'TypeScript',
+  'VS-Code',
   'Vue',
+  'Vuetify',
 ];
