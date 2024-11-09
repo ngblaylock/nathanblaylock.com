@@ -10,8 +10,8 @@
 {#if logos.length}
   <div class="border-top pt-5 mt-5 text-center">
     <div class="hstack flex-wrap gap-3 justify-content-center">
-      {#each logos as icon}
-        <Logo name={icon} />
+      {#each logos as logo}
+        <Logo name={logo} />
       {/each}
     </div>
   </div>

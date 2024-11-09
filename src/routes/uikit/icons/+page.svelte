@@ -38,7 +38,7 @@
       </div>
     {/each}
   </div>
-  <h2 class="mt-4">ProjectIcon</h2>
+  <h2 class="mt-4">Logos</h2>
   <div class="row row-gap-4">
     {#each logos as logo}
       <div class="col-sm-6">
