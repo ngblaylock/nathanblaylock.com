@@ -1,10 +1,10 @@
 <script lang="ts">
   import * as E from '$lib/components/Elemental';
-  import ProjectIcon from '$lib/components/ProjectIcon.svelte';
+  import Logo from '$components/Logo.svelte';
   import icons, {type IconName} from '$lib/icons';
-  import { projectIcons } from '$lib/assets/icons';
+  import { logos } from '$lib/assets/logos';
 
-  function copy(iconName: string, componentName: 'E.Icon' | 'ProjectIcon') {
+  function copy(iconName: string, componentName: 'E.Icon' | 'Logo') {
     navigator.clipboard
       .writeText(`<${componentName} name="${iconName}" />`)
       .then(() => {
@@ -40,15 +40,15 @@
   </div>
   <h2 class="mt-4">ProjectIcon</h2>
   <div class="row row-gap-4">
-    {#each projectIcons as projectIcon}
+    {#each logos as logo}
       <div class="col-sm-6">
         <button
           class="btn btn-base-4 btn-copy w-100 hstack gap-3 justify-content-between"
-          onclick={() => copy(projectIcon, 'ProjectIcon')}
+          onclick={() => copy(logo, 'Logo')}
         >
           <div class="hstack gap-3">
-            <ProjectIcon name={projectIcon} />
-            {projectIcon}
+            <Logo name={logo} />
+            {logo}
           </div>
           <div class="copy">
             <E.Icon name="copy" />

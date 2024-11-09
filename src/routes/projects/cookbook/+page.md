@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import * as E from "$components/Elemental";
-  import ProjectIcons from "$components/ProjectIcons.svelte"
+  import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
-  let icons = [
+  let logos = [
     "Nuxt",
     "Firebase",
     "Sass",
@@ -35,4 +35,4 @@ Some people ask me why I designed this app without categorizing the items like m
 
 <ProjectBtnLink href="https://cookbook.nathanblaylock.com">Visit Cookbook App</ProjectBtnLink>
 
-<ProjectIcons {icons} />
+<Logos {logos} />

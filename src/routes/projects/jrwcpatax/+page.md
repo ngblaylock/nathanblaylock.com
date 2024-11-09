@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import * as E from "$components/Elemental";
-  import ProjectIcons from "$components/ProjectIcons.svelte"
+  import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
-  let icons = [
+  let logos = [
     "Eleventy",
     "Nunjucks",
     "Bootstrap",
@@ -40,4 +40,4 @@ During the same time that we worked on the promotional materials, we also got th
 
 It was so much fun to work on this branding and website project with Jeff. I still continue to help him out with any needs he has with branding and website development. It didn't take long before we started hearing some positive reviews from his clients on how well the brand turned out and how easy the website was to use.
 
-<ProjectIcons {icons} />
+<Logos {logos} />

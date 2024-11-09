@@ -1,17 +1,17 @@
 <script lang="ts">
-  import ProjectIcon from './ProjectIcon.svelte';
+  import Logo from './Logo.svelte';
 
   interface Props {
-    icons: string[];
+    logos: string[];
   }
-  let { icons = [] } : Props = $props();
+  let { logos = [] } : Props = $props();
 </script>
 
-{#if icons.length}
+{#if logos.length}
   <div class="border-top pt-5 mt-5 text-center">
     <div class="hstack flex-wrap gap-3 justify-content-center">
-      {#each icons as icon}
-        <ProjectIcon name={icon} />
+      {#each logos as icon}
+        <Logo name={icon} />
       {/each}
     </div>
   </div>

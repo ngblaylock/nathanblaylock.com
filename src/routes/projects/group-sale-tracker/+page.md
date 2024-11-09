@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import * as E from "$components/Elemental";
-  import ProjectIcons from "$components/ProjectIcons.svelte"
+  import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
-  let icons = [
+  let logos = [
     "Nuxt",
     "Bootstrap-Vue",
     "Sass",
@@ -31,4 +31,4 @@ Instead of writing out what this app does, here is a video of how the app works.
 
 More than anything, this was just a fun pet project that I worked on. I learned a lot not only by using Nuxt.js, but also using client-side storage, and exporting and uploading JSON data.
 
-<ProjectIcons {icons} />
+<Logos {logos} />

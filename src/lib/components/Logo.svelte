@@ -9,7 +9,7 @@
   let svgStyle = $derived(`max-width: ${width}; max-height: ${height};`);
 </script>
 
-{#await import(`$lib/assets/${name}.svg?raw`) then value}
+{#await import(`$lib/assets/logos/${name}.svg?raw`) then value}
   <div>
     <span class="visually-hidden">{name}</span>
     {@html value.default.replace('<svg ', `<svg style="${svgStyle}"`)}

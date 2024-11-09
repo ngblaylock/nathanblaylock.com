@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
   import * as E from "$components/Elemental";
-  import ProjectIcons from "$components/ProjectIcons.svelte"
-  let icons = [
+  import Logos from "$components/Logos.svelte"
+  let logos = [
     "Affinity-Photo",
     "Affinity-Designer",
     "Affinity-Publisher",
@@ -34,4 +34,4 @@ I went one step further and created 3 variants of the logo and specified where t
 
 As the organization grows and as I help out, I hope that the branding helps communicate trust, sincerity, and professionalism. It has been great working with such a uplifting and caring group like the Enoch Initiative.
 
-<ProjectIcons {icons} />
+<Logos {logos} />

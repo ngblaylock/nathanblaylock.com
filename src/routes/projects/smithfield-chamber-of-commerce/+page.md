@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import * as E from "$components/Elemental";
-  import ProjectIcons from "$components/ProjectIcons.svelte"
+  import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
-  let icons = [
+  let logos = [
     "Adobe-XD",
     "Eleventy",
     "Nunjucks",
@@ -35,4 +35,4 @@ One big part of the site that I needed to figure out was adding in meeting minut
 
 We quickly got the new website launched using Firebase hosting. The Smithfield Chamber of Commerce has been very happy with a professional quality website that users can come and quickly find information about the events going on. I have personally found it very fulfilling to support a group that cares for the community while being able to continually play around with some new ideas and technology.
 
-<ProjectIcons {icons} />
+<Logos {logos} />

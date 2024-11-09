@@ -1,4 +1,4 @@
-export const projectIcons = [
+export const logos = [
   'Adobe-Illustrator',
   'Adobe-InDesign',
   'Adobe-Photoshop',
@@ -17,6 +17,7 @@ export const projectIcons = [
   'Eleventy',
   'Figma',
   'Firebase',
+  'Git',
   'GitHub',
   'HTML',
   'JavaScript',
@@ -30,6 +31,7 @@ export const projectIcons = [
   'Rollup',
   'Sass',
   'Sketch',
+  'Slack',
   'Strapi',
   'SvelteKit',
   'Tailwind',

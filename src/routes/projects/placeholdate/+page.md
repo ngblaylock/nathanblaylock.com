@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import * as E from "$components/Elemental";
-  import ProjectIcons from "$components/ProjectIcons.svelte"
+  import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from '$components/ProjectBtnLink.svelte'
-  let icons = [
+  let logos = [
     "TypeScript",
     "Node-JS",
     "Alpine",
@@ -42,4 +42,4 @@ There was however, one more issue. The development experience was somewhat diffi
 
 I am glad that I have been able to fill in a gap for thousands of UI designers around the world.
 
-<ProjectIcons {icons} />
+<Logos {logos} />

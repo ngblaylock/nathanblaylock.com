@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import '../sass/style.scss';
   import { global } from '$lib/global.svelte';
   import { onMount } from 'svelte';

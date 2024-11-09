@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
   import * as E from "$components/Elemental";
-  import ProjectIcons from "$components/ProjectIcons.svelte"
-  let icons = [
+  import Logos from "$components/Logos.svelte"
+  let logos = [
     "Adobe-Illustrator",
     "Eleventy",
     "Nunjucks",
@@ -41,4 +41,4 @@ I had used 11ty for some other projects and really liked it for a simple static 
 
 It was a pleasure to work with Wayne and take on this Busy Bee Odd Jobs branding and web development. I was even more pleased to hear that the website has helped his business bring in more clients.
 
-<ProjectIcons {icons} />
+<Logos {logos} />

@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import * as E from "$components/Elemental";
-  import ProjectIcons from "$components/ProjectIcons.svelte"
+  import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
-  let icons = [
+  let logos = [
     "Figma",
     "Tailwind",
     "SvelteKit"
@@ -31,4 +31,4 @@ Overall the app has been very successful. As always, there are a few things I wo
 
 <ProjectBtnLink href="https://scoresheet.nathanblaylock.com">Visit Scoresheet App</ProjectBtnLink>
 
-<ProjectIcons {icons} />
+<Logos {logos} />

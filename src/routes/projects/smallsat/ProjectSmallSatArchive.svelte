@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import ProjectBtnLink from '../../../lib/components/ProjectBtnLink.svelte';
 </script>
 

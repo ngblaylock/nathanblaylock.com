@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import * as E from "$components/Elemental";
-  import ProjectIcons from "$components/ProjectIcons.svelte"
+  import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
-  let icons = [
+  let logos = [
     "Nuxt",
     "Figma",
     "Bootstrap-Vue",
@@ -35,4 +35,4 @@ Another neat feature I developed was a site-wide keyword search. We wanted a way
 
 The new website was released in November 2022 and has been one of my favorite projects to work on. It took a lot of teamwork and collaboration but we couldn't have been happier with the result.
 
-<ProjectIcons {icons} />
+<Logos {logos} />

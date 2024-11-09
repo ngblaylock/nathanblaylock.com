@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import * as E from "$components/Elemental";
-  import ProjectIcons from "$components/ProjectIcons.svelte"
+  import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
-  let icons = [
+  let logos = [
     "SvelteKit",
     "TypeScript",
     "Firebase",
@@ -31,7 +31,7 @@ I also worked extensively with colors, sticking primarily to a brown theme with 
 
 Once we finalized the branding, it was time to work on the website. The design process went quickly since the branding was already in place. I stuck with my go-to CSS framework, Bootstrap, and chose SvelteKit for building the application due to my positive experience with it. For storing data and hosting, I opted for Firebase again because of its simplicity.
 
-The admin management portion of the website is the largest part. Admins can set up the order series by filling out which chocolates are available, the timeframe, and the pickup and payment methods. Once completed, customers can fill out a simple form with their contact information and their chocolate orders. Once submitted, a cloud function inserts the data into Firestore.
+The admin management portion of the website is the largest part. Admins can set up the order series by filling out which chocolates are available, the time frame, and the pickup and payment methods. Once completed, customers can fill out a simple form with their contact information and their chocolate orders. Once submitted, a cloud function inserts the data into Firestore.
 
 <img src="/images/optimized/projects/gtd/lg_gtd-order-summary.png" alt="Order Summary Page" />
 <img src="/images/optimized/projects/gtd/lg_gtd-order-detail.png" alt="Order Detail Page" />
@@ -43,4 +43,4 @@ Admins can log in and see all orders and their statuses. Another handy feature i
 
 This has been my favorite personal project due to the variety of skills I've been able to use, and of course, the chocolate. I am excited to keep this application maintained for future years of chocolate-dipping seasons.
 
-<ProjectIcons {icons} />
+<Logos {logos} />

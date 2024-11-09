@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
   import * as E from "$components/Elemental";
-  import ProjectIcons from "$components/ProjectIcons.svelte"
+  import Logos from "$components/Logos.svelte"
   import ProjectWebArchive from "$components/ProjectWebArchive.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
-  let icons = [
+  let logos = [
     'Adobe-Photoshop', 
     'Adobe-Illustrator', 
     'Adobe-InDesign', 
@@ -42,4 +42,4 @@ Because of this new (to Utah State University) strategy I was asked to present a
 
 Working with the Sorenson Center has always been one of my favorite parts of working with Utah State University. The things mentioned here is only a small part of the things I did to enhance the communication and design of the center. There were a lot of wonderful learning experiences that have helped shape me into the user experience engineer that I am today.
 
-<ProjectIcons {icons} />
+<Logos {logos} />

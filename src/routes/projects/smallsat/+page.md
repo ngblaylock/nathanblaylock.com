@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
   import * as E from "$components/Elemental";
-  import ProjectIcons from "$components/ProjectIcons.svelte"
+  import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   import ProjectSmallSatArchive from "./ProjectSmallSatArchive.svelte"
-  let icons = [
+  let logos = [
     "Nuxt",
     "Figma",
     "Bootstrap-Vue",
@@ -37,4 +37,4 @@ No one wanted to do a virtual conference, but considering the circumstances thin
 
 As I continue to work with SmallSat, I enjoy finding new solutions to some problems that the the team didn't really know they had. For example, I have helped with streamlining the content publishing flow in a way that reduced the amount of time to edit a webpage to be 10x faster, and much more accurate way. Although my interest in developing web applications have grown, developing static websites still brings me a lot of joy.
 
-<ProjectIcons {icons} />
+<Logos {logos} />

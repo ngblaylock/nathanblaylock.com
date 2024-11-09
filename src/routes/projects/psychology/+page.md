@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import * as E from "$components/Elemental";
   import ProjectWebArchive from "$components/ProjectWebArchive.svelte"
-  import ProjectIcons from "$components/ProjectIcons.svelte"
-  let icons = [
+  import Logos from "$components/Logos.svelte"
+  let logos = [
     "Adobe-Photoshop",
     "Adobe-XD",
     "Bootstrap"
@@ -47,4 +47,4 @@ Developing a site that is already designed is my recommendation. Development usu
 The stakeholders were thrilled with the final product and also passed on some very encouraging feedback they had received as well. The project was a smashing success in both delivery time and in addressing the issues we had found in the critique phase.
 
 
-<ProjectIcons {icons} />
+<Logos {logos} />

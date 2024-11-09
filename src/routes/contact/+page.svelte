@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import * as E from '$lib/components/Elemental';
 	import { onMount } from 'svelte';
 

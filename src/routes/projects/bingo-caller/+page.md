@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import * as E from "$components/Elemental";
-  import ProjectIcons from "$components/ProjectIcons.svelte"
+  import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
-  let icons = [
+  let logos = [
     "jQuery",
     "Sass",
     "GitHub"
@@ -25,4 +25,4 @@ As for the branding, I didn’t spend a lot of time on it, but I thought it stil
 
 I have had a few people use my bingo caller, and am glad that they enjoy using it. I have a few ideas in the future, such as adding audio, and maybe adding in some auto generated cards that the user can print off.
 
-<ProjectIcons {icons} />
+<Logos {logos} />
