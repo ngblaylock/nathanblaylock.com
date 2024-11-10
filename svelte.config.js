@@ -1,10 +1,11 @@
 import adapterStatic from '@sveltejs/adapter-static';
+import { mdsvex } from "mdsvex";
 import {sveltePreprocess} from 'svelte-preprocess';
 // import { mdsvex } from 'mdsvex'; // https://youtu.be/RhScu3uqGd0
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  extensions: ['.svelte', '.md'],
+  extensions: ['.svelte', '.svx'],
   kit: {
     adapter: adapterStatic({
       fallback: '404.html',
@@ -14,7 +15,7 @@ const config = {
     },
   },
   preprocess: [
-    // mdsvex({ extensions: ['.svelte.md', '.md', '.svx'] }),
+    mdsvex({ extensions: ['.svelte.md', '.svx'] }),
     sveltePreprocess({
       scss: {
         prependData: `
