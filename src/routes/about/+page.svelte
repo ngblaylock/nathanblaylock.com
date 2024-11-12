@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import * as E from '$components/Elemental';
   import MyStack from './MyStack.svelte';
 </script>
@@ -84,7 +84,7 @@
         <li>Figma, Adobe XD, Sketch</li>
         <li>HTML, Markdown</li>
         <li>CSS, SASS</li>
-        <li>Bootstrap 3, 4, 5, Bootstrap Vue, Vuetify</li>
+        <li>Bootstrap, Bootstrap Vue, Vuetify</li>
         <li>JS, jQuery, Vue, Svelte, Nunjucks, Alpine</li>
         <li>Eleventy, Nuxt, SvelteKit</li>
         <li>Frontend JS Libraries (day.js, excel.js, chart.js, lodash, etc)</li>
@@ -134,8 +134,8 @@
         border-radius: 20px;
         background: $primary;
         margin-left: -32px;
-        [data-bs-theme='dark'] & {
-          background: $red-500;
+        :global([data-bs-theme='dark']) & {
+          background: $red-400;
         }
       }
     }

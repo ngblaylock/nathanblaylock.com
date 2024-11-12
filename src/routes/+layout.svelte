@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { pageTitle } from '$lib/stores';
+  import '../sass/style.scss';
+  import { global } from '$lib/global.svelte';
   import { onMount } from 'svelte';
   import Footer from '$components/Footer.svelte';
   import Navbar from '$components/Navbar.svelte';
@@ -11,19 +12,22 @@
   // Animate On Scroll
   import 'aos/dist/aos.css';
   import AOS from 'aos';
-  import { NODE_ENV } from '$env/static/private';
+
+  let { children } = $props();
 
   onMount(() => {
     AOS.init({
       once: true,
       offset: 100,
     });
+
+    // This fixes WAVE issue
+    document.querySelector('style[lang="scss"]')?.removeAttribute('lang');
   });
 </script>
 
 <svelte:head>
   <style lang="scss">
-    @import '../sass/style';
     body {
       overflow-y: scroll;
       background-image: url('/images/optimized/bg/bg_texture.jpg');
@@ -42,6 +46,7 @@
     crossorigin="anonymous"
   ></script>
 </svelte:head>
+
 <Analytics />
 <Meta />
 <DevToolbar />
@@ -49,19 +54,19 @@
 
 <div class="site">
   <Navbar />
-
   <main>
     <div class="container">
       <div class="title-container">
         <div class="display">
           Nathan<br />Blaylock
         </div>
-        <h1>{$pageTitle}</h1>
+        {#if global.pageTitle}
+          <h1>{global.pageTitle}</h1>
+        {/if}
       </div>
-      <slot />
+      {@render children?.()}
     </div>
   </main>
-
   <Footer />
 </div>
 

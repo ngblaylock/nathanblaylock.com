@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import * as E from '$components/Elemental';
 	import { onMount } from 'svelte';
 
@@ -15,6 +15,6 @@
 
 <div class="row">
 	<div class="col-md-8">
-		<div id="cognito-form" class="mb-5" />
+		<div id="cognito-form" class="mb-5"></div>
 	</div>
 </div>

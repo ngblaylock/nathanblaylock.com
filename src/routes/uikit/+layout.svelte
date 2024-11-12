@@ -1,3 +1,7 @@
+<script lang="ts">
+  let { children } = $props();
+</script>
+
 <div class="card text-bg-secondary mb-4 overflow-hidden">
   <nav class="navbar navbar-dark navbar-expand-lg">
     <div class="container-fluid">
@@ -21,4 +25,4 @@
     </div>
   </nav>
 </div>
-<slot />
+{@render children?.()}

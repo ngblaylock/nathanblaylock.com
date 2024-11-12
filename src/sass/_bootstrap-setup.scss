@@ -7,14 +7,13 @@
 @import "../../node_modules/bootstrap/scss/functions";
 
 // Merge the maps
-$theme-colors: map-merge($theme-colors, $custom-colors);
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/variables-dark";
 @import "../../node_modules/bootstrap/scss/maps";
+$theme-colors: map-remove($theme-colors, 'info', 'warning', 'success', 'danger');
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/utilities";
 
-$theme-colors: map-remove($theme-colors, 'info', 'warning', 'success', 'danger');
 
 // Layout & components
 @import "../../node_modules/bootstrap/scss/root";
@@ -41,7 +40,7 @@ $theme-colors: map-remove($theme-colors, 'info', 'warning', 'success', 'danger')
 // @import "../../node_modules/bootstrap/scss/list-group";
 @import "../../node_modules/bootstrap/scss/close";
 // @import "../../node_modules/bootstrap/scss/toasts";
-// @import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/modal";
 // @import "../../node_modules/bootstrap/scss/tooltip";
 // @import "../../node_modules/bootstrap/scss/popover";
 // @import "../../node_modules/bootstrap/scss/carousel";

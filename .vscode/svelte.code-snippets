@@ -37,7 +37,7 @@
   "Button": {
     "prefix": "E.Btn",
     "body": [
-      "<E.Btn theme=\"${2:primary}\">$1</E.Btn>"
+      "<E.Btn variant=\"${2:primary}\">$1</E.Btn>"
     ],
     "scope": "svelte"
   },

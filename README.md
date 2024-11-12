@@ -10,3 +10,4 @@
 3. Update package.json version
 4. Merge in to `master` branch. This triggers a GitHub action to deploy the site on gh-pages
 5. Check the actions status at https://github.com/ngblaylock/nathanblaylock.com/actions
+6. Add a new release on GitHub

@@ -7,12 +7,13 @@
   let images = ['blaylock-nathan.jpg', 'blaylock-nathan-1.png', 'blaylock-nathan-2.png'];
   let logoColors = ['red', 'black', 'white'];
 
-  const getHex = (color: string) => {
+  const getHex = (color:string) => {
     if (browser) {
       return getComputedStyle(document.documentElement).getPropertyValue(`--bs-${color}`);
     } else return '';
   };
-  const getContrastColor = (color: string) => {
+
+  const getContrastColor = (color:string) => {
     if (browser) {
       const dark = getHex('dark');
       const light = getHex('light');
