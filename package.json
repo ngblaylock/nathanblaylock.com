@@ -6,7 +6,7 @@
 		"blunt": "node ./node_modules/@ngblaylock/blunt-images ./blunt.config.cjs",
 		"dev": "vite dev --open",
 		"build": "npm run blunt & vite build",
-		"preview": "vite preview",
+		"preview": "vite preview --open",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check .",
@@ -36,5 +36,8 @@
 		"typescript": "^5.5.0",
 		"vite": "^5.4.4"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"svelte-portal": "^2.2.1"
+	}
 }

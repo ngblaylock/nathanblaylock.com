@@ -1,5 +1,6 @@
 <script lang="ts">
   import { dev } from '$app/environment';
+  import DevToolbarSeo from './DevToolbarSeo.svelte';
 </script>
 
 {#if dev}
@@ -20,6 +21,7 @@
               class="link-light"
               target="_blank">Figma</a
             >
+            <DevToolbarSeo />
             <a href="/uikit" class="btn btn-sm btn-light">UI Kit</a>
           </div>
         </div>

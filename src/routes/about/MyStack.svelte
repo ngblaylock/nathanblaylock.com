@@ -4,7 +4,7 @@
   import { logos } from '$lib/assets/logos';
 </script>
 
-<div class="mb-5">
+<div class="mb-5" data-aos="fade-up">
   <h2 class="text-center mb-4">My Stack</h2>
   <div class="d-flex justify-content-center flex-wrap gap-3">
     {#each logos as logo}

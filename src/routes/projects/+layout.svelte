@@ -5,18 +5,11 @@
   import * as E from '$components/Elemental';
 
   const { children } = $props();
-
-  onMount(() => {
-    // Set all external anchor links to go to a new tab. Markdown doesn't support it.
-    let anchors = document.querySelectorAll('.project a:not([target="_blank"])');
-    anchors.forEach((a) => {
-      let href = a.getAttribute('href');
-      if (href?.startsWith('http')) {
-        // change target to blank
-        a.setAttribute('target', '_blank');
-      }
-    });
-  });
+  
+    const defaultProject = {
+      route: '',
+      alt: '',
+    };
 
   const currentProject = $derived($page.route.id?.replace('/projects/', ''));
 
@@ -48,11 +41,6 @@
     }
     return projects[currentProjectIndex - 1];
   });
-
-  const defaultProject = {
-    route: '',
-    alt: '',
-  };
 </script>
 
 <div class="project mb-5 pb-3">

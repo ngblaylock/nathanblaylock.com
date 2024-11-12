@@ -20,6 +20,9 @@
       once: true,
       offset: 100,
     });
+
+    // This fixes WAVE issue
+    document.querySelector('style[lang="scss"]')?.removeAttribute('lang');
   });
 </script>
 
