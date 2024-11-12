@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { page } from '$app/stores';
   import * as E from '$components/Elemental';
   import Portal from 'svelte-portal';
 

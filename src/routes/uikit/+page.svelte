@@ -1,27 +1,19 @@
 <script lang="ts">
   import { browser } from '$app/environment';
-  import * as E from '$lib/components/Elemental';
+  import * as E from '$components/Elemental';
   import chroma from 'chroma-js';
   let theme = ['primary', 'secondary', 'light', 'dark', 'gray'];
   let colors = ['red', 'blue', 'gray'];
   let images = ['blaylock-nathan.jpg', 'blaylock-nathan-1.png', 'blaylock-nathan-2.png'];
   let logoColors = ['red', 'black', 'white'];
 
-  /**
-   * Gets the hex value for the theme color
-   * @param {string} color The theme color
-   */
-  const getHex = (color) => {
+  const getHex = (color:string) => {
     if (browser) {
       return getComputedStyle(document.documentElement).getPropertyValue(`--bs-${color}`);
     } else return '';
   };
 
-  /**
-   * Gets the appropriate color contrast for a theme color
-   * @param {string} color The theme color
-   */
-  const getContrastColor = (color) => {
+  const getContrastColor = (color:string) => {
     if (browser) {
       const dark = getHex('dark');
       const light = getHex('light');

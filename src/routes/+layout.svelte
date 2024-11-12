@@ -2,12 +2,12 @@
   import '../sass/style.scss';
   import { global } from '$lib/global.svelte';
   import { onMount } from 'svelte';
-  import Footer from '$lib/components/Footer.svelte';
-  import Navbar from '$lib/components/Navbar.svelte';
-  import Meta from '$lib/components/Meta.svelte';
-  import BgAngle from '$lib/components/BgAngle.svelte';
-  import Analytics from '$lib/components/Analytics.svelte';
-  import DevToolbar from '$lib/components/DevToolbar.svelte';
+  import Footer from '$components/Footer.svelte';
+  import Navbar from '$components/Navbar.svelte';
+  import Meta from '$components/Meta.svelte';
+  import BgAngle from '$components/BgAngle.svelte';
+  import Analytics from '$components/Analytics.svelte';
+  import DevToolbar from '$components/DevToolbar.svelte';
 
   // Animate On Scroll
   import 'aos/dist/aos.css';

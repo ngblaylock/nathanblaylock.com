@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as E from '$lib/components/Elemental';
+  import * as E from '$components/Elemental';
 </script>
 
 <div data-aos="fade-up">
