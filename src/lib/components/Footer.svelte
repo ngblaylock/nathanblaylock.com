@@ -1,8 +1,10 @@
 <script lang="ts">
   import { themeSwitcher } from '@ngblaylock/bootstrap-extensions';
-  if (import.meta.hot) {
+  if (import.meta.hot) {    
     import.meta.hot.accept(() => {
-      themeSwitcher.initTheme();
+      setTimeout(() => {        
+        themeSwitcher.initTheme();
+      }, 10);
     });
   }
 </script>
@@ -10,7 +12,6 @@
 <div class="container">
   <footer class="border-top hstack flex-wrap gap-3 justify-content-center py-3">
     <div>© Nathan Blaylock {new Date().getFullYear()}</div>
-
     <div class="hstack flex-wrap gap-3 justify-content-center">
       <a href="https://docs.nathanblaylock.com/" target="_blank">Documentation</a>
       <a href="https://github.com/ngblaylock" target="_blank">GitHub</a>
