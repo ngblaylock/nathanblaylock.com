@@ -82,7 +82,10 @@ $color-contrast-dark: $dark;
 $color-contrast-light: $light;
 
 // Typography
-$font-family-sans-serif: 'Urbanist', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-family-sans-serif: 'Urbanist', sans-serif;
+$font-family-serif: 'Merriweather', serif;
+$font-family-cursive: 'Patrick Hand', cursive;
+$font-family-monospace: 'Fira Code', sans-serif;
 $font-weight-normal: 500;
 $lead-font-weight: $font-weight-normal;
 

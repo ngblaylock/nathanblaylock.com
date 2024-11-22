@@ -1,49 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Patrick+Hand&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import "variables";
-@import "bootstrap-setup";
-@import "node_modules/@ngblaylock/bootstrap-extensions/src/scss/icon-buttons";
-@import "node_modules/@ngblaylock/bootstrap-extensions/src/scss/base-theme";
-@import "node_modules/@ngblaylock/bootstrap-extensions/src/scss/btn-contrast";
-@import "node_modules/@ngblaylock/bootstrap-extensions/src/scss/theme-switch";
-@import "node_modules/@ngblaylock/bootstrap-extensions/src/scss/dev-tools";
-@import "cognito-form";
+@import 'variables';
+@import 'bootstrap-setup';
+@import 'node_modules/@ngblaylock/bootstrap-extensions/src/scss/icon-buttons';
+@import 'node_modules/@ngblaylock/bootstrap-extensions/src/scss/base-theme';
+@import 'node_modules/@ngblaylock/bootstrap-extensions/src/scss/btn-contrast';
+@import 'node_modules/@ngblaylock/bootstrap-extensions/src/scss/theme-switch';
+@import 'node_modules/@ngblaylock/bootstrap-extensions/src/scss/dev-tools';
+@import 'cognito-form';
 
-
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: $dark;
-  background: rgba($red-100, .8);
+  background: rgba($red-100, 0.8);
 }
 
 ::selection {
   color: $dark;
-  background: rgba($red-100, .8);
-}
-ul{
-  li{
-    line-height: 1.25em;
-    margin-bottom: .25em;
-  }
+  background: rgba($red-100, 0.8);
 }
 
-a{
-  text-underline-offset: 4px;
-}
-
-p, li, label, input, textarea{
-  font-size: 1.125em;
-}
-.form-label{
-  font-weight: 600;
-  margin-bottom: 0;
-  padding-top: 0;
-  display: block;
-  font-size: 1.125em;
-  line-height: var(--bs-body-line-height);
-}
-
-[data-bs-theme='dark']{
-  .btn{
-    border: $border-width solid rgba(white, 0.1);
-  }
-}
