@@ -1,6 +1,5 @@
 <script lang="ts">
   import { type IconName } from '$lib/icons';
-  import type { Snippet } from 'svelte';
   import Icon from './Icon.svelte';
   interface Props {
     href?: string;
@@ -8,6 +7,7 @@
     class?: string;
     icon: IconName;
     outline?: boolean;
+    title: string;
     [key: string]: unknown;
   }
   let {
@@ -15,6 +15,7 @@
     href = '',
     variant = 'primary',
     icon,
+    title,
     outline = false,
     ...restProps
   }: Props = $props();
@@ -23,7 +24,7 @@
 </script>
 
 {#if href}
-  <a class="btn btn-{outlineVariant}{variant} btn-icon {classList}" {href}><Icon name={icon} size={1.5} /></a>
+  <a {title} class="btn btn-{outlineVariant}{variant} btn-icon {classList}" {href}><Icon name={icon} size={1.5} /></a>
 {:else}
-  <button class="btn btn-{outlineVariant}{variant} btn-icon {classList}" {...restProps}><Icon name={icon} size={1.5} /></button>
+  <button {title} class="btn btn-{outlineVariant}{variant} btn-icon {classList}" {...restProps}><Icon name={icon} size={1.5} /></button>
 {/if}

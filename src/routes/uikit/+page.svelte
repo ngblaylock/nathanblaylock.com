@@ -68,6 +68,21 @@
     {/each}
   </div>
 
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <div class="p-2 text-bg-base-1">base-1</div>
+      <div class="p-2 text-bg-base-2">base-2</div>
+      <div class="p-2 text-bg-base-3">base-3</div>
+      <div class="p-2 text-bg-base-4">base-4</div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-2 text-bg-base-i1">base-i1</div>
+      <div class="p-2 text-bg-base-i2">base-i2</div>
+      <div class="p-2 text-bg-base-i3">base-i3</div>
+      <div class="p-2 text-bg-base-i4">base-i4</div>
+    </div>
+  </div>
+
   <h2 class="mt-5">Images</h2>
   <div class="row">
     {#each images as image, index}
@@ -135,7 +150,8 @@
   {#snippet fontFamily(fontFamily: string, fontType: string)}
     <div class="font-{fontType.toLowerCase()}">
       <h3>{fontFamily}</h3>
-      <div class="text-gray mt-n2">{fontType}</div>
+      <div class="text-gray mt-n2">{fontType} <code class="small">.font-{fontType.toLowerCase()}</code></div>
+      
       <div class="ps-4">
         A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br />
         a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
@@ -145,10 +161,59 @@
     </div>
   {/snippet}
 
-  <div class="card card-body gap-3 lead">
+  <div class="card card-body gap-3">
     {@render fontFamily('Urbanist', 'Sans-Serif')}
     {@render fontFamily('Merriweather', 'Serif')}
     {@render fontFamily('Patrick Hand', 'Cursive')}
     {@render fontFamily('Fira Code', 'Monospace')}
+  </div>
+
+  <div class="mt-4">
+    <h2>Tables</h2>
+    <div class="table-responsive">
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="mt-4">
+    <h2>TESTS!!</h2>
+    <div class="vstack gap-4">
+      <div>
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div>
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
   </div>
 </div>

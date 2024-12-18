@@ -1,0 +1,7 @@
+@import '../../node_modules/bootstrap/scss/forms';
+
+fieldset {
+  .form-check {
+    padding-left: map-get($spacers, 5);
+  }
+}
