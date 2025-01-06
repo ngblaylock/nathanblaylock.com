@@ -150,26 +150,3 @@
     </div>
   </form>
 </div>
-
-<style lang="scss">
-  .btn-check-group{
-    background: var(--bse-base-2);
-    display: inline-flex;
-    gap: 2px;
-    padding: 4px;
-    border-radius: $border-radius;
-    border: $border-width solid var(--bse-base-4);
-    .btn.btn-icon{
-      color: var(--bse-base-i1);
-    }
-    .btn-check:not(:checked) + .btn:hover{
-      background: var(--bse-base-4);
-      border-color: var(--bse-base-4);
-    }
-    .btn-check:checked + .btn{
-      background: $primary;
-      border-color: $primary;
-      color: $white;
-    }
-  }
-</style>

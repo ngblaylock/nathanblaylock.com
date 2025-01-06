@@ -5,3 +5,24 @@ fieldset {
     padding-left: map-get($spacers, 5);
   }
 }
+
+.btn-check-group{
+  background: var(--bse-base-2);
+  display: inline-flex;
+  gap: 2px;
+  padding: 4px;
+  border-radius: $border-radius;
+  border: $border-width solid var(--bse-base-4);
+  .btn.btn-icon:not(:checked){ // primarily used to beat specificity wars
+    color: var(--bse-base-i1);
+  }
+  .btn-check:not(:checked) + .btn:hover{
+    background: var(--bse-base-4);
+    border-color: var(--bse-base-4);
+  }
+  .btn-check:checked + .btn{
+    background: $primary;
+    border-color: $primary;
+    color: $white;
+  }
+}
