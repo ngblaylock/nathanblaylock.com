@@ -18,7 +18,7 @@
 		"@ngblaylock/bootstrap-extensions": "0.1.0-beta.20",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-static": "^3.0.0",
-		"@sveltejs/kit": "^2.5.27",
+		"@sveltejs/kit": "^2.8.3",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"@types/aos": "^3.0.7",
 		"@types/chroma-js": "^2.4.0",
