@@ -1,0 +1,44 @@
+@import '../../node_modules/bootstrap/scss/buttons';
+
+.btn.btn-icon:not([class*='btn-outline']) {
+  background: transparent;
+  color: var(--bs-btn-bg);
+  border-color: transparent;
+  transition:
+    $transition-base,
+    border-color 0s;
+  &:hover {
+    background: var(--bs-btn-hover-bg);
+    color: var(--bs-btn-hover-color);
+    border-color: var(--bs-btn-active-border-color);
+    transition:
+      $transition-base,
+      color 0.1s ease-in-out,
+      border-color 0.15s ease-in-out 0.05s;
+  }
+  &:active,
+  &.active {
+    background: var(--bs-btn-active-bg);
+    color: var(--bs-btn-active-color);
+    border-color: var(--bs-btn-active-border-color);
+  }
+}
+
+@include color-mode(dark) {
+  .btn-outline-primary{
+    --bs-btn-color: var(--bs-red-200);
+    --bs-btn-border-color: var(--bs-red-200);
+  }
+  .btn-outline-secondary{
+    --bs-btn-color: var(--bs-blue-200);
+    --bs-btn-border-color: var(--bs-blue-200);
+  }
+  .btn-icon {
+    &.btn-primary {
+      --bs-btn-bg: var(--bs-red-200);
+    }
+    &.btn-secondary {
+      --bs-btn-bg: var(--bs-blue-200);
+    }
+  }
+}

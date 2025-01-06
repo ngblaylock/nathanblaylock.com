@@ -62,6 +62,12 @@
     </div>
     <h3 class="mt-5">Education</h3>
     <div class="grouping">
+      <h4>Nielsen Norman Group</h4>
+      <ul>
+        <li>
+          <strong>UX Certification</strong> - Attended training courses and passed exams related to Interaction Design, User Research, and UX Management.
+        </li>
+      </ul>
       <h4>Utah State University</h4>
       <ul>
         <li>

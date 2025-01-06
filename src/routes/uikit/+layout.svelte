@@ -18,6 +18,9 @@
             <a class="nav-link" href="/uikit/components">Components</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/uikit/forms">Forms</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/uikit/icons">Icons</a>
           </li>
         </ul>
