@@ -6,7 +6,8 @@
 
 ## Deploy:
 1. Create a new branch from an issue and checkout locally
-2. Test the build with `npm run build` and `npm run preview`
+2. Run `npm run build` and `npm run preview`
+   1. This step is important to also build the css file for other apps.
 3. Update package.json version
 4. Merge in to `master` branch. This triggers a GitHub action to deploy the site on gh-pages
 5. Check the actions status at https://github.com/ngblaylock/nathanblaylock.com/actions
