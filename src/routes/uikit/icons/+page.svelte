@@ -1,7 +1,7 @@
 <script lang="ts">
-  import * as E from '$components/Elemental';
+  import * as P  from '$PACKAGE';
   import Logo from '$components/Logo.svelte';
-  import icons, {type IconName} from '$lib/icons';
+  import icons, {type IconName} from '$PACKAGE/icons';
   import { logos } from '$lib/assets/logos';
 
   function copy(iconName: string, componentName: 'E.Icon' | 'Logo') {
@@ -16,7 +16,7 @@
   }
 </script>
 
-<E.SEO title="Icons" />
+<P.SEO title="Icons" />
 
 <div class="mb-4">
   <h2 class="mt-4">E.Icon</h2>
@@ -28,11 +28,11 @@
           onclick={() => copy(icon, 'E.Icon')}
         >
           <div>
-            <E.Icon name={icon as IconName} />
+            <P.Icon name={icon as IconName} />
             <span>{icon}</span>
           </div>
           <div class="copy">
-            <E.Icon name="copy" />
+            <P.Icon name="copy" />
           </div>
         </button>
       </div>
@@ -51,7 +51,7 @@
             {logo}
           </div>
           <div class="copy">
-            <E.Icon name="copy" />
+            <P.Icon name="copy" />
           </div>
         </button>
       </div>

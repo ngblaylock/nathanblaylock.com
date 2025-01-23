@@ -1,0 +1,25 @@
+import { mdiArrowDown, mdiArrowLeft, mdiArrowRight, mdiArrowUp, mdiChartLine, mdiCheck, mdiChevronDown, mdiChevronLeft, mdiChevronRight, mdiChevronUp, mdiClose, mdiContentCopy, mdiDragVertical, mdiHome, mdiMenu, mdiMinus, mdiPencil, mdiPlus, mdiPoll, mdiTable, mdiViewList, } from '@mdi/js';
+const icons = {
+    arrowDown: mdiArrowDown,
+    arrowLeft: mdiArrowLeft,
+    arrowRight: mdiArrowRight,
+    arrowUp: mdiArrowUp,
+    chartLine: mdiChartLine,
+    check: mdiCheck,
+    chevronDown: mdiChevronDown,
+    chevronLeft: mdiChevronLeft,
+    chevronRight: mdiChevronRight,
+    chevronUp: mdiChevronUp,
+    close: mdiClose,
+    copy: mdiContentCopy,
+    dragVertical: mdiDragVertical,
+    home: mdiHome,
+    menu: mdiMenu,
+    minus: mdiMinus,
+    pencil: mdiPencil,
+    plus: mdiPlus,
+    poll: mdiPoll,
+    table: mdiTable,
+    viewList: mdiViewList,
+};
+export default icons;

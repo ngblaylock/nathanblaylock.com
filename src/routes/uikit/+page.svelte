@@ -1,6 +1,6 @@
 <script lang="ts">
   import { browser } from '$app/environment';
-  import * as E from '$components/Elemental';
+  import * as P  from '$PACKAGE';
   import chroma from 'chroma-js';
   let theme = ['primary', 'secondary', 'light', 'dark', 'gray'];
   let colors = ['red', 'blue', 'gray'];
@@ -28,7 +28,7 @@
   };
 </script>
 
-<E.SEO title="UI Kit" />
+<P.SEO title="UI Kit" />
 
 <div class="mb-5">
   <h2>Colors</h2>

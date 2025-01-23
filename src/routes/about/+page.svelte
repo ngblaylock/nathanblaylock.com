@@ -1,9 +1,9 @@
 <script lang="ts">
-  import * as E from '$components/Elemental';
+  import * as P  from '$PACKAGE';
   import MyStack from './MyStack.svelte';
 </script>
 
-<E.SEO title="About" />
+<P.SEO title="About" />
 
 <div class="row align-items-center" data-aos="fade-up">
   <div class="col-sm-3">

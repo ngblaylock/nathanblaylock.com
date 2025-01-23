@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as E from '$components/Elemental';
+  import * as P  from '$PACKAGE';
   import Portal from 'svelte-portal';
 
   let title = $state('');
@@ -28,13 +28,13 @@
   });
 </script>
 
-<E.Btn
+<P.Btn
   class="btn btn-light btn-sm"
   data-bs-toggle="modal"
   data-bs-target="#exampleModal"
 >
   Check SEO
-</E.Btn>
+</P.Btn>
 
 <Portal target="body">
   <div

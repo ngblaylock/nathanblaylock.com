@@ -3,11 +3,11 @@
     "prefix": "s-page-template",
     "body": [
       "<script lang=\"ts\">",
-      "  import * as E from '\\$components/Elemental';",
+      "  import * as P  from '\\$PACKAGE';",
       "  $1",
       "</script>",
       "",
-      "<E.SEO title=\"${1:New Page}\" />",
+      "<P.SEO title=\"${1:New Page}\" />",
     ],
     "description": "Basic page layout for all +page routes with SEO built in",
     "scope": "svelte"
@@ -16,7 +16,7 @@
     "prefix": "s-ts",
     "body": [
       "<script lang=\"ts\">",
-      "  import * as E from '\\$components/Elemental';",
+      "  import * as P  from '\\$PACKAGE';",
       "  $1",
       "</script>",
       "",
@@ -37,28 +37,28 @@
   "Button": {
     "prefix": "E.Btn",
     "body": [
-      "<E.Btn variant=\"${2:primary}\">$1</E.Btn>"
+      "<P.Btn variant=\"${2:primary}\">$1</P.Btn>"
     ],
     "scope": "svelte"
   },
   "Debug": {
     "prefix": "E.Debug",
     "body": [
-      "<E.Debug data={$1} />"
+      "<P.Debug data={$1} />"
     ],
     "scope": "svelte"
   },
   "Icon": {
     "prefix": "E.Icon",
     "body": [
-      "<E.Icon name=\"${2:home}\" />"
+      "<P.Icon name=\"${2:home}\" />"
     ],
     "scope": "svelte"
   },
   "SEO": {
     "prefix": "E.SEO",
     "body": [
-      "<E.SEO title=\"${1:home}\" description=\"$2\" ${3:robots} />"
+      "<P.SEO title=\"${1:home}\" description=\"$2\" ${3:robots} />"
     ],
     "scope": "svelte"
   },

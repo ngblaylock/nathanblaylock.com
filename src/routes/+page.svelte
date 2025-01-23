@@ -1,9 +1,9 @@
 <script lang="ts">
-  import * as E from '$components/Elemental';
+  import * as P  from '$PACKAGE';
   import { projects } from '$lib/projectList';
 </script>
 
-<E.SEO title="Projects" robots />
+<P.SEO title="Projects" robots />
 
 <div class="row mb-5">
   {#each projects as project}

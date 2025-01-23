@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as E from '$components/Elemental';
+  import * as P  from '$PACKAGE';
 </script>
 
 <div class="mb-5">
@@ -101,7 +101,7 @@
               checked
             />
             <label class="btn btn-icon" for="option25">
-              <E.Icon name="home" size={1.5} />
+              <P.Icon name="home" size={1.5} />
             </label>
           </div>
           <div>
@@ -113,7 +113,7 @@
               autocomplete="off"
             />
             <label class="btn btn-icon" for="option26">
-              <E.Icon name="chartLine" size={1.5} />
+              <P.Icon name="chartLine" size={1.5} />
             </label>
           </div>
           <div>
@@ -126,7 +126,7 @@
               disabled
             />
             <label class="btn btn-icon" for="option27">
-              <E.Icon name="poll" size={1.5} />
+              <P.Icon name="poll" size={1.5} />
             </label>
           </div>
           <div>
@@ -138,7 +138,7 @@
               autocomplete="off"
             />
             <label class="btn btn-icon" for="option28">
-              <E.Icon name="table" size={1.5} />
+              <P.Icon name="table" size={1.5} />
             </label>
           </div>
           

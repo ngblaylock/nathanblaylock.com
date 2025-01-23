@@ -12,6 +12,7 @@ const config = {
     }),
     alias: {
       $components: 'src/lib/components',
+      $PACKAGE: 'src/lib/PACKAGE',
     },
   },
   preprocess: [

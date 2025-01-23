@@ -1,0 +1,25 @@
+declare const icons: {
+    arrowDown: string;
+    arrowLeft: string;
+    arrowRight: string;
+    arrowUp: string;
+    chartLine: string;
+    check: string;
+    chevronDown: string;
+    chevronLeft: string;
+    chevronRight: string;
+    chevronUp: string;
+    close: string;
+    copy: string;
+    dragVertical: string;
+    home: string;
+    menu: string;
+    minus: string;
+    pencil: string;
+    plus: string;
+    poll: string;
+    table: string;
+    viewList: string;
+};
+export default icons;
+export type IconName = keyof typeof icons;

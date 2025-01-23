@@ -1,9 +1,9 @@
 <script lang="ts">
-  import * as E from '$components/Elemental';
+  import * as P  from '$PACKAGE';
 </script>
 
 <div data-aos="fade-up">
-  <E.SEO title="Privacy" />
+  <P.SEO title="Privacy" />
 
   <section>
     <p class="text-end"><strong>Last Updated:</strong> Nov. 9, 2024</p>

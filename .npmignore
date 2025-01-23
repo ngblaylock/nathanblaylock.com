@@ -1,0 +1,15 @@
+.github/
+.svelte-kit/
+.vscode/
+build/
+node_modules/
+src/
+static/
+.gitignore
+.npmignore
+.prettierignore
+.prettierrc
+blunt.config.cjs
+svelte.config.js
+tsconfig.json
+vite.config.js
