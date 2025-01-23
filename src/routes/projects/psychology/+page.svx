@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as E from "$components/Elemental";
+  import * as P  from "$PACKAGE";
   import ProjectWebArchive from "$components/ProjectWebArchive.svelte"
   import Logos from "$components/Logos.svelte"
   let logos = [
@@ -9,7 +9,7 @@
   ]
 </script>
 
-<E.SEO title="Department of Psychology Website" hideHeader  />
+<P.SEO title="Department of Psychology Website" hideHeader  />
 
 # Department of Psychology Website
 

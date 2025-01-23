@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import { projects } from '$lib/projectList';
-  import * as E from '$components/Elemental';
+  import * as P  from '$PACKAGE';
 
   const { children } = $props();
   
@@ -53,7 +53,7 @@
             href="/projects/{getPrevProject.route}"
             class="btn btn-outline-contrast btn-inner-icon text-end"
           >
-            <E.Icon name="arrowLeft" />
+            <P.Icon name="arrowLeft" />
             {getPrevProject.alt}</a
           >
           <a
@@ -61,7 +61,7 @@
             class="btn btn-outline-contrast btn-inner-icon text-end"
           >
             {getNextProject.alt}
-            <E.Icon name="arrowRight" /></a
+            <P.Icon name="arrowRight" /></a
           >
         </div>
       {/if}

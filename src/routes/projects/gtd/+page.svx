@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as E from "$components/Elemental";
+  import * as P  from "$PACKAGE";
   import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let logos = [
@@ -15,7 +15,7 @@
   ]
 </script>
 
-<E.SEO title="Grammy Tammy's Delights" hideHeader  />
+<P.SEO title="Grammy Tammy's Delights" hideHeader  />
 
 # Grammy Tammy's Delights
 
