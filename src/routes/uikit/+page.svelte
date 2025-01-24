@@ -1,6 +1,6 @@
 <script lang="ts">
   import { browser } from '$app/environment';
-  import * as P  from '$PACKAGE';
+  import SEO from '$components/SEO.svelte';
   import chroma from 'chroma-js';
   let theme = ['primary', 'secondary', 'light', 'dark', 'gray'];
   let colors = ['red', 'blue', 'gray'];
@@ -28,7 +28,7 @@
   };
 </script>
 
-<P.SEO title="UI Kit" />
+<SEO title="UI Kit" />
 
 <div class="mb-5">
   <h2>Colors</h2>
@@ -150,8 +150,10 @@
   {#snippet fontFamily(fontFamily: string, fontType: string)}
     <div class="font-{fontType.toLowerCase()}">
       <h3>{fontFamily}</h3>
-      <div class="text-gray mt-n2">{fontType} <code class="small">.font-{fontType.toLowerCase()}</code></div>
-      
+      <div class="text-gray mt-n2">
+        {fontType} <code class="small">.font-{fontType.toLowerCase()}</code>
+      </div>
+
       <div class="ps-4">
         A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br />
         a b c d e f g h i j k l m n o p q r s t u v w x y z<br />
@@ -208,7 +210,12 @@
     <div class="vstack gap-4">
       <div>
         <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="name@example.com"
+        />
       </div>
       <div>
         <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>

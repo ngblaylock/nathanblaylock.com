@@ -3,11 +3,11 @@
     "prefix": "s-page-template",
     "body": [
       "<script lang=\"ts\">",
-      "  import * as P  from '\\$PACKAGE';",
+      "  import SEO  from '\\$components/SEO';",
       "  $1",
       "</script>",
       "",
-      "<P.SEO title=\"${1:New Page}\" />",
+      "<SEO title=\"${1:New Page}\" />",
     ],
     "description": "Basic page layout for all +page routes with SEO built in",
     "scope": "svelte"
@@ -56,9 +56,9 @@
     "scope": "svelte"
   },
   "SEO": {
-    "prefix": "E.SEO",
+    "prefix": "SEO",
     "body": [
-      "<P.SEO title=\"${1:home}\" description=\"$2\" ${3:robots} />"
+      "<SEO title=\"${1:home}\" description=\"$2\" ${3:robots} />"
     ],
     "scope": "svelte"
   },

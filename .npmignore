@@ -2,6 +2,7 @@
 .svelte-kit/
 .vscode/
 build/
+dev-docs/
 node_modules/
 src/
 static/

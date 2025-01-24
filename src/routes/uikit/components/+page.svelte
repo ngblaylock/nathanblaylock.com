@@ -1,5 +1,6 @@
 <script lang="ts">
   import * as P  from '$PACKAGE';
+  import SEO from '$components/SEO.svelte';
   const variants: Variant[] = [
     'primary',
     'secondary',
@@ -11,7 +12,7 @@
   ];
 </script>
 
-<P.SEO title="Components" />
+<SEO title="Components" />
 
 <div class="container vstack gap-4">
   <!-- E.Btn -->

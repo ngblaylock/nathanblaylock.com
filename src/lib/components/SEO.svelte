@@ -4,7 +4,7 @@ This is just called SEO for standardization. The only page that should be shown 
 -->
 
 <script lang="ts">
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import { global } from '$lib/global.svelte';
   import { onMount } from 'svelte';
 
@@ -33,8 +33,8 @@ This is just called SEO for standardization. The only page that should be shown 
   <meta name="description" content={description} />
   <meta property="og:title" content={titleTemplate} />
   <meta property="og:description" content={description} />
-  <meta property="og:url" content="https://nathanblaylock.com{$page.route.id}" />
-  <link rel="canonical" href="https://nathanblaylock.com{$page.route.id}" />
+  <meta property="og:url" content="https://nathanblaylock.com{page.route.id}" />
+  <link rel="canonical" href="https://nathanblaylock.com{page.route.id}" />
   {#if !robots}
     <meta name="robots" content="noindex,nofollow" />
   {/if}

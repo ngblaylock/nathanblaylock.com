@@ -1,5 +1,6 @@
 <script lang="ts">
   import * as P  from '$PACKAGE';
+  import SEO from '$components/SEO.svelte';
   import Logo from '$components/Logo.svelte';
   import icons, {type IconName} from '$PACKAGE/icons';
   import { logos } from '$lib/assets/logos';
@@ -16,7 +17,7 @@
   }
 </script>
 
-<P.SEO title="Icons" />
+<SEO title="Icons" />
 
 <div class="mb-4">
   <h2 class="mt-4">E.Icon</h2>
