@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import { projects } from '$lib/projectList';
   import * as P  from '$PACKAGE';
 
@@ -11,7 +11,7 @@
       alt: '',
     };
 
-  const currentProject = $derived($page.route.id?.replace('/projects/', ''));
+  const currentProject = $derived(page.route.id?.replace('/projects/', ''));
 
   const getNextProject = $derived.by(() => {
     if (!currentProject) {

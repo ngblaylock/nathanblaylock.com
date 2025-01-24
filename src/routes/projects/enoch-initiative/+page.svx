@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as P  from "$PACKAGE";
+  import SEO from '$components/SEO.svelte';
   import Logos from "$components/Logos.svelte"
   let logos = [
     "Affinity-Photo",
@@ -8,7 +8,7 @@
   ]
 </script>
 
-<P.SEO title="Enoch Initiative" hideHeader  />
+<SEO title="Enoch Initiative" hideHeader  />
 
 # Enoch Initiative
 
