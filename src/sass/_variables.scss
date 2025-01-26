@@ -95,6 +95,13 @@ $spacers: (
   6: $spacer * 4,
 );
 
+// Focus Rings
+$focus-ring-width: 0.25rem;
+$focus-ring-opacity: 0.25;
+$focus-ring-color: rgba($primary, $focus-ring-opacity);
+$focus-ring-blur: 0;
+$focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color;
+
 // Typography
 $font-size-base: 1.125rem;
 $font-family-sans-serif: 'Urbanist', sans-serif;
@@ -112,6 +119,18 @@ $table-cell-padding-y: 0.375rem;
 // Border
 $border-width: 2px;
 $border-radius: 2px;
+
+// Accordions
+$accordion-button-color: var(--bse-base-i1);
+$accordion-button-active-color: var(--bse-base-i1);
+
+$accordion-icon-color-dark: $light;
+$accordion-icon-active-color-dark: $light;
+
+$accordion-button-bg: var(--bse-base-3);
+$accordion-button-active-bg: var(--bse-base-3);
+
+$accordion-button-focus-box-shadow: 0 0 $focus-ring-blur $focus-ring-width rgba($dark, $focus-ring-opacity);
 
 // Cards
 $card-border-color: transparent;

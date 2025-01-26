@@ -1,12 +1,27 @@
 <script lang="ts">
-  let { children } = $props();
+  import { onMount } from 'svelte';
+  import { componentData } from './components/component-docs.svelte';
+
+  let { data, children } = $props();
+
+  onMount(() => {
+    componentData.componentDoc = data.componentDoc;
+  });
 </script>
 
 <div class="card text-bg-secondary mb-4 overflow-hidden">
   <nav class="navbar navbar-dark navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="/uikit">UI Kit</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">

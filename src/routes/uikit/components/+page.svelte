@@ -1,6 +1,7 @@
 <script lang="ts">
-  import * as P  from '$PACKAGE';
+  import * as P from '$PACKAGE';
   import SEO from '$components/SEO.svelte';
+  import ComponentDoc from './ComponentDoc.svelte';
   const variants: Variant[] = [
     'primary',
     'secondary',
@@ -15,49 +16,7 @@
 <SEO title="Components" />
 
 <div class="container vstack gap-4">
-  <!-- E.Btn -->
-  <div>
-    <h2>E.Btn</h2>
-    <div class="card card-body">
-      <div class="vstack gap-4">
-        <div>
-          <h3>Links and Button</h3>
-          <P.Btn onclick={() => console.log('hi')}>Button</P.Btn>
-          <P.Btn href="/">Link</P.Btn>
-        </div>
-        <div>
-          <h3>Variants</h3>
-          {#each variants as variant}
-            <P.Btn {variant}>Button</P.Btn>&nbsp;
-          {/each}
-        </div>
-        <div>
-          <h3>Active</h3>
-          {#each variants as variant}
-            <P.Btn class="active" {variant}>Button</P.Btn>&nbsp;
-          {/each}
-        </div>
-        <div>
-          <h3>Disabled</h3>
-          {#each variants as variant}
-            <P.Btn disabled {variant}>Button</P.Btn>&nbsp;
-          {/each}
-        </div>
-        <div>
-          <h3>Outline</h3>
-          {#each variants as variant}
-            <P.Btn outline {variant}>Button</P.Btn>&nbsp;
-          {/each}
-        </div>
-        <div>
-          <h3>Inner Icon Buttons</h3>
-          <P.Btn variant="primary" iconLeft="arrowLeft">Button</P.Btn>
-          <P.Btn variant="primary" iconRight="arrowRight">Button</P.Btn>
-          <P.Btn variant="primary" iconLeft="arrowLeft" iconRight="arrowRight">Button</P.Btn>
-        </div>
-      </div>
-    </div>
-  </div>
+  <ComponentDoc title="Btn" component="Btn" />
 
   <!-- E.IconBtn -->
   <div>

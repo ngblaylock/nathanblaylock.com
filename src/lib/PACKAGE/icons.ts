@@ -20,6 +20,7 @@ import {
   mdiPoll,
   mdiTable,
   mdiViewList,
+  mdiXml,
 } from '@mdi/js';
 
 const icons = {
@@ -34,6 +35,7 @@ const icons = {
   chevronRight: mdiChevronRight,
   chevronUp: mdiChevronUp,
   close: mdiClose,
+  code: mdiXml,
   copy: mdiContentCopy,
   dragVertical: mdiDragVertical,
   home: mdiHome,

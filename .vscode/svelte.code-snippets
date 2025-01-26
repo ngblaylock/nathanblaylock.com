@@ -3,8 +3,8 @@
     "prefix": "s-page-template",
     "body": [
       "<script lang=\"ts\">",
-      "  import SEO  from '\\$components/SEO';",
-      "  $1",
+      "  import * as P from '\\$PACKAGE';",
+      "  import SEO from '\\$components/SEO.svelte';",
       "</script>",
       "",
       "<SEO title=\"${1:New Page}\" />",
@@ -35,21 +35,21 @@
 
   // Elemental Snippets
   "Button": {
-    "prefix": "E.Btn",
+    "prefix": "P.Btn",
     "body": [
       "<P.Btn variant=\"${2:primary}\">$1</P.Btn>"
     ],
     "scope": "svelte"
   },
   "Debug": {
-    "prefix": "E.Debug",
+    "prefix": "P.Debug",
     "body": [
       "<P.Debug data={$1} />"
     ],
     "scope": "svelte"
   },
   "Icon": {
-    "prefix": "E.Icon",
+    "prefix": "P.Icon",
     "body": [
       "<P.Icon name=\"${2:home}\" />"
     ],
