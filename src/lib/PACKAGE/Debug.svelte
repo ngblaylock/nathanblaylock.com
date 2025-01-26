@@ -1,10 +1,7 @@
 <script lang="ts">
   import { dev } from '$app/environment';
 
-  interface Props {
-    data: any;
-  }
-  let { data } : Props = $props();
+  let { data } = $props();
 </script>
 
 {#if dev}

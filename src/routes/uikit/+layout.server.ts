@@ -20,7 +20,7 @@ export async function load() {
   }
 
   // Call the function to read files and store content in an object
-  const resultObject = readFiles(join(process.cwd(), 'src/routes/uikit/components/examples'));
+  const resultObject = readFiles(join(process.cwd(), 'src/lib/components/examples'));
 
   return { componentDoc: resultObject };
 }

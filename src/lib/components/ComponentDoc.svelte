@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
   import { codeToHtml } from 'shiki';
   import { Icon } from '$PACKAGE';
-  import { componentData } from './component-docs.svelte';
+  import { componentData } from '$lib/component-docs.svelte';
 
   let { component, title } = $props();
 
@@ -12,7 +12,7 @@
   let uid = crypto.randomUUID();
 
   onMount(async () => {
-    const module = await import(`./examples/${component}.svelte`);
+    const module = await import(`$components/examples/${component}.svelte`);
     if (!module) return;
     DynamicComponent = module.default;
     const fileContent = componentData.componentDoc[component];

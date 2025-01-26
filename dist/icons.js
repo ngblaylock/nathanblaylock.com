@@ -1,4 +1,4 @@
-import { mdiArrowDown, mdiArrowLeft, mdiArrowRight, mdiArrowUp, mdiChartLine, mdiCheck, mdiChevronDown, mdiChevronLeft, mdiChevronRight, mdiChevronUp, mdiClose, mdiContentCopy, mdiDragVertical, mdiHome, mdiMenu, mdiMinus, mdiPencil, mdiPlus, mdiPoll, mdiTable, mdiViewList, } from '@mdi/js';
+import { mdiArrowDown, mdiArrowLeft, mdiArrowRight, mdiArrowUp, mdiChartLine, mdiCheck, mdiChevronDown, mdiChevronLeft, mdiChevronRight, mdiChevronUp, mdiClose, mdiContentCopy, mdiDragVertical, mdiHome, mdiMenu, mdiMinus, mdiPencil, mdiPlus, mdiPoll, mdiTable, mdiViewList, mdiXml, } from '@mdi/js';
 const icons = {
     arrowDown: mdiArrowDown,
     arrowLeft: mdiArrowLeft,
@@ -11,6 +11,7 @@ const icons = {
     chevronRight: mdiChevronRight,
     chevronUp: mdiChevronUp,
     close: mdiClose,
+    code: mdiXml,
     copy: mdiContentCopy,
     dragVertical: mdiDragVertical,
     home: mdiHome,

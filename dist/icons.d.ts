@@ -10,6 +10,7 @@ declare const icons: {
     chevronRight: string;
     chevronUp: string;
     close: string;
+    code: string;
     copy: string;
     dragVertical: string;
     home: string;
