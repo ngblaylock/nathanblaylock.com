@@ -1,11 +1,11 @@
 <script lang="ts">
-  import icons, {type IconName} from '$PACKAGE/icons';
+  import icons, { type IconName } from '$PACKAGE/icons';
 
   interface Props {
-    name: IconName,
-    size?: number,
+    name: IconName;
+    size?: number;
   }
-  let { name, size = 1 } : Props = $props();
+  let { name, size = 1 }: Props = $props();
 
   let path = $derived(icons[name] || '');
 </script>

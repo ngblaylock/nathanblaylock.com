@@ -64,7 +64,7 @@
             <a class="nav-link" href="/uikit/forms">Forms</a>
           </li>
           <li class="nav-item mb-0">
-            <a class="nav-link" href="/uikit/icons">Icons</a>
+            <a class="nav-link" href="/uikit/logos">Logos</a>
           </li>
         </ul>
         <div class="dropdown">

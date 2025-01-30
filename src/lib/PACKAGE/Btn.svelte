@@ -3,23 +3,23 @@
   import type { Snippet } from 'svelte';
   import Icon from './Icon.svelte';
   interface Props {
-    href?: string;
-    variant?: Variant;
-    class?: string;
-    children: Snippet;
     [key: string]: unknown;
+    children: Snippet;
+    class?: string;
+    href?: string;
     iconLeft?: IconName;
     iconRight?: IconName;
     outline?: boolean;
+    variant?: Variant;
   }
   let {
+    children,
     class: classList = '',
     href = '',
-    variant = 'primary',
     iconLeft,
     iconRight,
     outline = false,
-    children,
+    variant = 'primary',
     ...restProps
   }: Props = $props();
 
@@ -38,11 +38,15 @@
 {/snippet}
 
 {#if href}
-  <a class="btn btn-{outlineVariant}{variant} {classList}" class:btn-inner-icon={hasInnerIcon} {href}
-    >{@render btnContent()}</a
+  <a
+    class="btn btn-{outlineVariant}{variant} {classList}"
+    class:btn-inner-icon={hasInnerIcon}
+    {href}>{@render btnContent()}</a
   >
 {:else}
-  <button class="btn btn-{outlineVariant}{variant} {classList}" class:btn-inner-icon={hasInnerIcon} {...restProps}
-    >{@render btnContent()}</button
+  <button
+    class="btn btn-{outlineVariant}{variant} {classList}"
+    class:btn-inner-icon={hasInnerIcon}
+    {...restProps}>{@render btnContent()}</button
   >
 {/if}

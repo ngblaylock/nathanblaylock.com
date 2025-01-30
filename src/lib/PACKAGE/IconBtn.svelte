@@ -2,21 +2,21 @@
   import { type IconName } from '$PACKAGE/icons';
   import Icon from './Icon.svelte';
   interface Props {
-    href?: string;
-    variant?: Variant;
     class?: string;
+    href?: string;
     icon: IconName;
     outline?: boolean;
     title: string;
+    variant?: Variant;
     [key: string]: unknown;
   }
   let {
     class: classList = '',
     href = '',
-    variant = 'primary',
     icon,
-    title,
     outline = false,
+    title,
+    variant = 'primary',
     ...restProps
   }: Props = $props();
 
