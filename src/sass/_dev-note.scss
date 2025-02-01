@@ -1,0 +1,17 @@
+// These override styles from @ngblaylock/bootstrap-extensions
+.dev-note {
+  background: var(--bse-base-1);
+  color: var(--bse-base-i1);
+  border: 2px solid $dev;
+  &::before {
+    background: $dev;
+    padding: ($card-spacer-x * 0.5) ($card-spacer-y * 1) ($card-spacer-x * 0.5)
+      ($card-spacer-y * 3);
+  }
+  .dev-note-icon {
+    position: absolute;
+    color: white;
+    left: 0.9rem;
+    top: 0.4rem;
+  }
+}

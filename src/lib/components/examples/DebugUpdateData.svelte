@@ -4,7 +4,9 @@
   let data = $state(['Item 0', 'Item 1', 'Item 2']);
 </script>
 
-<Debug title="Custom Title" {data} />
+<div class="mb-2">
+  <Btn onclick={() => data.push(`Item ${data.length}`)}>Add Item</Btn>
+  <Btn onclick={() => data.pop()}>Remove Item</Btn>
+</div>
 
-<Btn onclick={() => data.push(`Item ${data.length}`)}>Add Item</Btn>
-<Btn onclick={() => data.pop()}>Remove Item</Btn>
+<Debug title="Custom Title" {data} class="mb-0" />

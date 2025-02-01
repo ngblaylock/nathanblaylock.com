@@ -25,6 +25,10 @@
       slug: 'debug',
     },
     {
+      name: 'DevNotes',
+      slug: 'dev-notes',
+    },
+    {
       name: 'Icon Buttons',
       slug: 'icon-buttons',
     },
@@ -55,7 +59,10 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+      <div
+        class="collapse navbar-collapse align-items-center"
+        id="navbarSupportedContent"
+      >
         <ul class="navbar-nav ms-auto me-2">
           <li class="nav-item mb-0">
             <a class="nav-link" href="/uikit">Home</a>
@@ -78,8 +85,9 @@
           <ul class="dropdown-menu">
             {#each filteredComponents as component}
               <li>
-                <a class="dropdown-item" href="/uikit/components/{component.slug}"
-                  >{component.name}</a
+                <a
+                  class="dropdown-item"
+                  href="/uikit/components/{component.slug}">{component.name}</a
                 >
               </li>
             {/each}
