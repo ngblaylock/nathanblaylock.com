@@ -1,6 +1,5 @@
 <script lang="ts">
   import Seo from '$components/Seo.svelte';
-  import { Icon } from '$PACKAGE';
 </script>
 
 <Seo title="Form Elements" hideHeader />

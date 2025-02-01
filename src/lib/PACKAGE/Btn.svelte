@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { type IconName } from '$PACKAGE/icons';
   import type { Snippet } from 'svelte';
+  import { type IconName } from './icons';
   import Icon from './Icon.svelte';
   interface Props {
     [key: string]: unknown;

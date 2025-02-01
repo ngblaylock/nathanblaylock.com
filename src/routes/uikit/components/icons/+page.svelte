@@ -4,7 +4,6 @@
   import Seo from '$components/Seo.svelte';
 
   import icons, { type IconName } from '$PACKAGE/icons';
-  import { Btn, Icon } from '$PACKAGE';
 
   function copy(iconName: string) {
     navigator.clipboard

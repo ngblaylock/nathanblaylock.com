@@ -1,7 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { codeToHtml } from 'shiki';
-  import { Icon } from '$PACKAGE';
   import { componentData } from '$lib/component-docs.svelte';
 
   let { component, title } = $props();

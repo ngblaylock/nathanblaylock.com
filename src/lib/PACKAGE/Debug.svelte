@@ -1,7 +1,7 @@
 <script lang="ts">
   import { codeToHtml } from 'shiki';
   import { dev } from '$app/environment';
-  import { Icon } from '$PACKAGE';
+  import Icon from './Icon.svelte';
   let { class: classList = '', data, title = 'Debug' } = $props();
 </script>
 

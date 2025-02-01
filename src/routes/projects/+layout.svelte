@@ -1,7 +1,6 @@
 <script lang="ts">
   import { page } from '$app/state';
   import { projects } from '$lib/projectList';
-  import { Icon } from '$PACKAGE';
 
   const { children } = $props();
 

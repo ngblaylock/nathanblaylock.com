@@ -1,5 +1,4 @@
 <script lang="ts">
-  import {IconBtn} from '$PACKAGE';
   const variants: Variant[] = [
     'primary',
     'secondary',

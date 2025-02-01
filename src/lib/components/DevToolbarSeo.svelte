@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { Btn } from '$PACKAGE';
   import Portal from 'svelte-portal';
 
   let title = $state('');

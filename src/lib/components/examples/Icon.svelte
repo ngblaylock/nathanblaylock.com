@@ -1,7 +1,3 @@
-<script lang="ts">
-  import { Icon } from '$PACKAGE';
-</script>
-
 <div class="vstack">
   <Icon name="home" />
 

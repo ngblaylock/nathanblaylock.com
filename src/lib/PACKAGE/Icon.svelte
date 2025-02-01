@@ -1,5 +1,5 @@
 <script lang="ts">
-  import icons, { type IconName } from '$PACKAGE/icons';
+  import icons, { type IconName } from './icons';
 
   interface Props {
     name: IconName;

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { dev } from '$app/environment';
-  import { Icon } from '$PACKAGE';
+  import Icon from './Icon.svelte';
   let { children, class: classList = '', title = 'Dev Note' } = $props();
 </script>
 
