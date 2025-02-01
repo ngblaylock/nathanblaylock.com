@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SEO from '$components/SEO.svelte';
+  import Seo from '$components/SEO.svelte';
   import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let logos = [
@@ -11,7 +11,7 @@
   ]
 </script>
 
-<SEO title="Group Sale Tracker" hideHeader  />
+<Seo title="Group Sale Tracker" hideHeader  />
 
 # Group Sale Tracker
 

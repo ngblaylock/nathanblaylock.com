@@ -19,7 +19,10 @@ const config = {
     mdsvex({
       extensions: ['.svx'],
       rehypePlugins: [
-        [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }]
+        [
+          rehypeExternalLinks,
+          { target: '_blank', rel: ['noopener', 'noreferrer'] },
+        ],
       ],
     }),
     sveltePreprocess({

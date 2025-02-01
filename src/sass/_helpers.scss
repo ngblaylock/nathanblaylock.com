@@ -1,0 +1,6 @@
+@import '../../node_modules/bootstrap/scss/helpers';
+
+.vstack,
+.hstack {
+  gap: map-get($spacers, 2);
+}

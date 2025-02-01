@@ -1,0 +1,14 @@
+{
+  "+Page Template": {
+    "prefix": "s-page-template",
+    "body": [
+      "<script lang=\"ts\">",
+      "  import Seo from '\\$components/SEO.svelte';",
+      "</script>",
+      "",
+      "<Seo title=\"${1:New Page}\" />",
+    ],
+    "description": "Basic page layout for all +page routes with SEO built in",
+    "scope": "svelte"
+  },
+}
