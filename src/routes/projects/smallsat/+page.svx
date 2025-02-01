@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Seo from '$components/SEO.svelte';
+  import Seo from '$components/Seo.svelte';
   import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   import ProjectSmallSatArchive from "./ProjectSmallSatArchive.svelte"

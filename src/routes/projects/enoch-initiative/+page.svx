@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Seo from '$components/SEO.svelte';
+  import Seo from '$components/Seo.svelte';
   import Logos from "$components/Logos.svelte"
   let logos = [
     "Affinity-Photo",
