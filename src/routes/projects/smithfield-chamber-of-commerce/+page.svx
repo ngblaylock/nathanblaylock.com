@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SEO from '$components/SEO.svelte';
+  import Seo from '$components/SEO.svelte';
   import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let logos = [
@@ -15,7 +15,7 @@
   ]
 </script>
 
-<SEO title="Smithfield Chamber of Commerce" hideHeader  />
+<Seo title="Smithfield Chamber of Commerce" hideHeader  />
 
 # Smithfield Chamber of Commerce
 

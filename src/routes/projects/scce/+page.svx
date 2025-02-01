@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SEO from '$components/SEO.svelte';
+  import Seo from '$components/SEO.svelte';
   import Logos from "$components/Logos.svelte"
   import ProjectWebArchive from "$components/ProjectWebArchive.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
@@ -13,7 +13,7 @@
   ]
 </script>
 
-<SEO title="Sorenson Center Website" hideHeader  />
+<Seo title="Sorenson Center Website" hideHeader  />
 
 # Sorenson Center Website
 

@@ -1,7 +1,7 @@
 <script lang="ts">
   import ComponentApi from '$components/ComponentApi.svelte';
   import ComponentDoc from '$components/ComponentDoc.svelte';
-  import Seo from '$components/SEO.svelte';
+  import Seo from '$components/Seo.svelte';
 
   import icons, { type IconName } from '$PACKAGE/icons';
   import { Btn, Icon } from '$PACKAGE';

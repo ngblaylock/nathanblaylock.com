@@ -1,15 +1,14 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
   import { page } from '$app/state';
   import { projects } from '$lib/projectList';
-  import * as P  from '$PACKAGE';
+  import { Icon } from '$PACKAGE';
 
   const { children } = $props();
-  
-    const defaultProject = {
-      route: '',
-      alt: '',
-    };
+
+  const defaultProject = {
+    route: '',
+    alt: '',
+  };
 
   const currentProject = $derived(page.route.id?.replace('/projects/', ''));
 
@@ -17,7 +16,9 @@
     if (!currentProject) {
       return defaultProject;
     }
-    const currentProjectIndex = projects.findIndex((project) => project.route === currentProject);
+    const currentProjectIndex = projects.findIndex(
+      (project) => project.route === currentProject
+    );
     if (currentProjectIndex == -1) {
       return defaultProject;
     }
@@ -31,7 +32,9 @@
     if (!currentProject) {
       return defaultProject;
     }
-    const currentProjectIndex = projects.findIndex((project) => project.route === currentProject);
+    const currentProjectIndex = projects.findIndex(
+      (project) => project.route === currentProject
+    );
     if (currentProjectIndex == -1) {
       return defaultProject;
     }
@@ -53,7 +56,7 @@
             href="/projects/{getPrevProject.route}"
             class="btn btn-outline-contrast btn-inner-icon text-end"
           >
-            <P.Icon name="arrowLeft" />
+            <Icon name="arrowLeft" />
             {getPrevProject.alt}</a
           >
           <a
@@ -61,7 +64,7 @@
             class="btn btn-outline-contrast btn-inner-icon text-end"
           >
             {getNextProject.alt}
-            <P.Icon name="arrowRight" /></a
+            <Icon name="arrowRight" /></a
           >
         </div>
       {/if}

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { browser } from '$app/environment';
-  import SEO from '$components/SEO.svelte';
+  import Seo from '$components/Seo.svelte';
   import chroma from 'chroma-js';
   let theme = ['primary', 'secondary', 'light', 'dark', 'gray'];
   let colors = ['red', 'blue', 'gray'];
@@ -28,7 +28,7 @@
   };
 </script>
 
-<SEO title="UI Kit" />
+<Seo title="UI Kit" />
 
 <div class="mb-5">
   <h2>Colors</h2>

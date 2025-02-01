@@ -1,7 +1,7 @@
 <script lang="ts">
   import ComponentApi from '$components/ComponentApi.svelte';
   import ComponentDoc from '$components/ComponentDoc.svelte';
-  import Seo from '$components/SEO.svelte';
+  import Seo from '$components/Seo.svelte';
   const props = [
     {
       name: 'class',

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SEO from '$components/SEO.svelte';
+  import Seo from '$components/SEO.svelte';
   import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   import ProjectSmallSatArchive from "./ProjectSmallSatArchive.svelte"
@@ -13,7 +13,7 @@
   ]
 </script>
 
-<SEO title="Small Satellite Conference" hideHeader  />
+<Seo title="Small Satellite Conference" hideHeader  />
 
 # Small Satellite Conference
 

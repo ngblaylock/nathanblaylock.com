@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SEO from '$components/SEO.svelte';
+  import Seo from '$components/SEO.svelte';
   import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let logos = [
@@ -14,7 +14,7 @@
   ]
 </script>
 
-<SEO title="Jeffrey R. Wangsgard & Associates" hideHeader  />
+<Seo title="Jeffrey R. Wangsgard & Associates" hideHeader  />
 
 # Jeffrey R. Wangsgard & Associates
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SEO from '$components/SEO.svelte';
+  import Seo from '$components/SEO.svelte';
   import * as P  from "$PACKAGE";
   import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
@@ -10,7 +10,7 @@
   ]
 </script>
 
-<SEO title="Scoresheet App" hideHeader  />
+<Seo title="Scoresheet App" hideHeader  />
 
 # Scoresheet App
 

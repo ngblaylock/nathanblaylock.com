@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Seo from '$components/SEO.svelte';
-  import * as P from '$PACKAGE';
+  import Seo from '$components/Seo.svelte';
+  import { Icon } from '$PACKAGE';
 </script>
 
 <Seo title="Form Elements" hideHeader />
@@ -129,7 +129,7 @@
               checked
             />
             <label class="btn btn-icon" for="option25">
-              <P.Icon name="home" size={1.5} />
+              <Icon name="home" size={1.5} />
             </label>
           </div>
           <div>
@@ -141,7 +141,7 @@
               autocomplete="off"
             />
             <label class="btn btn-icon" for="option26">
-              <P.Icon name="chartLine" size={1.5} />
+              <Icon name="chartLine" size={1.5} />
             </label>
           </div>
           <div>
@@ -154,7 +154,7 @@
               disabled
             />
             <label class="btn btn-icon" for="option27">
-              <P.Icon name="poll" size={1.5} />
+              <Icon name="poll" size={1.5} />
             </label>
           </div>
           <div>
@@ -166,7 +166,7 @@
               autocomplete="off"
             />
             <label class="btn btn-icon" for="option28">
-              <P.Icon name="table" size={1.5} />
+              <Icon name="table" size={1.5} />
             </label>
           </div>
         </div>

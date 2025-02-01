@@ -4,10 +4,10 @@
     "body": [
       "<script lang=\"ts\">",
       "  import * as P from '\\$PACKAGE';",
-      "  import SEO from '\\$components/SEO.svelte';",
+      "  import Seo from '\\$components/SEO.svelte';",
       "</script>",
       "",
-      "<SEO title=\"${1:New Page}\" />",
+      "<Seo title=\"${1:New Page}\" />",
     ],
     "description": "Basic page layout for all +page routes with SEO built in",
     "scope": "svelte"
@@ -58,7 +58,7 @@
   "SEO": {
     "prefix": "SEO",
     "body": [
-      "<SEO title=\"${1:home}\" description=\"$2\" ${3:robots} />"
+      "<Seo title=\"${1:home}\" description=\"$2\" ${3:robots} />"
     ],
     "scope": "svelte"
   },

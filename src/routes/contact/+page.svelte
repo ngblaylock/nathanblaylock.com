@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SEO from '$components/SEO.svelte';
+	import Seo from '$components/Seo.svelte';
 	import { onMount } from 'svelte';
 
 	onMount(() => { // Load the cognito form
@@ -11,7 +11,7 @@
 	});
 </script>
 
-<SEO title="Contact" />
+<Seo title="Contact" />
 
 <div class="row">
 	<div class="col-md-8">

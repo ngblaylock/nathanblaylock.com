@@ -1,11 +1,10 @@
 <script lang="ts">
   import Logo from '$components/Logo.svelte';
-  import SEO from '$components/SEO.svelte';
+  import Seo from '$components/Seo.svelte';
   import { logos } from '$lib/assets/logos';
-  import { Icon } from '$PACKAGE';
 </script>
 
-<SEO title="Logos" hideHeader />
+<Seo title="Logos" hideHeader />
 
 <h2 class="mt-4">Logos</h2>
 <div class="row row-gap-4">
