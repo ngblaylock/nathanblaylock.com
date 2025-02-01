@@ -37,7 +37,7 @@
               aria-controls={uid}
             >
               <div class="hstack">
-                <Icon size={1.5} name="code" />
+                <GIcon size={1.5} name="code" />
                 Code Example
               </div>
             </button>

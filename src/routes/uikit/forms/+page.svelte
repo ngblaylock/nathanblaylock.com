@@ -128,7 +128,7 @@
               checked
             />
             <label class="btn btn-icon" for="option25">
-              <Icon name="home" size={1.5} />
+              <GIcon name="home" size={1.5} />
             </label>
           </div>
           <div>
@@ -140,7 +140,7 @@
               autocomplete="off"
             />
             <label class="btn btn-icon" for="option26">
-              <Icon name="chartLine" size={1.5} />
+              <GIcon name="chartLine" size={1.5} />
             </label>
           </div>
           <div>
@@ -153,7 +153,7 @@
               disabled
             />
             <label class="btn btn-icon" for="option27">
-              <Icon name="poll" size={1.5} />
+              <GIcon name="poll" size={1.5} />
             </label>
           </div>
           <div>
@@ -165,7 +165,7 @@
               autocomplete="off"
             />
             <label class="btn btn-icon" for="option28">
-              <Icon name="table" size={1.5} />
+              <GIcon name="table" size={1.5} />
             </label>
           </div>
         </div>

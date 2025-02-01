@@ -13,37 +13,37 @@
 <div class="vstack gap-4">
   <div>
     <h3>Links and Button</h3>
-    <Btn onclick={() => console.info('hi')}>Button</Btn>
-    <Btn href="/">Link</Btn>
+    <GBtn onclick={() => console.info('hi')}>Button</GBtn>
+    <GBtn href="/">Link</GBtn>
   </div>
   <div>
     <h3>Variants</h3>
     {#each variants as variant}
-      <Btn {variant}>Button</Btn>
+      <GBtn {variant}>Button</GBtn>
     {/each}
   </div>
   <div>
     <h3>Active</h3>
     {#each variants as variant}
-      <Btn class="active" {variant}>Button</Btn>
+      <GBtn class="active" {variant}>Button</GBtn>
     {/each}
   </div>
   <div>
     <h3>Disabled</h3>
     {#each variants as variant}
-      <Btn disabled {variant}>Button</Btn>
+      <GBtn disabled {variant}>Button</GBtn>
     {/each}
   </div>
   <div>
     <h3>Outline</h3>
     {#each variants as variant}
-      <Btn outline {variant}>Button</Btn>
+      <GBtn outline {variant}>Button</GBtn>
     {/each}
   </div>
   <div>
     <h3>Inner Icon Buttons</h3>
-    <Btn variant="primary" iconLeft="arrowLeft">Button</Btn>
-    <Btn variant="primary" iconRight="arrowRight">Button</Btn>
-    <Btn variant="primary" iconLeft="arrowLeft" iconRight="arrowRight">Button</Btn>
+    <GBtn variant="primary" iconLeft="arrowLeft">Button</GBtn>
+    <GBtn variant="primary" iconRight="arrowRight">Button</GBtn>
+    <GBtn variant="primary" iconLeft="arrowLeft" iconRight="arrowRight">Button</GBtn>
   </div>
 </div>

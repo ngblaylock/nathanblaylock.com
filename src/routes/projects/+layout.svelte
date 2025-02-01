@@ -55,7 +55,7 @@
             href="/projects/{getPrevProject.route}"
             class="btn btn-outline-contrast btn-inner-icon text-end"
           >
-            <Icon name="arrowLeft" />
+            <GIcon name="arrowLeft" />
             {getPrevProject.alt}</a
           >
           <a
@@ -63,7 +63,7 @@
             class="btn btn-outline-contrast btn-inner-icon text-end"
           >
             {getNextProject.alt}
-            <Icon name="arrowRight" /></a
+            <GIcon name="arrowRight" /></a
           >
         </div>
       {/if}

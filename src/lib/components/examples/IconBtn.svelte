@@ -15,7 +15,7 @@
     <h3>Variants</h3>
     <div class="hstack">
       {#each variants as variant}
-        <IconBtn title="Example Title" {variant} icon="home" />
+        <GIconBtn title="Example Title" {variant} icon="home" />
       {/each}
     </div>
   </div>
@@ -24,7 +24,7 @@
     <h3>Active</h3>
     <div class="hstack">
       {#each variants as variant}
-        <IconBtn title="Example Title" {variant} icon="home" class="active" />
+        <GIconBtn title="Example Title" {variant} icon="home" class="active" />
       {/each}
     </div>
   </div>
@@ -33,7 +33,7 @@
     <h3>Disabled</h3>
     <div class="hstack">
       {#each variants as variant}
-        <IconBtn title="Example Title" {variant} icon="home" disabled />
+        <GIconBtn title="Example Title" {variant} icon="home" disabled />
       {/each}
     </div>
   </div>
@@ -42,7 +42,7 @@
     <h3>Outline</h3>
     <div class="hstack">
       {#each variants as variant}
-        <IconBtn title="Example Title" {variant} icon="home" outline />
+        <GIconBtn title="Example Title" {variant} icon="home" outline />
       {/each}
     </div>
   </div>

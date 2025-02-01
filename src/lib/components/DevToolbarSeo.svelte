@@ -33,13 +33,13 @@
   });
 </script>
 
-<Btn
+<GBtn
   class="btn btn-light btn-sm"
   data-bs-toggle="modal"
   data-bs-target="#exampleModal"
 >
   Check SEO
-</Btn>
+</GBtn>
 
 <Portal target="body">
   <div

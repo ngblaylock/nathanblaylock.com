@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
   import { type IconName } from './icons';
-  import Icon from './Icon.svelte';
+  import GIcon from './GIcon.svelte';
   interface Props {
     [key: string]: unknown;
     children: Snippet;
@@ -29,11 +29,11 @@
 
 {#snippet btnContent()}
   {#if iconLeft}
-    <Icon name={iconLeft} size={1.5} />
+    <GIcon name={iconLeft} size={1.5} />
   {/if}
   {@render children?.()}
   {#if iconRight}
-    <Icon name={iconRight} size={1.5} />
+    <GIcon name={iconRight} size={1.5} />
   {/if}
 {/snippet}
 

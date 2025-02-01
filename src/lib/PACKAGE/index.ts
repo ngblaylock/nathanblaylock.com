@@ -1,5 +1,5 @@
-export { default as Btn } from './Btn.svelte';
-export { default as Debug } from './Debug.svelte';
-export { default as DevNote } from './DevNote.svelte';
-export { default as Icon } from './Icon.svelte';
-export { default as IconBtn } from './IconBtn.svelte';
+export { default as GBtn } from './GBtn.svelte';
+export { default as GDebug } from './GDebug.svelte';
+export { default as GDevNote } from './GDevNote.svelte';
+export { default as GIcon } from './GIcon.svelte';
+export { default as GIconBtn } from './GIconBtn.svelte';

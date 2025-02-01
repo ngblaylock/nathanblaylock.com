@@ -3,8 +3,8 @@
 </script>
 
 <div class="mb-2">
-  <Btn onclick={() => data.push(`Item ${data.length}`)}>Add Item</Btn>
-  <Btn onclick={() => data.pop()}>Remove Item</Btn>
+  <GBtn onclick={() => data.push(`Item ${data.length}`)}>Add Item</GBtn>
+  <GBtn onclick={() => data.pop()}>Remove Item</GBtn>
 </div>
 
-<Debug title="Custom Title" {data} class="mb-0" />
+<GDebug title="Custom Title" {data} class="mb-0" />

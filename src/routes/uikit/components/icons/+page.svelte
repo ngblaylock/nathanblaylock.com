@@ -44,7 +44,7 @@
   <div class="row row-gap-4">
     {#each Object.entries(icons) as [icon, key]}
       <div class="col-sm-4">
-        <Btn
+        <GBtn
           variant="base-4"
           class="btn-copy w-100 hstack gap-3"
           onclick={() => copy(icon)}
@@ -52,9 +52,9 @@
         >
           {icon}
           <div class="copy ms-auto">
-            <Icon name="copy" />
+            <GIcon name="copy" />
           </div>
-        </Btn>
+        </GBtn>
       </div>
     {/each}
   </div>

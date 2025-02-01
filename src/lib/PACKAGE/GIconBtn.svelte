@@ -1,6 +1,6 @@
 <script lang="ts">
   import { type IconName } from '$PACKAGE/icons';
-  import Icon from './Icon.svelte';
+  import GIcon from './GIcon.svelte';
   interface Props {
     class?: string;
     href?: string;
@@ -24,7 +24,15 @@
 </script>
 
 {#if href}
-  <a {title} class="btn btn-{outlineVariant}{variant} btn-icon {classList}" {href}><Icon name={icon} size={1.5} /></a>
+  <a
+    {title}
+    class="btn btn-{outlineVariant}{variant} btn-icon {classList}"
+    {href}><GIcon name={icon} size={1.5} /></a
+  >
 {:else}
-  <button {title} class="btn btn-{outlineVariant}{variant} btn-icon {classList}" {...restProps}><Icon name={icon} size={1.5} /></button>
+  <button
+    {title}
+    class="btn btn-{outlineVariant}{variant} btn-icon {classList}"
+    {...restProps}><GIcon name={icon} size={1.5} /></button
+  >
 {/if}
