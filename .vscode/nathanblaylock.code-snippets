@@ -1,0 +1,48 @@
+// This file should can be copeid from the package into the local .vscode folder.
+
+{
+  // Not Included in the Svelte 5 Snippet Extension
+
+  "TS Script": {
+    "prefix": "s-ts",
+    "body": [
+      "<script lang=\"ts\">",
+      "  $1",
+      "</script>",
+      "",
+    ],
+    "description": "Adds a TS script tag.",
+    "scope": "svelte"
+  },
+  "SCSS Style": {
+    "prefix": "s-scss",
+    "body": [
+      "<style lang=\"scss\">",
+      "  $1",
+      "</style>",
+    ],
+    "description": "Adds a SCSS style tag.",
+    "scope": "svelte"
+  },
+
+  // Global Components
+
+  "GButton": {
+    "prefix": "GBtn",
+    "body": ["<GBtn variant=\"${2:primary}\">$1</GBtn>"],
+    "description": "Global Button component",
+    "scope": "svelte",
+  },
+  "GDebug": {
+    "prefix": "GDebug",
+    "body": ["<GDebug data={$1} />"],
+    "description": "Global Debug component",
+    "scope": "svelte",
+  },
+  "GIcon": {
+    "prefix": "GIcon",
+    "body": ["<GIcon name=\"${2:home}\" />"],
+    "description": "Global Icon component",
+    "scope": "svelte",
+  },
+}
