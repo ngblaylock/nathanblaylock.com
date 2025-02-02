@@ -1,25 +1,25 @@
 <script lang="ts">
-  import { type IconName } from '$PACKAGE/icons';
   import type { Snippet } from 'svelte';
-  import Icon from './Icon.svelte';
+  import { type IconName } from './icons';
+  import GIcon from './GIcon.svelte';
   interface Props {
-    href?: string;
-    variant?: Variant;
-    class?: string;
-    children: Snippet;
     [key: string]: unknown;
+    children: Snippet;
+    class?: string;
+    href?: string;
     iconLeft?: IconName;
     iconRight?: IconName;
     outline?: boolean;
+    variant?: Variant;
   }
   let {
+    children,
     class: classList = '',
     href = '',
-    variant = 'primary',
     iconLeft,
     iconRight,
     outline = false,
-    children,
+    variant = 'primary',
     ...restProps
   }: Props = $props();
 
@@ -29,20 +29,24 @@
 
 {#snippet btnContent()}
   {#if iconLeft}
-    <Icon name={iconLeft} size={1.5} />
+    <GIcon name={iconLeft} size={1.5} />
   {/if}
   {@render children?.()}
   {#if iconRight}
-    <Icon name={iconRight} size={1.5} />
+    <GIcon name={iconRight} size={1.5} />
   {/if}
 {/snippet}
 
 {#if href}
-  <a class="btn btn-{outlineVariant}{variant} {classList}" class:btn-inner-icon={hasInnerIcon} {href}
-    >{@render btnContent()}</a
+  <a
+    class="btn btn-{outlineVariant}{variant} {classList}"
+    class:btn-inner-icon={hasInnerIcon}
+    {href}>{@render btnContent()}</a
   >
 {:else}
-  <button class="btn btn-{outlineVariant}{variant} {classList}" class:btn-inner-icon={hasInnerIcon} {...restProps}
-    >{@render btnContent()}</button
+  <button
+    class="btn btn-{outlineVariant}{variant} {classList}"
+    class:btn-inner-icon={hasInnerIcon}
+    {...restProps}>{@render btnContent()}</button
   >
 {/if}

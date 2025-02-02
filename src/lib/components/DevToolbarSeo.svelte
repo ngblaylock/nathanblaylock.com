@@ -1,5 +1,4 @@
 <script lang="ts">
-  import * as P  from '$PACKAGE';
   import Portal from 'svelte-portal';
 
   let title = $state('');
@@ -19,22 +18,28 @@
   $effect(() => {
     title = document.title;
     description =
-      (document.querySelector('meta[name="description"]') as HTMLMetaElement)?.content || '';
-    let norobotsValue = (document.querySelector('meta[name="robots"]') as HTMLMetaElement)?.content;
+      (document.querySelector('meta[name="description"]') as HTMLMetaElement)
+        ?.content || '';
+    let norobotsValue = (
+      document.querySelector('meta[name="robots"]') as HTMLMetaElement
+    )?.content;
     robots = norobotsValue
-      ? !norobotsValue.includes('noindex') && !norobotsValue.includes('nofollow')
+      ? !norobotsValue.includes('noindex') &&
+        !norobotsValue.includes('nofollow')
       : true;
-    canonical = (document.querySelector('link[rel="canonical"]') as HTMLLinkElement)?.href || '';
+    canonical =
+      (document.querySelector('link[rel="canonical"]') as HTMLLinkElement)
+        ?.href || '';
   });
 </script>
 
-<P.Btn
+<GBtn
   class="btn btn-light btn-sm"
   data-bs-toggle="modal"
   data-bs-target="#exampleModal"
 >
   Check SEO
-</P.Btn>
+</GBtn>
 
 <Portal target="body">
   <div
@@ -48,7 +53,11 @@
       <div class="modal-content overflow-hidden">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Check SEO</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
           ></button>
         </div>
         <div>

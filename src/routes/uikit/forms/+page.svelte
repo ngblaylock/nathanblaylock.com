@@ -1,7 +1,8 @@
 <script lang="ts">
-  import * as P  from '$PACKAGE';
+  import Seo from '$components/Seo.svelte';
 </script>
 
+<Seo title="Form Elements" hideHeader />
 <div class="mb-5">
   <h1>Form Elements</h1>
   <form>
@@ -14,11 +15,17 @@
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
         />
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
       </div>
       <div>
         <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" />
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
       </div>
       <fieldset>
         <legend>Checkbox Group</legend>
@@ -29,14 +36,18 @@
             id="exampleCheck1"
             aria-describedby="check-help"
           />
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
           <div id="check-help" class="form-text">
             We'll never share your email with anyone else.
           </div>
         </div>
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck2" />
-          <label class="form-check-label" for="exampleCheck2">Check me out</label>
+          <label class="form-check-label" for="exampleCheck2"
+            >Check me out</label
+          >
         </div>
       </fieldset>
       <fieldset>
@@ -48,7 +59,9 @@
             name="flexRadioDefault"
             id="flexRadioDefault1"
           />
-          <label class="form-check-label" for="flexRadioDefault1"> Default radio </label>
+          <label class="form-check-label" for="flexRadioDefault1">
+            Default radio
+          </label>
         </div>
         <div class="form-check">
           <input
@@ -58,7 +71,9 @@
             id="flexRadioDefault2"
             checked
           />
-          <label class="form-check-label" for="flexRadioDefault2"> Default checked radio </label>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Default checked radio
+          </label>
         </div>
       </fieldset>
 
@@ -73,7 +88,13 @@
             checked
           />
           <label class="btn" for="option5">Checked</label>
-          <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off" />
+          <input
+            type="radio"
+            class="btn-check"
+            name="options-base"
+            id="option6"
+            autocomplete="off"
+          />
           <label class="btn" for="option6">Radio</label>
           <input
             type="radio"
@@ -84,7 +105,13 @@
             disabled
           />
           <label class="btn" for="option7">Disabled</label>
-          <input type="radio" class="btn-check" name="options-base" id="option8" autocomplete="off" />
+          <input
+            type="radio"
+            class="btn-check"
+            name="options-base"
+            id="option8"
+            autocomplete="off"
+          />
           <label class="btn" for="option8">Radio</label>
         </div>
       </div>
@@ -101,7 +128,7 @@
               checked
             />
             <label class="btn btn-icon" for="option25">
-              <P.Icon name="home" size={1.5} />
+              <GIcon name="home" size={1.5} />
             </label>
           </div>
           <div>
@@ -113,7 +140,7 @@
               autocomplete="off"
             />
             <label class="btn btn-icon" for="option26">
-              <P.Icon name="chartLine" size={1.5} />
+              <GIcon name="chartLine" size={1.5} />
             </label>
           </div>
           <div>
@@ -126,7 +153,7 @@
               disabled
             />
             <label class="btn btn-icon" for="option27">
-              <P.Icon name="poll" size={1.5} />
+              <GIcon name="poll" size={1.5} />
             </label>
           </div>
           <div>
@@ -138,10 +165,9 @@
               autocomplete="off"
             />
             <label class="btn btn-icon" for="option28">
-              <P.Icon name="table" size={1.5} />
+              <GIcon name="table" size={1.5} />
             </label>
           </div>
-          
         </div>
       </div>
       <div>

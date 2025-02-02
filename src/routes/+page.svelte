@@ -1,9 +1,9 @@
 <script lang="ts">
   import { projects } from '$lib/projectList';
-  import SEO from '$components/SEO.svelte';
+  import Seo from '$components/Seo.svelte';
 </script>
 
-<SEO title="Projects" robots />
+<Seo title="Projects" robots />
 
 <div class="row mb-5">
   {#each projects as project}

@@ -1,8 +1,9 @@
 .github/
 .svelte-kit/
 .vscode/
+!.vscode/nathanblaylock.code-snippets
 build/
-dev-docs/
+documentation/
 node_modules/
 src/
 static/
@@ -11,6 +12,7 @@ static/
 .prettierignore
 .prettierrc
 blunt.config.cjs
+components.d.ts
 svelte.config.js
 tsconfig.json
 vite.config.js

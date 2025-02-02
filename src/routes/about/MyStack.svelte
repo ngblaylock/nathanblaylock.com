@@ -1,5 +1,4 @@
 <script lang="ts">
-  import * as P  from '$PACKAGE';
   import Logo from '$components/Logo.svelte';
   import { logos } from '$lib/assets/logos';
 </script>

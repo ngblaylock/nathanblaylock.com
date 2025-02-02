@@ -1,9 +1,9 @@
 <script lang="ts">
-  import SEO from '$components/SEO.svelte';
+  import Seo from '$components/Seo.svelte';
 </script>
 
 <div data-aos="fade-up">
-  <SEO title="Privacy" />
+  <Seo title="Privacy" />
 
   <section>
     <p class="text-end"><strong>Last Updated:</strong> Nov. 9, 2024</p>

@@ -31,6 +31,7 @@
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"@types/aos": "^3.0.7",
 		"@types/chroma-js": "^2.4.0",
+		"@types/node": "^22.10.10",
 		"aos": "^2.3.4",
 		"chroma-js": "^2.4.2",
 		"mdsvex": "^0.12.3",
@@ -41,6 +42,7 @@
 		"svelte-check": "^4.0.0",
 		"svelte-preprocess": "^6.0.3",
 		"typescript": "^5.5.0",
+		"unplugin-svelte-components": "^0.3.1",
 		"vite": "^5.4.14"
 	},
 	"dependencies": {
@@ -48,6 +50,7 @@
 		"@ngblaylock/bootstrap-extensions": "0.1.0-beta.20",
 		"@sveltejs/kit": "^2.8.3",
 		"bootstrap": "^5.3.3",
+		"shiki": "^2.1.0",
 		"svelte": "^5.0.0",
 		"svelte-portal": "^2.2.1"
 	}

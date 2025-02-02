@@ -1,9 +1,9 @@
 <script lang="ts">
-  import SEO from '$components/SEO.svelte';
+  import Seo from '$components/Seo.svelte';
   import MyStack from './MyStack.svelte';
 </script>
 
-<SEO title="About" />
+<Seo title="About" />
 
 <div class="row align-items-center" data-aos="fade-up">
   <div class="col-sm-3">
