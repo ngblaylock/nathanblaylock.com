@@ -6,7 +6,7 @@
 <div class="mb-5">
   <h1>Form Elements</h1>
   <form>
-    <div class="vstack gap-3">
+    <div class="vstack">
       <div>
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input

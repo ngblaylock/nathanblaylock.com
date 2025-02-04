@@ -6,6 +6,7 @@ declare global {
     const GDevNote: typeof import("./src/lib/PACKAGE/GDevNote.svelte")["default"]
     const GIcon: typeof import("./src/lib/PACKAGE/GIcon.svelte")["default"]
     const GIconBtn: typeof import("./src/lib/PACKAGE/GIconBtn.svelte")["default"]
+    const GTextInput: typeof import("./src/lib/PACKAGE/GTextInput.svelte")["default"]
 }
 
 export {}

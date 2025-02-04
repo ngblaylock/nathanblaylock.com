@@ -52,4 +52,10 @@
     "description": "Global icon button component.",
     "scope": "svelte",
   },
+  "Global TextInput": {
+    "prefix": "G-TextInput",
+    "body": ["<GTextInput label=\"$1\" />"],
+    "description": "Global text input component.",
+    "scope": "svelte",
+  },
 }
