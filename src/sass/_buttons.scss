@@ -17,7 +17,8 @@
       border-color 0.15s ease-in-out 0.05s;
   }
   &:active,
-  &.active {
+  &.active,
+  &.show {
     background: var(--bs-btn-active-bg);
     color: var(--bs-btn-active-color);
     border-color: var(--bs-btn-active-border-color);
