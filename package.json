@@ -34,7 +34,9 @@
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"@types/aos": "^3.0.7",
 		"@types/chroma-js": "^2.4.0",
+		"@types/lodash": "^4.17.15",
 		"@types/node": "^22.10.10",
+		"@types/sortablejs": "^1.15.8",
 		"aos": "^2.3.4",
 		"chroma-js": "^2.4.2",
 		"mdsvex": "^0.12.3",
@@ -53,7 +55,9 @@
 		"@ngblaylock/bootstrap-extensions": "0.1.0-beta.20",
 		"@sveltejs/kit": "^2.8.3",
 		"bootstrap": "^5.3.3",
+		"lodash": "^4.17.21",
 		"shiki": "^2.1.0",
+		"sortablejs": "^1.15.6",
 		"svelte": "^5.0.0",
 		"svelte-portal": "^2.2.1"
 	}

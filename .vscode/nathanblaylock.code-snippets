@@ -24,7 +24,7 @@
 
   "Global Button": {
     "prefix": "G-Btn",
-    "body": ["<GBtn variant=\"${2:primary}\">$1</GBtn>"],
+    "body": ["<GBtn>$1</GBtn>"],
     "description": "Global button component.",
     "scope": "svelte",
   },
