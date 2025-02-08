@@ -29,6 +29,10 @@
       slug: 'icons',
     },
     {
+      name: 'Sortable Cards',
+      slug: 'sortable-cards',
+    },
+    {
       name: '--- Forms ---',
       slug: 'text-inputs',
     },

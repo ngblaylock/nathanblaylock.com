@@ -35,7 +35,9 @@
     },
     {
       name: 'value',
-      type: 'bindable()',
+      bindable: true,
+      type: 'string | number | null',
+      default: '',
       description: 'The value of the input that can be bound to the parent component.',
     },
     {
