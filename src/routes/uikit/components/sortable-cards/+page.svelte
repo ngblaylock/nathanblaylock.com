@@ -4,10 +4,16 @@
   import Seo from '$components/Seo.svelte';
   const props = [
     {
-      name: 'name',
-      type: 'string',
-      default: '',
-      description: 'Prop description.',
+      name: 'children',
+      type: 'Snippet<[item: any, index: number]>',
+      description: 'Allows for customization inside the card content.',
+    },
+    {
+      name: 'items',
+      required: true,
+      bindable: true,
+      type: 'unknown[]',
+      description: 'An array of items to be sorted.',
     },
   ];
 </script>

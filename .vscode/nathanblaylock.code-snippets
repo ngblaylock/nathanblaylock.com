@@ -52,6 +52,20 @@
     "description": "Global icon button component.",
     "scope": "svelte",
   },
+  "Global SortableCards": {
+    "prefix": "G-SortableCards",
+    "body": [
+      "<GSortableCards bind:items={$1}>",
+      "  {#snippet children(item, index)}",
+      "    <div class=\"p-3\">",
+      "      ${2:{index\\} - {JSON.stringify(item)\\}}",
+      "    </div>",
+      "  {/snippet}",
+      "</GSortableCards>",
+    ],
+    "description": "Global sortable cards component.",
+    "scope": "svelte",
+  },
   "Global TextInput": {
     "prefix": "G-TextInput",
     "body": ["<GTextInput label=\"$1\" />"],

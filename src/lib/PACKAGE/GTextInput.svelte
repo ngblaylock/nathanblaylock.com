@@ -5,8 +5,16 @@
     id = '',
     label,
     required = false,
-    value = $bindable(),
+    value = $bindable(''),
     ...restProps
+  }: {
+    class?: string;
+    hideLabel?: boolean;
+    id?: string;
+    label: string;
+    required?: boolean;
+    value?: string | number | null;
+    [key: string]: unknown;
   } = $props();
 
   let uid = $derived(id || crypto.randomUUID());

@@ -1,6 +1,6 @@
 <script lang="ts">
   let myValues = $state({
-    value1: 'Hello',
+    value1: null,
     value2: 'World',
     value3: 1,
   });

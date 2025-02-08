@@ -3,11 +3,11 @@
   import { onMount, tick, type Snippet } from 'svelte';
   import cloneDeep from 'lodash/cloneDeep';
   let {
-    items = $bindable(),
     children,
+    items = $bindable(),
   }: {
+    children?: Snippet<[ item: any, index: number ]>;
     items: unknown[];
-    children?: Snippet<[{ item: unknown, index: number }]>;
   } = $props();
 
   let el: HTMLElement | undefined = $state();
@@ -37,7 +37,7 @@
         <GIcon name="dragVertical" size={1.5} />
       </div>
       {#if children}
-        {@render children({ item, index })}
+        {@render children( item, index )}
       {:else}
         {item}
       {/if}

@@ -1,6 +1,4 @@
 <script lang="ts">
-    import { slice } from "lodash";
-
   let data = $state([
     { fruit: 'Banana', price: 2.5 },
     { fruit: 'Apple', price: 3 },
@@ -12,7 +10,7 @@
 </script>
 
 <GSortableCards bind:items={data}>
-  {#snippet children({ item, index }: { item: any; index: number })}
+  {#snippet children(item, index)}
     <div class="py-2 px-3">
       <div class="hstack align-items-end">
         <GTextInput
@@ -20,7 +18,13 @@
           bind:value={item.price}
           type="number"
         />
-        <GIconBtn icon="close" title="Remove" onclick={() => {data.splice(index, 1)}} />
+        <GIconBtn
+          icon="close"
+          title="Remove"
+          onclick={() => {
+            data.splice(index, 1);
+          }}
+        />
       </div>
     </div>
   {/snippet}

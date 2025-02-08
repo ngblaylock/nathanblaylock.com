@@ -3,12 +3,13 @@
     props: componentProps,
   }: {
     props: {
-      name: string;
-      required?: boolean;
-      type: string;
+      bindable?: boolean;
       default?: any;
       description: string;
       link?: string;
+      name: string;
+      required?: boolean;
+      type: string;
     }[];
   } = $props();
 </script>
@@ -33,11 +34,21 @@
               <a href={prop.link} target="_blank">{prop.name}</a>
             {:else}
               {prop.name}
-            {/if}</td
-          >
-          <td>{prop.type}</td>
-          <td><code>{JSON.stringify(prop.default)}</code></td>
-          <td>{prop.description}</td>
+            {/if}
+          </td>
+          <td><code>{prop.type}</code></td>
+          <td>
+            <code>
+              {#if prop.bindable}
+                $bindable({JSON.stringify(prop.default)})
+              {:else}
+                {JSON.stringify(prop.default)}
+              {/if}
+            </code>
+          </td>
+          <td>
+            {prop.description}
+          </td>
         </tr>
       {/each}
     </tbody>
