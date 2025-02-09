@@ -16,6 +16,12 @@
       description: 'If true will visually hide the label. This is useful for accessibility when the label is not needed.',
     },
     {
+      name: 'hint',
+      type: 'string',
+      default: '',
+      description: 'The helper text that goes below the input.',
+    },
+    {
       name: 'id',
       type: 'string',
       default: '',

@@ -2,6 +2,7 @@
 // We suggest you to commit this file into source control
 declare global {
     const GBtn: typeof import("./src/lib/PACKAGE/GBtn.svelte")["default"]
+    const GCheckbox: typeof import("./src/lib/PACKAGE/GCheckbox.svelte")["default"]
     const GDebug: typeof import("./src/lib/PACKAGE/GDebug.svelte")["default"]
     const GDevNote: typeof import("./src/lib/PACKAGE/GDevNote.svelte")["default"]
     const GIcon: typeof import("./src/lib/PACKAGE/GIcon.svelte")["default"]
