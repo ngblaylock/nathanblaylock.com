@@ -4,12 +4,18 @@
   import chroma from 'chroma-js';
   let theme = ['primary', 'secondary', 'light', 'dark', 'gray'];
   let colors = ['red', 'blue', 'gray'];
-  let images = ['blaylock-nathan.jpg', 'blaylock-nathan-1.png', 'blaylock-nathan-2.png'];
+  let images = [
+    'blaylock-nathan.jpg',
+    'blaylock-nathan-1.png',
+    'blaylock-nathan-2.png',
+  ];
   let logoColors = ['red', 'black', 'white'];
 
   const getHex = (color: string) => {
     if (browser) {
-      return getComputedStyle(document.documentElement).getPropertyValue(`--bs-${color}`);
+      return getComputedStyle(document.documentElement).getPropertyValue(
+        `--bs-${color}`
+      );
     } else return '';
   };
 
@@ -49,7 +55,9 @@
         {#each Array(9) as _, i}
           {@const fullColor = `${color}-${i + 1}00`}
           <div
-            class="p-2 d-flex justify-content-between text-{getContrastColor(fullColor).color}"
+            class="p-2 d-flex justify-content-between text-{getContrastColor(
+              fullColor
+            ).color}"
             style="background: var(--bs-{fullColor});"
           >
             <div>
@@ -57,7 +65,9 @@
               {#if getContrastColor(fullColor).contrast < 4.5}
                 <!-- content here -->
                 <span class="badge text-text-bg-base-3 ms-2"
-                  >Poor Contrast - {getContrastColor(fullColor).contrast.toFixed(1)}</span
+                  >Poor Contrast - {getContrastColor(
+                    fullColor
+                  ).contrast.toFixed(1)}</span
                 >
               {/if}
             </div>
@@ -87,7 +97,11 @@
   <div class="row">
     {#each images as image, index}
       <div class="col-md-4 text-center">
-        <img src="/images/optimized/profile/{image}" alt="profile {index}" class="img-fluid mb-4" />
+        <img
+          src="/images/optimized/profile/{image}"
+          alt="profile {index}"
+          class="img-fluid mb-4"
+        />
         <img
           src="/images/optimized/profile/{image.replace('.', '-square.')}"
           alt="square profile {index}"
@@ -134,14 +148,16 @@
     <h5>Header 5</h5>
     <h6>Header 6</h6>
     <p>
-      Paragraph - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eum laboriosam
-      nihil debitis ex praesentium dolore quas illum dolorem alias, nobis dolorum neque omnis
-      officiis quaerat error, repellendus voluptas cupiditate.
+      Paragraph - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+      eum laboriosam nihil debitis ex praesentium dolore quas illum dolorem
+      alias, nobis dolorum neque omnis officiis quaerat error, repellendus
+      voluptas cupiditate.
     </p>
     <p class="lead">
-      Lead Paragraph - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est obcaecati
-      debitis quibusdam atque repellat unde assumenda cumque consequuntur tempora pariatur
-      recusandae, odio reiciendis itaque numquam aperiam maiores esse voluptatum.
+      Lead Paragraph - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quasi est obcaecati debitis quibusdam atque repellat unde assumenda cumque
+      consequuntur tempora pariatur recusandae, odio reiciendis itaque numquam
+      aperiam maiores esse voluptatum.
     </p>
   </div>
 
@@ -207,20 +223,23 @@
 
   <div class="mt-4">
     <h2>TESTS!!</h2>
-    <div class="vstack gap-4">
-      <div>
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="name@example.com"
-        />
-      </div>
-      <div>
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
+    <div class="dropdown">
+      <!-- <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  >
+        Dropdown link
+      </a> -->
+
+      <GIconBtn
+        icon="home"
+        title="Test"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      />
+
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
     </div>
   </div>
 </div>

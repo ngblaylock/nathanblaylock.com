@@ -3,3 +3,7 @@ export { default as GDebug } from './GDebug.svelte';
 export { default as GDevNote } from './GDevNote.svelte';
 export { default as GIcon } from './GIcon.svelte';
 export { default as GIconBtn } from './GIconBtn.svelte';
+export { default as GSortableCards } from './GSortableCards.svelte';
+// FORMS
+export { default as GCheckbox } from './GCheckbox.svelte';
+export { default as GTextInput } from './GTextInput.svelte';

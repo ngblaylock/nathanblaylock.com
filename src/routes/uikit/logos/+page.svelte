@@ -13,7 +13,7 @@
       <div
         class="card card-body"
       >
-        <div class="hstack gap-3">
+        <div class="hstack">
           <Logo name={logo} />
           {logo}
         </div>

@@ -46,7 +46,7 @@
       <div class="col-sm-4">
         <GBtn
           variant="base-4"
-          class="btn-copy w-100 hstack gap-3"
+          class="btn-copy w-100 hstack"
           onclick={() => copy(icon)}
           iconLeft={icon as IconName}
         >

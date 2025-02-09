@@ -1,16 +1,17 @@
 <script lang="ts">
-  type Prop = {
-    name: string;
-    required?: boolean;
-    type: string;
-    default?: any;
-    description: string;
-  };
-  type Props = {
-    props: Prop[];
-  };
-
-  let { props: componentProps }: Props = $props();
+  let {
+    props: componentProps,
+  }: {
+    props: {
+      bindable?: boolean;
+      default?: any;
+      description: string;
+      link?: string;
+      name: string;
+      required?: boolean;
+      type: string;
+    }[];
+  } = $props();
 </script>
 
 <h2>Props</h2>
@@ -29,11 +30,25 @@
         <tr>
           <td
             ><span class="text-primary">{prop.required ? '*' : ''}</span
-            >{prop.name}</td
-          >
-          <td>{prop.type}</td>
-          <td><code>{JSON.stringify(prop.default)}</code></td>
-          <td>{prop.description}</td>
+            >{#if prop.link}
+              <a href={prop.link} target="_blank">{prop.name}</a>
+            {:else}
+              {prop.name}
+            {/if}
+          </td>
+          <td><code>{prop.type}</code></td>
+          <td>
+            <code>
+              {#if prop.bindable}
+                $bindable({JSON.stringify(prop.default)})
+              {:else}
+                {JSON.stringify(prop.default)}
+              {/if}
+            </code>
+          </td>
+          <td>
+            {prop.description}
+          </td>
         </tr>
       {/each}
     </tbody>
