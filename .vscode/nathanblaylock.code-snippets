@@ -66,6 +66,13 @@
     "description": "Global sortable cards component.",
     "scope": "svelte",
   },
+  // FORMS
+  "Global Checkbox": {
+    "prefix": "G-Checkbox",
+    "body": ["<GCheckbox label=\"$1\" />"],
+    "description": "Global checkbox component.",
+    "scope": "svelte",
+  },
   "Global TextInput": {
     "prefix": "G-TextInput",
     "body": ["<GTextInput label=\"$1\" />"],

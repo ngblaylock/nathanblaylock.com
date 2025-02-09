@@ -6,4 +6,5 @@
   <GTextInput label="Number" type="number" />
   <GTextInput label="Disabled" disabled />
   <GTextInput label="Readonly" readonly value="Foo" />
+  <GTextInput label="Hint" hint="This is helper text." />
 </div>

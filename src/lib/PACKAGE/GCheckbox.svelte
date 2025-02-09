@@ -1,39 +1,37 @@
 <script lang="ts">
   let {
+    checked = $bindable(),
     class: classList = '',
     hideLabel = false,
     hint = '',
     id = '',
     label,
-    required = false,
-    value = $bindable(''),
     ...restProps
   }: {
+    checked: boolean;
     class?: string;
     hideLabel?: boolean;
     hint?: string;
     id?: string;
     label: string;
-    required?: boolean;
-    value?: string | number | null;
     [key: string]: unknown;
   } = $props();
 
   let uid = $derived(id || crypto.randomUUID());
 </script>
 
-<div class={classList}>
-  <label for={uid} class="form-label" class:visually-hidden={hideLabel}
-    >{#if required}<span class="text-primary">*</span>{/if}{label}</label
-  >
+<div class="form-check {classList}">
   <input
-    bind:value
-    class="form-control"
+    bind:checked
+    class="form-check-input"
+    type="checkbox"
     id={uid}
     aria-describedby={hint ? `${uid}-hint` : null}
-    {required}
     {...restProps}
   />
+  <label class="form-check-label" class:visually-hidden={hideLabel} for={uid}>
+    {label}
+  </label>
   {#if hint}
     <div id="{uid}-hint" class="form-text">{hint}</div>
   {/if}

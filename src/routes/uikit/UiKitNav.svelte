@@ -1,5 +1,6 @@
 <script lang="ts">
   import { afterNavigate } from '$app/navigation';
+  import { page } from '$app/state';
 
   afterNavigate(() => {
     search = '';
@@ -33,8 +34,11 @@
       slug: 'sortable-cards',
     },
     {
-      name: '--- Forms ---',
-      slug: 'text-inputs',
+      name: 'Forms',
+    },
+    {
+      name: 'Checkboxes',
+      slug: 'checkboxes',
     },
     {
       name: 'Text Inputs',
@@ -46,6 +50,10 @@
       return c.name.toLowerCase().includes(search.toLowerCase());
     })
   );
+
+  function isActive(slug:string){
+    return page.route.id === `/uikit/components/${slug}`
+  }
 </script>
 
 <div class="card mb-4 text-bg-dev">
@@ -88,12 +96,19 @@
           />
           <ul class="dropdown-menu">
             {#each filteredComponents as component}
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="/uikit/components/{component.slug}">{component.name}</a
-                >
-              </li>
+              {#if component.slug}
+                <li>
+                  <a
+                    class="dropdown-item"
+                    class:active={isActive(component.slug)}
+                    href="/uikit/components/{component.slug}"
+                    >{component.name}</a
+                  >
+                </li>
+              {:else}
+                <li><hr class="dropdown-divider" /></li>
+                <li><h6 class="dropdown-header">{component.name}</h6></li>
+              {/if}
             {/each}
             {#if filteredComponents.length === 0}
               <li class="px-3 text-muted">No Results Found</li>
