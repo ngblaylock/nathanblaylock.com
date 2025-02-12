@@ -29,14 +29,14 @@
       {#each componentProps as prop}
         <tr>
           <td
-            ><span class="text-primary">{prop.required ? '*' : ''}</span
+            ><span class="code-color">{prop.required ? '* ' : ''}</span
             >{#if prop.link}
               <a href={prop.link} target="_blank">{prop.name}</a>
             {:else}
               {prop.name}
             {/if}
           </td>
-          <td><code>{prop.type}</code></td>
+          <td><pre class="code-color mb-0">{prop.type}</pre></td>
           <td>
             <code>
               {#if prop.bindable}
@@ -52,5 +52,20 @@
         </tr>
       {/each}
     </tbody>
+    {#if componentProps.some((cp) => cp.required)}
+      <tfoot>
+        <tr
+          ><td colspan="4" class="bg-base-4"
+            ><span class="code-color">*</span> <small>Required Prop</small></td
+          ></tr
+        >
+      </tfoot>
+    {/if}
   </table>
 </div>
+
+<style lang="scss">
+  .code-color {
+    color: var(--bs-code-color);
+  }
+</style>
