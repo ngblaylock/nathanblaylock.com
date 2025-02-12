@@ -1,5 +1,17 @@
 <script lang="ts">
   import Seo from '$components/Seo.svelte';
+
+  let items = [
+    {
+      label: 'Check me out',
+      value: 1,
+      hint: 'We\'ll never share your email with anyone else.'
+    },
+    {
+      label: 'Check me out',
+      value: 2,
+    }
+  ]
 </script>
 
 <Seo title="Form Elements" hideHeader />
@@ -16,29 +28,7 @@
         label="Password"
         type="password"
       />
-      <fieldset>
-        <legend>Checkbox Group</legend>
-        <div class="form-check">
-          <input
-            type="checkbox"
-            class="form-check-input"
-            id="exampleCheck1"
-            aria-describedby="check-help"
-          />
-          <label class="form-check-label" for="exampleCheck1"
-            >Check me out</label
-          >
-          <div id="check-help" class="form-text">
-            We'll never share your email with anyone else.
-          </div>
-        </div>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck2" />
-          <label class="form-check-label" for="exampleCheck2"
-            >Check me out</label
-          >
-        </div>
-      </fieldset>
+      <GCheckboxGroup items={items} legend="Checkbox Group" />
       <fieldset>
         <legend>Radio Group</legend>
         <div class="form-check">

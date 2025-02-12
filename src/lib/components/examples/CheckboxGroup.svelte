@@ -1,22 +1,23 @@
 <script lang="ts">
   let items = $state([
     {
-      label: 'Checkbox 1',
-      value: [22, 33, 44],
-      hint: 'This is a hint.',
+      label: 'Toyota',
+      value: { id: 1, models: ['Camry', 'Sienna', 'Rav4'] },
+      hint: 'These are trustworthy cars.',
     },
     {
-      label: 'Checkbox 2',
-      value: [1, 2, 3],
+      label: 'Honda',
+      value: { id: 2, models: ['Accord', 'Odyssey'] },
     },
     {
-      label: 'Checkbox 3',
-      value: [100, 102, 303],
+      label: 'Kia',
+      value: { id: 3, models: ['EV6', 'Soul', 'Carnival', 'EV9'] },
     },
   ]);
   let group = $state([]);
 </script>
 
-<GCheckboxGroup {items} bind:group={group} legend="Checkbox Group" />
-
-<GDebug data={group} />
+<div class="vstack">
+  <GCheckboxGroup {items} bind:group legend="Car Brands" />
+  <GDebug data={group} />
+</div>
