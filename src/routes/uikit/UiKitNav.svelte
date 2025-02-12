@@ -41,6 +41,10 @@
       slug: 'checkboxes',
     },
     {
+      name: 'Checkbox Groups',
+      slug: 'checkbox-groups',
+    },
+    {
       name: 'Text Inputs',
       slug: 'text-inputs',
     },

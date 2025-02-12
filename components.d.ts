@@ -3,6 +3,7 @@
 declare global {
     const GBtn: typeof import("./src/lib/PACKAGE/GBtn.svelte")["default"]
     const GCheckbox: typeof import("./src/lib/PACKAGE/GCheckbox.svelte")["default"]
+    const GCheckboxGroup: typeof import("./src/lib/PACKAGE/GCheckboxGroup.svelte")["default"]
     const GDebug: typeof import("./src/lib/PACKAGE/GDebug.svelte")["default"]
     const GDevNote: typeof import("./src/lib/PACKAGE/GDevNote.svelte")["default"]
     const GIcon: typeof import("./src/lib/PACKAGE/GIcon.svelte")["default"]
