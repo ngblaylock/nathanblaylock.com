@@ -1,6 +1,6 @@
 # New Package Component
 
-Package components are shared components between multiple applications. They are bundled when running `npm run build` in the deploy steps. Only files and components within the `src/PACKAGE` component will be bundled. All components should be prefixed with a `G` which stands for "Global".
+Package components are shared components between multiple applications. They are bundled when running `npm run build` in the deploy steps. Only files and components within the `src/PACKAGE/components` directory will be bundled. All components should be prefixed with a `G` which stands for "Global".
 
 When adding a component:
 
