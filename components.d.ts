@@ -8,6 +8,7 @@ declare global {
     const GDevNote: typeof import("./src/lib/PACKAGE/GDevNote.svelte")["default"]
     const GIcon: typeof import("./src/lib/PACKAGE/GIcon.svelte")["default"]
     const GIconBtn: typeof import("./src/lib/PACKAGE/GIconBtn.svelte")["default"]
+    const GRadioGroup: typeof import("./src/lib/PACKAGE/GRadioGroup.svelte")["default"]
     const GSortableCards: typeof import("./src/lib/PACKAGE/GSortableCards.svelte")["default"]
     const GTextInput: typeof import("./src/lib/PACKAGE/GTextInput.svelte")["default"]
 }
