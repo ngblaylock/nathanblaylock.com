@@ -19,7 +19,7 @@
 		"blunt": "node ./node_modules/@ngblaylock/blunt-images ./blunt.config.cjs",
 		"dev": "vite dev --open",
 		"build": "npm run blunt & vite build",
-		"postbuild": "npx @sveltejs/package --input src/lib/PACKAGE && sass --no-source-map --style=compressed src/sass/style.scss:dist/nathanblaylock.min.css",
+		"postbuild": "npx @sveltejs/package --input src/PACKAGE/components && sass --no-source-map --style=compressed src/sass/style.scss:dist/nathanblaylock.min.css",
 		"preview": "vite preview --open",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",

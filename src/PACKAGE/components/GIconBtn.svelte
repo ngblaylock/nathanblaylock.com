@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { type IconName } from '$PACKAGE/icons';
+  import { type IconName } from './icons';
   import GIcon from './GIcon.svelte';
   interface Props {
     class?: string;
