@@ -45,6 +45,10 @@
       slug: 'checkbox-groups',
     },
     {
+      name: 'Radio Groups',
+      slug: 'radio-groups',
+    },
+    {
       name: 'Text Inputs',
       slug: 'text-inputs',
     },
@@ -55,8 +59,8 @@
     })
   );
 
-  function isActive(slug:string){
-    return page.route.id === `/uikit/components/${slug}`
+  function isActive(slug: string) {
+    return page.route.id === `/uikit/components/${slug}`;
   }
 </script>
 

@@ -11,7 +11,7 @@
   let uid = crypto.randomUUID();
 
   onMount(async () => {
-    const module = await import(`$components/examples/${component}.svelte`);
+    const module = await import(`$PACKAGE/examples/${component}.svelte`);
     if (!module) return;
     DynamicComponent = module.default;
     const fileContent = componentData.componentDoc[component];

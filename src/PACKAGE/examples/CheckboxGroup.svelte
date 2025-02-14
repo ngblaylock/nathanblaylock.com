@@ -14,7 +14,7 @@
       value: { id: 3, models: ['EV6', 'Soul', 'Carnival', 'EV9'] },
     },
   ]);
-  let group = $state([]);
+  let group = $state([items[1].value]);
 </script>
 
 <div class="vstack">

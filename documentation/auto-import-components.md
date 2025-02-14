@@ -15,7 +15,7 @@ import Components from 'unplugin-svelte-components/vite';
 export default defineConfig({
   plugins: [
     Components({
-      dirs: ['src/lib/PACKAGE'],
+      dirs: ['src/PACKAGE/components'],
       dts: true,
       eslintrc: {
         enabled: false,
