@@ -49,6 +49,10 @@
       slug: 'radio-groups',
     },
     {
+      name: 'Radio Groups Button',
+      slug: 'radio-groups-btn',
+    },
+    {
       name: 'Text Inputs',
       slug: 'text-inputs',
     },
@@ -101,6 +105,7 @@
             placeholder="Search Components"
             data-bs-toggle="dropdown"
             aria-expanded="false"
+            aria-label="Search Components"
           />
           <ul class="dropdown-menu">
             {#each filteredComponents as component}

@@ -3,7 +3,7 @@
   import ComponentDoc from '$components/ComponentDoc.svelte';
   import Seo from '$components/Seo.svelte';
 
-  import icons, { type IconName } from '$PACKAGE/components/icons';
+  import icons, { type IconName } from 'nathanblaylock.com/icons';
 
   function copy(iconName: string) {
     navigator.clipboard

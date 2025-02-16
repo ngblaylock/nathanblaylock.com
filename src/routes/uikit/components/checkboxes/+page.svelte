@@ -34,7 +34,7 @@
       type: 'string',
       default: '',
       description:
-        'The ID to use for the input and label. If none are provided a unique one will be created.',
+        'The ID to use for the input and label. If no ID is set, a UID will be generated.',
     },
     {
       name: 'label',
