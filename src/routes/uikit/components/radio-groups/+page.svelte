@@ -20,7 +20,7 @@
       type: 'string',
       default: '',
       description:
-        "The base ID for each identifier for the group. Each item's ID will be appended by the item's index.",
+        "The base ID for each identifier for the group. Each item's ID will be appended by the item's index. If no ID is set, a UID will be generated.",
     },
     {
       name: 'items',

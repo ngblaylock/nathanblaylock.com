@@ -13,6 +13,7 @@ const config = {
     alias: {
       $components: 'src/lib/components',
       $PACKAGE: 'src/PACKAGE',
+      "nathanblaylock.com": 'src/PACKAGE/components',
     },
   },
   preprocess: [
