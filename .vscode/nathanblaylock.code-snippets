@@ -85,10 +85,10 @@
     "description": "Global radio group component.",
     "scope": "svelte",
   },
-  "Global Radio Group Button": {
-    "prefix": "G-RadioGroupBtn",
-    "body": ["<GRadioGroupBtn items={$1} bind:group={$2} />"],
-    "description": "Global radio group button component.",
+  "Global Segmented Control": {
+    "prefix": "G-SegmentedControl",
+    "body": ["<GSegmentedControl items={$1} bind:group={$2} />"],
+    "description": "Global segmented control component.",
     "scope": "svelte",
   },
   "Global TextInput": {

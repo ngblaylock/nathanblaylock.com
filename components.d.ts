@@ -9,7 +9,7 @@ declare global {
     const GIcon: typeof import("./src/PACKAGE/components/GIcon.svelte")["default"]
     const GIconBtn: typeof import("./src/PACKAGE/components/GIconBtn.svelte")["default"]
     const GRadioGroup: typeof import("./src/PACKAGE/components/GRadioGroup.svelte")["default"]
-    const GRadioGroupBtn: typeof import("./src/PACKAGE/components/GRadioGroupBtn.svelte")["default"]
+    const GSegmentedControl: typeof import("./src/PACKAGE/components/GSegmentedControl.svelte")["default"]
     const GSortableCards: typeof import("./src/PACKAGE/components/GSortableCards.svelte")["default"]
     const GTextInput: typeof import("./src/PACKAGE/components/GTextInput.svelte")["default"]
 }

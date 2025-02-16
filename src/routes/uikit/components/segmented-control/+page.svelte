@@ -32,23 +32,23 @@
 }[]`,
       default: '',
       description:
-        "Each radio button item's information. Icons are for adding the specified icon as the option, the label fills in the label, and the value is what is bound to the group. If any item has an icon omitted, all options will fallback to a text style.",
+        "Each control item's information. Icons are for adding the specified icon as the option, the label fills in the label, and the value is what is bound to the group. If any item has an icon omitted, all options will fallback to a text style.",
     },
   ];
 </script>
 
-<Seo title="Button Radio Groups" hideHeader />
+<Seo title="Segmented Control" hideHeader />
 
-<h1>Button Radio Groups</h1>
+<h1>Segmented Control</h1>
 
 <p>
-  Radio Buttons can be displayed as buttons if there is a need for a more
-  stylized toggle. This component allows for both text and icon styles. If you
-  want to use the icons style, each item passed in to the <code>items</code> prop
-  must have an icon associated with it. If one icon is missing, it will render to
-  the all text version. These cannot be mixed and matched.
+  Segmented controls are essentially radio buttons stylized as buttons. This
+  component allows for both text and icon styles. If you want to use the icons
+  style, each item passed in to the <code>items</code> prop must have an icon associated
+  with it. If one icon is missing, it will render to the all text version. These
+  cannot be mixed and matched.
 </p>
 
 <ComponentApi {props} />
-<ComponentDoc title="Text Style" component="RadioGroupBtn" />
-<ComponentDoc title="Icon Style" component="RadioGroupBtnIcon" />
+<ComponentDoc title="Text Style" component="SegmentedControl" />
+<ComponentDoc title="Icon Style" component="SegmentedControlIcon" />

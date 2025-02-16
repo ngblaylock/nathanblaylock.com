@@ -22,7 +22,7 @@
 
 <div class="vstack">
   <div>
-    <GRadioGroupBtn {items} bind:group />
+    <GSegmentedControl {items} bind:group />
   </div>
   <GDebug data={group} />
 </div>

@@ -49,8 +49,8 @@
       slug: 'radio-groups',
     },
     {
-      name: 'Radio Groups Button',
-      slug: 'radio-groups-btn',
+      name: 'Segmented Control',
+      slug: 'segmented-control',
     },
     {
       name: 'Text Inputs',

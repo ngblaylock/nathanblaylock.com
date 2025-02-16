@@ -43,7 +43,7 @@
         legend="Radio Group"
       />
       <div>
-        <GRadioGroupBtn items={radioItems} bind:group={radioGroup} />
+        <GSegmentedControl items={radioItems} bind:group={radioGroup} />
       </div>
       <div>
         <GBtn type="submit" variant="secondary">Submit</GBtn>

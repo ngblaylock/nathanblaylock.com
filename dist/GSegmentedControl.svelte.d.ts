@@ -9,6 +9,6 @@ type $$ComponentProps = {
         value: unknown;
     }[];
 };
-declare const GRadioGroupBtn: import("svelte").Component<$$ComponentProps, {}, "group">;
-type GRadioGroupBtn = ReturnType<typeof GRadioGroupBtn>;
-export default GRadioGroupBtn;
+declare const GSegmentedControl: import("svelte").Component<$$ComponentProps, {}, "group">;
+type GSegmentedControl = ReturnType<typeof GSegmentedControl>;
+export default GSegmentedControl;
