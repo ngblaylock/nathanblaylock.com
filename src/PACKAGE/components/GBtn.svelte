@@ -2,16 +2,6 @@
   import type { Snippet } from 'svelte';
   import { type IconName } from './icons';
   import GIcon from './GIcon.svelte';
-  interface Props {
-    [key: string]: unknown;
-    children: Snippet;
-    class?: string;
-    href?: string;
-    iconLeft?: IconName;
-    iconRight?: IconName;
-    outline?: boolean;
-    variant?: Variant;
-  }
   let {
     children,
     class: classList = '',
@@ -21,7 +11,16 @@
     outline = false,
     variant = 'primary',
     ...restProps
-  }: Props = $props();
+  }: {
+    [key: string]: unknown;
+    children: Snippet;
+    class?: string;
+    href?: string;
+    iconLeft?: IconName;
+    iconRight?: IconName;
+    outline?: boolean;
+    variant?: Variant;
+  } = $props();
 
   const hasInnerIcon = $derived(!!iconLeft || !!iconRight);
   const outlineVariant = $derived(outline ? 'outline-' : '');

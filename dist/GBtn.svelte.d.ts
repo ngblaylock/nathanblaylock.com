@@ -1,6 +1,6 @@
 import type { Snippet } from 'svelte';
 import { type IconName } from './icons';
-interface Props {
+type $$ComponentProps = {
     [key: string]: unknown;
     children: Snippet;
     class?: string;
@@ -9,7 +9,7 @@ interface Props {
     iconRight?: IconName;
     outline?: boolean;
     variant?: Variant;
-}
-declare const GBtn: import("svelte").Component<Props, {}, "">;
+};
+declare const GBtn: import("svelte").Component<$$ComponentProps, {}, "">;
 type GBtn = ReturnType<typeof GBtn>;
 export default GBtn;

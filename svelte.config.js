@@ -12,7 +12,8 @@ const config = {
     }),
     alias: {
       $components: 'src/lib/components',
-      $PACKAGE: 'src/lib/PACKAGE',
+      $PACKAGE: 'src/PACKAGE',
+      "nathanblaylock.com": 'src/PACKAGE/components',
     },
   },
   preprocess: [

@@ -3,7 +3,7 @@
   import ComponentDoc from '$components/ComponentDoc.svelte';
   import Seo from '$components/Seo.svelte';
 
-  import icons, { type IconName } from '$PACKAGE/icons';
+  import icons, { type IconName } from 'nathanblaylock.com/icons';
 
   function copy(iconName: string) {
     navigator.clipboard
@@ -46,7 +46,7 @@
       <div class="col-sm-4">
         <GBtn
           variant="base-4"
-          class="btn-copy w-100 hstack gap-3"
+          class="btn-copy w-100 hstack"
           onclick={() => copy(icon)}
           iconLeft={icon as IconName}
         >
