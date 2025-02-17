@@ -24,5 +24,5 @@
   <div>
     <GSegmentedControl {items} bind:group />
   </div>
-  <GDebug data={group} />
+  <GDebug data={group} showInProd />
 </div>

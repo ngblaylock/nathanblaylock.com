@@ -19,5 +19,5 @@
 
 <div class="vstack">
   <GRadioGroup {items} bind:group legend="Car Brands" />
-  <GDebug data={group} />
+  <GDebug data={group} showInProd />
 </div>

@@ -16,6 +16,12 @@
       description: 'The data to display.',
     },
     {
+      name: 'showInProd',
+      type: 'boolean',
+      default: false,
+      description: 'If true will show up in production mode as well.',
+    },
+    {
       name: 'title',
       type: 'string',
       default: 'Debug',
@@ -38,5 +44,5 @@
 <ComponentApi {props} />
 
 <ComponentDoc title="Overview Usage" component="Debug" />
-
 <ComponentDoc title="Updating Data" component="DebugUpdateData" />
+<ComponentDoc title="Show In Prod" component="DebugProd" />

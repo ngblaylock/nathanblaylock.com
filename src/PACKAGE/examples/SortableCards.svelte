@@ -4,5 +4,5 @@
 
 <div class="vstack">
   <GSortableCards bind:items={data} />
-  <GDebug {data} />
+  <GDebug {data} showInProd />
 </div>
