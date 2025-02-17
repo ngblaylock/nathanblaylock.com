@@ -17,4 +17,4 @@
 <GCheckbox bind:checked={checks.check3} hideLabel label="Checkbox 3" />
 <GCheckbox bind:checked={checks.check4} disabled label="Disabled Checkbox" />
 
-<GDebug data={checks} />
+<GDebug data={checks} showInProd />

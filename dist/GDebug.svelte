@@ -1,10 +1,11 @@
 <script lang="ts">import { codeToHtml } from 'shiki';
 import { dev } from '$app/environment';
 import GIcon from './GIcon.svelte';
-let { class: classList = '', data, title = 'Debug' } = $props();
+let { class: classList = '', data, showInProd = false, title = 'Debug', } = $props();
+let show = $derived(showInProd || dev);
 </script>
 
-{#if dev}
+{#if show}
   <div
     class="dev-note pb-0 {classList}"
     style="--bse-dev-note-title: '{title}'"

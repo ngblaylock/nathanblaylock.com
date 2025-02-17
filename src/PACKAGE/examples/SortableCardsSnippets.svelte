@@ -41,4 +41,4 @@
   >
 </div>
 
-<GDebug class="mt-4" {data} />
+<GDebug class="mt-4" {data} showInProd />
