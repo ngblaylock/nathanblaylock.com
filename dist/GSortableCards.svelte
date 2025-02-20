@@ -1,6 +1,7 @@
 <script lang="ts">import Sortable from 'sortablejs';
 import { onMount, tick } from 'svelte';
 import cloneDeep from 'lodash/cloneDeep';
+import GIcon from './GIcon.svelte';
 let { children, items = $bindable(), } = $props();
 let el = $state();
 onMount(() => {
@@ -20,16 +21,22 @@ onMount(() => {
 });
 </script>
 
-<div bind:this={el} class="vstack">
+<div
+  bind:this={el}
+  class="vstack"
+>
   {#each items as item, index (index)}
     <div class="card hstack gap-0">
       <div
         class="handle bg-base-4 align-self-stretch d-flex align-items-center px-2"
       >
-        <GIcon name="dragVertical" size={1.5} />
+        <GIcon
+          name="dragVertical"
+          size={1.5}
+        />
       </div>
       {#if children}
-        {@render children( item, index )}
+        {@render children(item, index)}
       {:else}
         {item}
       {/if}

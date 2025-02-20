@@ -8,12 +8,20 @@ const outlineVariant = $derived(outline ? 'outline-' : '');
   <a
     {title}
     class="btn btn-{outlineVariant}{variant} btn-icon {classList}"
-    {href}><GIcon name={icon} size={1.5} /></a
+    {href}
+    ><GIcon
+      name={icon}
+      size={1.5}
+    /></a
   >
 {:else}
   <button
     {title}
     class="btn btn-{outlineVariant}{variant} btn-icon {classList}"
-    {...restProps}><GIcon name={icon} size={1.5} /></button
+    {...restProps}
+    ><GIcon
+      name={icon}
+      size={1.5}
+    /></button
   >
 {/if}
