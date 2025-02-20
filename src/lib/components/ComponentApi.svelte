@@ -31,7 +31,12 @@
           <td
             ><span class="code-color">{prop.required ? '* ' : ''}</span
             >{#if prop.link}
-              <a href={prop.link} target="_blank">{prop.name}</a>
+              <a
+                href={prop.link}
+                target="_blank"
+              >
+                {prop.name}
+              </a>
             {:else}
               {prop.name}
             {/if}
@@ -55,7 +60,9 @@
     {#if componentProps.some((cp) => cp.required)}
       <tfoot>
         <tr
-          ><td colspan="4" class="bg-base-4"
+          ><td
+            colspan="4"
+            class="bg-base-4"
             ><span class="code-color">*</span> <small>Required Prop</small></td
           ></tr
         >

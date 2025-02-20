@@ -18,14 +18,17 @@
     style="--bse-dev-note-title: '{title}'"
   >
     <div class="dev-note-icon">
-      <GIcon name="json" size={1.5} />
+      <GIcon
+        name="json"
+        size={1.5}
+      />
     </div>
-    {#await codeToHtml( JSON.stringify(data, null, 2), { lang: 'json', theme: 'material-theme' } )}
+    {#await codeToHtml( JSON.stringify(data, null, 2), { lang: 'json', theme: 'material-theme' }, )}
       <div class="m-n3 shiki-example bg-dark">
         <pre style="background-color: #263238; color: #EEFFFF;">{JSON.stringify(
             data,
             null,
-            2
+            2,
           )}</pre>
       </div>
     {:then value}

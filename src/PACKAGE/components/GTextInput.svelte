@@ -23,7 +23,10 @@
 </script>
 
 <div class={classList}>
-  <label for={uid} class="form-label" class:visually-hidden={hideLabel}
+  <label
+    for={uid}
+    class="form-label"
+    class:visually-hidden={hideLabel}
     >{#if required}<span class="text-primary">*</span>{/if}{label}</label
   >
   <input
@@ -35,6 +38,11 @@
     {...restProps}
   />
   {#if hint}
-    <div id="{uid}-hint" class="form-text">{hint}</div>
+    <div
+      id="{uid}-hint"
+      class="form-text"
+    >
+      {hint}
+    </div>
   {/if}
 </div>

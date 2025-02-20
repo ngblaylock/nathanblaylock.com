@@ -22,6 +22,10 @@
     <div class="hstack gap-1 flex-wrap">
       <GBtn onclick={() => console.info('hi')}>Button</GBtn>
       <GBtn href="/">Link</GBtn>
+      <GBtn
+        href="https://github.com/ngblaylock?tab=repositories"
+        target="_blank">External Link</GBtn
+      >
     </div>
   </div>
   <div>
@@ -36,7 +40,10 @@
     <h3>Active</h3>
     <div class="hstack gap-1 flex-wrap">
       {#each variants as variant}
-        <GBtn class="active" {variant}>Button</GBtn>
+        <GBtn
+          class="active"
+          {variant}>Button</GBtn
+        >
       {/each}
     </div>
   </div>
@@ -44,7 +51,10 @@
     <h3>Disabled</h3>
     <div class="hstack gap-1 flex-wrap">
       {#each variants as variant}
-        <GBtn disabled {variant}>Button</GBtn>
+        <GBtn
+          disabled
+          {variant}>Button</GBtn
+        >
       {/each}
     </div>
   </div>
@@ -52,16 +62,29 @@
     <h3>Outline</h3>
     <div class="hstack gap-1 flex-wrap">
       {#each variants as variant}
-        <GBtn outline {variant}>Button</GBtn>
+        <GBtn
+          outline
+          {variant}>Button</GBtn
+        >
       {/each}
     </div>
   </div>
   <div>
     <h3>Inner Icon Buttons</h3>
     <div class="hstack gap-1 flex-wrap">
-      <GBtn variant="primary" iconLeft="arrowLeft">Button</GBtn>
-      <GBtn variant="primary" iconRight="arrowRight">Button</GBtn>
-      <GBtn variant="primary" iconLeft="arrowLeft" iconRight="arrowRight">Button</GBtn>
+      <GBtn
+        variant="primary"
+        iconLeft="arrowLeft">Button</GBtn
+      >
+      <GBtn
+        variant="primary"
+        iconRight="arrowRight">Button</GBtn
+      >
+      <GBtn
+        variant="primary"
+        iconLeft="arrowLeft"
+        iconRight="arrowRight">Button</GBtn
+      >
     </div>
   </div>
 </div>

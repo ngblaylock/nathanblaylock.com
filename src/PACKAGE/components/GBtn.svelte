@@ -28,11 +28,17 @@
 
 {#snippet btnContent()}
   {#if iconLeft}
-    <GIcon name={iconLeft} size={1.5} />
+    <GIcon
+      name={iconLeft}
+      size={1.5}
+    />
   {/if}
   {@render children?.()}
   {#if iconRight}
-    <GIcon name={iconRight} size={1.5} />
+    <GIcon
+      name={iconRight}
+      size={1.5}
+    />
   {/if}
 {/snippet}
 
@@ -40,12 +46,17 @@
   <a
     class="btn btn-{outlineVariant}{variant} {classList}"
     class:btn-inner-icon={hasInnerIcon}
-    {href}>{@render btnContent()}</a
+    {href}
+    {...restProps}
   >
+    {@render btnContent()}
+  </a>
 {:else}
   <button
     class="btn btn-{outlineVariant}{variant} {classList}"
     class:btn-inner-icon={hasInnerIcon}
-    {...restProps}>{@render btnContent()}</button
+    {...restProps}
   >
+    {@render btnContent()}
+  </button>
 {/if}

@@ -22,7 +22,10 @@
   let iconVariant = $derived(items.every((item) => item.icon));
 </script>
 
-<div class="btn-check-group {classList}" class:rounded-pill={iconVariant}>
+<div
+  class="btn-check-group {classList}"
+  class:rounded-pill={iconVariant}
+>
   {#each items as item, index}
     <input
       bind:group
@@ -33,12 +36,21 @@
       autocomplete="off"
     />
     {#if iconVariant}
-      <label class="btn btn-icon" for={uid + index}>
-        <GIcon name={item.icon as IconName} size={1.5} />
+      <label
+        class="btn btn-icon"
+        for={uid + index}
+      >
+        <GIcon
+          name={item.icon as IconName}
+          size={1.5}
+        />
         <span class="visually-hidden">{item.label}</span>
       </label>
     {:else}
-      <label class="btn" for={uid + index}>
+      <label
+        class="btn"
+        for={uid + index}
+      >
         {item.label}
       </label>
     {/if}

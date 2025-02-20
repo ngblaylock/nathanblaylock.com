@@ -34,11 +34,19 @@
         id={uid + index}
         aria-describedby={item.hint ? `${uid + index}-hint` : null}
       />
-      <label class="form-check-label" for={uid + index}>
+      <label
+        class="form-check-label"
+        for={uid + index}
+      >
         {item.label}
       </label>
       {#if item.hint}
-        <div id="{uid + index}-hint" class="form-text">{item.hint}</div>
+        <div
+          id="{uid + index}-hint"
+          class="form-text"
+        >
+          {item.hint}
+        </div>
       {/if}
     </div>
   {/each}
