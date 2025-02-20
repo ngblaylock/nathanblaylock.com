@@ -5,9 +5,15 @@ let show = $derived(showInProd || dev);
 </script>
 
 {#if show}
-  <div class="dev-note {classList}" style="--bse-dev-note-title: '{title}'">
+  <div
+    class="dev-note {classList}"
+    style="--bse-dev-note-title: '{title}'"
+  >
     <div class="dev-note-icon">
-      <GIcon name="tools" size={1.5} />
+      <GIcon
+        name="tools"
+        size={1.5}
+      />
     </div>
     {@render children()}
   </div>

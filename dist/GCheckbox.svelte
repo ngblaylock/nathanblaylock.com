@@ -12,10 +12,19 @@ let uid = $derived(id || crypto.randomUUID());
     aria-describedby={hint ? `${uid}-hint` : null}
     {...restProps}
   />
-  <label class="form-check-label" class:visually-hidden={hideLabel} for={uid}>
+  <label
+    class="form-check-label"
+    class:visually-hidden={hideLabel}
+    for={uid}
+  >
     {label}
   </label>
   {#if hint}
-    <div id="{uid}-hint" class="form-text">{hint}</div>
+    <div
+      id="{uid}-hint"
+      class="form-text"
+    >
+      {hint}
+    </div>
   {/if}
 </div>
