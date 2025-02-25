@@ -7,7 +7,7 @@
 <Seo title="Logos" hideHeader />
 
 <h2 class="mt-4">Logos</h2>
-<div class="row row-gap-4">
+<div class="row row-gap-4 mb-7">
   {#each logos as logo}
     <div class="col-sm-6">
       <div

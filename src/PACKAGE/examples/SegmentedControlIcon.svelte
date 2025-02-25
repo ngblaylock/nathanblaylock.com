@@ -22,7 +22,13 @@
 
 <div class="vstack">
   <div>
-    <GSegmentedControl {items} bind:group />
+    <GSegmentedControl
+      {items}
+      bind:group
+    />
   </div>
-  <GDebug data={group} showInProd />
+  <GDebug
+    data={group}
+    showInProd
+  />
 </div>

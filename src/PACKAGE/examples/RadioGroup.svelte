@@ -18,6 +18,13 @@
 </script>
 
 <div class="vstack">
-  <GRadioGroup {items} bind:group legend="Car Brands" />
-  <GDebug data={group} showInProd />
+  <GRadioGroup
+    {items}
+    bind:group
+    legend="Car Brands"
+  />
+  <GDebug
+    data={group}
+    showInProd
+  />
 </div>

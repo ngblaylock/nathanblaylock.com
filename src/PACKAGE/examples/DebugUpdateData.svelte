@@ -7,4 +7,9 @@
   <GBtn onclick={() => data.pop()}>Remove Item</GBtn>
 </div>
 
-<GDebug title="Custom Title" {data} class="mb-0" showInProd />
+<GDebug
+  title="Custom Title"
+  {data}
+  class="mb-0"
+  showInProd
+/>

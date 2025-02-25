@@ -87,13 +87,15 @@ $color-contrast-light: $light;
 // Spacers
 $spacer: 1rem;
 $spacers: (
-  0: 0,
-  1: $spacer * 0.25,
-  2: $spacer * 0.5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 2.25,
-  6: $spacer * 4,
+  0: 0,                // 0
+  1: $spacer * 0.25,   // 4px
+  2: $spacer * 0.5,    // 8px
+  3: $spacer * 0.75,   // 12px
+  4: $spacer,          // 16px
+  5: $spacer * 1.5,    // 24px
+  6: $spacer * 2,      // 32px
+  7: $spacer * 3,      // 48px
+  8: $spacer * 4,      // 64px
 );
 
 // Focus Rings

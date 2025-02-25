@@ -31,7 +31,10 @@
 </GSortableCards>
 
 <div class="hstack align-items-end mt-4">
-  <GTextInput label="Add Fruit" bind:value={newItem} />
+  <GTextInput
+    label="Add Fruit"
+    bind:value={newItem}
+  />
   <GBtn
     disabled={!newItem}
     onclick={() => {
@@ -41,4 +44,8 @@
   >
 </div>
 
-<GDebug class="mt-4" {data} showInProd />
+<GDebug
+  class="mt-4"
+  {data}
+  showInProd
+/>

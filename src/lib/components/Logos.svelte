@@ -8,7 +8,7 @@
 </script>
 
 {#if logos.length}
-  <div class="border-top pt-5 mt-5 text-center">
+  <div class="border-top pt-6 mt-6 text-center">
     <div class="hstack flex-wrap justify-content-center">
       {#each logos as logo}
         <Logo name={logo} />

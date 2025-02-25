@@ -50,7 +50,7 @@
     <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
       {@render children?.()}
       {#if getPrevProject.route && getNextProject.route}
-        <div class="d-flex justify-content-between mt-5">
+        <div class="d-flex justify-content-between mt-7">
           <a
             href="/projects/{getPrevProject.route}"
             class="btn btn-outline-contrast btn-inner-icon text-end"

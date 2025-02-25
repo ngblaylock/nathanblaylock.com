@@ -18,6 +18,13 @@
 </script>
 
 <div class="vstack">
-  <GCheckboxGroup {items} bind:group legend="Car Brands" />
-  <GDebug data={group} showInProd />
+  <GCheckboxGroup
+    {items}
+    bind:group
+    legend="Car Brands"
+  />
+  <GDebug
+    data={group}
+    showInProd
+  />
 </div>
