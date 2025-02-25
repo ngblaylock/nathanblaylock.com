@@ -10,7 +10,7 @@
 </script>
 
 <div class="container">
-  <footer class="border-top hstack flex-wrap justify-content-center py-3">
+  <footer class="border-top hstack flex-wrap justify-content-center py-4">
     <div>© Nathan Blaylock {new Date().getFullYear()}</div>
     <div class="hstack flex-wrap justify-content-center">
       <a href="https://docs.nathanblaylock.com/" target="_blank">Documentation</a>

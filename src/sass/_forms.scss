@@ -2,7 +2,7 @@
 
 fieldset {
   .form-check {
-    padding-left: map-get($spacers, 5);
+    padding-left: map-get($spacers, 6) + map-get($spacers, 1);
   }
 }
 

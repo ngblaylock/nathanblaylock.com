@@ -14,7 +14,7 @@
   const getHex = (color: string) => {
     if (browser) {
       return getComputedStyle(document.documentElement).getPropertyValue(
-        `--bs-${color}`
+        `--bs-${color}`,
       );
     } else return '';
   };
@@ -49,14 +49,14 @@
     {/each}
   </div>
 
-  <div class="row mt-4">
+  <div class="row mt-5">
     {#each colors as color}
       <div class="col">
         {#each Array(9) as _, i}
           {@const fullColor = `${color}-${i + 1}00`}
           <div
             class="p-2 d-flex justify-content-between text-{getContrastColor(
-              fullColor
+              fullColor,
             ).color}"
             style="background: var(--bs-{fullColor});"
           >
@@ -66,7 +66,7 @@
                 <!-- content here -->
                 <span class="badge text-text-bg-base-3 ms-2"
                   >Poor Contrast - {getContrastColor(
-                    fullColor
+                    fullColor,
                   ).contrast.toFixed(1)}</span
                 >
               {/if}
@@ -78,7 +78,7 @@
     {/each}
   </div>
 
-  <div class="row mt-4">
+  <div class="row mt-5">
     <div class="col-md-6">
       <div class="p-2 text-bg-base-1">base-1</div>
       <div class="p-2 text-bg-base-2">base-2</div>
@@ -100,7 +100,7 @@
         <img
           src="/images/optimized/profile/{image}"
           alt="profile {index}"
-          class="img-fluid mb-4"
+          class="img-fluid mb-5"
         />
         <img
           src="/images/optimized/profile/{image.replace('.', '-square.')}"
@@ -187,6 +187,56 @@
   </div>
 
   <div class="mt-4">
+    <h2>Spacing</h2>
+    <div class="table-responsive">
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><div class="pt-1 pl-1 bg-primary"></div></td>
+            <td>4px</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><div class="pt-2 pl-2 bg-primary"></div></td>
+            <td>8px</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><div class="pt-3 pl-3 bg-primary"></div></td>
+            <td>12px</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><div class="pt-4 pl-4 bg-primary"></div></td>
+            <td>16px</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><div class="pt-5 pl-5 bg-primary"></div></td>
+            <td>24px</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><div class="pt-6 pl-6 bg-primary"></div></td>
+            <td>32px</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><div class="pt-7 pl-7 bg-primary"></div></td>
+            <td>48px</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><div class="pt-8 pl-8 bg-primary"></div></td>
+            <td>64px</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="mt-4">
     <h2>Tables</h2>
     <div class="table-responsive">
       <table class="table table-striped table-hover">
@@ -232,9 +282,24 @@
       />
 
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="/">Action</a></li>
-        <li><a class="dropdown-item" href="/">Another action</a></li>
-        <li><a class="dropdown-item" href="/">Something else here</a></li>
+        <li>
+          <a
+            class="dropdown-item"
+            href="/">Action</a
+          >
+        </li>
+        <li>
+          <a
+            class="dropdown-item"
+            href="/">Another action</a
+          >
+        </li>
+        <li>
+          <a
+            class="dropdown-item"
+            href="/">Something else here</a
+          >
+        </li>
       </ul>
     </div>
   </div>

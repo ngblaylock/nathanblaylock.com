@@ -17,7 +17,7 @@ let show = $derived(showInProd || dev);
       />
     </div>
     {#await codeToHtml( JSON.stringify(data, null, 2), { lang: 'json', theme: 'material-theme' }, )}
-      <div class="m-n3 shiki-example bg-dark">
+      <div class="m-n4 shiki-example bg-dark">
         <pre style="background-color: #263238; color: #EEFFFF;">{JSON.stringify(
             data,
             null,
@@ -25,7 +25,7 @@ let show = $derived(showInProd || dev);
           )}</pre>
       </div>
     {:then value}
-      <div class="m-n3 shiki-example">{@html value}</div>
+      <div class="m-n4 shiki-example">{@html value}</div>
     {/await}
   </div>
 {/if}

@@ -7,8 +7,21 @@
 </script>
 
 <div class="vstack">
-  <GTextInput label="Value 1" bind:value={myValues.value1} />
-  <GTextInput label="Value 2" bind:value={myValues.value2} />
-  <GTextInput label="Value 3" type="number" bind:value={myValues.value3} />
-  <GDebug data={myValues} showInProd />
+  <GTextInput
+    label="Value 1"
+    bind:value={myValues.value1}
+  />
+  <GTextInput
+    label="Value 2"
+    bind:value={myValues.value2}
+  />
+  <GTextInput
+    label="Value 3"
+    type="number"
+    bind:value={myValues.value3}
+  />
+  <GDebug
+    data={myValues}
+    showInProd
+  />
 </div>
