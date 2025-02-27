@@ -1,6 +1,6 @@
 <script lang="ts">import {} from './icons';
 import GIcon from './GIcon.svelte';
-let { class: classList = '', href = '', icon, outline = false, title, variant = 'primary', ...restProps } = $props();
+let { class: classList = '', href = '', icon, outline = false, title, type = 'button', variant = 'primary', ...restProps } = $props();
 const outlineVariant = $derived(outline ? 'outline-' : '');
 </script>
 
@@ -18,6 +18,7 @@ const outlineVariant = $derived(outline ? 'outline-' : '');
   <button
     {title}
     class="btn btn-{outlineVariant}{variant} btn-icon {classList}"
+    {type}
     {...restProps}
     ><GIcon
       name={icon}

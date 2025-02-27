@@ -9,6 +9,7 @@
     iconLeft,
     iconRight,
     outline = false,
+    type = 'button',
     variant = 'primary',
     ...restProps
   }: {
@@ -19,6 +20,7 @@
     iconLeft?: IconName;
     iconRight?: IconName;
     outline?: boolean;
+    type?: 'button' | 'submit' | 'reset';
     variant?: Variant;
   } = $props();
 
@@ -55,6 +57,7 @@
   <button
     class="btn btn-{outlineVariant}{variant} {classList}"
     class:btn-inner-icon={hasInnerIcon}
+    {type}
     {...restProps}
   >
     {@render btnContent()}

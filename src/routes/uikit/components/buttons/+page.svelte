@@ -41,6 +41,12 @@
       description: 'Makes the button an outlined style.',
     },
     {
+      name: 'type',
+      type: "'button' | 'submit' | 'reset'",
+      default: 'button',
+      description: 'Adds the type to the button element, if applicable.',
+    },
+    {
       name: 'variant',
       type: 'Variant',
       default: 'primary',

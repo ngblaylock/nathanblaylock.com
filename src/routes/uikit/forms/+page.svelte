@@ -25,28 +25,44 @@
   let radioGroup = $state(1);
 </script>
 
-<Seo title="Form Elements" hideHeader />
+<Seo
+  title="Form Elements"
+  hideHeader
+/>
 <div class="mb-5">
   <h1>Form Elements</h1>
-  <form>
+  <form onsubmit={() => alert('submitted')}>
     <div class="vstack">
       <GTextInput
         label="Email address"
         type="email"
         hint="We'll never share your email with anyone else."
       />
-      <GTextInput label="Password" type="password" />
-      <GCheckboxGroup items={checkboxItems} legend="Checkbox Group" />
+      <GTextInput
+        label="Password"
+        type="password"
+      />
+      <GCheckboxGroup
+        items={checkboxItems}
+        legend="Checkbox Group"
+      />
       <GRadioGroup
         items={radioItems}
         bind:group={radioGroup}
         legend="Radio Group"
       />
       <div>
-        <GSegmentedControl items={radioItems} bind:group={radioGroup} />
+        <GSegmentedControl
+          items={radioItems}
+          bind:group={radioGroup}
+        />
       </div>
       <div>
-        <GBtn type="submit" variant="secondary">Submit</GBtn>
+        <GBtn
+          variant="secondary"
+          type="submit">Submit</GBtn
+        >
+        <GBtn variant="base-i1" outline>Cancel</GBtn>
       </div>
     </div>
   </form>
