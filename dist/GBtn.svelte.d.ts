@@ -8,6 +8,7 @@ type $$ComponentProps = {
     iconLeft?: IconName;
     iconRight?: IconName;
     outline?: boolean;
+    type?: 'button' | 'submit' | 'reset';
     variant?: Variant;
 };
 declare const GBtn: import("svelte").Component<$$ComponentProps, {}, "">;
