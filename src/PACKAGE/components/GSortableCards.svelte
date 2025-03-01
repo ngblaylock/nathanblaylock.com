@@ -25,6 +25,14 @@
         await tick();
         items = cloneDeep(newItems);
       },
+      // Grabbing style
+      forceFallback: true, // This fixes the grabbing style
+      onStart: function (evt) {
+        document.body.classList.add('sortable-js-grabbing');
+      },
+      onEnd: function (evt) {
+        document.body.classList.remove('sortable-js-grabbing');
+      },
     });
   });
 </script>
@@ -34,9 +42,9 @@
   class="vstack"
 >
   {#each items as item, index (index)}
-    <div class="card hstack gap-0">
+    <div class="card text-bg-base-2 hstack gap-0">
       <div
-        class="handle bg-base-4 align-self-stretch d-flex align-items-center px-2"
+        class="handle cursor-grab bg-base-3 align-self-stretch d-flex align-items-center px-2"
       >
         <GIcon
           name="dragVertical"
