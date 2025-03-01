@@ -1,0 +1,6 @@
+// This file is used to add global styles when using sortable-js.
+
+.sortable-js-grabbing * {
+  // This should be applied to the body on onStart() and removed onEnd().
+  cursor: grabbing !important;
+}
