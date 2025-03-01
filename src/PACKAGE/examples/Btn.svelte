@@ -18,17 +18,6 @@
 
 <div class="vstack gap-4">
   <div>
-    <h3>Links and Button</h3>
-    <div class="hstack gap-1 flex-wrap">
-      <GBtn onclick={() => console.info('hi')}>Button</GBtn>
-      <GBtn href="/">Link</GBtn>
-      <GBtn
-        href="https://github.com/ngblaylock?tab=repositories"
-        target="_blank">External Link</GBtn
-      >
-    </div>
-  </div>
-  <div>
     <h3>Variants</h3>
     <div class="hstack gap-1 flex-wrap">
       {#each variants as variant}

@@ -10,6 +10,13 @@
       description: 'Additional classes to add to the button.',
     },
     {
+      name: 'disabled',
+      type: 'boolean',
+      default: false,
+      description:
+        'Disables the button or adds the disabled class to the link.',
+    },
+    {
       name: 'href',
       type: 'string',
       default: '',
@@ -50,9 +57,19 @@
   ];
 </script>
 
-<Seo title="Icon Buttons" hideHeader />
+<Seo
+  title="Icon Buttons"
+  hideHeader
+/>
 
 <h1>Icon Buttons</h1>
 
 <ComponentApi {props} />
-<ComponentDoc title="Overview Usage" component="IconBtn" />
+<ComponentDoc
+  title="Overview Usage"
+  component="IconBtn"
+/>
+<ComponentDoc
+  title="Buttons & Links"
+  component="IconBtnLinks"
+/>
