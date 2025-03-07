@@ -1,7 +1,8 @@
 <script lang="ts">import GIcon from './GIcon.svelte';
 import {} from './icons';
+import uniqueId from 'lodash/uniqueId';
 let { class: classList = '', group = $bindable(), id = '', items, } = $props();
-let uid = $derived(id || crypto.randomUUID());
+let uid = $derived(id || uniqueId('u'));
 let iconVariant = $derived(items.every((item) => item.icon));
 </script>
 
@@ -15,13 +16,14 @@ let iconVariant = $derived(items.every((item) => item.icon));
       type="radio"
       value={item.value}
       class="btn-check"
-      id={uid + index}
+      id={`${uid}-${index}`}
       autocomplete="off"
+      name={uid + '-group'}
     />
     {#if iconVariant}
       <label
         class="btn btn-icon"
-        for={uid + index}
+        for={`${uid}-${index}`}
       >
         <GIcon
           name={item.icon as IconName}
@@ -32,7 +34,7 @@ let iconVariant = $derived(items.every((item) => item.icon));
     {:else}
       <label
         class="btn"
-        for={uid + index}
+        for={`${uid}-${index}`}
       >
         {item.label}
       </label>

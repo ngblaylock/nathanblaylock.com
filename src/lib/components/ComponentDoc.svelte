@@ -2,13 +2,14 @@
   import { onMount } from 'svelte';
   import { codeToHtml } from 'shiki';
   import { componentData } from '$lib/component-docs.svelte';
+  import uniqueId from 'lodash/uniqueId';
 
   let { component, title } = $props();
 
   let DynamicComponent: any = $state();
   let codeHTML = $state('');
 
-  let uid = crypto.randomUUID();
+  let uid = uniqueId('u');
 
   onMount(async () => {
     const module = await import(`$PACKAGE/examples/${component}.svelte`);
@@ -17,7 +18,7 @@
     const fileContent = componentData.componentDoc[component];
     codeHTML = await codeToHtml(fileContent, {
       lang: 'svelte',
-      theme: 'material-theme',
+      theme: 'dark-plus',
     });
   });
 </script>

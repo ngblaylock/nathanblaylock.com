@@ -1,6 +1,6 @@
-<script lang="ts">"use strict";
+<script lang="ts">import uniqueId from 'lodash/uniqueId';
 let { class: classList = '', group = $bindable(), id = '', items, legend, } = $props();
-let uid = $derived(id || crypto.randomUUID());
+let uid = $derived(id || uniqueId('u'));
 </script>
 
 <fieldset class={classList}>
@@ -14,18 +14,19 @@ let uid = $derived(id || crypto.randomUUID());
         class="form-check-input"
         type="radio"
         value={item.value}
-        id={uid + index}
-        aria-describedby={item.hint ? `${uid + index}-hint` : null}
+        id={`${uid}-${index}`}
+        aria-describedby={item.hint ? `${`${uid}-${index}`}-hint` : null}
+        name={uid + '-group'}
       />
       <label
         class="form-check-label"
-        for={uid + index}
+        for={`${uid}-${index}`}
       >
         {item.label}
       </label>
       {#if item.hint}
         <div
-          id="{uid + index}-hint"
+          id="{`${uid}-${index}`}-hint"
           class="form-text"
         >
           {item.hint}
