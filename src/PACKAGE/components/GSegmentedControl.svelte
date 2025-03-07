@@ -1,6 +1,7 @@
 <script lang="ts">
   import GIcon from './GIcon.svelte';
   import { type IconName } from './icons';
+  import uniqueId from 'lodash/uniqueId';
 
   let {
     class: classList = '',
@@ -18,7 +19,7 @@
     }[];
   } = $props();
 
-  let uid = $derived(id || crypto.randomUUID());
+  let uid = $derived(id || uniqueId('u'));
   let iconVariant = $derived(items.every((item) => item.icon));
 </script>
 

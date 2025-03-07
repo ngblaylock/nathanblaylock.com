@@ -1,6 +1,6 @@
-<script lang="ts">"use strict";
+<script lang="ts">import uniqueId from 'lodash/uniqueId';
 let { class: classList = '', group = $bindable(), id = '', items, legend, } = $props();
-let uid = $derived(id || crypto.randomUUID());
+let uid = $derived(id || uniqueId('u'));
 </script>
 
 <fieldset class={classList}>
