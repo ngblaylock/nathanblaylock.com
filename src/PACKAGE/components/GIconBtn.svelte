@@ -3,6 +3,7 @@
   import GIcon from './GIcon.svelte';
   let {
     class: classList = '',
+    disabled = false,
     href = '',
     icon,
     outline = false,
@@ -12,6 +13,7 @@
     ...restProps
   }: {
     class?: string;
+    disabled?: boolean;
     href?: string;
     icon: IconName;
     outline?: boolean;
@@ -28,21 +30,26 @@
   <a
     {title}
     class="btn btn-{outlineVariant}{variant} btn-icon {classList}"
+    class:disabled
     {href}
-    ><GIcon
+    {...restProps}
+  >
+    <GIcon
       name={icon}
       size={1.5}
-    /></a
-  >
+    />
+  </a>
 {:else}
   <button
     {title}
     class="btn btn-{outlineVariant}{variant} btn-icon {classList}"
     {type}
+    {disabled}
     {...restProps}
-    ><GIcon
+  >
+    <GIcon
       name={icon}
       size={1.5}
-    /></button
-  >
+    />
+  </button>
 {/if}

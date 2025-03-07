@@ -5,6 +5,7 @@
   let {
     children,
     class: classList = '',
+    disabled = false,
     href = '',
     iconLeft,
     iconRight,
@@ -16,6 +17,7 @@
     [key: string]: unknown;
     children: Snippet;
     class?: string;
+    disabled?: boolean;
     href?: string;
     iconLeft?: IconName;
     iconRight?: IconName;
@@ -48,6 +50,7 @@
   <a
     class="btn btn-{outlineVariant}{variant} {classList}"
     class:btn-inner-icon={hasInnerIcon}
+    class:disabled
     {href}
     {...restProps}
   >
@@ -58,6 +61,7 @@
     class="btn btn-{outlineVariant}{variant} {classList}"
     class:btn-inner-icon={hasInnerIcon}
     {type}
+    {disabled}
     {...restProps}
   >
     {@render btnContent()}

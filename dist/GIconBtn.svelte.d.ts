@@ -1,6 +1,7 @@
 import { type IconName } from './icons';
 type $$ComponentProps = {
     class?: string;
+    disabled?: boolean;
     href?: string;
     icon: IconName;
     outline?: boolean;

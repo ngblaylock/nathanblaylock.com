@@ -1,6 +1,6 @@
-<script lang="ts">"use strict";
+<script lang="ts">import uniqueId from 'lodash/uniqueId';
 let { class: classList = '', hideLabel = false, hint = '', id = '', label, required = false, value = $bindable(''), ...restProps } = $props();
-let uid = $derived(id || crypto.randomUUID());
+let uid = $derived(id || uniqueId('u'));
 </script>
 
 <div class={classList}>

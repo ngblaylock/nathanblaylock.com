@@ -4,6 +4,7 @@ type $$ComponentProps = {
     [key: string]: unknown;
     children: Snippet;
     class?: string;
+    disabled?: boolean;
     href?: string;
     iconLeft?: IconName;
     iconRight?: IconName;

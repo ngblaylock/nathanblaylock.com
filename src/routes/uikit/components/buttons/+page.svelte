@@ -16,6 +16,13 @@
       description: 'Additional classes for the button.',
     },
     {
+      name: 'disabled',
+      type: 'boolean',
+      default: false,
+      description:
+        'Disables the button or adds the disabled class to the link.',
+    },
+    {
       name: 'href',
       type: 'string',
       default: '',
@@ -62,9 +69,19 @@
   ];
 </script>
 
-<Seo title="Buttons" hideHeader />
+<Seo
+  title="Buttons"
+  hideHeader
+/>
 
 <h1>Buttons</h1>
 
 <ComponentApi {props} />
-<ComponentDoc title="Overview Usage" component="Btn" />
+<ComponentDoc
+  title="Overview Usage"
+  component="Btn"
+/>
+<ComponentDoc
+  title="Buttons & Links"
+  component="BtnLinks"
+/>

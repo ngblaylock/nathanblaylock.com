@@ -23,9 +23,9 @@
         size={1.5}
       />
     </div>
-    {#await codeToHtml( JSON.stringify(data, null, 2), { lang: 'json', theme: 'material-theme' }, )}
+    {#await codeToHtml( JSON.stringify(data, null, 2), { lang: 'json', theme: 'dark-plus' }, )}
       <div class="m-n4 shiki-example bg-dark">
-        <pre style="background-color: #263238; color: #EEFFFF;">{JSON.stringify(
+        <pre style="background-color: #1E1E1E; color: #d4d4d4;">{JSON.stringify(
             data,
             null,
             2,

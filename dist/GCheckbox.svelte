@@ -1,6 +1,6 @@
-<script lang="ts">"use strict";
+<script lang="ts">import uniqueId from 'lodash/uniqueId';
 let { checked = $bindable(), class: classList = '', hideLabel = false, hint = '', id = '', label, ...restProps } = $props();
-let uid = $derived(id || crypto.randomUUID());
+let uid = $derived(id || uniqueId('u'));
 </script>
 
 <div class="form-check {classList}">
