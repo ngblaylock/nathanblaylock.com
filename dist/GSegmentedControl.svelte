@@ -16,13 +16,14 @@ let iconVariant = $derived(items.every((item) => item.icon));
       type="radio"
       value={item.value}
       class="btn-check"
-      id={uid + index}
+      id={`${uid}-${index}`}
       autocomplete="off"
+      name={uid + '-group'}
     />
     {#if iconVariant}
       <label
         class="btn btn-icon"
-        for={uid + index}
+        for={`${uid}-${index}`}
       >
         <GIcon
           name={item.icon as IconName}
@@ -33,7 +34,7 @@ let iconVariant = $derived(items.every((item) => item.icon));
     {:else}
       <label
         class="btn"
-        for={uid + index}
+        for={`${uid}-${index}`}
       >
         {item.label}
       </label>

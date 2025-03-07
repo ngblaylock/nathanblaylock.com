@@ -32,18 +32,19 @@
         class="form-check-input"
         type="radio"
         value={item.value}
-        id={uid + index}
-        aria-describedby={item.hint ? `${uid + index}-hint` : null}
+        id={`${uid}-${index}`}
+        aria-describedby={item.hint ? `${`${uid}-${index}`}-hint` : null}
+        name={uid + '-group'}
       />
       <label
         class="form-check-label"
-        for={uid + index}
+        for={`${uid}-${index}`}
       >
         {item.label}
       </label>
       {#if item.hint}
         <div
-          id="{uid + index}-hint"
+          id="{`${uid}-${index}`}-hint"
           class="form-text"
         >
           {item.hint}
