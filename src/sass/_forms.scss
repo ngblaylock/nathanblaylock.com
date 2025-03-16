@@ -29,4 +29,10 @@ fieldset {
       color: $white;
     }
   }
+  .btn-check:focus-visible + label {
+    box-shadow: $focus-ring-box-shadow !important;
+    [data-bs-theme=dark] &{
+      box-shadow: 0 0 0 0.25rem rgba(125, 44, 45, .5) !important;
+    }
+  }
 }
