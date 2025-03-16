@@ -54,6 +54,13 @@
       default: 'primary',
       description: 'The color variant of the button.',
     },
+    {
+      name: '...restProps',
+      type: 'unknown',
+      description:
+        'Any other attributes or event handlers you want to pass to the button.',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button',
+    },
   ];
 </script>
 

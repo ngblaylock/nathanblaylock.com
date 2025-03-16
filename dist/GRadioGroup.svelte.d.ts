@@ -8,6 +8,7 @@ type $$ComponentProps = {
         value: unknown;
     }[];
     legend?: string;
+    [key: string]: unknown;
 };
 declare const GRadioGroup: import("svelte").Component<$$ComponentProps, {}, "group">;
 type GRadioGroup = ReturnType<typeof GRadioGroup>;

@@ -8,6 +8,7 @@ type $$ComponentProps = {
         value: unknown;
     }[];
     legend?: string;
+    [key: string]: unknown;
 };
 declare const GCheckboxGroup: import("svelte").Component<$$ComponentProps, {}, "group">;
 type GCheckboxGroup = ReturnType<typeof GCheckboxGroup>;
