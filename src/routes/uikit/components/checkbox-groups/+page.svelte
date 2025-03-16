@@ -42,14 +42,32 @@
       description:
         'Sets the legend for the fieldset describing the checkbox group.',
     },
+    {
+      name: '...restProps',
+      type: 'unknown',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input',
+      description:
+        'Any other props will be passed to each of the input elements. These are specifically used for events.',
+    },
   ];
 </script>
 
-<Seo title="Checkbox Group" hideHeader />
+<Seo
+  title="Checkbox Group"
+  hideHeader
+/>
 
 <h1>Checkbox Group</h1>
 
-<p>Checkbox Groups are different from checkboxes in that checkboxes bindable value is either <code>true</code> or <code>false</code>, and checkbox groups bind the items value, which could be anything. This always binds to an array of values.</p>
+<p>
+  Checkbox Groups are different from checkboxes in that checkboxes bindable
+  value is either <code>true</code> or <code>false</code>, and checkbox groups
+  bind the items value, which could be anything. This always binds to an array
+  of values.
+</p>
 
 <ComponentApi {props} />
-<ComponentDoc title="Overview Usage" component="CheckboxGroup" />
+<ComponentDoc
+  title="Overview Usage"
+  component="CheckboxGroup"
+/>

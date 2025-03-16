@@ -8,6 +8,7 @@
     group = $bindable(),
     id = '',
     items,
+    ...restProps
   }: {
     class?: string;
     group?: unknown;
@@ -17,6 +18,7 @@
       label: string;
       value: unknown;
     }[];
+    [key: string]: unknown;
   } = $props();
 
   let uid = $derived(id || uniqueId('u'));
@@ -36,6 +38,7 @@
       id={`${uid}-${index}`}
       autocomplete="off"
       name={uid + '-group'}
+      {...restProps}
     />
     {#if iconVariant}
       <label

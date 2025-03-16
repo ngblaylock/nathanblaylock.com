@@ -41,6 +41,13 @@
       description:
         'Sets the legend for the fieldset describing the radio group.',
     },
+    {
+      name: '...restProps',
+      type: 'unknown',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input',
+      description:
+        'Any other props will be passed to each of the input elements. These are specifically used for events.',
+    },
   ];
 </script>
 

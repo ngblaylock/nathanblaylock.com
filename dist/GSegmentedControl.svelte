@@ -1,7 +1,7 @@
 <script lang="ts">import GIcon from './GIcon.svelte';
 import {} from './icons';
 import uniqueId from 'lodash/uniqueId';
-let { class: classList = '', group = $bindable(), id = '', items, } = $props();
+let { class: classList = '', group = $bindable(), id = '', items, ...restProps } = $props();
 let uid = $derived(id || uniqueId('u'));
 let iconVariant = $derived(items.every((item) => item.icon));
 </script>
@@ -19,6 +19,7 @@ let iconVariant = $derived(items.every((item) => item.icon));
       id={`${uid}-${index}`}
       autocomplete="off"
       name={uid + '-group'}
+      {...restProps}
     />
     {#if iconVariant}
       <label

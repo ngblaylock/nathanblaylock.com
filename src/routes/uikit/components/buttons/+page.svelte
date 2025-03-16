@@ -63,7 +63,7 @@
       name: '...restProps',
       type: 'unknown',
       description:
-        'Any other attributes or event handlers you want to pass to the button (not yet anchor).',
+        'Any other attributes or event handlers you want to pass to the button.',
       link: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button',
     },
   ];
