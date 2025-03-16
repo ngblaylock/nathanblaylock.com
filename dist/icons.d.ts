@@ -14,6 +14,7 @@ declare const icons: {
     copy: string;
     darkMode: string;
     dragVertical: string;
+    gitHub: string;
     home: string;
     json: string;
     lightMode: string;
