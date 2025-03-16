@@ -34,6 +34,13 @@
       description:
         "Each control item's information. Icons are for adding the specified icon as the option, the label fills in the label, and the value is what is bound to the group. If any item has an icon omitted, all options will fallback to a text style.",
     },
+    {
+      name: '...restProps',
+      type: 'unknown',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input',
+      description:
+        'Any other props will be passed to each of the input elements. These are specifically used for events.',
+    },
   ];
 </script>
 

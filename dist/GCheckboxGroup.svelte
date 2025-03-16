@@ -1,5 +1,5 @@
 <script lang="ts">import uniqueId from 'lodash/uniqueId';
-let { class: classList = '', group = $bindable([]), id = '', items, legend, } = $props();
+let { class: classList = '', group = $bindable([]), id = '', items, legend, ...restProps } = $props();
 let uid = $derived(id || uniqueId('u'));
 </script>
 
@@ -16,6 +16,7 @@ let uid = $derived(id || uniqueId('u'));
         value={item.value}
         id={uid + index}
         aria-describedby={item.hint ? `${uid + index}-hint` : null}
+        {...restProps}
       />
       <label
         class="form-check-label"

@@ -6,6 +6,7 @@
     id = '',
     items,
     legend,
+    ...restProps
   }: {
     class?: string;
     group?: unknown[];
@@ -16,6 +17,7 @@
       value: unknown;
     }[];
     legend?: string;
+    [key: string]: unknown;
   } = $props();
 
   let uid = $derived(id || uniqueId('u'));
@@ -34,6 +36,7 @@
         value={item.value}
         id={uid + index}
         aria-describedby={item.hint ? `${uid + index}-hint` : null}
+        {...restProps}
       />
       <label
         class="form-check-label"
