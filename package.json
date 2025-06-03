@@ -1,6 +1,6 @@
 {
 	"name": "nathanblaylock.com",
-	"version": "2.3.8",
+	"version": "2.3.9",
 	"private": true,
 	"type": "module",
 	"exports": {
@@ -52,7 +52,7 @@
 	},
 	"dependencies": {
 		"@mdi/js": "^7.4.47",
-		"@ngblaylock/bootstrap-extensions": "0.1.0-beta.20",
+		"@ngblaylock/bootstrap-extensions": "0.1.0",
 		"@sveltejs/kit": "^2.20.6",
 		"bootstrap": "^5.3.3",
 		"lodash": "^4.17.21",

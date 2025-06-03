@@ -4,30 +4,53 @@
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let logos = [
     "Figma",
-    "Tailwind",
-    "SvelteKit"
+    "Bootstrap",
+    "SvelteKit",
+    "TypeScript",
   ]
 </script>
 
-<Seo title="Scoresheet App" hideHeader  />
+<Seo title="Scoresheet App" hideHeader />
 
 # Scoresheet App
 
-Growing up, my family played games frequently, especially card games. We would often find ourselves scrambling to come up with some scratch paper to write down scores. It was also an argument on who would be the scorekeeper because no one wanted to do the math that came with it. The Scoresheet app is the answer to handle this tedious task. I wanted to develop an app that would allow the user to easily add players and scores without needing to worry about adding any scores. It also needed to primarily work on a phone for ease of use.
+In my family, card games were a staple growing up—but keeping score was always a hassle. We'd scramble for scratch paper, argue over math, and usually pass the task to some unlucky player. I built Scoresheet to solve that problem: an easy-to-use app that automates scorekeeping and works anywhere, even offline.
 
-After I made some mockups and a prototype in Figma, I passed it around my family to see if they would actually use this if I made it. I got the green light from them and headed to my development phase.
+## Project Goals
+
+- Prioritize a mobile-first, tap-friendly interface.
+- Make the app installable as a Progressive Web App (PWA).
+- Ensure offline functionality using local storage and service workers.
+- Avoid any need for user accounts or backends.
+- Keep it simple enough that anyone could start using it in seconds.
+- Provide a free experience, without ads.
+
+## From Prototype to MVP
+
+I started by creating wireframes and mockups in Figma. Once I had a clear flow, I shared the prototype with family members to see whether it would actually be useful in real game sessions. I implemented additional features based their feedback, and I moved on to development.
 
 <img src="/images/optimized/projects/scoresheet/lg_screenshot-mockup.png" alt="Scoresheet Mockup" />
 
-This was my first project using Svelte and SvelteKit. It ended up being pretty good timing since SvelteKit 1.0.0 was just released. I knew there wouldn't be many resources online for how to do something in SvelteKit, but I figured this project was low-risk if it didn't turn out.
+## Tech Stack and Implementation
 
-For CSS I decided to try out Tailwind. I heard a lot about Tailwind but was hesitant to try it out. I decided to give it a fair chance. Honestly, I didn't really like using Tailwind but I won't bore you with those reasons here. I will likely stick to Bootstrap for future projects.
+Version 1 of Scoresheet lasted a few years and was used by a handful of people. There were some features and design changes that needed to be made, as well as upgrading from Svelte 3 to Svelte 5. I did some more redesign and got additional feedback before starting working on the current version, v2.0.
 
-Developing the app was a little bit of a learning curve, but I really enjoyed SvelteKit. To me it appeared to follow more of a development flow of a standard HTML page. One of my challenges with this project, as I mentioned, is that SvelteKit was pretty new at the time and there weren't many resources. I was pretty determined to include some drag-and-drop functionality. I was able to figure out how to use sortable.js with Svelte in a REPL and merge that over to my project.
+Key tech choices:
+- **Svelte & SvelteKit** 
+- **Bootstrap** for consistent, lightweight UI components
+- **Figma** for quick prototyping
+- **Service workers** for offline support
+- **Localstorage** for persisting game state without a backend
 
-Overall the app has been very successful. As always, there are a few things I would like to improve on it but for now it gets the job done. This app is available to anyone so give it a try.
+## Iteration and Design System
+
+In version 2, I refactored the app using a personal design system and component library—many of which are shared across this portfolio. This improved consistency and reduced redundant development. I also began migrating parts of the app to Svelte 5 to explore its new reactivity model and optimize component structure.
 
 <img src="/images/optimized/projects/scoresheet/lg_screenshot.png" alt="Scoresheet Mockup on a Phone" />
+
+## Results
+
+Scoresheet has become a go-to app for family game nights. It’s simple, fast, and works offline—exactly what I set out to build. I'm hoping to share this app with more people to see what additional features, if any are needed to make game night a more enjoyable experience.
 
 <ProjectBtnLink href="https://scoresheet.nathanblaylock.com">Visit Scoresheet App</ProjectBtnLink>
 
