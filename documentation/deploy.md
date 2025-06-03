@@ -1,10 +1,5 @@
-# Develop and Deploy
+# Deploy
 
-## Develop: 
-1. Create a new branch for what you are working on
-2. `npm run dev`
-
-## Deploy:
 1. Create a new branch from an issue and checkout locally
 2. Run `npm run build` and `npm run preview`
    1. This step is important to also package SvelteKit and compile the Sass file for other apps.
