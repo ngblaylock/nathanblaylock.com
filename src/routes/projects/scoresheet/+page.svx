@@ -3,8 +3,8 @@
   import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let logos = [
-    "Figma",
     "Bootstrap",
+    "Figma",
     "SvelteKit",
     "TypeScript",
   ]

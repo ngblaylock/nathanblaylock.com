@@ -2,8 +2,8 @@
   import Seo from '$components/Seo.svelte';
   import Logos from "$components/Logos.svelte"
   let logos = [
-    "Affinity-Photo",
     "Affinity-Designer",
+    "Affinity-Photo",
     "Affinity-Publisher",
   ]
 </script>

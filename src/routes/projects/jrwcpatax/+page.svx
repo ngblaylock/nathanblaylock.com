@@ -3,14 +3,14 @@
   import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let logos = [
-    "Eleventy",
-    "Nunjucks",
-    "Bootstrap",
-    "Sass",
-    "Firebase",
-    "GitHub",
     "Adobe-Illustrator",
     "Adobe-Photoshop",
+    "Bootstrap",
+    "Eleventy",
+    "Firebase",
+    "GitHub",
+    "Nunjucks",
+    "Sass",
   ]
 </script>
 

@@ -20,6 +20,10 @@ export const projects = [
     route: 'scoresheet',
   },
   {
+    alt: 'Bootstrap Extensions',
+    route: 'bootstrap-extensions',
+  },
+  {
     alt: 'Extract GSheet',
     route: 'extract-gsheet',
   },

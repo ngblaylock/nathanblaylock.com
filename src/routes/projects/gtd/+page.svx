@@ -3,15 +3,15 @@
   import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let logos = [
+    "Affinity-Designer",
+    "Affinity-Photo",
+    "Bootstrap",
+    "Figma",
+    "Firebase",
+    "GitHub",
+    "Sass",
     "SvelteKit",
     "TypeScript",
-    "Firebase",
-    "Bootstrap",
-    "Sass",
-    "Figma",
-    "GitHub",
-    "Affinity-Photo",
-    "Affinity-Designer",
   ]
 </script>
 

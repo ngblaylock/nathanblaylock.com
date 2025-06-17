@@ -5,7 +5,7 @@
   let logos = [
     "Adobe-Photoshop",
     "Adobe-XD",
-    "Bootstrap"
+    "Bootstrap",
   ]
 </script>
 

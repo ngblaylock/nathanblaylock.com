@@ -3,13 +3,13 @@
   import Logos from "$components/Logos.svelte"
   let logos = [
     "Adobe-Illustrator",
-    "Eleventy",
-    "Nunjucks",
     "Bootstrap",
-    "jQuery",
-    "Sass",
+    "Eleventy",
     "Firebase",
-    "GitHub"
+    "GitHub",
+    "jQuery",
+    "Nunjucks",
+    "Sass",
   ]
 </script>
 

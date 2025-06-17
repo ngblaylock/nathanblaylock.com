@@ -3,11 +3,11 @@
   import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let logos = [
-    "Nuxt",
     "Firebase",
+    "GitHub",
+    "Nuxt",
     "Sass",
     "Sketch",
-    "GitHub"
   ]
 </script>
 
