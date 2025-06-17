@@ -4,14 +4,14 @@
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let logos = [
     "Adobe-XD",
-    "Eleventy",
-    "Nunjucks",
     "Bootstrap",
-    "Markdown",
-    "Vue",
-    "Sass",
+    "Eleventy",
     "Firebase",
     "GitHub",
+    "Markdown",
+    "Nunjucks",
+    "Sass",
+    "Vue",
   ]
 </script>
 

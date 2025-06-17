@@ -4,12 +4,12 @@
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   import ProjectSmallSatArchive from "./ProjectSmallSatArchive.svelte"
   let logos = [
-    "Nuxt",
-    "Figma",
-    "Bootstrap-Vue",
-    "Sass",
-    "Node-JS",
     "Bash",
+    "Bootstrap-Vue",
+    "Figma",
+    "Node-JS",
+    "Nuxt",
+    "Sass",
   ]
 </script>
 

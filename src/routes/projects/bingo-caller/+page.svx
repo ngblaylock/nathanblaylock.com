@@ -3,9 +3,9 @@
   import Logos from "$components/Logos.svelte"
   import ProjectBtnLink from "$components/ProjectBtnLink.svelte"
   let logos = [
+    "GitHub",
     "jQuery",
     "Sass",
-    "GitHub"
   ]
 </script>
 
