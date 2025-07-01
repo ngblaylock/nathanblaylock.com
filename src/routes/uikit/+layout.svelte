@@ -11,4 +11,4 @@
 </script>
 
 <UiKitNav />
-{@render children?.()}
+<div class="container">{@render children?.()}</div>

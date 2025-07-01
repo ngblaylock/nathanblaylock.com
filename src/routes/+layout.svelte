@@ -2,6 +2,7 @@
   import '../sass/style.scss';
   import { global } from '$lib/global.svelte';
   import { onMount } from 'svelte';
+  import { page } from '$app/state';
   import Footer from '$components/Footer.svelte';
   import Navbar from '$components/Navbar.svelte';
   import Meta from '$components/Meta.svelte';
@@ -53,21 +54,27 @@
 <BgAngle />
 
 <div class="site">
-  <Navbar />
-  <main>
-    <div class="container">
-      <div class="title-container">
-        <div class="display">
-          Nathan<br />Blaylock
-        </div>
-        {#if global.pageTitle}
-          <h1>{global.pageTitle}</h1>
-        {/if}
-      </div>
+  {#if page.route.id.startsWith('/uikit')}
+    <main>
       {@render children?.()}
-    </div>
-  </main>
-  <Footer />
+    </main>
+  {:else}
+    <main>
+      <Navbar />
+      <div class="container">
+        <div class="title-container">
+          <div class="display">
+            Nathan<br />Blaylock
+          </div>
+          {#if global.pageTitle}
+            <h1>{global.pageTitle}</h1>
+          {/if}
+        </div>
+        {@render children?.()}
+      </div>
+    </main>
+    <Footer />
+  {/if}
 </div>
 
 <style lang="scss">
@@ -83,30 +90,30 @@
     display: inline-block;
     margin-bottom: 6rem;
     position: relative;
-  }
-  .display {
-    color: $primary;
-    display: inline-block;
-    font-size: 4.7em;
-    font-weight: 700;
-    line-height: 0.85em;
-    :global([data-bs-theme='dark']) & {
-      color: var(--bse-base-i1);
+    .display {
+      color: $primary;
+      display: inline-block;
+      font-size: 4.7em;
+      font-weight: 700;
+      line-height: 0.85em;
+      :global([data-bs-theme='dark']) & {
+        color: var(--bse-base-i1);
+      }
+    }
+    h1 {
+      bottom: -1.2em;
+      color: $primary;
+      font-weight: 400;
+      position: absolute;
+      right: 0;
+      :global([data-bs-theme='dark']) & {
+        color: var(--bse-base-i1);
+      }
     }
   }
   @include media-breakpoint-up(sm) {
-    .display {
+    .title-container .display {
       font-size: 7em;
-    }
-  }
-  h1 {
-    bottom: -1.2em;
-    color: $primary;
-    font-weight: 400;
-    position: absolute;
-    right: 0;
-    :global([data-bs-theme='dark']) & {
-      color: var(--bse-base-i1);
     }
   }
 </style>
