@@ -9,8 +9,13 @@ export default defineConfig({
       dts: true,
       eslintrc: {
         enabled: false,
-      }
+      },
     }),
     sveltekit(),
   ],
+  define: {
+    __APP_VERSION__: JSON.stringify(
+      process.env.npm_package_version || 'unknown',
+    ),
+  },
 });

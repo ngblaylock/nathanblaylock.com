@@ -87,15 +87,23 @@ $color-contrast-light: $light;
 // Spacers
 $spacer: 1rem;
 $spacers: (
-  0: 0,                // 0
-  1: $spacer * 0.25,   // 4px
-  2: $spacer * 0.5,    // 8px
-  3: $spacer * 0.75,   // 12px
-  4: $spacer,          // 16px
-  5: $spacer * 1.5,    // 24px
-  6: $spacer * 2,      // 32px
-  7: $spacer * 3,      // 48px
-  8: $spacer * 4,      // 64px
+  0: 0,
+  // 0
+  1: $spacer * 0.25,
+  // 4px
+  2: $spacer * 0.5,
+  // 8px
+  3: $spacer * 0.75,
+  // 12px
+  4: $spacer,
+  // 16px
+  5: $spacer * 1.5,
+  // 24px
+  6: $spacer * 2,
+  // 32px
+  7: $spacer * 3,
+  // 48px
+  8: $spacer * 4, // 64px
 );
 
 // Focus Rings
@@ -133,7 +141,8 @@ $accordion-icon-active-color-dark: $light;
 $accordion-button-bg: var(--bse-base-3);
 $accordion-button-active-bg: var(--bse-base-3);
 
-$accordion-button-focus-box-shadow: 0 0 $focus-ring-blur $focus-ring-width rgba($dark, $focus-ring-opacity);
+$accordion-button-focus-box-shadow: 0 0 $focus-ring-blur $focus-ring-width
+  rgba($dark, $focus-ring-opacity);
 
 // Cards
 $card-border-color: transparent;
@@ -173,3 +182,12 @@ $container-max-widths: (
 // Enables
 $enable-negative-margins: true;
 $enable-smooth-scroll: false;
+
+// List Groups
+$list-group-bg: transparent;
+$list-group-border-color: transparent;
+$list-group-border-width: 0;
+$list-group-border-radius: 0;
+$list-group-item-padding-y: map-get($spacers, 1);
+$list-group-item-padding-x: map-get($spacers, 3);
+$list-group-hover-bg: var(--bse-base-4);

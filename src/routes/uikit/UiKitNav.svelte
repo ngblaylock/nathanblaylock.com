@@ -1,134 +1,116 @@
 <script lang="ts">
   import { afterNavigate } from '$app/navigation';
   import { page } from '$app/state';
+  import { onMount } from 'svelte';
+
+  let navItemGroups = $state([
+    {
+      name: '',
+      folder: '',
+      items: [
+        { name: 'Home', slug: '' },
+        { name: 'Colors', slug: 'colors' },
+        { name: 'Typography', slug: 'typography' },
+        { name: 'Spacing', slug: 'spacing' },
+        { name: 'Brand Logos', slug: 'brand-logos' },
+      ],
+    },
+    {
+      name: 'Components',
+      folder: '/components',
+      items: [
+        { name: 'Buttons', slug: 'buttons' },
+        { name: 'Checkboxes', slug: 'checkboxes' },
+        { name: 'Checkbox Groups', slug: 'checkbox-groups' },
+        { name: 'Debug', slug: 'debug' },
+        { name: 'DevNotes', slug: 'dev-notes' },
+        { name: 'Icon Buttons', slug: 'icon-buttons' },
+        { name: 'Icons', slug: 'icons' },
+        { name: 'Radio Groups', slug: 'radio-groups' },
+        { name: 'Segmented Control', slug: 'segmented-control' },
+        { name: 'Sortable Cards', slug: 'sortable-cards' },
+        { name: 'Text Inputs', slug: 'text-inputs' },
+      ],
+    },
+  ]);
+
+  let search = $state('');
+
+  const filteredNav = $derived(
+    navItemGroups
+      .map((group) => {
+        const items = group.items.filter((item) => {
+          return item.name.toLowerCase().includes(search.toLowerCase());
+        });
+        return { ...group, items };
+      })
+      .filter((group) => group.items.length),
+  );
+
+  function isActive(path: string) {
+    return page.route.id === path || null;
+  }
+
+  onMount(() => {
+    document.getElementById('uikit-search')?.focus();
+  });
 
   afterNavigate(() => {
     search = '';
   });
-
-  let search = $state('');
-
-  let components = $state([
-    {
-      name: 'Buttons',
-      slug: 'buttons',
-    },
-    {
-      name: 'Debug',
-      slug: 'debug',
-    },
-    {
-      name: 'DevNotes',
-      slug: 'dev-notes',
-    },
-    {
-      name: 'Icon Buttons',
-      slug: 'icon-buttons',
-    },
-    {
-      name: 'Icons',
-      slug: 'icons',
-    },
-    {
-      name: 'Sortable Cards',
-      slug: 'sortable-cards',
-    },
-    {
-      name: 'Forms',
-    },
-    {
-      name: 'Checkboxes',
-      slug: 'checkboxes',
-    },
-    {
-      name: 'Checkbox Groups',
-      slug: 'checkbox-groups',
-    },
-    {
-      name: 'Radio Groups',
-      slug: 'radio-groups',
-    },
-    {
-      name: 'Segmented Control',
-      slug: 'segmented-control',
-    },
-    {
-      name: 'Text Inputs',
-      slug: 'text-inputs',
-    },
-  ]);
-  const filteredComponents = $derived(
-    components.filter((c) => {
-      return c.name.toLowerCase().includes(search.toLowerCase());
-    })
-  );
-
-  function isActive(slug: string) {
-    return page.route.id === `/uikit/components/${slug}`;
-  }
 </script>
 
-<div class="card mb-4 text-bg-dev">
-  <nav class="navbar navbar-dark navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/uikit">UI Kit</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse align-items-center"
-        id="navbarSupportedContent"
-      >
-        <ul class="navbar-nav ms-auto me-2">
-          <li class="nav-item mb-0">
-            <a class="nav-link" href="/uikit">Home</a>
-          </li>
-          <li class="nav-item mb-0">
-            <a class="nav-link" href="/uikit/forms">Forms</a>
-          </li>
-          <li class="nav-item mb-0">
-            <a class="nav-link" href="/uikit/logos">Logos</a>
-          </li>
-        </ul>
-        <div class="dropdown">
-          <input
-            class="form-control"
-            bind:value={search}
-            placeholder="Search Components"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            aria-label="Search Components"
-          />
-          <ul class="dropdown-menu">
-            {#each filteredComponents as component}
-              {#if component.slug}
-                <li>
-                  <a
-                    class="dropdown-item"
-                    class:active={isActive(component.slug)}
-                    href="/uikit/components/{component.slug}"
-                    >{component.name}</a
-                  >
-                </li>
-              {:else}
-                <li><hr class="dropdown-divider" /></li>
-                <li><h6 class="dropdown-header">{component.name}</h6></li>
-              {/if}
-            {/each}
-            {#if filteredComponents.length === 0}
-              <li class="px-3 text-muted">No Results Found</li>
-            {/if}
-          </ul>
-        </div>
-      </div>
+<div class="uikit-nav bg-base-2 py-5 px-3 border-end">
+  <aside>
+    <div class="hstack">
+      <h2>UI Kit</h2>
+      <code>v{__APP_VERSION__}</code>
     </div>
-  </nav>
+    <div class="mb-4">
+      <GTextInput
+        label="Hidden Label"
+        hideLabel
+        placeholder="Search Pages"
+        type="search"
+        id="uikit-search"
+        bind:value={search}
+      />
+    </div>
+    {#each filteredNav as group}
+      {#if group.name}
+        <h3 class="h5"><strong>{group.name}</strong></h3>
+      {/if}
+      <div class="list-group mx-n3 mb-4">
+        {#each group.items as item}
+          {@const path = `/uikit${group.folder}${item.slug ? `/${item.slug}` : ''}`}
+          <div>
+            <a
+              href={path}
+              class="list-group-item list-group-item-action"
+              class:active={isActive(path)}
+              aria-current={isActive(path)}
+            >
+              {item.name}
+            </a>
+          </div>
+        {/each}
+      </div>
+    {/each}
+
+    <GBtn
+      class="w-100"
+      variant="base-4"
+      href="/"
+      iconLeft="arrowLeft"
+    >
+      Main Website
+    </GBtn>
+  </aside>
 </div>
+
+<style lang="scss">
+  .uikit-nav {
+    max-width: 350px !important;
+    min-width: 350px !important;
+  }
+</style>

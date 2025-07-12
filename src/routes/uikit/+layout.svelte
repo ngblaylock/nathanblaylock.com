@@ -10,5 +10,7 @@
   });
 </script>
 
-<UiKitNav />
-{@render children?.()}
+<div class="d-flex h-100">
+  <UiKitNav />
+  <div class="container py-5">{@render children?.()}</div>
+</div>

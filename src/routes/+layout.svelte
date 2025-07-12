@@ -2,6 +2,7 @@
   import '../sass/style.scss';
   import { global } from '$lib/global.svelte';
   import { onMount } from 'svelte';
+  import { page } from '$app/state';
   import Footer from '$components/Footer.svelte';
   import Navbar from '$components/Navbar.svelte';
   import Meta from '$components/Meta.svelte';
@@ -27,22 +28,24 @@
 </script>
 
 <svelte:head>
-  <style lang="scss">
-    body {
-      overflow-y: scroll;
-      background-image: url('/images/optimized/bg/bg_texture.jpg');
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      min-height: 100vh;
-    }
-    [data-bs-theme='dark'] body {
-      background-image: url('/images/optimized/bg/bg_texture-dark.jpg');
-    }
-  </style>
+  {#if !page.route.id?.startsWith('/uikit')}
+    <style lang="scss">
+      body {
+        overflow-y: scroll;
+        background-image: url('/images/optimized/bg/bg_texture.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        min-height: 100vh;
+      }
+      [data-bs-theme='dark'] body {
+        background-image: url('/images/optimized/bg/bg_texture-dark.jpg');
+      }
+    </style>
+  {/if}
   <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"
   ></script>
 </svelte:head>
@@ -50,23 +53,29 @@
 <Analytics />
 <Meta />
 <DevToolbar />
-<BgAngle />
 
 <div class="site">
-  <Navbar />
-  <main>
-    <div class="container">
-      <div class="title-container">
-        <div class="display">
-          Nathan<br />Blaylock
-        </div>
-        {#if global.pageTitle}
-          <h1>{global.pageTitle}</h1>
-        {/if}
-      </div>
+  {#if page.route.id?.startsWith('/uikit')}
+    <main>
       {@render children?.()}
-    </div>
-  </main>
+    </main>
+  {:else}
+    <BgAngle />
+    <main>
+      <Navbar />
+      <div class="container">
+        <div class="title-container">
+          <div class="display">
+            Nathan<br />Blaylock
+          </div>
+          {#if global.pageTitle}
+            <h1>{global.pageTitle}</h1>
+          {/if}
+        </div>
+        {@render children?.()}
+      </div>
+    </main>
+  {/if}
   <Footer />
 </div>
 
@@ -83,30 +92,30 @@
     display: inline-block;
     margin-bottom: 6rem;
     position: relative;
-  }
-  .display {
-    color: $primary;
-    display: inline-block;
-    font-size: 4.7em;
-    font-weight: 700;
-    line-height: 0.85em;
-    :global([data-bs-theme='dark']) & {
-      color: var(--bse-base-i1);
+    .display {
+      color: $primary;
+      display: inline-block;
+      font-size: 4.7em;
+      font-weight: 700;
+      line-height: 0.85em;
+      :global([data-bs-theme='dark']) & {
+        color: var(--bse-base-i1);
+      }
+    }
+    h1 {
+      bottom: -1.2em;
+      color: $primary;
+      font-weight: 400;
+      position: absolute;
+      right: 0;
+      :global([data-bs-theme='dark']) & {
+        color: var(--bse-base-i1);
+      }
     }
   }
   @include media-breakpoint-up(sm) {
-    .display {
+    .title-container .display {
       font-size: 7em;
-    }
-  }
-  h1 {
-    bottom: -1.2em;
-    color: $primary;
-    font-weight: 400;
-    position: absolute;
-    right: 0;
-    :global([data-bs-theme='dark']) & {
-      color: var(--bse-base-i1);
     }
   }
 </style>
