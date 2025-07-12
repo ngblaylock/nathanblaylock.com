@@ -29,23 +29,23 @@
 
 <svelte:head>
   {#if !page.route.id?.startsWith('/uikit')}
-  <style lang="scss">
-    body {
-      overflow-y: scroll;
-      background-image: url('/images/optimized/bg/bg_texture.jpg');
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      min-height: 100vh;
-    }
-    [data-bs-theme='dark'] body {
-      background-image: url('/images/optimized/bg/bg_texture-dark.jpg');
-    }
-  </style>
+    <style lang="scss">
+      body {
+        overflow-y: scroll;
+        background-image: url('/images/optimized/bg/bg_texture.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        min-height: 100vh;
+      }
+      [data-bs-theme='dark'] body {
+        background-image: url('/images/optimized/bg/bg_texture-dark.jpg');
+      }
+    </style>
   {/if}
   <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"
   ></script>
 </svelte:head>
@@ -56,11 +56,11 @@
 
 <div class="site">
   {#if page.route.id?.startsWith('/uikit')}
-  <main>
-    {@render children?.()}
-  </main>
+    <main>
+      {@render children?.()}
+    </main>
   {:else}
-  <BgAngle />
+    <BgAngle />
     <main>
       <Navbar />
       <div class="container">
