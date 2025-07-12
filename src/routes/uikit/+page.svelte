@@ -25,11 +25,7 @@
 /&gt;</pre>
 </small>
 
-<p>For Svelte Projects, you need to install the package from GitHub via NPM:</p>
-
-<small>
-  <pre>npm i github:ngblaylock/nathanblaylock.com#v{__APP_VERSION__}</pre>
-</small>
+<p>For larger projects like with SvelteKit, see <code>_Documentation_/Processes/Auto-Import Components.md</code>.</p>
 
 <h2 class="mt-5">Images</h2>
 <div class="row">
