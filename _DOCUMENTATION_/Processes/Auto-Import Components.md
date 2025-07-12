@@ -38,10 +38,23 @@ export default defineConfig({
 
 For other repositories like Scoresheet, you can manually import components using `import { Btn } from 'nathanblaylock.com'`. Alternatively you can configure auto-importing with the following.
 
-1. First run `npm install unplugin-svelte-components @types/node -D`
-2. Then add the following to your `vite.config.js` file:
+1. First run 
+   - `npm install github:ngblaylock/nathanblaylock.com#v<tag>` where tag is the current version number.
+   - `npm install unplugin-svelte-components @types/node -D`
+2. Second add the styles in `+layout.svelte`
 
-```js
+```svelte
+<script lang="ts">
+	let { children } = $props();
+	import 'nathanblaylock.com/styles';
+</script>
+
+{@render children()}
+```
+
+3. Then add the following to your `vite.config.ts` file:
+
+```ts
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import Components from 'unplugin-svelte-components/vite'; // https://github.com/Mohamed-Kaizen/unplugin-svelte-components
@@ -76,10 +89,20 @@ export default defineConfig({
 });
 ```
 
-3. In the `tsconfig.json` file add the `files` property:
+4. In the `tsconfig.json` file add the `files` property:
 
 ```json
 {
   "files" : ["./components.d.ts"],
+}
+```
+
+5. Copy over snippets when appropriate. For example
+
+```json
+{
+  "scripts": {
+    "predev": "cp -f ./node_modules/nathanblaylock.com/.vscode/nathanblaylock.code-snippets .vscode/"
+  }
 }
 ```
