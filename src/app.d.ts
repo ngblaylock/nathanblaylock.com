@@ -24,6 +24,7 @@ declare global {
     // interface PageState {}
     // interface Platform {}
   }
+  const __APP_VERSION__: string; // Version of the app, set in vite.config.ts
 }
 
 export {};

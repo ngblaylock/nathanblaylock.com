@@ -40,10 +40,6 @@ export const projects = [
     route: 'jrwcpatax',
   },
   {
-    alt: 'Busy Bee Odd Jobs',
-    route: 'busy-bee-odd-jobs',
-  },
-  {
     alt: 'Bingo Caller',
     route: 'bingo-caller',
   },
@@ -52,6 +48,10 @@ export const projects = [
     route: 'scce',
   },
   // /* ARCHIVED PROJECTS */
+  // {
+  //   alt: 'Busy Bee Odd Jobs',
+  //   route: 'busy-bee-odd-jobs',
+  // },
   // {
   // 	alt: 'Psychology Department Website',
   // 	route: 'psychology',

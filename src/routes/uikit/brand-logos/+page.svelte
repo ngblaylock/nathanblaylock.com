@@ -4,9 +4,9 @@
   import { logos } from '$lib/assets/logos';
 </script>
 
-<Seo title="Logos" hideHeader />
+<Seo title="Brand Logos" />
 
-<h2 class="mt-4">Logos</h2>
+<h1>Brand Logos</h1>
 <div class="row row-gap-4 mb-7">
   {#each logos as logo}
     <div class="col-sm-6">

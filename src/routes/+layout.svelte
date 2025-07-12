@@ -28,6 +28,7 @@
 </script>
 
 <svelte:head>
+  {#if !page.route.id?.startsWith('/uikit')}
   <style lang="scss">
     body {
       overflow-y: scroll;
@@ -41,6 +42,7 @@
       background-image: url('/images/optimized/bg/bg_texture-dark.jpg');
     }
   </style>
+  {/if}
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -51,14 +53,14 @@
 <Analytics />
 <Meta />
 <DevToolbar />
-<BgAngle />
 
 <div class="site">
-  {#if page.route.id.startsWith('/uikit')}
-    <main>
-      {@render children?.()}
-    </main>
+  {#if page.route.id?.startsWith('/uikit')}
+  <main>
+    {@render children?.()}
+  </main>
   {:else}
+  <BgAngle />
     <main>
       <Navbar />
       <div class="container">
@@ -73,8 +75,8 @@
         {@render children?.()}
       </div>
     </main>
-    <Footer />
   {/if}
+  <Footer />
 </div>
 
 <style lang="scss">
