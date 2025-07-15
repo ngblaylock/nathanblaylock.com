@@ -16,20 +16,26 @@
       ],
     },
     {
+      name: 'Form Elements',
+      folder: '/components',
+      items: [
+        { name: 'Checkboxes', slug: 'checkboxes' },
+        { name: 'Checkbox Groups', slug: 'checkbox-groups' },
+        { name: 'Radio Groups', slug: 'radio-groups' },
+        { name: 'Segmented Control', slug: 'segmented-control' },
+        { name: 'Text Inputs', slug: 'text-inputs' },
+      ],
+    },
+    {
       name: 'Components',
       folder: '/components',
       items: [
         { name: 'Buttons', slug: 'buttons' },
-        { name: 'Checkboxes', slug: 'checkboxes' },
-        { name: 'Checkbox Groups', slug: 'checkbox-groups' },
         { name: 'Debug', slug: 'debug' },
         { name: 'DevNotes', slug: 'dev-notes' },
         { name: 'Icon Buttons', slug: 'icon-buttons' },
         { name: 'Icons', slug: 'icons' },
-        { name: 'Radio Groups', slug: 'radio-groups' },
-        { name: 'Segmented Control', slug: 'segmented-control' },
         { name: 'Sortable Cards', slug: 'sortable-cards' },
-        { name: 'Text Inputs', slug: 'text-inputs' },
       ],
     },
   ]);
@@ -78,7 +84,7 @@
     </div>
     {#each filteredNav as group}
       {#if group.name}
-        <h3 class="h5"><strong>{group.name}</strong></h3>
+        <h3 class="h6 text-base-i4 border-top pt-2"><strong>{group.name}</strong></h3>
       {/if}
       <div class="list-group mx-n3 mb-4">
         {#each group.items as item}

@@ -43,7 +43,7 @@
   <h2 class="mt-4">Package Icons</h2>
   <div class="row row-gap-4">
     {#each Object.entries(icons) as [icon, key]}
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <GBtn
           variant="base-4"
           class="btn-copy w-100 hstack"
