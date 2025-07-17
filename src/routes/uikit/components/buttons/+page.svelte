@@ -42,6 +42,13 @@
         'The name of the icon to display on the right side of the button.',
     },
     {
+      name: 'loading',
+      type: 'boolean',
+      default: false,
+      description:
+        'Disables the button/link and shows the loader inside the button.',
+    },
+    {
       name: 'outline',
       type: 'boolean',
       default: false,
@@ -77,11 +84,18 @@
 <h1>Buttons</h1>
 
 <ComponentApi {props} />
+
 <ComponentDoc
   title="Overview Usage"
   component="Btn"
 />
+
 <ComponentDoc
   title="Buttons & Links"
   component="BtnLinks"
+/>
+
+<ComponentDoc
+  title="Loading Buttons"
+  component="BtnLoading"
 />

@@ -1,0 +1,43 @@
+// Forked from https://cssloaders.github.io/
+
+$loader-circle-size: 2em;
+$loader-offset: $loader-circle-size + .5;
+$loader-transition-speed: 1.6s;
+
+.loader, .loader:before, .loader:after {
+  border-radius: 50%;
+  width: $loader-circle-size;
+  height: $loader-circle-size;
+  animation-fill-mode: both;
+  animation: bblFadInOut $loader-transition-speed infinite ease-in-out;
+}
+.loader {
+  display: inline-flex;
+  color: currentColor;
+  font-size: 7px;
+  position: relative;
+  text-indent: -9999em;
+  transform: translateZ(0) translateY(-100%);
+  animation-delay: -$loader-transition-speed * .17;
+  margin-left: $loader-offset;
+  margin-right: $loader-offset;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -$loader-offset;
+  animation-delay: -$loader-transition-speed * .34;
+}
+.loader:after {
+  left: $loader-offset;
+}
+
+@keyframes bblFadInOut {
+  0%, 80%, 100% { box-shadow: 0 $loader-circle-size 0 -1.3em }
+  40% { box-shadow: 0 $loader-circle-size 0 0 }
+}
+  
