@@ -42,13 +42,13 @@
   },
   "Global Icon": {
     "prefix": "G-Icon",
-    "body": ["<GIcon name=\"${2:home}\" />"],
+    "body": ["<GIcon name=\"${2:plus}\" />"],
     "description": "Global icon component.",
     "scope": "svelte",
   },
   "Global IconBtn": {
     "prefix": "G-IconBtn",
-    "body": ["<GIconBtn icon=\"${2:home}\" title=\"$3\" />"],
+    "body": ["<GIconBtn icon=\"${2:plus}\" title=\"$3\" />"],
     "description": "Global icon button component.",
     "scope": "svelte",
   },
