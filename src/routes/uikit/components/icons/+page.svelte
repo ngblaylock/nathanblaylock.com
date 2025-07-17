@@ -30,32 +30,51 @@
       description: 'Size of the icon measured in rem.',
     },
   ];
+
+  let searchIcons = $state('');
 </script>
 
-<Seo title="Icons" hideHeader />
+<Seo
+  title="Icons"
+  hideHeader
+/>
 
 <h1>Icons</h1>
 
 <ComponentApi {props} />
-<ComponentDoc title="Overview Usage" component="Icon" />
+<ComponentDoc
+  title="Overview Usage"
+  component="Icon"
+/>
 
 <div class="mb-4">
-  <h2 class="mt-4">Package Icons</h2>
+  <div class="hstack">
+    <h2 class="mt-4 me-auto">Package Icons</h2>
+    <GTextInput
+      hideLabel
+      label="Search Icons"
+      placeholder="Search Icons"
+      bind:value={searchIcons}
+      type="search"
+    />
+  </div>
   <div class="row row-gap-4">
     {#each Object.entries(icons) as [icon, key]}
-      <div class="col-sm-3">
-        <GBtn
-          variant="base-4"
-          class="btn-copy w-100 hstack"
-          onclick={() => copy(icon)}
-          iconLeft={icon as IconName}
-        >
-          {icon}
-          <div class="copy ms-auto">
-            <GIcon name="copy" />
-          </div>
-        </GBtn>
-      </div>
+      {#if icon.toLowerCase().includes(searchIcons.toLowerCase())}
+        <div class="col-lg-6 col-xl-4">
+          <GBtn
+            variant="base-4"
+            class="btn-copy w-100 hstack"
+            onclick={() => copy(icon)}
+            iconLeft={icon as IconName}
+          >
+            {icon}
+            <div class="copy ms-auto">
+              <GIcon name="copy" />
+            </div>
+          </GBtn>
+        </div>
+      {/if}
     {/each}
   </div>
 </div>
