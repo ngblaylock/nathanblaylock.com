@@ -20,6 +20,11 @@ When adding a component:
 2. Any other global component references should be manually imported with a relative file path
 3. Add the import to the `PACKAGE/index.ts` file
 4. Add a code snippet to `.vscode/nathanblaylock.code-snippets`
+5. Create a component page in `src/routes/uikit/components`
+   - Add a meaningful description
+   - Add props to a `ComponentApi.svelte` component
+   - Add component examples to `ComponentDoc.svelte` components (housed in `src/PACKAGE/examples`)
+   - Add the page to the UI Kit navigation
 
 ---
 

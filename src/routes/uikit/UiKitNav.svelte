@@ -25,7 +25,11 @@
         { name: 'DevNotes', slug: 'dev-notes' },
         { name: 'Icon Buttons', slug: 'icon-buttons' },
         { name: 'Icons', slug: 'icons' },
-        { name: 'Sortable Cards', slug: 'sortable-cards' },
+        {
+          name: 'Sortable Cards',
+          slug: 'sortable-cards',
+          tags: ['draggable cards'],
+        },
       ],
     },
     {
@@ -35,8 +39,12 @@
         { name: 'Checkboxes', slug: 'checkboxes' },
         { name: 'Checkbox Groups', slug: 'checkbox-groups' },
         { name: 'Radio Groups', slug: 'radio-groups' },
-        { name: 'Segmented Control', slug: 'segmented-control' },
-        { name: 'Text Inputs', slug: 'text-inputs' },
+        {
+          name: 'Segmented Control',
+          slug: 'segmented-control',
+          tags: ['button group'],
+        },
+        { name: 'Text Inputs', slug: 'text-inputs', tags: ['textareas'] },
       ],
     },
   ]);
@@ -47,7 +55,10 @@
     navItemGroups
       .map((group) => {
         const items = group.items.filter((item) => {
-          return item.name.toLowerCase().includes(search.toLowerCase());
+          return (
+            item.name.toLowerCase().includes(search.toLowerCase()) ||
+            item.tags?.join('≠').toLowerCase().includes(search.toLowerCase())
+          );
         });
         return { ...group, items };
       })

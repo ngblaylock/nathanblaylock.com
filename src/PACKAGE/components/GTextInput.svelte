@@ -6,6 +6,7 @@
     hint = '',
     id = '',
     label,
+    multiline = false,
     required = false,
     value = $bindable(''),
     ...restProps
@@ -15,6 +16,7 @@
     hint?: string;
     id?: string;
     label: string;
+    multiline?: boolean;
     required?: boolean;
     value?: string | number | null;
     [key: string]: unknown;
@@ -30,14 +32,25 @@
     class:visually-hidden={hideLabel}
     >{#if required}<span class="text-primary">*</span>{/if}{label}</label
   >
-  <input
-    bind:value
-    class="form-control"
-    id={uid}
-    aria-describedby={hint ? `${uid}-hint` : null}
-    {required}
-    {...restProps}
-  />
+  {#if multiline}
+    <textarea
+      bind:value
+      class="form-control"
+      id={uid}
+      aria-describedby={hint ? `${uid}-hint` : null}
+      {required}
+      {...restProps}
+    ></textarea>
+  {:else}
+    <input
+      bind:value
+      class="form-control"
+      id={uid}
+      aria-describedby={hint ? `${uid}-hint` : null}
+      {required}
+      {...restProps}
+    />
+  {/if}
   {#if hint}
     <div
       id="{uid}-hint"
