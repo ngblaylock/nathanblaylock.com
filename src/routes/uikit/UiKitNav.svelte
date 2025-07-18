@@ -39,6 +39,7 @@
         { name: 'Checkboxes', slug: 'checkboxes' },
         { name: 'Checkbox Groups', slug: 'checkbox-groups' },
         { name: 'Radio Groups', slug: 'radio-groups' },
+        { name: 'Rich Text Inputs', slug: 'rich-text-inputs' },
         {
           name: 'Segmented Control',
           slug: 'segmented-control',
