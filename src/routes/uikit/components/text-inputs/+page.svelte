@@ -34,6 +34,12 @@
       description: 'The label to display for the input.',
     },
     {
+      name: 'multiline',
+      type: 'boolean',
+      default: false,
+      description: 'Uses a textarea instead of an input element.',
+    },
+    {
       name: 'required',
       type: 'boolean',
       default: false,
@@ -59,8 +65,9 @@
 
 <h1>Text Inputs</h1>
 
-<p>Text Inputs are the most generic uses of a form input.</p>
+<p>Text Inputs are the most generic uses of a form input. This component will either use an <code>input</code> or <code>textarea</code> element depending on the <code>multiline</code> prop.</p>
 
 <ComponentApi {props} />
 <ComponentDoc title="Overview Usage" component="TextInputs" />
 <ComponentDoc title="Binding Values" component="TextInputValue" />
+<ComponentDoc title="Inputs and Textareas" component="TextInputTextarea" />
