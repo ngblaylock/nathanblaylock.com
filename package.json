@@ -55,6 +55,7 @@
 		"@ngblaylock/bootstrap-extensions": "0.1.1",
 		"@sveltejs/kit": "^2.16.0",
 		"@tiptap/core": "^3.0.7",
+		"@tiptap/extension-highlight": "^3.0.7",
 		"@tiptap/pm": "^3.0.7",
 		"@tiptap/starter-kit": "^3.0.7",
 		"bootstrap": "5.3.7",

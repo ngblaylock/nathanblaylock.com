@@ -1,7 +1,30 @@
 <script lang="ts">
+  import { onMount, onDestroy } from 'svelte';
   import { Editor } from '@tiptap/core';
   import StarterKit from '@tiptap/starter-kit';
-  import { onDestroy, onMount } from 'svelte';
+  import Highlight from '@tiptap/extension-highlight';
+  import uniqueId from 'lodash/uniqueId';
+
+  let {
+    class: classList = '',
+    hideLabel = false,
+    hint = '',
+    id,
+    label,
+    required = false,
+    value = $bindable(''),
+    ...restProps
+  }: {
+    class?: string;
+    hideLabel?: boolean;
+    hint?: string;
+    id?: string;
+    label: string;
+    required?: boolean;
+    value?: string;
+    [key: string]: unknown;
+  } = $props();
+  let uid = $derived(id || uniqueId('u'));
 
   let element = $state<HTMLDivElement>();
   let editor = $state<Editor>();
@@ -9,14 +32,22 @@
   onMount(() => {
     editor = new Editor({
       element: element,
-      extensions: [StarterKit],
-      content: '<h2>Hello World! 🌍️ </h2>',
+      extensions: [StarterKit, Highlight.configure({})],
+      content: value,
       onTransaction: ({ editor: newEditor }) => {
-        // https://github.com/ueberdosis/tiptap/issues/6025#issuecomment-2657619316
+        // force re-render so `editor.isActive` works as expected
         editor = undefined;
         editor = newEditor;
+        value = editor.getHTML();
       },
     });
+  });
+
+  $effect(() => {
+    // This makes sure if the parent passes in something new it sets Tiptap to use that instead of what it was.
+    if (value !== editor?.getHTML()) {
+      editor?.commands.setContent(value);
+    }
   });
 
   onDestroy(() => {
@@ -24,34 +55,143 @@
       editor.destroy();
     }
   });
+
+  function changeThing(e: Event) {
+    const target = e.target as HTMLSelectElement;
+    let val: string | number = target.value;
+
+    if (val === 'paragraph') {
+      editor?.chain().focus().setParagraph().run();
+    } else {
+      val = +val < 1 || +val > 6 ? 1 : +val;
+      editor
+        ?.chain()
+        .focus()
+        .toggleHeading({ level: val as 1 | 2 | 3 | 4 | 5 | 6 })
+        .run();
+    }
+  }
+
+  const getBlockType = () => {
+    if (editor?.isActive('heading', { level: 1 })) return '1';
+    if (editor?.isActive('heading', { level: 2 })) return '2';
+    if (editor?.isActive('heading', { level: 3 })) return '3';
+    if (editor?.isActive('heading', { level: 4 })) return '4';
+    if (editor?.isActive('heading', { level: 5 })) return '5';
+    if (editor?.isActive('heading', { level: 6 })) return '6';
+    if (editor?.isActive('paragraph')) return 'paragraph';
+    return '';
+  };
 </script>
 
-{#if editor}
-  <button
-    onclick={() => editor?.chain().focus().toggleHeading({ level: 1 }).run()}
-    class:active={editor.isActive('heading', { level: 1 })}
+<div class={classList}>
+  <label
+    for={uid}
+    class="form-label"
+    class:visually-hidden={hideLabel}
+    >{#if required}<span class="text-primary">*</span>{/if}{label}</label
   >
-    H1
-  </button>
-  <button
-    onclick={() => editor?.chain().focus().toggleHeading({ level: 2 }).run()}
-    class:active={editor.isActive('heading', { level: 2 })}
-  >
-    H2
-  </button>
-  <button
-    onclick={() => editor?.chain().focus().setParagraph().run()}
-    class:active={editor.isActive('paragraph')}
-  >
-    P
-  </button>
-{/if}
+  <input
+    id={uid}
+    bind:value
+    class="visually-hidden"
+    tabindex="-1"
+  />
+  <div class="form-control p-0">
+    <div class="tiptap-toolbar">
+      {#if editor}
+        <div class="hstack gap-1">
+          <select
+            name="a"
+            id="kl"
+            onchange={changeThing}
+            value={getBlockType()}
+            class="form-select"
+            style="max-width: 175px;"
+          >
+            <option value="paragraph">Paragraph</option>
+            <option value="1">Header 1</option>
+            <option value="2">Header 2</option>
+            <option value="3">Header 3</option>
+            <option value="4">Header 4</option>
+            <option value="5">Header 5</option>
+            <option value="6">Header 6</option>
+          </select>
+          <GIconBtn
+            icon="formatBold"
+            title="Bold"
+            variant="base-i4"
+            onclick={() => editor?.chain().focus().toggleBold().run()}
+            class={editor.isActive('bold') ? 'active' : ''}
+          />
+          <GIconBtn
+            icon="formatItalic"
+            title="Italic"
+            variant="base-i4"
+            onclick={() => editor?.chain().focus().toggleItalic().run()}
+            class={editor.isActive('italic') ? 'active' : ''}
+          />
+          <GIconBtn
+            icon="formatUnderline"
+            title="Underline"
+            variant="base-i4"
+            onclick={() => editor?.chain().focus().toggleUnderline().run()}
+            class={editor.isActive('underline') ? 'active' : undefined}
+          />
+          <GIconBtn
+            icon="formatStrikethrough"
+            title="Strike"
+            variant="base-i4"
+            onclick={() => editor?.chain().focus().toggleStrike().run()}
+            class={editor.isActive('strike') ? 'active' : undefined}
+          />
+          <div class="border-start border-base-4 align-self-stretch mx-1"></div>
+          <GIconBtn
+            icon="formatListBulleted"
+            title="Bulleted List"
+            variant="base-i4"
+            onclick={() => editor?.chain().focus().toggleBulletList().run()}
+            class={editor.isActive('bulletList') ? 'active' : undefined}
+          />
+          <GIconBtn
+            icon="formatListNumbered"
+            title="Ordered List"
+            variant="base-i4"
+            onclick={() => editor?.chain().focus().toggleOrderedList().run()}
+            class={editor.isActive('orderedList') ? 'active' : undefined}
+          />
+          <div class="border-start border-base-4 align-self-stretch mx-1"></div>
+          <GIconBtn
+            icon="formatBlockquote"
+            title="Blockquote"
+            variant="base-i4"
+            onclick={() => editor?.chain().focus().toggleBlockquote().run()}
+            class={editor.isActive('blockquote') ? 'active' : undefined}
+          />
+          <GIconBtn
+            icon="formatHighlight"
+            title="Highlight"
+            variant="base-i4"
+            onclick={() => editor?.chain().focus().toggleHighlight().run()}
+            class={editor.isActive('highlight') ? 'active' : undefined}
+          />
+          <div class="border-start border-base-4 align-self-stretch mx-1"></div>
+          <GIconBtn
+            icon="undo"
+            title="Undo"
+            variant="base-i4"
+            onclick={() => editor?.commands.undo()}
+          />
+          <GIconBtn
+            icon="redo"
+            title="Redo"
+            variant="base-i4"
+            onclick={() => editor?.commands.redo()}
+          />
+        </div>
+      {/if}
+    </div>
 
-<div bind:this={element}></div>
-
-<style>
-  button.active {
-    background: black;
-    color: white;
-  }
-</style>
+    <div bind:this={element}></div>
+  </div>
+</div>

@@ -24,6 +24,10 @@
     consequuntur tempora pariatur recusandae, odio reiciendis itaque numquam
     aperiam maiores esse voluptatum.
   </p>
+  <blockquote>
+    <h2>Blockquote</h2>
+    <p>Blockquote Paragraph</p>
+  </blockquote>
 </div>
 
 <h2 class="mt-5">Fonts</h2>

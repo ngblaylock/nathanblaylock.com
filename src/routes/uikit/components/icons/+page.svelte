@@ -5,17 +5,6 @@
 
   import icons, { type IconName } from 'nathanblaylock.com/icons';
 
-  function copy(iconName: string) {
-    navigator.clipboard
-      .writeText(iconName)
-      .then(() => {
-        alert(`"${iconName}" copied to the clipboard`);
-      })
-      .catch((err) => {
-        console.error('Failed to copy text to clipboard:', err);
-      });
-  }
-
   const props = [
     {
       name: 'name',
@@ -62,33 +51,15 @@
     {#each Object.entries(icons) as [icon, key]}
       {#if icon.toLowerCase().includes(searchIcons.toLowerCase())}
         <div class="col-lg-6 col-xl-4">
-          <GBtn
-            variant="base-4"
-            class="btn-copy w-100 hstack"
-            onclick={() => copy(icon)}
-            iconLeft={icon as IconName}
-          >
+          <div class="card hstack px-4 py-2">
+            <GIcon
+              name={icon as IconName}
+              size={2}
+            />
             {icon}
-            <div class="copy ms-auto">
-              <GIcon name="copy" />
-            </div>
-          </GBtn>
+          </div>
         </div>
       {/if}
     {/each}
   </div>
 </div>
-
-<style lang="scss">
-  .copy {
-    opacity: 0;
-    transition: 0.2s;
-  }
-  :global(.btn-copy) {
-    &:hover {
-      .copy {
-        opacity: 0.75;
-      }
-    }
-  }
-</style>
