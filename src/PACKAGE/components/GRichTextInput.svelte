@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount, onDestroy, tick } from 'svelte';
   import { Editor } from '@tiptap/core';
+  import { Placeholder } from '@tiptap/extensions';
   import StarterKit from '@tiptap/starter-kit';
   import Highlight from '@tiptap/extension-highlight';
   import uniqueId from 'lodash/uniqueId';
@@ -12,6 +13,7 @@
     hint = '',
     id,
     label,
+    placeholder = '',
     required = false,
     value = $bindable(''),
     ...restProps
@@ -21,6 +23,7 @@
     hint?: string;
     id?: string;
     label: string;
+    placeholder?: string;
     required?: boolean;
     value?: string;
     [key: string]: unknown;
@@ -46,6 +49,9 @@
           },
         }),
         Highlight.configure({}),
+        Placeholder.configure({
+          placeholder,
+        }),
       ],
       content: value,
       onTransaction: ({ editor: newEditor }) => {
@@ -251,7 +257,10 @@
                     ?.chain()
                     .focus()
                     .extendMarkRange('link')
-                    .setLink({ href: link.href, target: link.href.startsWith('/') ? null : '_blank' })
+                    .setLink({
+                      href: link.href,
+                      target: link.href.startsWith('/') ? null : '_blank',
+                    })
                     .run()}
               >
                 Set Link
