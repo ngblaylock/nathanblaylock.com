@@ -46,6 +46,7 @@
       required
       bind:value={html}
       placeholder="Add something..."
+      hint="This supports markdown shortcuts!"
     />
     <div>
       <GBtn type="submit">Submit</GBtn>
@@ -54,7 +55,7 @@
 </form>
 
 <div class="mt-6">
-  <h2>Dynamically change values</h2>
+  <h2>Dynamically Change Values</h2>
   <GBtn
     variant="base-2"
     onclick={() => (html = '<h2>Lorem</h2><p>ipsum <b>dolor</b>...</p>')}

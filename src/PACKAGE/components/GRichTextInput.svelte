@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { onMount, onDestroy, tick } from 'svelte';
+  import GIconBtn from './GIconBtn.svelte';
+  import { onMount, onDestroy } from 'svelte';
   import { Editor } from '@tiptap/core';
   import { Placeholder } from '@tiptap/extensions';
   import StarterKit from '@tiptap/starter-kit';
@@ -15,7 +16,6 @@
     placeholder = '',
     required = false,
     value = $bindable(''),
-    ...restProps
   }: {
     class?: string;
     hideLabel?: boolean;
@@ -25,7 +25,6 @@
     placeholder?: string;
     required?: boolean;
     value?: string;
-    [key: string]: unknown;
   } = $props();
   let uid = $derived(id || uniqueId('u'));
 
@@ -110,6 +109,7 @@
     bind:value
     class="visually-hidden"
     tabindex="-1"
+    aria-describedby={hint ? `${uid}-hint` : null}
   />
   <div class="tiptap-input-container form-control p-0">
     <div class="tiptap-toolbar">
@@ -169,7 +169,7 @@
           />
           <GIconBtn
             icon="formatListNumbered"
-            title="Ordered List"
+            title="Numbered List"
             variant="base-i4"
             onclick={() => editor?.chain().focus().toggleOrderedList().run()}
             class={editor.isActive('orderedList') ? 'active' : undefined}
@@ -216,4 +216,12 @@
     class="visually-hidden w-25"
     tabindex="-1"
   />
+  {#if hint}
+    <div
+      id="{uid}-hint"
+      class="form-text"
+    >
+      {hint}
+    </div>
+  {/if}
 </div>

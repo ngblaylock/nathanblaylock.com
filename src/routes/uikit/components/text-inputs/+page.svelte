@@ -13,7 +13,8 @@
       name: 'hideLabel',
       type: 'boolean',
       default: false,
-      description: 'If true will visually hide the label. This is useful for accessibility when the label is not needed.',
+      description:
+        'If true will visually hide the label. This is useful for accessibility when the label is not needed.',
     },
     {
       name: 'hint',
@@ -25,7 +26,8 @@
       name: 'id',
       type: 'string',
       default: '',
-      description: 'The ID to use for the input and label. If none are provided a unique one will be created.',
+      description:
+        'The ID to use for the input and label. If none are provided a unique one will be created.',
     },
     {
       name: 'label',
@@ -43,31 +45,49 @@
       name: 'required',
       type: 'boolean',
       default: false,
-      description: 'Makes the input required, and adds a red asterisk to the label.',
+      description:
+        'Makes the input required, and adds a red asterisk to the label.',
     },
     {
       name: 'value',
       bindable: true,
       type: 'string | number | null',
       default: '',
-      description: 'The value of the input that can be bound to the parent component.',
+      description:
+        'The value of the input that can be bound to the parent component.',
     },
     {
       name: '...restProps',
       type: 'unknown',
       description: 'Any other props will be passed to the input element.',
       link: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input',
-    }
+    },
   ];
 </script>
 
-<Seo title="Text Inputs" hideHeader />
+<Seo
+  title="Text Inputs"
+  hideHeader
+/>
 
 <h1>Text Inputs</h1>
 
-<p>Text Inputs are the most generic uses of a form input. This component will either use an <code>input</code> or <code>textarea</code> element depending on the <code>multiline</code> prop.</p>
+<p>
+  Text Inputs are the most generic uses of a form input. This component will
+  either use an <code>input</code> or <code>textarea</code> element depending on
+  the <code>multiline</code> prop.
+</p>
 
 <ComponentApi {props} />
-<ComponentDoc title="Overview Usage" component="TextInputs" />
-<ComponentDoc title="Binding Values" component="TextInputValue" />
-<ComponentDoc title="Inputs and Textareas" component="TextInputTextarea" />
+<ComponentDoc
+  title="Overview Usage"
+  component="TextInputs"
+/>
+<ComponentDoc
+  title="Binding Values"
+  component="TextInputValue"
+/>
+<ComponentDoc
+  title="Inputs and Textareas"
+  component="TextInputTextarea"
+/>
