@@ -1,8 +1,9 @@
 <script lang="ts">import {} from './icons';
 import GIcon from './GIcon.svelte';
-let { children, class: classList = '', disabled = false, href = '', iconLeft, iconRight, outline = false, type = 'button', variant = 'primary', ...restProps } = $props();
+let { children, class: classList = '', disabled = false, href = '', iconLeft, iconRight, loading = false, outline = false, type = 'button', variant = 'primary', ...restProps } = $props();
 const hasInnerIcon = $derived(!!iconLeft || !!iconRight);
 const outlineVariant = $derived(outline ? 'outline-' : '');
+let disabledOrLoading = $derived(disabled || loading);
 </script>
 
 {#snippet btnContent()}
@@ -12,7 +13,15 @@ const outlineVariant = $derived(outline ? 'outline-' : '');
       size={1.5}
     />
   {/if}
-  {@render children?.()}
+  {#if loading}
+    <div class="position-absolute"><span class="loader"></span></div>
+  {/if}
+  <!--
+  Exception for inline styling:
+  
+  Loader needs more transparent text than disabled alone provides. Disabled text cannot be more transparent without making the whole button transparent.
+  -->
+  <span style={loading ? 'opacity: .2;' : ''}>{@render children?.()}</span>
   {#if iconRight}
     <GIcon
       name={iconRight}
@@ -23,9 +32,8 @@ const outlineVariant = $derived(outline ? 'outline-' : '');
 
 {#if href}
   <a
-    class="btn btn-{outlineVariant}{variant} {classList}"
-    class:btn-inner-icon={hasInnerIcon}
-    class:disabled
+    class="btn btn-{outlineVariant}{variant} btn-inner-icon {classList}"
+    class:disabled={disabledOrLoading}
     {href}
     {...restProps}
   >
@@ -33,10 +41,9 @@ const outlineVariant = $derived(outline ? 'outline-' : '');
   </a>
 {:else}
   <button
-    class="btn btn-{outlineVariant}{variant} {classList}"
-    class:btn-inner-icon={hasInnerIcon}
+    class="btn btn-{outlineVariant}{variant} btn-inner-icon {classList}"
     {type}
-    {disabled}
+    disabled={disabledOrLoading}
     {...restProps}
   >
     {@render btnContent()}

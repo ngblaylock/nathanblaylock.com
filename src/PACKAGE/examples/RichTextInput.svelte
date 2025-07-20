@@ -32,7 +32,7 @@
   `);
 </script>
 
-<GDebug data={html} />
+<GDebug data={html} showInProd />
 
 <form
   onsubmit={(e) => {

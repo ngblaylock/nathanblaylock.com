@@ -1,100 +1,81 @@
-<script lang="ts">
-  import GIconBtn from './GIconBtn.svelte';
-  import { onMount, onDestroy } from 'svelte';
-  import { Editor } from '@tiptap/core';
-  import { Placeholder } from '@tiptap/extensions';
-  import StarterKit from '@tiptap/starter-kit';
-  import Highlight from '@tiptap/extension-highlight';
-  import uniqueId from 'lodash/uniqueId';
-
-  let {
-    class: classList = '',
-    hideLabel = false,
-    hint = '',
-    id,
-    label,
-    placeholder = '',
-    required = false,
-    value = $bindable(''),
-  }: {
-    class?: string;
-    hideLabel?: boolean;
-    hint?: string;
-    id?: string;
-    label: string;
-    placeholder?: string;
-    required?: boolean;
-    value?: string;
-  } = $props();
-  let uid = $derived(id || uniqueId('u'));
-
-  let element = $state<HTMLDivElement>();
-  let editor = $state<Editor>();
-
-  onMount(() => {
+<script lang="ts">import GIconBtn from './GIconBtn.svelte';
+import { onMount, onDestroy } from 'svelte';
+import { Editor } from '@tiptap/core';
+import { Placeholder } from '@tiptap/extensions';
+import StarterKit from '@tiptap/starter-kit';
+import Highlight from '@tiptap/extension-highlight';
+import uniqueId from 'lodash/uniqueId';
+let { class: classList = '', hideLabel = false, hint = '', id, label, placeholder = '', required = false, value = $bindable(''), } = $props();
+let uid = $derived(id || uniqueId('u'));
+let element = $state();
+let editor = $state();
+onMount(() => {
     editor = new Editor({
-      element: element,
-      extensions: [
-        StarterKit.configure({
-          link: {
-            openOnClick: false,
-            defaultProtocol: 'https',
-          },
-        }),
-        Highlight.configure({}),
-        Placeholder.configure({
-          placeholder,
-        }),
-      ],
-      content: value,
-      onTransaction: ({ editor: newEditor }) => {
-        // force re-render so `editor.isActive` works as expected
-        editor = undefined;
-        editor = newEditor;
-        value = editor.getHTML();
-      },
+        element: element,
+        extensions: [
+            StarterKit.configure({
+                link: {
+                    openOnClick: false,
+                    defaultProtocol: 'https',
+                },
+            }),
+            Highlight.configure({}),
+            Placeholder.configure({
+                placeholder,
+            }),
+        ],
+        content: value,
+        onTransaction: ({ editor: newEditor }) => {
+            // force re-render so `editor.isActive` works as expected
+            editor = undefined;
+            editor = newEditor;
+            value = editor.getHTML();
+        },
     });
-  });
-
-  $effect(() => {
+});
+$effect(() => {
     // This makes sure if the parent passes in something new it sets Tiptap to use that instead of what it was.
     if (value !== editor?.getHTML()) {
-      editor?.commands.setContent(value);
+        editor?.commands.setContent(value);
     }
-  });
-
-  onDestroy(() => {
+});
+onDestroy(() => {
     if (editor) {
-      editor.destroy();
+        editor.destroy();
     }
-  });
-
-  function changeBlockSelection(e: Event) {
-    const target = e.target as HTMLSelectElement;
-    let val: string | number = target.value;
-
+});
+function changeBlockSelection(e) {
+    const target = e.target;
+    let val = target.value;
     if (val === 'paragraph') {
-      editor?.chain().focus().setParagraph().run();
-    } else {
-      val = +val < 1 || +val > 6 ? 1 : +val;
-      editor
-        ?.chain()
-        .focus()
-        .toggleHeading({ level: val as 1 | 2 | 3 | 4 | 5 | 6 })
-        .run();
+        editor?.chain().focus().setParagraph().run();
     }
-  }
-
-  const getBlockElement = () => {
-    if (editor?.isActive('heading', { level: 1 })) return '1';
-    if (editor?.isActive('heading', { level: 2 })) return '2';
-    if (editor?.isActive('heading', { level: 3 })) return '3';
-    if (editor?.isActive('heading', { level: 4 })) return '4';
-    if (editor?.isActive('heading', { level: 5 })) return '5';
-    if (editor?.isActive('heading', { level: 6 })) return '6';
-    if (editor?.isActive('paragraph')) return 'paragraph';
+    else {
+        val = +val < 1 || +val > 6 ? 1 : +val;
+        editor
+            ?.chain()
+            .focus()
+            .toggleHeading({ level: val })
+            .run();
+    }
+}
+const getBlockElement = () => {
+    if (editor?.isActive('heading', { level: 1 }))
+        return '1';
+    if (editor?.isActive('heading', { level: 2 }))
+        return '2';
+    if (editor?.isActive('heading', { level: 3 }))
+        return '3';
+    if (editor?.isActive('heading', { level: 4 }))
+        return '4';
+    if (editor?.isActive('heading', { level: 5 }))
+        return '5';
+    if (editor?.isActive('heading', { level: 6 }))
+        return '6';
+    if (editor?.isActive('paragraph'))
+        return 'paragraph';
     return '';
-  };
+};
 </script>
 
 <div class={classList}>

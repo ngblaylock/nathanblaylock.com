@@ -4,6 +4,7 @@ type $$ComponentProps = {
     hint?: string;
     id?: string;
     label: string;
+    multiline?: boolean;
     required?: boolean;
     value?: string | number | null;
     [key: string]: unknown;
