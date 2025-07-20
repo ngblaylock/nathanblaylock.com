@@ -42,13 +42,13 @@
   },
   "Global Icon": {
     "prefix": "G-Icon",
-    "body": ["<GIcon name=\"${2:home}\" />"],
+    "body": ["<GIcon name=\"${2:plus}\" />"],
     "description": "Global icon component.",
     "scope": "svelte",
   },
   "Global IconBtn": {
     "prefix": "G-IconBtn",
-    "body": ["<GIconBtn icon=\"${2:home}\" title=\"$3\" />"],
+    "body": ["<GIconBtn icon=\"${2:plus}\" title=\"$3\" />"],
     "description": "Global icon button component.",
     "scope": "svelte",
   },
@@ -73,19 +73,25 @@
     "description": "Global checkbox component.",
     "scope": "svelte",
   },
-  "Global Checkbox Group": {
+  "Global CheckboxGroup": {
     "prefix": "G-CheckboxGroup",
     "body": ["<GCheckboxGroup items={$1} bind:group={$2} />"],
     "description": "Global checkbox group component.",
     "scope": "svelte",
   },
-  "Global Radio Group": {
+  "Global RadioGroup": {
     "prefix": "G-RadioGroup",
     "body": ["<GRadioGroup items={$1} bind:group={$2} />"],
     "description": "Global radio group component.",
     "scope": "svelte",
   },
-  "Global Segmented Control": {
+  "Global RichTextInput": {
+    "prefix": "G-RichTextInput",
+    "body": ["<GRichTextInput label=\"$1\" bind:value={$2} />"],
+    "description": "Global rich text input component.",
+    "scope": "svelte",
+  },
+  "Global SegmentedControl": {
     "prefix": "G-SegmentedControl",
     "body": ["<GSegmentedControl items={$1} bind:group={$2} />"],
     "description": "Global segmented control component.",

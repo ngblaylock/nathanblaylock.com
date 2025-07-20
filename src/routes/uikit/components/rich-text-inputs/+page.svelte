@@ -20,7 +20,7 @@
       name: 'hint',
       type: 'string',
       default: '',
-      description: 'The helper text that goes below the input.',
+      description: 'The helper text that goes below the rich text input.',
     },
     {
       name: 'id',
@@ -33,61 +33,49 @@
       name: 'label',
       type: 'string',
       required: true,
-      description: 'The label to display for the input.',
+      description: 'The label to display for the rich text input.',
     },
     {
-      name: 'multiline',
-      type: 'boolean',
-      default: false,
-      description: 'Uses a textarea instead of an input element.',
+      name: 'placeholder',
+      type: 'string',
+      default: '',
+      description:
+        'The placeholder text inside the Tiptap editor if no text is selected.',
     },
     {
       name: 'required',
       type: 'boolean',
       default: false,
       description:
-        'Makes the input required, and adds a red asterisk to the label.',
+        'Makes the rich text input required, and adds a red asterisk to the label.',
     },
     {
       name: 'value',
       bindable: true,
-      type: 'string | number | null',
+      type: 'string',
       default: '',
       description:
-        'The value of the input that can be bound to the parent component.',
-    },
-    {
-      name: '...restProps',
-      type: 'unknown',
-      description: 'Any other props will be passed to the input element.',
-      link: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input',
+        'The HTML value of the rich text input that can be bound to the parent component. This expects HTML. If the string is not HTML it will default it to a paragraph.',
     },
   ];
 </script>
 
 <Seo
-  title="Text Inputs"
+  title="Rich Text Inputs"
   hideHeader
 />
 
-<h1>Text Inputs</h1>
+<h1>Rich Text Inputs</h1>
 
 <p>
-  Text Inputs are the most generic uses of a form input. This component will
-  either use an <code>input</code> or <code>textarea</code> element depending on
-  the <code>multiline</code> prop.
+  Rich Text Inputs use <a
+    href="https://tiptap.dev/docs"
+    target="_blank">TipTap 3.x</a
+  > under the hood. The output is always HTML and not JSON.
 </p>
 
 <ComponentApi {props} />
 <ComponentDoc
   title="Overview Usage"
-  component="TextInputs"
-/>
-<ComponentDoc
-  title="Binding Values"
-  component="TextInputValue"
-/>
-<ComponentDoc
-  title="Inputs and Textareas"
-  component="TextInputTextarea"
+  component="RichTextInput"
 />

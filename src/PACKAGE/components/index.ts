@@ -8,5 +8,6 @@ export { default as GSortableCards } from './GSortableCards.svelte';
 export { default as GCheckbox } from './GCheckbox.svelte';
 export { default as GCheckboxGroup } from './GCheckboxGroup.svelte';
 export { default as GRadioGroup } from './GRadioGroup.svelte';
+export { default as GRichTextInput } from './GRichTextInput.svelte';
 export { default as GSegmentedControl } from './GSegmentedControl.svelte';
 export { default as GTextInput } from './GTextInput.svelte';

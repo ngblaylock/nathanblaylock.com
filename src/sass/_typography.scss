@@ -1,9 +1,13 @@
-@import "../../node_modules/bootstrap/scss/type";
+@import '../../node_modules/bootstrap/scss/type';
 
-ul {
+ul,
+ol {
   li {
     line-height: 1.25em;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
+    p {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -11,15 +15,28 @@ a {
   text-underline-offset: 4px;
 }
 
-.font-sans-serif{
+blockquote {
+  border-left: $border-width $primary solid;
+  padding-left: map-get($map: $spacers, $key: 4);
+  padding-top: map-get($map: $spacers, $key: 2);
+  padding-bottom: map-get($map: $spacers, $key: 2);
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.font-sans-serif {
   font-family: $font-family-sans-serif;
 }
-.font-serif{
+.font-serif {
   font-family: $font-family-serif;
 }
-.font-cursive{
+.font-cursive {
   font-family: $font-family-cursive;
 }
-.font-monospace{
+.font-monospace {
   font-family: $font-family-monospace;
 }

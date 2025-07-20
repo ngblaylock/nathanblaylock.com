@@ -2,6 +2,7 @@
 
 @import 'variables';
 @import 'bootstrap-setup';
+@import 'loader';
 @import '../../node_modules/@ngblaylock/bootstrap-extensions/src/scss/icon-buttons';
 @import '../../node_modules/@ngblaylock/bootstrap-extensions/src/scss/base-theme';
 @import '../../node_modules/@ngblaylock/bootstrap-extensions/src/scss/btn-contrast';
@@ -10,6 +11,7 @@
 @import 'dev-note';
 @import 'sortable-js';
 @import 'cognito-form';
+@import 'tiptap';
 
 ::-moz-selection {
   /* Code for Firefox */

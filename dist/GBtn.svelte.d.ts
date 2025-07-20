@@ -8,6 +8,7 @@ type $$ComponentProps = {
     href?: string;
     iconLeft?: IconName;
     iconRight?: IconName;
+    loading?: boolean;
     outline?: boolean;
     type?: 'button' | 'submit' | 'reset';
     variant?: Variant;

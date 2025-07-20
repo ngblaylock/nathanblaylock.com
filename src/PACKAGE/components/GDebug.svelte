@@ -10,6 +10,24 @@
   } = $props();
 
   let show = $derived(showInProd || dev);
+
+  let htmlData = $state(
+    `<pre style="background-color: #1E1E1E; color: #d4d4d4;">${JSON.stringify(
+      // fixes HTML strings to not render as HTML
+      typeof data === 'string' ? data.replaceAll('<', '&lt;') : data,
+      null,
+      2,
+    )}</pre>`,
+  );
+
+  $effect(() => {
+    codeToHtml(JSON.stringify(data, null, 2), {
+      lang: 'json',
+      theme: 'dark-plus',
+    }).then((val) => {
+      htmlData = val;
+    });
+  });
 </script>
 
 {#if show}
@@ -23,17 +41,7 @@
         size={1.5}
       />
     </div>
-    {#await codeToHtml( JSON.stringify(data, null, 2), { lang: 'json', theme: 'dark-plus' }, )}
-      <div class="m-n4 shiki-example bg-dark">
-        <pre style="background-color: #1E1E1E; color: #d4d4d4;">{JSON.stringify(
-            data,
-            null,
-            2,
-          )}</pre>
-      </div>
-    {:then value}
-      <div class="m-n4 shiki-example">{@html value}</div>
-    {/await}
+    <div class="m-n4 shiki-example">{@html htmlData}</div>
   </div>
 {/if}
 

@@ -11,6 +11,7 @@
         { name: 'Home', slug: '' },
         { name: 'Colors', slug: 'colors' },
         { name: 'Typography', slug: 'typography' },
+        { name: 'Loaders', slug: 'loaders' },
         { name: 'Spacing', slug: 'spacing' },
         { name: 'Brand Logos', slug: 'brand-logos' },
       ],
@@ -20,16 +21,31 @@
       folder: '/components',
       items: [
         { name: 'Buttons', slug: 'buttons' },
-        { name: 'Checkboxes', slug: 'checkboxes' },
-        { name: 'Checkbox Groups', slug: 'checkbox-groups' },
         { name: 'Debug', slug: 'debug' },
         { name: 'DevNotes', slug: 'dev-notes' },
         { name: 'Icon Buttons', slug: 'icon-buttons' },
         { name: 'Icons', slug: 'icons' },
+        {
+          name: 'Sortable Cards',
+          slug: 'sortable-cards',
+          tags: ['draggable cards'],
+        },
+      ],
+    },
+    {
+      name: 'Form Elements',
+      folder: '/components',
+      items: [
+        { name: 'Checkboxes', slug: 'checkboxes' },
+        { name: 'Checkbox Groups', slug: 'checkbox-groups' },
         { name: 'Radio Groups', slug: 'radio-groups' },
-        { name: 'Segmented Control', slug: 'segmented-control' },
-        { name: 'Sortable Cards', slug: 'sortable-cards' },
-        { name: 'Text Inputs', slug: 'text-inputs' },
+        { name: 'Rich Text Inputs', slug: 'rich-text-inputs' },
+        {
+          name: 'Segmented Control',
+          slug: 'segmented-control',
+          tags: ['button group'],
+        },
+        { name: 'Text Inputs', slug: 'text-inputs', tags: ['textareas'] },
       ],
     },
   ]);
@@ -40,7 +56,10 @@
     navItemGroups
       .map((group) => {
         const items = group.items.filter((item) => {
-          return item.name.toLowerCase().includes(search.toLowerCase());
+          return (
+            item.name.toLowerCase().includes(search.toLowerCase()) ||
+            item.tags?.join('≠').toLowerCase().includes(search.toLowerCase())
+          );
         });
         return { ...group, items };
       })
@@ -65,6 +84,13 @@
     <div class="hstack">
       <h2>UI Kit</h2>
       <code>v{__APP_VERSION__}</code>
+      <GIconBtn
+        icon="home"
+        title="Main Website"
+        href="/"
+        variant="base-i4"
+        class="ms-auto"
+      />
     </div>
     <div class="mb-4">
       <GTextInput
@@ -78,7 +104,9 @@
     </div>
     {#each filteredNav as group}
       {#if group.name}
-        <h3 class="h5"><strong>{group.name}</strong></h3>
+        <h3 class="h6 text-base-i4 border-top pt-2">
+          <strong>{group.name}</strong>
+        </h3>
       {/if}
       <div class="list-group mx-n3 mb-4">
         {#each group.items as item}
@@ -96,15 +124,6 @@
         {/each}
       </div>
     {/each}
-
-    <GBtn
-      class="w-100"
-      variant="base-4"
-      href="/"
-      iconLeft="arrowLeft"
-    >
-      Main Website
-    </GBtn>
   </aside>
 </div>
 

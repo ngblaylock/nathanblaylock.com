@@ -12,5 +12,5 @@
 
 <div class="d-flex h-100">
   <UiKitNav />
-  <div class="container py-5">{@render children?.()}</div>
+  <div class="container py-5" style="min-width: 1px;">{@render children?.()}</div>
 </div>

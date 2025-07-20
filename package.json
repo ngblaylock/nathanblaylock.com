@@ -1,6 +1,6 @@
 {
 	"name": "nathanblaylock.com",
-	"version": "2.3.12",
+	"version": "2.4.0",
 	"private": true,
 	"type": "module",
 	"exports": {
@@ -54,6 +54,11 @@
 		"@mdi/js": "^7.4.47",
 		"@ngblaylock/bootstrap-extensions": "0.1.1",
 		"@sveltejs/kit": "^2.16.0",
+		"@tiptap/core": "^3.0.7",
+		"@tiptap/extension-highlight": "^3.0.7",
+		"@tiptap/extensions": "^3.0.7",
+		"@tiptap/pm": "^3.0.7",
+		"@tiptap/starter-kit": "^3.0.7",
 		"bootstrap": "5.3.7",
 		"lodash": "^4.17.21",
 		"shiki": "^3.7.0",
