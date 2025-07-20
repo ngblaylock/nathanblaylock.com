@@ -1,0 +1,63 @@
+.tiptap-input-container {
+  &:focus-within {
+    color: $input-focus-color;
+    background-color: $input-focus-bg;
+    border-color: $input-focus-border-color;
+    outline: 0;
+    @if $enable-shadows {
+      @include box-shadow($input-box-shadow, $input-focus-box-shadow);
+    } @else {
+      // Avoid using mixin so we can pass custom focus shadow properly
+      box-shadow: $input-focus-box-shadow;
+    }
+  }
+  .tiptap.ProseMirror {
+    padding-bottom: 0.02px;
+    padding: $input-padding-y $input-padding-x;
+    min-height: 200px;
+    max-height: 60vh;
+    overflow-y: auto;
+    &:focus {
+      outline: none;
+    }
+    p.is-editor-empty:first-child::before {
+      color: $input-placeholder-color;
+      content: attr(data-placeholder);
+      float: left;
+      height: 0;
+      pointer-events: none;
+    }
+  }
+  .tiptap-toolbar {
+    background: var(--bse-base-2);
+    border-bottom: $border-width $border-color solid;
+    padding: map-get($map: $spacers, $key: 1) $input-padding-x;
+    .form-select:focus {
+      border-color: color-mix(
+        in srgb,
+        rgb(var(--bse-base-4-rgb)),
+        rgb(var(--bse-base-i4-rgb)) 50%
+      );
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem rgba(var(--bse-base-i4-rgb), .25);
+    }
+    .btn.btn-icon {
+      border-radius: $border-radius;
+      &:hover {
+        background: var(--bse-base-3);
+        border-color: var(--bse-base-3);
+        color: var(--bse-base-i4);
+      }
+      &:active,
+      &.active {
+        background: var(--bse-base-4);
+        border-color: color-mix(
+          in srgb,
+          rgb(var(--bse-base-4-rgb)),
+          rgb(var(--bse-base-i4-rgb)) 5%
+        );
+        color: var(--bse-base-i1);
+      }
+    }
+  }
+}
