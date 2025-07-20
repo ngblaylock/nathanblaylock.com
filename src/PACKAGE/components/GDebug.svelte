@@ -12,7 +12,12 @@
   let show = $derived(showInProd || dev);
 
   let htmlData = $state(
-    `<pre style="background-color: #1E1E1E; color: #d4d4d4;">${JSON.stringify(data, null, 2)}</pre>`,
+    `<pre style="background-color: #1E1E1E; color: #d4d4d4;">${JSON.stringify(
+      // fixes HTML strings to not render as HTML
+      typeof data === 'string' ? data.replaceAll('<', '&lt;') : data,
+      null,
+      2,
+    )}</pre>`,
   );
 
   $effect(() => {
