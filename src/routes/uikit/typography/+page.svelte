@@ -13,10 +13,13 @@
   <h5>Header 5</h5>
   <h6>Header 6</h6>
   <p>
-    Paragraph - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-    eum laboriosam nihil debitis ex praesentium dolore quas illum dolorem alias,
-    nobis dolorum neque omnis officiis quaerat error, repellendus voluptas
-    cupiditate.
+    Paragraph - Lorem ipsum <s>strike</s> sit amet consectetur <mark>mark</mark>
+    elit. Quos, eum <b>bold</b> nihil <u>underline</u> ex praesentium
+    <i>italic</i> quas illum dolorem alias, nobis <code>code</code> neque omnis
+    <a
+      href="https://nathanblaylock.com"
+      target="_blank">link</a
+    > quaerat error, repellendus voluptas cupiditate.
   </p>
   <p class="lead">
     Lead Paragraph - Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -24,6 +27,16 @@
     consequuntur tempora pariatur recusandae, odio reiciendis itaque numquam
     aperiam maiores esse voluptatum.
   </p>
+  <ul>
+    <li><p>List 1</p></li>
+    <li><p>List 2</p></li>
+    <li><p>List 3</p></li>
+  </ul>
+  <ol>
+    <li><p>List 1</p></li>
+    <li><p>List 2</p></li>
+    <li><p>List 3</p></li>
+  </ol>
   <blockquote>
     <h2>Blockquote</h2>
     <p>Blockquote Paragraph</p>

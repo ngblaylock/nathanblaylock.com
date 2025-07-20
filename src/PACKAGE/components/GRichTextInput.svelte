@@ -5,7 +5,6 @@
   import StarterKit from '@tiptap/starter-kit';
   import Highlight from '@tiptap/extension-highlight';
   import uniqueId from 'lodash/uniqueId';
-  import isURL from 'validator/es/lib/isURL';
 
   let {
     class: classList = '',
@@ -32,11 +31,6 @@
 
   let element = $state<HTMLDivElement>();
   let editor = $state<Editor>();
-
-  let link = $state({
-    href: '',
-    new: false,
-  });
 
   onMount(() => {
     editor = new Editor({
@@ -67,14 +61,6 @@
     // This makes sure if the parent passes in something new it sets Tiptap to use that instead of what it was.
     if (value !== editor?.getHTML()) {
       editor?.commands.setContent(value);
-    }
-
-    if (editor?.isActive('link')) {
-      link.href = editor.getAttributes('link').href;
-      link.new = false;
-    } else {
-      link.href = '';
-      link.new = false;
     }
   });
 
@@ -125,10 +111,10 @@
     class="visually-hidden"
     tabindex="-1"
   />
-  <div class="form-control p-0">
+  <div class="tiptap-input-container form-control p-0">
     <div class="tiptap-toolbar">
       {#if editor}
-        <div class="hstack gap-1">
+        <div class="hstack gap-1 flex-wrap">
           <select
             name="a"
             id="kl"
@@ -197,22 +183,6 @@
             class={editor.isActive('blockquote') ? 'active' : undefined}
           />
           <GIconBtn
-            icon="link"
-            title="Link"
-            variant="base-i4"
-            class={editor.isActive('link') ? 'active' : undefined}
-            onclick={async (e: MouseEvent) => {
-              link.new = true;
-              let target = e.currentTarget as HTMLButtonElement;
-              let toolbar = target.closest('.tiptap-toolbar');
-              await tick();
-              let linkInput = toolbar?.querySelector(
-                `#${uid}-tiptap-link-input`,
-              ) as HTMLInputElement;
-              linkInput?.focus();
-            }}
-          />
-          <GIconBtn
             icon="formatHighlight"
             title="Highlight"
             variant="base-i4"
@@ -233,52 +203,17 @@
             onclick={() => editor?.commands.redo()}
           />
         </div>
-        <div class="tiptap-sub-toolbar">
-          {#if editor.isActive('link') || link.new}
-            <div class="hstack gap-1">
-              <GTextInput
-                label="Link"
-                hideLabel
-                placeholder="https://"
-                bind:value={link.href}
-                style="width: 400px;"
-                id={`${uid}-tiptap-link-input`}
-              />
-              <GBtn
-                disabled={!(
-                  link.href.startsWith('/') ||
-                  isURL(link.href, {
-                    protocols: ['http', 'https'],
-                    require_protocol: true,
-                  })
-                )}
-                onclick={() =>
-                  editor
-                    ?.chain()
-                    .focus()
-                    .extendMarkRange('link')
-                    .setLink({
-                      href: link.href,
-                      target: link.href.startsWith('/') ? null : '_blank',
-                    })
-                    .run()}
-              >
-                Set Link
-              </GBtn>
-              {#if editor.isActive('link')}
-                <GIconBtn
-                  icon="linkOff"
-                  title="Remove Link"
-                  variant="base-i4"
-                  onclick={() => editor?.commands.unsetLink()}
-                />
-              {/if}
-            </div>
-          {/if}
-        </div>
       {/if}
     </div>
 
     <div bind:this={element}></div>
   </div>
+  <input
+    type="text"
+    value={editor?.getText()}
+    {required}
+    aria-label="Plain Text, for reference only"
+    class="visually-hidden w-25"
+    tabindex="-1"
+  />
 </div>
