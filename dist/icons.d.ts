@@ -3,6 +3,7 @@ declare const icons: {
     arrowLeft: string;
     arrowRight: string;
     arrowUp: string;
+    book: string;
     chartLine: string;
     check: string;
     chevronDown: string;
@@ -13,7 +14,9 @@ declare const icons: {
     code: string;
     copy: string;
     darkMode: string;
+    delete: string;
     dragVertical: string;
+    edit: string;
     firebase: string;
     formatBlockquote: string;
     formatBold: string;
@@ -36,6 +39,7 @@ declare const icons: {
     plus: string;
     poll: string;
     redo: string;
+    search: string;
     systemMode: string;
     table: string;
     tools: string;
