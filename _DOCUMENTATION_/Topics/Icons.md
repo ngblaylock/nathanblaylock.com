@@ -11,6 +11,10 @@ Icons can be added to `src/lib/PACKAGE/components/icons.ts`. If it is a MDI icon
 
 Custom icons are defined separately. When adding an icon, you only need the path value. This should be a [minified SVG](https://www.svgminify.com/) with a single path. For example, `<path d="..."`. Icons should also be added to Figma's UI Kit.
 
+## Deprecating Icons
+
+Instead of making breaking changes, or duplicating icon paths, icons can be deprecated in the `GIcon` component. Just add them to the `deprecations` list with the old icon name, and the new name.
+
 ## Icon Types
 
 If you need to get the types for icon names, you can import them like:
