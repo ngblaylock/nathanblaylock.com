@@ -3,6 +3,10 @@ declare const icons: {
     arrowLeft: string;
     arrowRight: string;
     arrowUp: string;
+    book: string;
+    brandFirebase: string;
+    brandGitHub: string;
+    brandNbMedia: string;
     chartLine: string;
     check: string;
     chevronDown: string;
@@ -13,8 +17,9 @@ declare const icons: {
     code: string;
     copy: string;
     darkMode: string;
+    delete: string;
     dragVertical: string;
-    firebase: string;
+    edit: string;
     formatBlockquote: string;
     formatBold: string;
     formatHighlight: string;
@@ -23,7 +28,6 @@ declare const icons: {
     formatListNumbered: string;
     formatStrikethrough: string;
     formatUnderline: string;
-    gitHub: string;
     home: string;
     json: string;
     lightMode: string;
@@ -31,11 +35,10 @@ declare const icons: {
     linkOff: string;
     menu: string;
     minus: string;
-    nbMedia: string;
-    pencil: string;
     plus: string;
     poll: string;
     redo: string;
+    search: string;
     systemMode: string;
     table: string;
     tools: string;

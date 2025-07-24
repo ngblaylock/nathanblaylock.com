@@ -7,7 +7,25 @@
   }
   let { name, size = 1 }: Props = $props();
 
-  let path = $derived(icons[name] || '');
+  let deprecations: { old: string; new: IconName }[] = [
+    { old: 'pencil', new: 'edit' },
+    { old: 'nbMedia', new: 'brandNbMedia' },
+    { old: 'firebase', new: 'brandFirebase' },
+    { old: 'gitHub', new: 'brandGitHub' },
+  ];
+
+  let path = $derived.by(() => {
+    const deprecatedIcon = deprecations.find(
+      (deprecation) => deprecation.old === name,
+    );
+    if (deprecatedIcon) {
+      console.warn(
+        `The "${deprecatedIcon.old}" icon has been deprecated. Please use "${deprecatedIcon.new}"`,
+      );
+      return icons[deprecatedIcon.new];
+    }
+    return icons[name] || '';
+  });
 </script>
 
 {#if path}
