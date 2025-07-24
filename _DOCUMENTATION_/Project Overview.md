@@ -13,7 +13,10 @@ This is the home base application for my projects and serves primarily as my por
 **Frontend:** Svelte
 **Backend:** None (Static Generated)
 **Database:** None
-**Integrations:** Cognito Forms
+
+## 3rd Party Integrations
+
+**Cognito Forms:** - Used for the contact form.
 
 ## Stakeholders
 
@@ -26,3 +29,4 @@ None
 ## Project Links
 
 - [Website](https://nathanblaylock.com/)
+- [GitHub](https://github.com/ngblaylock/nathanblaylock.com)
