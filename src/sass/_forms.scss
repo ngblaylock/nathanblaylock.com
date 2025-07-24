@@ -1,5 +1,13 @@
 @import '../../node_modules/bootstrap/scss/forms';
 
+.form-control {
+  [data-bs-theme='dark'] & {
+    &::placeholder {
+      color: $input-placeholder-color-dark;
+    }
+  }
+}
+
 fieldset {
   .form-check {
     padding-left: map-get($spacers, 6) + map-get($spacers, 1);
@@ -31,8 +39,32 @@ fieldset {
   }
   .btn-check:focus-visible + label {
     box-shadow: $focus-ring-box-shadow !important;
-    [data-bs-theme=dark] &{
-      box-shadow: 0 0 0 0.25rem rgba(125, 44, 45, .5) !important;
+    [data-bs-theme='dark'] & {
+      box-shadow: 0 0 0 0.25rem rgba(125, 44, 45, 0.5) !important;
     }
+  }
+}
+
+@mixin search-background-image($icon-color: $input-placeholder-color) {
+  background-image: escape-svg(
+    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='#{$icon-color}' d='M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z' /></svg>")
+  );
+}
+
+.form-control[type='search'] {
+  @include search-background-image($input-placeholder-color);
+  background-repeat: no-repeat;
+  background-position: left $input-padding-x center;
+  background-size: 1.5rem;
+  padding-left: $input-padding-x * 2.5;
+  transition: background-image $transition-base;
+  &:focus-within {
+    @include search-background-image($input-color);
+    [data-bs-theme='dark'] & {
+      @include search-background-image($body-color-dark);
+    }
+  }
+  [data-bs-theme='dark'] & {
+    @include search-background-image($input-placeholder-color-dark);
   }
 }
