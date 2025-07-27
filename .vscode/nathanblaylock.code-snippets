@@ -22,6 +22,12 @@
 
   // Global Components
 
+  "Global Avatar": {
+    "prefix": "G-Avatar",
+    "body": ["<GAvatar />"],
+    "description": "Global avatar component.",
+    "scope": "svelte",
+  },
   "Global Button": {
     "prefix": "G-Btn",
     "body": ["<GBtn>$1</GBtn>"],
