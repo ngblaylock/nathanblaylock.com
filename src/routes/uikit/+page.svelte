@@ -12,6 +12,19 @@
 
 <h1>UI Kit Home</h1>
 
+<h2><code>.avatar</code></h2>
+
+<div
+class="avatar position-absolute"
+style="width: 64px; transform: scale(.975)"
+></div>
+<div
+class="avatar position-relative"
+style="width: 64px; background-image: url('http://localhost:5173/images/optimized/profile/blaylock-nathan-1-square.png')"
+></div>
+
+<h2><code>.avatar</code></h2>
+
 <p>
   This UI Kit is a library of styles and components built in Svelte 5. This is
   set up where all styles reside in the main <code>nathanblaylock.css</code> file.
@@ -25,7 +38,11 @@
 /&gt;</pre>
 </small>
 
-<p>For larger projects like with SvelteKit, see <code>_Documentation_/Topics/PACKAGE Components.md</code>.</p>
+<p>
+  For larger projects like with SvelteKit, see <code
+    >_Documentation_/Topics/PACKAGE Components.md</code
+  >.
+</p>
 
 <h2 class="mt-5">Images</h2>
 <div class="row">
