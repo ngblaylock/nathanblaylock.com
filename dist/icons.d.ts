@@ -20,6 +20,7 @@ declare const icons: {
     delete: string;
     dragVertical: string;
     edit: string;
+    email: string;
     formatBlockquote: string;
     formatBold: string;
     formatHighlight: string;
