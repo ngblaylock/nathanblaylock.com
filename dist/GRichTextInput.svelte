@@ -31,6 +31,7 @@ onMount(() => {
             editor = newEditor;
         },
         onUpdate: ({ editor: newEditor }) => {
+            // force re-render so `editor.isActive` works as expected
             editor = undefined;
             editor = newEditor;
             value = newEditor.getHTML();
