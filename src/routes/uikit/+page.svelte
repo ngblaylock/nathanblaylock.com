@@ -25,7 +25,11 @@
 /&gt;</pre>
 </small>
 
-<p>For larger projects like with SvelteKit, see <code>_Documentation_/Topics/PACKAGE Components.md</code>.</p>
+<p>
+  For larger projects like with SvelteKit, see <code
+    >_Documentation_/Topics/PACKAGE Components.md</code
+  >.
+</p>
 
 <h2 class="mt-5">Images</h2>
 <div class="row">

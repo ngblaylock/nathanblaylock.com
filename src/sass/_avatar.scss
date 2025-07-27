@@ -1,0 +1,12 @@
+.avatar {
+  width: 48px;
+  display: inline-block;
+  aspect-ratio: 1 / 1;
+  background-image: escape-svg(
+    url("data:image/svg+xml,<svg fill='none' viewBox='0 0 175 175' xmlns='http://www.w3.org/2000/svg'><g clip-path='url(#a)'><rect width='175' height='175' fill='#F7F7F7'/><circle cx='87' cy='69' r='48' fill='#E5E6EB'/><circle cx='87.5' cy='198.5' r='84.5' fill='#E5E6EB'/></g><defs><clipPath id='a'><rect width='175' height='175' fill='#fff'/></clipPath></defs></svg>")
+  );
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+}
