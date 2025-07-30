@@ -52,14 +52,12 @@
 
 <Analytics />
 <Meta />
-<DevToolbar />
 
-<div class="site">
-  {#if page.route.id?.startsWith('/uikit')}
-    <main>
-      {@render children?.()}
-    </main>
-  {:else}
+{#if page.route.id?.startsWith('/uikit')}
+  {@render children?.()}
+{:else}
+  <DevToolbar />
+  <div class="site">
     <BgAngle />
     <main>
       <Navbar />
@@ -75,9 +73,9 @@
         {@render children?.()}
       </div>
     </main>
-  {/if}
-  <Footer />
-</div>
+    <Footer />
+  </div>
+{/if}
 
 <style lang="scss">
   .site {
