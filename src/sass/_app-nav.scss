@@ -1,5 +1,4 @@
 .app-nav-container {
-  // background: yellow;
   min-height: 100dvh;
   display: flex;
   flex-direction: column-reverse;
@@ -17,6 +16,17 @@
   }
   .app-nav-brand {
     display: none;
+    border: $border-width solid transparent;
+    outline-offset: 1px;
+    outline: 1px solid rgba($white, 0);
+    border-radius: $border-radius;
+    &:focus-visible {
+      border-color: rgba($white, 0.8);
+      outline-color: rgba($white, 0.24);
+    }
+    .app-nav-brand-text{
+      display: none;
+    }
   }
   .app-nav-link {
     color: $white;
@@ -30,9 +40,9 @@
     padding: map-get($spacers, 1);
     text-wrap: nowrap;
     transition: background 0.2s ease-in-out;
-    border: 3px solid transparent;
-    outline-offset: 0px;
-    outline: 2px solid rgba($white, 0);
+    border: $border-width solid transparent;
+    outline-offset: 1px;
+    outline: 1px solid rgba($white, 0);
     svg,
     img,
     .avatar {
@@ -47,12 +57,11 @@
       background: rgba(0, 0, 0, 0.36);
     }
     &:focus-visible {
-      border: 3px solid rgba($white, 0.8);
-      outline: 2px solid rgba($white, 0.24);
+      border-color: rgba($white, 0.8);
+      outline-color: rgba($white, 0.24);
     }
   }
   .app-nav-content {
-    // background: pink;
     display: flex;
     flex-direction: column;
     flex: 1 1 0;
@@ -81,6 +90,47 @@
     }
     .app-nav-link {
       flex: 0 0 0;
+      .avatar {
+        width: map-get($spacers, 6) !important;
+        height: map-get($spacers, 6) !important;
+        margin-bottom: map-get($spacers, 1);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .app-nav-container {
+    &.expanded {
+      .app-nav {
+        width: 276px;
+      }
+      .app-nav-brand {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: map-get($spacers, 3);
+        text-decoration: none;
+        .app-nav-brand-text{
+          display: block;
+          flex: 1 1 0;
+          font-size: 1.3em;
+          color: $white;
+        }
+      }
+      .app-nav-link {
+        flex-direction: row;
+        font-size: 1rem;
+        gap: map-get($spacers, 3);
+        padding: map-get($spacers, 2) map-get($spacers, 1);
+        svg,
+        img,
+        .avatar {
+          width: map-get($spacers, 5) !important;
+          height: map-get($spacers, 5) !important;
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

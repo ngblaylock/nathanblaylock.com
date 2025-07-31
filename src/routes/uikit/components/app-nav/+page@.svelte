@@ -32,6 +32,7 @@
   {#snippet appNav()}
     <a href="/uikit/components/app-nav" class="app-nav-brand">
       <img src="https://picsum.photos/200" alt="">
+      <div class="app-nav-brand-text">App Name</div>
     </a>
     <a href="/uikit/components/app-nav" class="app-nav-link active">
       <GIcon name="book" />
