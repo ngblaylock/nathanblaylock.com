@@ -20,6 +20,7 @@
       name: 'Components',
       folder: '/components',
       items: [
+        { name: 'AppNav', slug: 'app-nav' },
         { name: 'Avatars', slug: 'avatars' },
         { name: 'Buttons', slug: 'buttons' },
         { name: 'Debug', slug: 'debug' },

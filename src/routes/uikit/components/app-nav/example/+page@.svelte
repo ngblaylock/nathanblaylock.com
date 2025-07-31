@@ -1,5 +1,4 @@
 <script lang="ts">
-  import GAppNav from './GAppNav.svelte';
   import DevToolbar from '$components/DevToolbar.svelte';
   import Footer from '$components/Footer.svelte';
 
