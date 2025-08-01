@@ -3,10 +3,46 @@
   import Footer from '$components/Footer.svelte';
 
   let lines = $state(20);
+
+  const navItems = {
+    brand: {
+      src: 'https://picsum.photos/200',
+      label: 'App Name',
+      href: '/uikit/components/app-nav',
+    },
+    links: [
+      {
+        icon: 'home',
+        label: 'Home',
+        href: '/uikit/components/app-nav',
+        active: true,
+      },
+      {
+        icon: 'delete',
+        label: 'Trash Can',
+        href: '/uikit/components/app-nav',
+      },
+      {
+        icon: 'darkMode',
+        label: 'Theme',
+        href: '/uikit/components/app-nav',
+      },
+      {
+        icon: 'edit',
+        label: 'Edit',
+        href: '/uikit/components/app-nav',
+      },
+      {
+        src: '/images/optimized/profile/blaylock-nathan.jpg',
+        label: 'Profile',
+        href: '/uikit/components/app-nav',
+      },
+    ],
+  };
 </script>
 
 <DevToolbar />
-<GAppNav>
+<GAppNav {navItems}>
   <div class="flex-fill d-flex flex-column">
     <main class="flex-fill">
       <div class="container">
@@ -16,7 +52,10 @@
         >
           Toggle
         </GBtn>
-        {#each Array(lines) as x}
+        <GDevNote class="mt-4">
+          I think the .app-nav-brand should be optionally a link, or just a div. I would assume most apps would have the first item in their appNav be a Home link. Especially since the mobile version doesn't even show the brand. With Jot for example, you would never be able to get back to the homepage if the first link wasn't the home item.
+        </GDevNote>
+        {#each Array(lines) as _x}
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus,
             labore sit voluptas expedita tempore numquam porro veniam, iure
@@ -29,7 +68,7 @@
     <Footer />
   </div>
 
-  {#snippet appNav()}
+  <!-- {#snippet appNav()}
     <a
       href="/uikit/components/app-nav"
       class="app-nav-brand"
@@ -75,5 +114,5 @@
       <GAvatar src="/images/optimized/profile/blaylock-nathan.jpg" />
       Profile
     </a>
-  {/snippet}
+  {/snippet} -->
 </GAppNav>

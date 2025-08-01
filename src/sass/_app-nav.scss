@@ -90,6 +90,7 @@
     }
     .app-nav-link {
       flex: 0 0 0;
+      min-width: map-get($spacers, 8);
       .avatar {
         width: map-get($spacers, 6) !important;
         height: map-get($spacers, 6) !important;

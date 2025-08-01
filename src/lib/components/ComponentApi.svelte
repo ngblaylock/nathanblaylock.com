@@ -28,7 +28,7 @@
     <tbody>
       {#each componentProps as prop}
         <tr>
-          <td
+          <td class="text-nowrap"
             ><span class="code-color">{prop.required ? '* ' : ''}</span
             >{#if prop.link}
               <a
@@ -52,7 +52,7 @@
             </code>
           </td>
           <td>
-            {prop.description}
+            {@html prop.description}
           </td>
         </tr>
       {/each}
