@@ -1,3 +1,4 @@
+export { default as GAppNav } from './GAppNav.svelte';
 export { default as GAvatar } from './GAvatar.svelte';
 export { default as GBtn } from './GBtn.svelte';
 export { default as GDebug } from './GDebug.svelte';

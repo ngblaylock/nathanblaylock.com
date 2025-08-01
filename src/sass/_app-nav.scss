@@ -1,5 +1,5 @@
 .app-nav-container {
-  min-height: 100dvh;
+  min-height: calc(100dvh - var(--dev-toolbar-offset));
   display: flex;
   flex-direction: column-reverse;
   width: 100%;
@@ -75,8 +75,8 @@
   .app-nav-container {
     flex-direction: row;
     .app-nav {
-      top: 0;
-      height: 100dvh;
+      top: var(--dev-toolbar-offset);
+      height: calc(100dvh - var(--dev-toolbar-offset));
       flex-direction: column;
       justify-content: flex-start;
       padding: map-get($spacers, 5) map-get($spacers, 3);
