@@ -19,20 +19,7 @@
     },
     {
       name: 'navItems',
-      type: `{
-  brand: { 
-    href?: string;
-    label: string; 
-    src: string; 
-  };
-  links: {
-    active?: boolean;
-    href: string;
-    icon?: string;
-    label: string;
-    src?: string;
-  }[];
-};`,
+      type: `ApNavItems`,
       description: 'Adds items to the red app navigation bar.',
       required: true,
     },
