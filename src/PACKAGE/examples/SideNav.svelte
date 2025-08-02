@@ -2,6 +2,7 @@
   import Footer from '$components/Footer.svelte';
 
   let lines = $state(20);
+  let snLines = $state(2);
 </script>
 
 <GSideNav header="Side Nav">
@@ -28,7 +29,17 @@
   </div>
 
   {#snippet sideNavContent()}
-    Hey-o
+    <GBtn
+      variant="secondary"
+      onclick={() => (snLines = snLines === 40 ? 2 : 40)}
+    >
+      Toggle
+    </GBtn>
+    <ul>
+      {#each Array(snLines) as x}
+        <li>Foo {x}</li>
+      {/each}
+    </ul>
   {/snippet}
 
   {#snippet sideNavTools()}
@@ -40,12 +51,7 @@
     <GIconBtn
       variant="base-i4"
       icon="brandFirebase"
-      title="Add"
-    />
-    <GIconBtn
-      variant="base-i4"
-      icon="brandGitHub"
-      title="Add"
+      title="Firebase"
     />
   {/snippet}
 </GSideNav>

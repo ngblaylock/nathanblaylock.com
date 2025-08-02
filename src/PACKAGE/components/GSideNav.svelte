@@ -11,7 +11,7 @@
     children: Snippet;
     header: string;
     sideNavContent: Snippet;
-    sideNavTools: Snippet;
+    sideNavTools?: Snippet;
   } = $props();
 </script>
 
@@ -29,9 +29,11 @@
         aria-controls="offcanvasNavbar"
       />
       <div class="side-nav-header">{header}</div>
-      <div class="side-nav-tools">
-        {@render sideNavTools()}
-      </div>
+      {#if sideNavTools}
+        <div class="side-nav-tools">
+          {@render sideNavTools()}
+        </div>
+      {/if}
     </div>
     <div
       class="offcanvas offcanvas-start"
@@ -44,7 +46,7 @@
           variant="base-i1"
           icon="close"
           title="Close"
-          class="d-lg-none float-end"
+          class="d-lg-none float-end me-3"
           data-bs-dismiss="offcanvas"
         />
         {@render sideNavContent()}

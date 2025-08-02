@@ -21,6 +21,11 @@
     }
     .offcanvas {
       background-color: var(--bse-base-2) !important;
+      .offcanvas-body{
+        display: block;
+        overflow-y: auto;
+        padding: map-get($spacers, 3) 0 0 0;
+      }
     }
   }
 }
@@ -36,7 +41,7 @@
       min-width: $offcanvas-horizontal-width;
       max-width: $offcanvas-horizontal-width;
       flex-direction: column;
-      padding: map-get($spacers, 5) 0;
+      padding: map-get($spacers, 5) 0 0 0;
       position: sticky;
       top: var(--dev-toolbar-offset);
       .side-nav-header {
@@ -49,6 +54,10 @@
       .offcanvas {
         width: 100% !important;
         flex: 1 1 0;
+        display: flex;
+        .offcanvas-body{
+          flex: 1 1 0;
+        }
       }
     }
   }
