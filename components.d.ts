@@ -13,6 +13,7 @@ declare global {
     const GRadioGroup: typeof import("./src/PACKAGE/components/GRadioGroup.svelte")["default"]
     const GRichTextInput: typeof import("./src/PACKAGE/components/GRichTextInput.svelte")["default"]
     const GSegmentedControl: typeof import("./src/PACKAGE/components/GSegmentedControl.svelte")["default"]
+    const GSideNav: typeof import("./src/PACKAGE/components/GSideNav.svelte")["default"]
     const GSortableCards: typeof import("./src/PACKAGE/components/GSortableCards.svelte")["default"]
     const GTextInput: typeof import("./src/PACKAGE/components/GTextInput.svelte")["default"]
 }

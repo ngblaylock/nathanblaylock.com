@@ -1,61 +1,10 @@
 <script lang="ts">
-  import DevToolbar from '$components/DevToolbar.svelte';
   import Footer from '$components/Footer.svelte';
 
   let lines = $state(20);
 </script>
 
-<DevToolbar />
-<div class="side-nav-container">
-  <nav class="side-nav navbar navbar-expand-lg">
-    <div class="side-nav-toolbar">
-      <GIconBtn
-        variant="base-i1"
-        icon="menu"
-        class="d-lg-none"
-        title="Toggle navigation"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar"
-      />
-      <div class="side-nav-header">Side Nav</div>
-      <div class="side-nav-tools">
-        <GIconBtn
-          variant="base-i4"
-          icon="plus"
-          title="Add"
-        />
-        <GIconBtn
-          variant="base-i4"
-          icon="brandFirebase"
-          title="Add"
-        />
-        <GIconBtn
-          variant="base-i4"
-          icon="brandGitHub"
-          title="Add"
-        />
-      </div>
-    </div>
-    <div
-      class="offcanvas offcanvas-start"
-      tabindex="-1"
-      id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel"
-    >
-      <div class="offcanvas-body">
-        <GIconBtn
-          variant="base-i1"
-          icon="close"
-          title="Close"
-          class="d-lg-none float-end"
-          data-bs-dismiss="offcanvas"
-        />
-        Side Nav Content
-      </div>
-    </div>
-  </nav>
-
+<GSideNav header="Side Nav">
   <div class="flex-fill d-flex flex-column">
     <main class="flex-fill">
       <div class="container">
@@ -77,4 +26,26 @@
     </main>
     <Footer />
   </div>
-</div>
+
+  {#snippet sideNavContent()}
+    Hey-o
+  {/snippet}
+
+  {#snippet sideNavTools()}
+    <GIconBtn
+      variant="base-i4"
+      icon="plus"
+      title="Add"
+    />
+    <GIconBtn
+      variant="base-i4"
+      icon="brandFirebase"
+      title="Add"
+    />
+    <GIconBtn
+      variant="base-i4"
+      icon="brandGitHub"
+      title="Add"
+    />
+  {/snippet}
+</GSideNav>
