@@ -1,8 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Patrick+Hand&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import '../../node_modules/bootstrap/scss/mixins/banner';
+@include bsBanner('');
+
+@import '../../node_modules/bootstrap/scss/functions';
+
 @import 'variables';
-@import 'bootstrap-setup';
+@import '../../node_modules/bootstrap/scss/maps';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/utilities';
+
+@import 'root';
+@import '../../node_modules/bootstrap/scss/reboot';
+@import 'typography';
+@import '../../node_modules/bootstrap/scss/images';
+@import '../../node_modules/bootstrap/scss/containers';
+@import '../../node_modules/bootstrap/scss/grid';
+@import 'tables';
+@import 'forms';
+@import 'buttons';
+@import '../../node_modules/bootstrap/scss/transitions';
+@import 'dropdown';
+// @import "../../node_modules/bootstrap/scss/button-group";
+@import '../../node_modules/bootstrap/scss/nav';
+@import '../../node_modules/bootstrap/scss/navbar';
+@import '../../node_modules/bootstrap/scss/card';
+@import "../../node_modules/bootstrap/scss/accordion";
+// @import "../../node_modules/bootstrap/scss/breadcrumb";
+// @import "../../node_modules/bootstrap/scss/pagination";
+@import '../../node_modules/bootstrap/scss/badge';
+// @import "../../node_modules/bootstrap/scss/alert";
+// @import "../../node_modules/bootstrap/scss/progress";
+@import "../../node_modules/bootstrap/scss/list-group";
+@import '../../node_modules/bootstrap/scss/close';
+// @import "../../node_modules/bootstrap/scss/toasts";
+@import '../../node_modules/bootstrap/scss/modal';
+// @import "../../node_modules/bootstrap/scss/tooltip";
+// @import "../../node_modules/bootstrap/scss/popover";
+// @import "../../node_modules/bootstrap/scss/carousel";
+// @import "../../node_modules/bootstrap/scss/spinners"; // Using custom loader
+@import "../../node_modules/bootstrap/scss/offcanvas";
+// @import "../../node_modules/bootstrap/scss/placeholders";
+
+// Helpers
+@import 'helpers';
+
+// Utilities
+@import "utilities-api";
+// scss-docs-end import-stack
+
 @import 'app-nav';
+@import 'side-nav';
 @import 'avatar';
 @import 'loader';
 @import '../../node_modules/@ngblaylock/bootstrap-extensions/src/scss/icon-buttons';

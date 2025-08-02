@@ -200,3 +200,13 @@ $list-group-border-radius: 0;
 $list-group-item-padding-y: map-get($spacers, 1);
 $list-group-item-padding-x: map-get($spacers, 3);
 $list-group-hover-bg: var(--bse-base-4);
+
+// Modals
+$modal-content-border-color: $border-color;
+
+// Offcanvas
+$offcanvas-horizontal-width: 320px;
+
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/variables-dark';
