@@ -3,7 +3,8 @@
   import ComponentDoc from '$components/ComponentDoc.svelte';
   import Seo from '$components/Seo.svelte';
 
-  import icons, { type IconName } from 'nathanblaylock.com/icons';
+  import type { IconName } from 'nathanblaylock.com';
+  import icons from 'nathanblaylock.com/icons';
 
   const props = [
     {

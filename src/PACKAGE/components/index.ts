@@ -13,3 +13,24 @@ export { default as GRadioGroup } from './GRadioGroup.svelte';
 export { default as GRichTextInput } from './GRichTextInput.svelte';
 export { default as GSegmentedControl } from './GSegmentedControl.svelte';
 export { default as GTextInput } from './GTextInput.svelte';
+
+
+// Types
+import icons from './icons';
+export type IconName = keyof typeof icons;
+
+/** @type for the GAppNav navItems prop */
+export type AppNavItems = {
+  brand: {
+    href?: string;
+    label: string;
+    src: string;
+  };
+  links: {
+    active?: boolean;
+    href: string;
+    icon?: IconName;
+    label: string;
+    src?: string;
+  }[];
+};

@@ -1,4 +1,4 @@
-import { type IconName } from './icons';
+import type { IconName } from './';
 type $$ComponentProps = {
     class?: string;
     group?: unknown;

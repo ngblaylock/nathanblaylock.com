@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
-  import { type IconName } from './icons';
+  import type { IconName } from './';
   import GIcon from './GIcon.svelte';
   let {
     children,

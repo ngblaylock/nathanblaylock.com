@@ -4,6 +4,7 @@
       "${folder}/static"
     ]
   },
+  "cSpell.language": "en,lorem",
   "cSpell.words": [
     "Asana",
     "BBOJ",

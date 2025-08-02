@@ -35,7 +35,7 @@
       ],
     },
     {
-      name: 'Form Elements',
+      name: 'Form Components',
       folder: '/components',
       items: [
         { name: 'Checkboxes', slug: 'checkboxes' },

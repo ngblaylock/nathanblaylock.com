@@ -1,4 +1,4 @@
-import { mdiArrowDown, mdiArrowLeft, mdiArrowRight, mdiArrowULeftTop, mdiArrowUp, mdiArrowURightTop, mdiBook, mdiChartLine, mdiCheck, mdiChevronDown, mdiChevronLeft, mdiChevronRight, mdiChevronUp, mdiClose, mdiCodeJson, mdiContentCopy, mdiDelete, mdiDragVertical, mdiEmail, mdiFormatBold, mdiFormatItalic, mdiFormatListBulleted, mdiFormatListNumbered, mdiFormatQuoteClose, mdiFormatStrikethroughVariant, mdiFormatUnderline, mdiHammerScrewdriver, mdiHome, mdiLink, mdiLinkOff, mdiMagnify, mdiMarker, mdiMenu, mdiMinus, mdiPencil, mdiPlus, mdiPoll, mdiTable, mdiViewList, mdiXml, } from '@mdi/js';
+import { mdiArrowDown, mdiArrowLeft, mdiArrowRight, mdiArrowULeftTop, mdiArrowUp, mdiArrowURightTop, mdiBook, mdiChartLine, mdiCheck, mdiChevronDown, mdiChevronLeft, mdiChevronRight, mdiChevronUp, mdiClose, mdiCodeJson, mdiContentCopy, mdiDelete, mdiDragVertical, mdiEmail, mdiFormatBold, mdiFormatItalic, mdiFormatListBulleted, mdiFormatListNumbered, mdiFormatQuoteClose, mdiFormatStrikethroughVariant, mdiFormatUnderline, mdiHammerScrewdriver, mdiHome, mdiLink, mdiLinkOff, mdiMagnify, mdiMarker, mdiMenu, mdiMinus, mdiOpenInNew, mdiPencil, mdiPlus, mdiPoll, mdiTable, mdiViewList, mdiXml, } from '@mdi/js';
 import { darkMode, firebase, gitHub, lightMode, nbMedia, systemMode, } from './custom-icon-paths';
 const icons = {
     arrowDown: mdiArrowDown,
@@ -38,6 +38,7 @@ const icons = {
     linkOff: mdiLinkOff,
     menu: mdiMenu,
     minus: mdiMinus,
+    openInNew: mdiOpenInNew,
     plus: mdiPlus,
     poll: mdiPoll,
     redo: mdiArrowURightTop,

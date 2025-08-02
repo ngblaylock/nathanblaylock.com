@@ -1,5 +1,6 @@
 <script lang="ts">
   import ComponentApi from '$components/ComponentApi.svelte';
+  import ComponentDoc from '$components/ComponentDoc.svelte';
   import Seo from '$components/Seo.svelte';
 
   const props = [
@@ -20,7 +21,7 @@
       name: 'navItems',
       type: `{
   brand: { 
-    href: string;
+    href?: string;
     label: string; 
     src: string; 
   };
@@ -69,16 +70,26 @@
 
 <ComponentApi {props} />
 
-<h2>Example</h2>
-
 <GDevNote>
-  Need to add a <code>fullPage</code> prop to the <code>ComponentDoc</code> component.
+  When building GAppNav, there is an issue with the <code>as ItemName</code> since
+  it builds to JS and not TS.
 </GDevNote>
 
-<GBtn
-  variant="secondary"
-  href="/uikit/components/app-nav/example"
-  target="_blank"
+<ComponentDoc
+  title="App Navigation"
+  component="AppNav"
+  fullPage
 >
-  Full Page Example
-</GBtn>
+  <p>This example uses an object to fill in the links in the AppNav.</p>
+</ComponentDoc>
+
+<ComponentDoc
+  title="App Navigation w/ Snippet"
+  component="AppNavAlt"
+  fullPage
+>
+  <p>
+    This example uses a Snippet to render links in the AppNav. This is useful
+    for advanced manipulation.
+  </p>
+</ComponentDoc>

@@ -1,6 +1,10 @@
 <script lang="ts">
-  import { type IconName } from 'nathanblaylock.com/icons';
-  let items: { label: string; value: unknown; icon?: IconName }[] = $state([
+  import type { IconName } from 'nathanblaylock.com';
+  let items: {
+    label: string;
+    value: unknown;
+    icon?: IconName;
+  }[] = $state([
     {
       label: 'Podium View',
       value: 'podium',

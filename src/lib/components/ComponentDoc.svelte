@@ -1,15 +1,24 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onMount, type Snippet } from 'svelte';
   import { codeToHtml } from 'shiki';
   import { componentData } from '$lib/component-docs.svelte';
-  import uniqueId from 'lodash/uniqueId';
 
-  let { component, title } = $props();
+  let {
+    children,
+    component,
+    fullPage,
+    title,
+  }: {
+    children?: Snippet;
+    component: string;
+    fullPage?: boolean;
+    title: string;
+  } = $props();
 
   let DynamicComponent: any = $state();
   let codeHTML = $state('');
 
-  let uid = uniqueId('u');
+  const uid = $props.id();
 
   onMount(async () => {
     const module = await import(`$PACKAGE/examples/${component}.svelte`);
@@ -27,6 +36,11 @@
   <div>
     <h2>{title}</h2>
     <div class="card gap-0 mb-4">
+      {#if children}
+        <div class="card-body border-bottom border-base-4 bg-base-2 pb-0">
+          {@render children()}
+        </div>
+      {/if}
       <div class="accordion accordion-flush">
         <div class="accordion-item">
           <h2 class="accordion-header">
@@ -38,18 +52,38 @@
               aria-controls={uid}
             >
               <div class="hstack">
-                <GIcon size={1.5} name="code" />
+                <GIcon
+                  size={1.5}
+                  name="code"
+                />
                 Code Example
               </div>
             </button>
           </h2>
-          <div id={uid} class="accordion-collapse collapse">
+          <div
+            id={uid}
+            class="accordion-collapse collapse"
+          >
             <div class="shiki-example">{@html codeHTML}</div>
           </div>
         </div>
       </div>
       <div class="bg-base-1 p-4">
-        <DynamicComponent />
+        {#if fullPage}
+          <p>
+            This component can only be previewed in a full page environment.
+          </p>
+          <GBtn
+            variant="secondary"
+            href="/uikit/full-page-example?component={component}"
+            target="_blank"
+            iconRight="openInNew"
+          >
+            Full Page Example
+          </GBtn>
+        {:else}
+          <DynamicComponent />
+        {/if}
       </div>
     </div>
   </div>

@@ -1,6 +1,9 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
-  import type { IconName } from './icons';
+  import GAvatar from './GAvatar.svelte';
+  import GIcon from './GIcon.svelte';
+  import GIconBtn from './GIconBtn.svelte';
+  import type { AppNavItems } from './';
 
   let {
     appNav,
@@ -9,20 +12,7 @@
   }: {
     appNav?: Snippet;
     children: Snippet;
-    navItems?: {
-      brand: {
-        href: string;
-        label: string;
-        src: string;
-      };
-      links: {
-        active?: boolean;
-        href: string;
-        icon?: string;
-        label: string;
-        src?: string;
-      }[];
-    };
+    navItems?: AppNavItems;
   } = $props();
 
   let expanded = $state(false);
@@ -36,16 +26,26 @@
     {#if appNav}
       {@render appNav()}
     {:else if navItems}
-      <a
-        href={navItems.brand.href}
-        class="app-nav-brand"
-      >
-        <img
-          src={navItems.brand.src}
-          alt=""
-        />
-        <div class="app-nav-brand-text">{navItems.brand.label}</div>
-      </a>
+      {#if navItems.brand.href}
+        <a
+          href={navItems.brand.href}
+          class="app-nav-brand"
+        >
+          <img
+            src={navItems.brand.src}
+            alt=""
+          />
+          <div class="app-nav-brand-text">{navItems.brand.label}</div>
+        </a>
+      {:else}
+        <div class="app-nav-brand">
+          <img
+            src={navItems.brand.src}
+            alt=""
+          />
+          <div class="app-nav-brand-text">{navItems.brand.label}</div>
+        </div>
+      {/if}
       {#each navItems.links as link}
         <a
           href={link.href}
@@ -53,7 +53,7 @@
           class:active={link.active}
         >
           {#if link.icon}
-            <GIcon name={link.icon as IconName} />
+            <GIcon name={link.icon} />
           {:else if link.src}
             <GAvatar src={link.src} />
           {/if}

@@ -1,15 +1,53 @@
-<script lang="ts">import { dev } from "$app/environment";
-let { devToolbarOffset = false, children, appNav } = $props();
+<script lang="ts">import GAvatar from './GAvatar.svelte';
+import GIcon from './GIcon.svelte';
+import GIconBtn from './GIconBtn.svelte';
+let { appNav, children, navItems, } = $props();
 let expanded = $state(false);
 </script>
 
 <div
-  style="{devToolbarOffset && dev ? '--dev-toolbar-offset: 16px;' : null}"
   class="app-nav-container"
   class:expanded
 >
   <nav class="app-nav">
-    {@render appNav?.()}
+    {#if appNav}
+      {@render appNav()}
+    {:else if navItems}
+      {#if navItems.brand.href}
+        <a
+          href={navItems.brand.href}
+          class="app-nav-brand"
+        >
+          <img
+            src={navItems.brand.src}
+            alt=""
+          />
+          <div class="app-nav-brand-text">{navItems.brand.label}</div>
+        </a>
+      {:else}
+        <div class="app-nav-brand">
+          <img
+            src={navItems.brand.src}
+            alt=""
+          />
+          <div class="app-nav-brand-text">{navItems.brand.label}</div>
+        </div>
+      {/if}
+      {#each navItems.links as link}
+        <a
+          href={link.href}
+          class="app-nav-link"
+          class:active={link.active}
+        >
+          {#if link.icon}
+            <GIcon name={link.icon} />
+          {:else if link.src}
+            <GAvatar src={link.src} />
+          {/if}
+          {link.label}
+        </a>
+      {/each}
+    {/if}
     <div
       class="d-none d-xl-block mt-auto {expanded
         ? 'align-self-end'

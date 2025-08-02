@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { type IconName } from './icons';
+  import type { IconName } from './';
   import GIcon from './GIcon.svelte';
   let {
     class: classList = '',

@@ -1,5 +1,11 @@
 <script lang="ts">
   import { themeSwitcher } from '@ngblaylock/bootstrap-extensions';
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    themeSwitcher.initTheme();
+  });
+
   if (import.meta.hot) {
     import.meta.hot.accept(() => {
       setTimeout(() => {
