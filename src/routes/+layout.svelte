@@ -21,15 +21,12 @@
       once: true,
       offset: 100,
     });
-
-    // This fixes WAVE issue
-    document.querySelector('style[lang="scss"]')?.removeAttribute('lang');
   });
 </script>
 
 <svelte:head>
   {#if !page.route.id?.startsWith('/uikit')}
-    <style lang="scss">
+    <style>
       body {
         overflow-y: scroll;
         background-image: url('/images/optimized/bg/bg_texture.jpg');

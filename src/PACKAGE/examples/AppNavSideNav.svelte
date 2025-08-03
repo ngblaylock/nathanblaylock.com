@@ -1,13 +1,50 @@
 <script lang="ts">
   import DevToolbar from '$components/DevToolbar.svelte';
   import Footer from '$components/Footer.svelte';
+  import type { AppNavItems } from 'nathanblaylock.com';
 
   let lines = $state(20);
   let snLines = $state(2);
+
+  const navItems: AppNavItems = {
+    brand: {
+      src: 'https://picsum.photos/200',
+      label: 'App Name',
+      // href: '/',
+    },
+    links: [
+      {
+        icon: 'home',
+        label: 'Home',
+        href: '/uikit/components/app-nav',
+        active: true,
+      },
+      {
+        icon: 'delete',
+        label: 'Trash Can',
+        href: '/uikit/components/app-nav',
+      },
+      {
+        icon: 'darkMode',
+        label: 'Theme',
+        href: '/uikit/components/app-nav',
+      },
+      {
+        icon: 'edit',
+        label: 'Edit',
+        href: '/uikit/components/app-nav',
+      },
+      {
+        src: '/images/optimized/profile/blaylock-nathan.jpg',
+        label: 'Profile',
+        href: '/uikit/components/app-nav',
+      },
+    ],
+  };
 </script>
 
 <DevToolbar />
-<div class="d-flex">
+<GAppNav {navItems}>
   <GSideNav header="Side Nav">
     <div class="flex-fill d-flex flex-column">
       <main class="flex-fill">
@@ -58,4 +95,4 @@
       />
     {/snippet}
   </GSideNav>
-</div>
+</GAppNav>

@@ -43,7 +43,7 @@
 
 <p>
   This component was well thought through, and is designed to work well with the
-  left navigation.
+  SideNav component.
 </p>
 
 <p>
@@ -56,11 +56,6 @@
 </p>
 
 <ComponentApi {props} />
-
-<GDevNote>
-  When building GAppNav, there is an issue with the <code>as ItemName</code> since
-  it builds to JS and not TS.
-</GDevNote>
 
 <ComponentDoc
   title="App Navigation"
@@ -79,4 +74,12 @@
     This example uses a Snippet to render links in the AppNav. This is useful
     for advanced manipulation.
   </p>
+</ComponentDoc>
+
+<ComponentDoc
+  title="GAppNav + GSideNav"
+  component="AppNavSideNav"
+  fullPage
+>
+  This example uses AppNav with the SideNav component.
 </ComponentDoc>

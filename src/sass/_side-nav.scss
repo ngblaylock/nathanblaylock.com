@@ -20,12 +20,12 @@
         display: flex;
         align-items: center;
         gap: map-get($spacers, 1);
-        justify-content: flex-end
+        justify-content: flex-end;
       }
     }
     .offcanvas {
       background-color: var(--bse-base-2) !important;
-      .offcanvas-body{
+      .offcanvas-body {
         display: block;
         overflow-y: auto;
         padding: map-get($spacers, 3) 0 0 0;
@@ -59,7 +59,7 @@
         width: 100% !important;
         flex: 1 1 0;
         display: flex;
-        .offcanvas-body{
+        .offcanvas-body {
           flex: 1 1 0;
         }
       }

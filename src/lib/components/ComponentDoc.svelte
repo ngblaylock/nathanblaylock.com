@@ -34,11 +34,11 @@
 
 {#if DynamicComponent}
   <div>
-    <h2>{title}</h2>
+    <h2 class="mt-6">{title}</h2>
     <div class="card gap-0 mb-4">
       {#if children}
         <div class="card-body border-bottom border-base-4 bg-base-2 pb-0">
-          {@render children()}
+          <div class="mb-4">{@render children()}</div>
         </div>
       {/if}
       <div class="accordion accordion-flush">

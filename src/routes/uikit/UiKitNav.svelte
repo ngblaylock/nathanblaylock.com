@@ -17,10 +17,9 @@
       ],
     },
     {
-      name: 'Components',
+      name: 'General Components',
       folder: '/components',
       items: [
-        { name: 'AppNav', slug: 'app-nav' },
         { name: 'Avatars', slug: 'avatars' },
         { name: 'Buttons', slug: 'buttons' },
         { name: 'Debug', slug: 'debug' },
@@ -32,6 +31,14 @@
           slug: 'sortable-cards',
           tags: ['draggable cards'],
         },
+      ],
+    },
+    {
+      name: 'Layout Components',
+      folder: '/components',
+      items: [
+        { name: 'AppNav', slug: 'app-nav' },
+        { name: 'SideNav', slug: 'side-nav' },
       ],
     },
     {
@@ -93,25 +100,27 @@
     bind:value={search}
   />
 </div>
-{#each filteredNav as group}
-  {#if group.name}
-    <h3 class="h6 text-base-i4 border-top pt-2 px-3 small mt-4">
-      <strong>{group.name}</strong>
-    </h3>
-  {/if}
-  <div class="list-group">
-    {#each group.items as item}
-      {@const path = `/uikit${group.folder}${item.slug ? `/${item.slug}` : ''}`}
-      <div>
-        <a
-          href={path}
-          class="list-group-item list-group-item-action"
-          class:active={isActive(path)}
-          aria-current={isActive(path)}
-        >
-          {item.name}
-        </a>
-      </div>
-    {/each}
-  </div>
-{/each}
+<div class="mb-5">
+  {#each filteredNav as group}
+    {#if group.name}
+      <h3 class="h6 text-base-i4 border-top pt-2 px-3 small mt-4">
+        <strong>{group.name}</strong>
+      </h3>
+    {/if}
+    <div class="list-group">
+      {#each group.items as item}
+        {@const path = `/uikit${group.folder}${item.slug ? `/${item.slug}` : ''}`}
+        <div>
+          <a
+            href={path}
+            class="list-group-item list-group-item-action"
+            class:active={isActive(path)}
+            aria-current={isActive(path)}
+          >
+            {item.name}
+          </a>
+        </div>
+      {/each}
+    </div>
+  {/each}
+</div>

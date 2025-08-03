@@ -51,7 +51,7 @@
   <div class="row row-gap-4">
     {#each Object.entries(icons) as [icon, key]}
       {#if icon.toLowerCase().includes(searchIcons.toLowerCase())}
-        <div class="col-lg-6 col-xl-4">
+        <div class="col-md-6 col-xl-4">
           <div class="card hstack px-4 py-2">
             <GIcon
               name={icon as IconName}
