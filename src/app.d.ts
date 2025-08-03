@@ -2,6 +2,9 @@
 // for information about these interfaces
 
 declare global {
+  interface Window {
+    bootstrap: any;
+  }
   type Variant =
     | 'primary'
     | 'secondary'

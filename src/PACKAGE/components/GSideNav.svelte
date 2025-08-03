@@ -1,5 +1,5 @@
 <script lang="ts">
-  import DevToolbar from '$components/DevToolbar.svelte';
+  import { beforeNavigate } from '$app/navigation';
   import type { Snippet } from 'svelte';
 
   let {
@@ -13,9 +13,19 @@
     sideNavContent: Snippet;
     sideNavTools?: Snippet;
   } = $props();
+
+  const uid = $props.id();
+
+  beforeNavigate(async () => {
+    const offcanvasEl = document.getElementById(uid);
+    if (!offcanvasEl) return;
+    const offcanvas = window.bootstrap.Offcanvas.getInstance(offcanvasEl);
+    if (offcanvas) {
+      offcanvas.hide();
+    }
+  });
 </script>
 
-<DevToolbar />
 <div class="side-nav-container">
   <nav class="side-nav navbar navbar-expand-lg">
     <div class="side-nav-toolbar">
@@ -25,21 +35,26 @@
         class="d-lg-none"
         title="Toggle navigation"
         data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar"
+        data-bs-target="#{uid}"
+        aria-controls={uid}
       />
-      <div class="side-nav-header">{header}</div>
+      <div
+        id="{uid}Label"
+        class="side-nav-header"
+      >
+        {header}
+      </div>
       {#if sideNavTools}
         <div class="side-nav-tools">
           {@render sideNavTools()}
         </div>
       {/if}
     </div>
-    <div
+    <aside
       class="offcanvas offcanvas-start"
       tabindex="-1"
-      id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel"
+      id={uid}
+      aria-labelledby="{uid}Label"
     >
       <div class="offcanvas-body">
         <GIconBtn
@@ -51,7 +66,7 @@
         />
         {@render sideNavContent()}
       </div>
-    </div>
+    </aside>
   </nav>
   {@render children()}
 </div>

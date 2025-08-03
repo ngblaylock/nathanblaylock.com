@@ -81,57 +81,37 @@
   });
 </script>
 
-<div class="uikit-nav bg-base-2 py-5 px-3 border-end">
-  <aside>
-    <div class="hstack">
-      <h2>UI Kit</h2>
-      <code>v{__APP_VERSION__}</code>
-      <GIconBtn
-        icon="home"
-        title="Main Website"
-        href="/"
-        variant="base-i4"
-        class="ms-auto"
-      />
-    </div>
-    <div class="mb-4">
-      <GTextInput
-        label="Hidden Label"
-        hideLabel
-        placeholder="Search Pages"
-        type="search"
-        id="uikit-search"
-        bind:value={search}
-      />
-    </div>
-    {#each filteredNav as group}
-      {#if group.name}
-        <h3 class="h6 text-base-i4 border-top pt-2">
-          <strong>{group.name}</strong>
-        </h3>
-      {/if}
-      <div class="list-group mx-n3 mb-4">
-        {#each group.items as item}
-          {@const path = `/uikit${group.folder}${item.slug ? `/${item.slug}` : ''}`}
-          <div>
-            <a
-              href={path}
-              class="list-group-item list-group-item-action"
-              class:active={isActive(path)}
-              aria-current={isActive(path)}
-            >
-              {item.name}
-            </a>
-          </div>
-        {/each}
+<h5 class="px-3 pt-3 d-lg-none">UI Kit Nav</h5>
+
+<div class="mb-3 px-3">
+  <GTextInput
+    label="Hidden Label"
+    hideLabel
+    placeholder="Search Pages"
+    type="search"
+    id="uikit-search"
+    bind:value={search}
+  />
+</div>
+{#each filteredNav as group}
+  {#if group.name}
+    <h3 class="h6 text-base-i4 border-top pt-2 px-3 small mt-4">
+      <strong>{group.name}</strong>
+    </h3>
+  {/if}
+  <div class="list-group">
+    {#each group.items as item}
+      {@const path = `/uikit${group.folder}${item.slug ? `/${item.slug}` : ''}`}
+      <div>
+        <a
+          href={path}
+          class="list-group-item list-group-item-action"
+          class:active={isActive(path)}
+          aria-current={isActive(path)}
+        >
+          {item.name}
+        </a>
       </div>
     {/each}
-  </aside>
-</div>
-
-<style lang="scss">
-  .uikit-nav {
-    max-width: 350px !important;
-    min-width: 350px !important;
-  }
-</style>
+  </div>
+{/each}
