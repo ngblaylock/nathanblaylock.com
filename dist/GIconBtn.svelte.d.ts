@@ -1,4 +1,4 @@
-import { type IconName } from './icons';
+import type { IconName, Variant } from './';
 type $$ComponentProps = {
     class?: string;
     disabled?: boolean;

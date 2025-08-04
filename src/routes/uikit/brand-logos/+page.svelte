@@ -7,6 +7,7 @@
 <Seo title="Brand Logos" />
 
 <h1>Brand Logos</h1>
+<p>These are not available in the package, just in this project.</p>
 <div class="row row-gap-4 mb-7">
   {#each logos as logo}
     <div class="col-sm-6">

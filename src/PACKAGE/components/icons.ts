@@ -33,6 +33,7 @@ import {
   mdiMarker,
   mdiMenu,
   mdiMinus,
+  mdiOpenInNew,
   mdiPencil,
   mdiPlus,
   mdiPoll,
@@ -88,6 +89,7 @@ const icons = {
   linkOff: mdiLinkOff,
   menu: mdiMenu,
   minus: mdiMinus,
+  openInNew: mdiOpenInNew,
   plus: mdiPlus,
   poll: mdiPoll,
   redo: mdiArrowURightTop,
@@ -100,4 +102,4 @@ const icons = {
 };
 
 export default icons;
-export type IconName = keyof typeof icons;
+export type IconName = keyof typeof icons; // Prefer `import type { IconName } from 'nathanblaylock.com'`

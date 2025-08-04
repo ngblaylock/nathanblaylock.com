@@ -1,5 +1,11 @@
 <script lang="ts">
   import { themeSwitcher } from '@ngblaylock/bootstrap-extensions';
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    themeSwitcher.initTheme();
+  });
+
   if (import.meta.hot) {
     import.meta.hot.accept(() => {
       setTimeout(() => {
@@ -11,30 +17,32 @@
 
 <div class="border-top">
   <div class="container">
-    <footer class="hstack flex-wrap justify-content-center py-4">
-      <div>© Nathan Blaylock {new Date().getFullYear()}</div>
-      <div class="hstack flex-wrap justify-content-center">
-        <a
-          href="https://docs.nathanblaylock.com/"
-          target="_blank">Documentation</a
-        >
-        <a
-          href="https://github.com/ngblaylock"
-          target="_blank">GitHub</a
-        >
-        <a
-          href="https://dev.to/ngblaylock"
-          target="_blank">Dev.to Blog</a
-        >
-        <a href="/privacy">Privacy</a>
-        <input
-          type="checkbox"
-          aria-label="Switch Theme"
-          class="theme-switch"
-          data-bse-theme-switch
-        />
+    <footer class="hstack flex-wrap justify-content-center justify-content-md-between py-4">
+      <div>
+        <div class="text-center text-md-start">© Nathan Blaylock {new Date().getFullYear()}</div>
+        <div class="hstack flex-wrap justify-content-center">
+          <a
+            href="https://docs.nathanblaylock.com/"
+            target="_blank">Documentation</a
+          >
+          <a
+            href="https://github.com/ngblaylock"
+            target="_blank">GitHub</a
+          >
+          <a
+            href="https://dev.to/ngblaylock"
+            target="_blank">Dev.to Blog</a
+          >
+          <a href="/privacy">Privacy</a>
+          <input
+            type="checkbox"
+            aria-label="Switch Theme"
+            class="theme-switch"
+            data-bse-theme-switch
+          />
+        </div>
       </div>
-      <div class="hstack gap-2 ms-lg-auto">
+      <div class="hstack gap-2">
         <a
           href="https://www.nngroup.com/ux-certification/verify/"
           target="_blank"
