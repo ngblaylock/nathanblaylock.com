@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { Variant } from 'nathanblaylock.com';
   const variants: Variant[] = [
     'primary',
     'secondary',

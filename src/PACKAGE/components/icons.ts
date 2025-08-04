@@ -102,4 +102,4 @@ const icons = {
 };
 
 export default icons;
-export type IconName = keyof typeof icons; // Prefer `import { IconName } from 'nathanblaylock.com'`
+export type IconName = keyof typeof icons; // Prefer `import type { IconName } from 'nathanblaylock.com'`
