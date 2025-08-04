@@ -6,11 +6,11 @@
   import type { AppNavItems } from './';
 
   let {
-    appNav,
+    appNavContent,
     children,
     navItems,
   }: {
-    appNav?: Snippet;
+    appNavContent?: Snippet;
     children: Snippet;
     navItems?: AppNavItems;
   } = $props();
@@ -23,8 +23,8 @@
   class:expanded
 >
   <nav class="app-nav">
-    {#if appNav}
-      {@render appNav()}
+    {#if appNavContent}
+      {@render appNavContent()}
     {:else if navItems}
       {#if navItems.brand.href}
         <a

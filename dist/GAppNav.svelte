@@ -1,7 +1,7 @@
 <script lang="ts">import GAvatar from './GAvatar.svelte';
 import GIcon from './GIcon.svelte';
 import GIconBtn from './GIconBtn.svelte';
-let { appNav, children, navItems, } = $props();
+let { appNavContent, children, navItems, } = $props();
 let expanded = $state(false);
 </script>
 
@@ -10,8 +10,8 @@ let expanded = $state(false);
   class:expanded
 >
   <nav class="app-nav">
-    {#if appNav}
-      {@render appNav()}
+    {#if appNavContent}
+      {@render appNavContent()}
     {:else if navItems}
       {#if navItems.brand.href}
         <a

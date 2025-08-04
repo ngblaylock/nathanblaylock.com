@@ -1,7 +1,7 @@
 import type { Snippet } from 'svelte';
 import type { AppNavItems } from './';
 type $$ComponentProps = {
-    appNav?: Snippet;
+    appNavContent?: Snippet;
     children: Snippet;
     navItems?: AppNavItems;
 };

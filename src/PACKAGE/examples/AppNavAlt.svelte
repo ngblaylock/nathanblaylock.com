@@ -29,7 +29,7 @@
     <Footer />
   </div>
 
-  {#snippet appNav()}
+  {#snippet appNavContent()}
     <a
       href="/uikit/components/app-nav"
       class="app-nav-brand"

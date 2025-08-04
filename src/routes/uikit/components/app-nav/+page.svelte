@@ -5,10 +5,10 @@
 
   const props = [
     {
-      name: 'appNav',
+      name: 'appNavContent',
       type: 'Snippet',
       description:
-        "This snippet will replace the <code>navItems</code> prop. Use this for edge case scenarios when programmatically adding items isn't helpful.",
+        "The content within the red navigation section. This snippet will replace the <code>navItems</code> prop. Use this for edge case scenarios when programmatically adding items isn't helpful.",
     },
     {
       name: 'children',
