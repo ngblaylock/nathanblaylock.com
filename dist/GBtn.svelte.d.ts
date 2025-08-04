@@ -1,5 +1,5 @@
 import type { Snippet } from 'svelte';
-import type { IconName } from './';
+import type { IconName, Variant } from './';
 type $$ComponentProps = {
     children: Snippet;
     class?: string;
