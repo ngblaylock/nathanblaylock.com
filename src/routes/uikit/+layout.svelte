@@ -3,7 +3,6 @@
   import { componentData } from '$lib/component-docs.svelte';
   import UiKitNav from './UiKitNav.svelte';
   import Footer from '$components/Footer.svelte';
-  import GSideNav from '$PACKAGE/components/GSideNav.svelte';
   import DevToolbar from '$components/DevToolbar.svelte';
 
   let { data, children } = $props();
