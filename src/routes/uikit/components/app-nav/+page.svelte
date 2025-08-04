@@ -21,7 +21,6 @@
       name: 'navItems',
       type: `ApNavItems`,
       description: 'Adds items to the red app navigation bar.',
-      required: true,
     },
   ];
 </script>
