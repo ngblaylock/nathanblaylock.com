@@ -1,9 +1,11 @@
 <script lang="ts">
   const {
+    class: className = '',
     size = 48,
     src,
     ...restProps
   }: {
+    class: string;
     size?: string | number;
     src?: string;
     [key: string]: unknown;
@@ -14,7 +16,7 @@
 </script>
 
 <div
-  class="d-inline-flex"
+  class="d-inline-flex {className}"
   {...restProps}
 >
   <div

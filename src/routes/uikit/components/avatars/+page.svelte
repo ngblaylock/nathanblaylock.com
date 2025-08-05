@@ -5,15 +5,23 @@
 
   const props = [
     {
+      name: 'class',
+      default: '',
+      type: 'string',
+      description: 'Any additional classes to add to the parent element.',
+    },
+    {
       name: 'size',
       default: 48,
       type: 'string | number',
-      description: "The size of the Avatar. If the value is a number, it will be measured in pixels."
+      description:
+        'The size of the Avatar. If the value is a number, it will be measured in pixels.',
     },
     {
       name: 'src',
       type: 'string',
-      description: "The URL of the image. The fallback is used while the image loads."
+      description:
+        'The URL of the image. The fallback is used while the image loads.',
     },
     {
       name: '...restProps',
@@ -30,6 +38,22 @@
 />
 
 <h1>Avatars</h1>
+
+<GAvatar
+  src="/images/optimized/profile/blaylock-nathan.jpg"
+  size="3.5em"
+  class="mt-8"
+/>
+<GAvatar
+  src="/images/optimized/profile/blaylock-nathan.jpg"
+  size="3.5em"
+  class="mt-8"
+/>
+<GAvatar
+  src="/images/optimized/profile/blaylock-nathan.jpg"
+  size="3.5em"
+  class="mt-8"
+/>
 
 <ComponentApi {props} />
 
