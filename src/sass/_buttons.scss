@@ -1,6 +1,8 @@
 @import '../../node_modules/bootstrap/scss/buttons';
 
-.btn.btn-icon:not([class*='btn-outline']) {
+.btn{
+  white-space: nowrap;
+  &.btn-icon:not([class*='btn-outline']) {
   background: transparent;
   color: var(--bs-btn-bg);
   border-color: transparent;
@@ -23,7 +25,7 @@
     color: var(--bs-btn-active-color);
     border-color: var(--bs-btn-active-border-color);
   }
-}
+}}
 
 @include color-mode(dark) {
   .btn-outline-primary{
