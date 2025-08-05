@@ -8,8 +8,9 @@
   const navItems: AppNavItems = {
     brand: {
       src: 'https://picsum.photos/200',
-      label: 'App Name',
-      // href: '/',
+      alt: 'Alt Text for linked brands without a label',
+      // label: 'App Name',
+      href: '/',
     },
     links: [
       {
