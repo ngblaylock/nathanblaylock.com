@@ -1,4 +1,4 @@
-# Snippets
+# Code Snippets
 
 This repo contains two snippet files, one is a `local.code-snippet` file which is nathanblaylock.com specific, and a `nathanblaylock.code-snippets` file which is intended to be shared with the PACKAGE.
 

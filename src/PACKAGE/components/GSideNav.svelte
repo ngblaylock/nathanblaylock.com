@@ -1,6 +1,7 @@
 <script lang="ts">
   import { beforeNavigate } from '$app/navigation';
   import type { Snippet } from 'svelte';
+  import uniqueId from 'lodash/uniqueId';
 
   let {
     children,
@@ -14,7 +15,7 @@
     sideNavTools?: Snippet;
   } = $props();
 
-  const uid = $props.id();
+  const uid = uniqueId('u');
 
   beforeNavigate(async () => {
     const offcanvasEl = document.getElementById(uid);

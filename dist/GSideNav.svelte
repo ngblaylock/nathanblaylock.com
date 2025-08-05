@@ -1,6 +1,7 @@
 <script lang="ts">import { beforeNavigate } from '$app/navigation';
+import uniqueId from 'lodash/uniqueId';
 let { children, header, sideNavContent, sideNavTools, } = $props();
-const uid = $props.id();
+const uid = uniqueId('u');
 beforeNavigate(async () => {
     const offcanvasEl = document.getElementById(uid);
     if (!offcanvasEl)

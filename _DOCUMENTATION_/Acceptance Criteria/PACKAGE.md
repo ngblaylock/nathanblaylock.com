@@ -2,7 +2,9 @@
 
 ## Bundle reusable components and related files to be used in other packages.
 
-Typescript support is important. This won't be available on NPM, so this will need to be installed with a GitHub URL.
+Typescript support is important. 
+
+This won't be available on NPM, so this will need to be installed with a GitHub URL.
 
 ```bash
 npm i github:ngblaylock/nathanblaylock.com#v2.4.0 # <-- Change the version to the latest tag

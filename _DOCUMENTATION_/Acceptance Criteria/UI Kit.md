@@ -30,5 +30,5 @@ This should autofocus the first time the user shows up
   - Required
 - Example Usage
   - Code Example (auto-pulled)
-  - Live Output
+  - Live Output or Full Page if applicable
 - Optional additional information related
