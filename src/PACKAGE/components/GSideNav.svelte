@@ -2,6 +2,7 @@
   import { beforeNavigate } from '$app/navigation';
   import type { Snippet } from 'svelte';
   import uniqueId from 'lodash/uniqueId';
+  import GIconBtn from './GIconBtn.svelte';
 
   let {
     children,

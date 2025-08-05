@@ -1,5 +1,6 @@
 <script lang="ts">import { beforeNavigate } from '$app/navigation';
 import uniqueId from 'lodash/uniqueId';
+import GIconBtn from './GIconBtn.svelte';
 let { children, header, sideNavContent, sideNavTools, } = $props();
 const uid = uniqueId('u');
 beforeNavigate(async () => {
