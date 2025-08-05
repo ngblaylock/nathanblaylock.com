@@ -39,22 +39,6 @@
 
 <h1>Avatars</h1>
 
-<GAvatar
-  src="/images/optimized/profile/blaylock-nathan.jpg"
-  size="3.5em"
-  class="mt-8"
-/>
-<GAvatar
-  src="/images/optimized/profile/blaylock-nathan.jpg"
-  size="3.5em"
-  class="mt-8"
-/>
-<GAvatar
-  src="/images/optimized/profile/blaylock-nathan.jpg"
-  size="3.5em"
-  class="mt-8"
-/>
-
 <ComponentApi {props} />
 
 <ComponentDoc
