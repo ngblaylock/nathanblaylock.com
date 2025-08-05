@@ -2,6 +2,9 @@
   min-height: calc(100dvh - var(--dev-toolbar-offset));
   display: flex;
   flex-direction: column;
+  > * {
+    min-width: 1px;
+  }
   .side-nav {
     border-bottom: $border-width solid $border-color;
     height: map-get($spacers, 7);
