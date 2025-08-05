@@ -20,7 +20,7 @@ let expanded = $state(false);
         >
           <img
             src={navItems.brand.src}
-            alt=""
+            alt="{navItems.brand.alt}"
           />
           <div class="app-nav-brand-text">{navItems.brand.label}</div>
         </a>
@@ -30,7 +30,9 @@ let expanded = $state(false);
             src={navItems.brand.src}
             alt=""
           />
-          <div class="app-nav-brand-text">{navItems.brand.label}</div>
+          {#if navItems.brand.label}
+            <div class="app-nav-brand-text">{navItems.brand.label}</div>
+          {/if}
         </div>
       {/if}
       {#each navItems.links as link}

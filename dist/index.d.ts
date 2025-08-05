@@ -18,8 +18,9 @@ export type IconName = keyof typeof icons;
 /** @type for the GAppNav navItems prop */
 export type AppNavItems = {
     brand: {
+        alt?: string;
         href?: string;
-        label: string;
+        label?: string;
         src: string;
     };
     links: {
