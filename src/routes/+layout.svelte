@@ -21,15 +21,12 @@
       once: true,
       offset: 100,
     });
-
-    // This fixes WAVE issue
-    document.querySelector('style[lang="scss"]')?.removeAttribute('lang');
   });
 </script>
 
 <svelte:head>
   {#if !page.route.id?.startsWith('/uikit')}
-    <style lang="scss">
+    <style>
       body {
         overflow-y: scroll;
         background-image: url('/images/optimized/bg/bg_texture.jpg');
@@ -52,14 +49,12 @@
 
 <Analytics />
 <Meta />
-<DevToolbar />
 
-<div class="site">
-  {#if page.route.id?.startsWith('/uikit')}
-    <main>
-      {@render children?.()}
-    </main>
-  {:else}
+{#if page.route.id?.startsWith('/uikit')}
+  {@render children?.()}
+{:else}
+  <DevToolbar />
+  <div class="site">
     <BgAngle />
     <main>
       <Navbar />
@@ -75,9 +70,9 @@
         {@render children?.()}
       </div>
     </main>
-  {/if}
-  <Footer />
-</div>
+    <Footer />
+  </div>
+{/if}
 
 <style lang="scss">
   .site {

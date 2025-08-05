@@ -1,4 +1,4 @@
-<script lang="ts">import icons, {} from './icons';
+<script lang="ts">import icons from './icons';
 let { name, size = 1 } = $props();
 let deprecations = [
     { old: 'pencil', new: 'edit' },

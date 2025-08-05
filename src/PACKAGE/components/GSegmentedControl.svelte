@@ -1,6 +1,6 @@
 <script lang="ts">
   import GIcon from './GIcon.svelte';
-  import { type IconName } from './icons';
+  import type { IconName } from './';
   import uniqueId from 'lodash/uniqueId';
 
   let {

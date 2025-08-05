@@ -129,9 +129,15 @@ $table-cell-padding-y: 0.375rem;
 
 // Border
 $border-width: 2px;
-$border-radius: 2px;
 $border-color: $gray-300;
 $border-color-dark: $gray-700;
+
+$border-radius: 2px;
+$border-radius: $border-radius;
+$border-radius-sm: $border-radius;
+$border-radius-lg: $border-radius;
+$border-radius-xl: $border-radius;
+$border-radius-xxl: $border-radius;
 
 // Accordions
 $accordion-button-color: var(--bse-base-i1);
@@ -194,3 +200,13 @@ $list-group-border-radius: 0;
 $list-group-item-padding-y: map-get($spacers, 1);
 $list-group-item-padding-x: map-get($spacers, 3);
 $list-group-hover-bg: var(--bse-base-4);
+
+// Modals
+$modal-content-border-color: $border-color;
+
+// Offcanvas
+$offcanvas-horizontal-width: 320px;
+
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/variables-dark';

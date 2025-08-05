@@ -36,6 +36,7 @@ declare const icons: {
     linkOff: string;
     menu: string;
     minus: string;
+    openInNew: string;
     plus: string;
     poll: string;
     redo: string;

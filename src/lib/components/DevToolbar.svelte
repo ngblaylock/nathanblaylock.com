@@ -3,8 +3,18 @@
   import DevToolbarSeo from './DevToolbarSeo.svelte';
 </script>
 
+<svelte:head>
+  {#if dev}
+    <style>
+      body {
+        --dev-toolbar-offset: 16px;
+      }
+    </style>
+  {/if}
+</svelte:head>
+
 {#if dev}
-  <div class="dev-toolbar-collapse-container z-3">
+  <div class="dev-toolbar-collapse-container z-3 position-sticky top-0">
     <div class="dev-toolbar-collapse">
       <div class="dev-toolbar">
         <div class="dev-toolbar-body">

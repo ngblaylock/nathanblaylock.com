@@ -20,5 +20,5 @@ Instead of making breaking changes, or duplicating icon paths, icons can be depr
 If you need to get the types for icon names, you can import them like:
 
 ```ts
- import { type IconName } from 'nathanblaylock.com/icons';
+ import type { IconName } from 'nathanblaylock.com';
 ```

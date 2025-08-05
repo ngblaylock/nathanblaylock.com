@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
-  import { type IconName } from './icons';
+  import type { IconName, Variant } from './';
   import GIcon from './GIcon.svelte';
   let {
     children,
@@ -15,7 +15,6 @@
     variant = 'primary',
     ...restProps
   }: {
-    [key: string]: unknown;
     children: Snippet;
     class?: string;
     disabled?: boolean;
@@ -26,6 +25,7 @@
     outline?: boolean;
     type?: 'button' | 'submit' | 'reset';
     variant?: Variant;
+    [key: string]: unknown;
   } = $props();
 
   const hasInnerIcon = $derived(!!iconLeft || !!iconRight);

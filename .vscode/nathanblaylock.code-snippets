@@ -20,8 +20,13 @@
     "scope": "svelte",
   },
 
-  // Global Components
-
+  // GENERAL COMPONENTS
+  "Global Avatar": {
+    "prefix": "G-Avatar",
+    "body": ["<GAvatar />"],
+    "description": "Global avatar component.",
+    "scope": "svelte",
+  },
   "Global Button": {
     "prefix": "G-Btn",
     "body": ["<GBtn>$1</GBtn>"],
@@ -66,7 +71,34 @@
     "description": "Global sortable cards component.",
     "scope": "svelte",
   },
-  // FORMS
+  // LAYOUT COMPONENTS
+  "Global AppNav": {
+    "prefix": "G-AppNav",
+    "body": ["<GAppNav navItems={$1}>", "  ${2:Main Content}", "</GAppNav>"],
+    "description": "Global app navigation.",
+    "scope": "svelte",
+  },
+  "Global SideNav": {
+    "prefix": "G-SideNav",
+    "body": [
+      "<GSideNav header=\"${1:Side Nav}\">",
+      "  {#snippet sideNavContent()}",
+      "    ${2:Side Nav Content}",
+      "  {/snippet}",
+      "  {#snippet sideNavTools()}",
+      "    <GIconBtn",
+      "      variant=\"base-i4\"",
+      "      icon=\"plus\"",
+      "      title=\"Add\"",
+      "    />",
+      "  {/snippet}",
+      "  ${3:Main Content}",
+      "</GSideNav>",
+    ],
+    "description": "Global app navigation.",
+    "scope": "svelte",
+  },
+  // FORM COMPONENTS
   "Global Checkbox": {
     "prefix": "G-Checkbox",
     "body": ["<GCheckbox label=\"$1\" />"],
