@@ -5,7 +5,7 @@
     src,
     ...restProps
   }: {
-    class: string;
+    class?: string;
     size?: string | number;
     src?: string;
     [key: string]: unknown;
