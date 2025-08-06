@@ -2,6 +2,10 @@
   min-height: calc(100dvh - var(--dev-toolbar-offset));
   display: flex;
   flex-direction: column;
+  .app-nav-content &{
+    // This makes it so a SideNav can use a sticky footer on mobile sizes, but it won't have a sticky footer if nested under an AppNav. There isn't really a good way to do this without CSS trickery or even JS. If there is an AppNav, I don't think I would use a sticky footer anyway on mobile. See #176.
+    min-height: 1px;
+  }
   > * {
     min-width: 1px;
   }
