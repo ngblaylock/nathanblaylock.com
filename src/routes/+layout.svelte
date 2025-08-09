@@ -66,8 +66,8 @@
             <h1>{global.pageTitle}</h1>
           {/if}
         </div>
-        {@render children?.()}
       </div>
+      {@render children?.()}
     </main>
     <Footer />
   </div>
