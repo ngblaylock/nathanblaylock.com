@@ -16,7 +16,7 @@
       return defaultProject;
     }
     const currentProjectIndex = projects.findIndex(
-      (project) => project.route === currentProject
+      (project) => project.route === currentProject,
     );
     if (currentProjectIndex == -1) {
       return defaultProject;
@@ -32,7 +32,7 @@
       return defaultProject;
     }
     const currentProjectIndex = projects.findIndex(
-      (project) => project.route === currentProject
+      (project) => project.route === currentProject,
     );
     if (currentProjectIndex == -1) {
       return defaultProject;
@@ -45,30 +45,29 @@
   });
 </script>
 
-<div class="project mb-5 pb-3">
-  <div class="row" data-aos="fade-up">
-    <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-      {@render children?.()}
-      {#if getPrevProject.route && getNextProject.route}
-        <div class="d-flex justify-content-between mt-7">
-          <a
-            href="/projects/{getPrevProject.route}"
-            class="btn btn-outline-contrast btn-inner-icon text-end"
-          >
-            <GIcon name="arrowLeft" />
-            {getPrevProject.alt}</a
-          >
-          <a
-            href="/projects/{getNextProject.route}"
-            class="btn btn-outline-contrast btn-inner-icon text-end"
-          >
-            {getNextProject.alt}
-            <GIcon name="arrowRight" /></a
-          >
-        </div>
-      {/if}
+<div
+  class="container container-max-md mb-5 pb-3"
+  data-aos="fade-up"
+>
+  {@render children?.()}
+  {#if getPrevProject.route && getNextProject.route}
+    <div class="d-flex justify-content-between mt-7">
+      <a
+        href="/projects/{getPrevProject.route}"
+        class="btn btn-outline-contrast btn-inner-icon text-end"
+      >
+        <GIcon name="arrowLeft" />
+        {getPrevProject.alt}</a
+      >
+      <a
+        href="/projects/{getNextProject.route}"
+        class="btn btn-outline-contrast btn-inner-icon text-end"
+      >
+        {getNextProject.alt}
+        <GIcon name="arrowRight" /></a
+      >
     </div>
-  </div>
+  {/if}
 </div>
 
 <style lang="scss">

@@ -2,7 +2,7 @@
   import Seo from '$components/Seo.svelte';
 </script>
 
-<div data-aos="fade-up">
+<div class="container" data-aos="fade-up">
   <Seo title="Privacy" />
 
   <section>
