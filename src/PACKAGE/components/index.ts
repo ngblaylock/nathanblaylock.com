@@ -23,7 +23,7 @@ export { default as GTextInput } from './GTextInput.svelte';
 // Utils
 //
 // ----------------------------------------------------------------------
-import icons from './icons';
+
 export {getClientEnvironment} from './utils';
 
 // ----------------------------------------------------------------------
@@ -32,6 +32,7 @@ export {getClientEnvironment} from './utils';
 //
 // ----------------------------------------------------------------------
 
+import icons from './icons';
 export type IconName = keyof typeof icons;
 
 /** @type for the GAppNav navItems prop */

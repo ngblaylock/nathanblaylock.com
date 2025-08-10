@@ -18,6 +18,12 @@ export { default as GSegmentedControl } from './GSegmentedControl.svelte';
 export { default as GTextInput } from './GTextInput.svelte';
 // ----------------------------------------------------------------------
 //
+// Utils
+//
+// ----------------------------------------------------------------------
+export { getClientEnvironment } from './utils';
+// ----------------------------------------------------------------------
+//
 // Types
 //
 // ----------------------------------------------------------------------
