@@ -13,7 +13,7 @@
         { name: 'Typography', slug: 'typography' },
         { name: 'Loaders', slug: 'loaders' },
         { name: 'Spacing', slug: 'spacing' },
-        { name: 'Brand Logos', slug: 'brand-logos' },
+        { name: 'Utils', slug: 'utils' },
       ],
     },
     {

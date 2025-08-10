@@ -21,12 +21,16 @@
   );
 
   $effect(() => {
-    codeToHtml(JSON.stringify(data, null, 2), {
-      lang: 'json',
-      theme: 'dark-plus',
-    }).then((val) => {
-      htmlData = val;
-    });
+    if (data === undefined) {
+      htmlData = `<pre style="background-color: #1E1E1E; color: #d4d4d4;">undefined</pre>`;
+    } else {
+      codeToHtml(JSON.stringify(data, null, 2), {
+        lang: 'json',
+        theme: 'dark-plus',
+      }).then((val) => {
+        htmlData = val;
+      });
+    }
   });
 </script>
 

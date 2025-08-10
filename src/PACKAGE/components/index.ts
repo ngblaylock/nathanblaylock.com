@@ -17,13 +17,21 @@ export { default as GRichTextInput } from './GRichTextInput.svelte';
 export { default as GSegmentedControl } from './GSegmentedControl.svelte';
 export { default as GTextInput } from './GTextInput.svelte';
 
+
+// ----------------------------------------------------------------------
+//
+// Utils
+//
+// ----------------------------------------------------------------------
+import icons from './icons';
+export {getClientEnvironment} from './utils';
+
 // ----------------------------------------------------------------------
 //
 // Types
 //
 // ----------------------------------------------------------------------
 
-import icons from './icons';
 export type IconName = keyof typeof icons;
 
 /** @type for the GAppNav navItems prop */
