@@ -1,9 +1,9 @@
 <script lang="ts">
-  import type { Snippet } from 'svelte';
+  import { onMount, type Snippet } from 'svelte';
   import GAvatar from './GAvatar.svelte';
   import GIcon from './GIcon.svelte';
   import GIconBtn from './GIconBtn.svelte';
-  import type { AppNavItems } from './';
+  import { getClientEnvironment, type AppNavItems } from './';
 
   let {
     appNavContent,
@@ -16,13 +16,20 @@
   } = $props();
 
   let expanded = $state(false);
+  let isIosPwa = $state(false);
+
+  onMount(() => {
+    let environment = getClientEnvironment();
+    isIosPwa = environment.isIosSafari && environment.isPwa;
+    console.log(isIosPwa);  
+  })
 </script>
 
 <div
   class="app-nav-container"
   class:expanded
 >
-  <nav class="app-nav">
+  <nav class="app-nav" class:ios-home-bar-offset={isIosPwa}>
     {#if appNavContent}
       {@render appNavContent()}
     {:else if navItems}
