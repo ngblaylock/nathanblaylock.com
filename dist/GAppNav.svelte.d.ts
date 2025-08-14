@@ -1,5 +1,5 @@
-import type { Snippet } from 'svelte';
-import type { AppNavItems } from './';
+import { type Snippet } from 'svelte';
+import { type AppNavItems } from './';
 type $$ComponentProps = {
     appNavContent?: Snippet;
     children: Snippet;

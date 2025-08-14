@@ -8,12 +8,12 @@
   "scope": "/",
   "icons": [
     {
-      "src": "/meta/webmanifest-512x512.png",
+      "src": "/meta/dev/webmanifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/meta/webmanifest-512x512-maskable.png",
+      "src": "/meta/dev/webmanifest-512x512-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
