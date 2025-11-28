@@ -21,11 +21,12 @@
       folder: '/components',
       items: [
         { name: 'Avatars', slug: 'avatars' },
-        { name: 'Buttons', slug: 'buttons' },
+        { name: 'Buttons', slug: 'buttons', tags: ['btns'] },
         { name: 'Debug', slug: 'debug' },
         { name: 'DevNotes', slug: 'dev-notes' },
         { name: 'Icon Buttons', slug: 'icon-buttons' },
         { name: 'Icons', slug: 'icons' },
+        { name: 'Modals', slug: 'modals', tags: ['dialogs'] },
         {
           name: 'Sortable Cards',
           slug: 'sortable-cards',

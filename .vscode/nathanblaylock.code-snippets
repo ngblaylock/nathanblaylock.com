@@ -45,6 +45,12 @@
     "description": "Global development note component.",
     "scope": "svelte",
   },
+  "Global Modal": {
+    "prefix": "G-Modal",
+    "body": ["<GModal show={showModal}>$1</GModal>"],
+    "description": "Global modal component.",
+    "scope": "svelte",
+  },
   "Global Icon": {
     "prefix": "G-Icon",
     "body": ["<GIcon name=\"${2:plus}\" />"],

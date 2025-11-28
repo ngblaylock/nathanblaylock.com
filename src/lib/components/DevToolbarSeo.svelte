@@ -36,7 +36,7 @@
 <GBtn
   class="btn btn-light btn-sm"
   data-bs-toggle="modal"
-  data-bs-target="#exampleModal"
+  data-bs-target="#seoModal"
 >
   Check SEO
 </GBtn>
@@ -44,15 +44,15 @@
 <Portal target="body">
   <div
     class="modal modal-lg fade"
-    id="exampleModal"
+    id="seoModal"
     tabindex="-1"
-    aria-labelledby="exampleModalLabel"
+    aria-labelledby="seoModalLabel"
     aria-hidden="true"
   >
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content overflow-hidden">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Check SEO</h1>
+          <h1 class="modal-title fs-5" id="seoModalLabel">Check SEO</h1>
           <button
             type="button"
             class="btn-close"
