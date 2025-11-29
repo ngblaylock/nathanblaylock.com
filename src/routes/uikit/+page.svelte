@@ -1,4 +1,5 @@
 <script lang="ts">
+  import CodeBlock from '$components/CodeBlock.svelte';
   import Seo from '$components/Seo.svelte';
   let images = [
     'blaylock-nathan.jpg',
@@ -18,12 +19,19 @@
   To include this in any type of project use:
 </p>
 
-<small>
-  <pre>&lt;link
-  rel=&quot;stylesheet&quot;
-  href=&quot;https://cdn.jsdelivr.net/gh/ngblaylock/nathanblaylock.com@{__APP_VERSION__}/dist/nathanblaylock.min.css&quot;
-/&gt;</pre>
-</small>
+<h2>Basic Setup</h2>
+<p>
+  You first need to include the CSS file in your project. You can do this
+  through the Github package manager or through a CDN link like below:
+</p>
+
+<CodeBlock
+  code={`<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/ngblaylock/nathanblaylock.com@2.6.0/dist/nathanblaylock.min.css"
+/>`}
+  lang="html"
+/>
 
 <p>
   For larger projects like with SvelteKit, see <code

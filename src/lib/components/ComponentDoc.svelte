@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount, type Snippet } from 'svelte';
-  import { codeToHtml } from 'shiki';
   import { componentData } from '$lib/component-docs.svelte';
+    import CodeBlock from './CodeBlock.svelte';
 
   let {
     children,
@@ -16,7 +16,7 @@
   } = $props();
 
   let DynamicComponent: any = $state();
-  let codeHTML = $state('');
+  let fileContent = $state('');
 
   const uid = $props.id();
 
@@ -24,11 +24,7 @@
     const module = await import(`$PACKAGE/examples/${component}.svelte`);
     if (!module) return;
     DynamicComponent = module.default;
-    const fileContent = componentData.componentDoc[component];
-    codeHTML = await codeToHtml(fileContent, {
-      lang: 'svelte',
-      theme: 'material-theme',
-    });
+    fileContent = componentData.componentDoc[component];
   });
 </script>
 
@@ -64,7 +60,11 @@
             id={uid}
             class="accordion-collapse collapse"
           >
-            <div class="shiki-example">{@html codeHTML}</div>
+            <CodeBlock
+              code={fileContent}
+              lang="svelte"
+              class="mb-0"
+            />
           </div>
         </div>
       </div>
@@ -88,14 +88,3 @@
     </div>
   </div>
 {/if}
-
-<style lang="scss">
-  .shiki-example {
-    :global(pre) {
-      padding: $spacer;
-      border-radius: $border-radius;
-      border: 1px solid $dark;
-      margin: 0;
-    }
-  }
-</style>

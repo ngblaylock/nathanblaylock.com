@@ -1,6 +1,6 @@
 <script lang="ts">
   import uniqueId from 'lodash/uniqueId';
-  import { onDestroy, onMount, type Snippet } from 'svelte';
+  import { onDestroy, onMount, tick, type Snippet } from 'svelte';
   import GIconBtn from './GIconBtn.svelte';
   import type { Modal } from 'bootstrap';
   import Portal from 'svelte-portal';
@@ -8,10 +8,10 @@
     children,
     footer,
     id = `u${uniqueId()}`,
-    onHidden = () => {},
-    onHide = () => {},
-    onShow = () => {},
-    onShown = () => {},
+    onHidden,
+    onHide,
+    onShow,
+    onShown,
     show = $bindable(false),
     size,
     title,
@@ -31,31 +31,32 @@
   let bsModal = $state<Modal | null>(null);
   let activatingElement: Element | null = null;
 
-  onMount(async () => {
-    const { Modal } = await import('bootstrap');
-    const modalEl = document.getElementById(id)!;
-    bsModal = Modal.getOrCreateInstance(modalEl);
+  onMount(async () => {    
+    // const { Modal } = await import('bootstrap');
+    const modalEl = document.getElementById(id)!;    
+    
+    bsModal = window.bootstrap.Modal.getOrCreateInstance(modalEl);
 
     modalEl.addEventListener('show.bs.modal', () => {
       activatingElement = document.activeElement;
       show = true;
-      onShow();
+      onShow?.();
     });
 
     modalEl.addEventListener('shown.bs.modal', () => {
-      onShown();
+      onShown?.();
     });
 
     modalEl.addEventListener('hide.bs.modal', () => {
-      onHide();
+      onHide?.();
     });
-    
+
     modalEl.addEventListener('hidden.bs.modal', () => {
       if (activatingElement instanceof HTMLElement) {
         activatingElement.focus();
       }
       show = false;
-      onHidden();
+      onHidden?.();
     });
   });
 

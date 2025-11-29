@@ -1,16 +1,16 @@
 <script lang="ts">
   let showModal = $state(false);
-  let onShown = () => {
-    console.log('Modal is fully shown!');
-  };
   let onShow = () => {
-    console.log('Modal is starting to show!');
+    console.info('Modal is starting to show');
+  };
+  let onShown = () => {
+    console.info('Modal is fully shown');
   };
   let onHide = () => {
-    console.log('Modal is starting to hide!');
+    console.info('Modal is starting to hide');
   };
   let onHidden = () => {
-    console.log('Modal is fully hidden!');
+    console.info('Modal is fully hidden');
   };
 </script>
 

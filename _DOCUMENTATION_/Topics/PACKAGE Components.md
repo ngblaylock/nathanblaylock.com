@@ -81,6 +81,16 @@ Add the styles in `+layout.svelte`
 {@render children()}
 ```
 
+### JavaScript
+
+Components that require scripts need to have the bootstrap script script loaded in the window object. To do this, add the following to `src/hooks.client.js` which will load before any layout, page, or component:
+
+```ts
+// @ts-ignore
+const bootstrap = await import('bootstrap/dist/js/bootstrap.bundle.min.js');
+window.bootstrap = bootstrap;
+```
+
 ### Components
 
 For other repositories like Scoresheet, you can manually import components using `import { Btn } from 'nathanblaylock.com'`. Alternatively you can configure auto-importing with the following.
