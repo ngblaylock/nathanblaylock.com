@@ -10,15 +10,15 @@ Since deciding to auto-import components in the `src/PACKAGE/components` directo
 
 ---
 
-# New Package Component
+# Create New Package Component
 
 Package components are shared components between multiple applications. They are bundled when running `npm run build` in the deploy steps. Only files and components within the `src/PACKAGE/components` directory will be bundled. All components should be prefixed with a `G` which stands for "Global".
 
-When adding a component:
+When creating a component:
 
-1. Prefix the component with a `G`
+1. Prefix the component with a `G` in `./src/PACKAGE/components`
 2. Any other global component references should be manually imported with a relative file path
-3. Add the import to the `PACKAGE/index.ts` file
+3. Add the import to the `src/PACKAGE/components/index.ts` file
 4. Add a code snippet to `.vscode/nathanblaylock.code-snippets`
 5. Create a component page in `src/routes/uikit/components`
    - Add a meaningful description
@@ -79,6 +79,17 @@ Add the styles in `+layout.svelte`
 </script>
 
 {@render children()}
+```
+
+### JavaScript
+
+Components that require scripts need to have the bootstrap script script loaded in the window object. To do this, add the following to `src/hooks.client.js` which will load before any layout, page, or component:
+
+```ts
+// @ts-ignore
+import('bootstrap/dist/js/bootstrap.bundle.min.js').then((bootstrap) => {
+  window.bootstrap = bootstrap;
+});
 ```
 
 ### Components

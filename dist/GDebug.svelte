@@ -13,7 +13,7 @@ $effect(() => {
     else {
         codeToHtml(JSON.stringify(data, null, 2), {
             lang: 'json',
-            theme: 'dark-plus',
+            theme: 'material-theme',
         }).then((val) => {
             htmlData = val;
         });

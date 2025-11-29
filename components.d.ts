@@ -10,6 +10,7 @@ declare global {
     const GDevNote: typeof import("./src/PACKAGE/components/GDevNote.svelte")["default"]
     const GIcon: typeof import("./src/PACKAGE/components/GIcon.svelte")["default"]
     const GIconBtn: typeof import("./src/PACKAGE/components/GIconBtn.svelte")["default"]
+    const GModal: typeof import("./src/PACKAGE/components/GModal.svelte")["default"]
     const GRadioGroup: typeof import("./src/PACKAGE/components/GRadioGroup.svelte")["default"]
     const GRichTextInput: typeof import("./src/PACKAGE/components/GRichTextInput.svelte")["default"]
     const GSegmentedControl: typeof import("./src/PACKAGE/components/GSegmentedControl.svelte")["default"]

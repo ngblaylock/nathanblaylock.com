@@ -21,7 +21,6 @@
   onMount(() => {
     let environment = getClientEnvironment();
     isIosPwa = environment.isIosSafari && environment.isPwa;
-    console.log(isIosPwa);  
   })
 </script>
 
