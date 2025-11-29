@@ -16,7 +16,6 @@
 <p>
   This UI Kit is a library of styles and components built in Svelte 5. This is
   set up where all styles reside in the main <code>nathanblaylock.css</code> file.
-  To include this in any type of project use:
 </p>
 
 <h2>Basic Setup</h2>

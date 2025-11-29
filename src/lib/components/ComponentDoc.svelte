@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount, type Snippet } from 'svelte';
   import { componentData } from '$lib/component-docs.svelte';
-    import CodeBlock from './CodeBlock.svelte';
+  import CodeBlock from './CodeBlock.svelte';
 
   let {
     children,

@@ -2,16 +2,21 @@
   import { codeToHtml } from 'shiki';
   import { onMount } from 'svelte';
   let codeHtml = $state('');
-  let {code, lang, class: classList}: {code: string; lang: string; class?: string} = $props();
+  let {
+    code,
+    lang,
+    class: classList,
+  }: {
+    code: string;
+    lang: string;
+    class?: string;
+  } = $props();
 
   onMount(async () => {
-    codeHtml = await codeToHtml(
-      code,
-      {
-        lang,
-        theme: 'material-theme',
-      },
-    );
+    codeHtml = await codeToHtml(code, {
+      lang,
+      theme: 'material-theme',
+    });
   });
 </script>
 

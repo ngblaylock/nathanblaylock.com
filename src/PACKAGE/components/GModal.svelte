@@ -1,6 +1,6 @@
 <script lang="ts">
   import uniqueId from 'lodash/uniqueId';
-  import { onDestroy, onMount, tick, type Snippet } from 'svelte';
+  import { onDestroy, onMount, type Snippet } from 'svelte';
   import GIconBtn from './GIconBtn.svelte';
   import type { Modal } from 'bootstrap';
   import Portal from 'svelte-portal';
@@ -32,9 +32,7 @@
   let activatingElement: Element | null = null;
 
   onMount(async () => {    
-    // const { Modal } = await import('bootstrap');
     const modalEl = document.getElementById(id)!;    
-    
     bsModal = window.bootstrap.Modal.getOrCreateInstance(modalEl);
 
     modalEl.addEventListener('show.bs.modal', () => {

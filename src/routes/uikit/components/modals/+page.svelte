@@ -53,6 +53,7 @@
     },
     {
       name: 'title',
+      required: true,
       type: 'string',
       description: 'Sets the title of the modal.',
     },

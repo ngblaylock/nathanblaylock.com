@@ -16,7 +16,7 @@
 
   let { children } = $props();
 
-  onMount(async () => {    
+  onMount(async () => {
     AOS.init({
       once: true,
       offset: 100,
