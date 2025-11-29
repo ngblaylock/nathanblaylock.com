@@ -47,7 +47,7 @@
   },
   "Global Modal": {
     "prefix": "G-Modal",
-    "body": ["<GModal show={showModal}>$1</GModal>"],
+    "body": ["<GModal bind:show={showModal}>$1</GModal>"],
     "description": "Global modal component.",
     "scope": "svelte",
   },

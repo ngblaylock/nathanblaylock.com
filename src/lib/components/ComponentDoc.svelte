@@ -27,7 +27,7 @@
     const fileContent = componentData.componentDoc[component];
     codeHTML = await codeToHtml(fileContent, {
       lang: 'svelte',
-      theme: 'dark-plus',
+      theme: 'material-theme',
     });
   });
 </script>
