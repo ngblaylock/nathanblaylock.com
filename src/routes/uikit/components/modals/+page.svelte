@@ -86,3 +86,9 @@
     target="_blank">Bootstrap events</a
   >.
 </ComponentDoc>
+<ComponentDoc
+  title="Modal Sizes"
+  component="ModalSizes"
+>
+  Show different size modals by using the <code>size</code> prop.
+</ComponentDoc>

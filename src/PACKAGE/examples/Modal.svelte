@@ -7,7 +7,6 @@
 <GModal
   bind:show={showModal}
   title="Example Modal"
-  size="lg"
 >
   Here is the modal content!
   {#snippet footer()}
