@@ -1,3 +1,6 @@
+$variable-prefix: bs-;
+$prefix: $variable-prefix;
+
 $white: #ffffff;
 $transparent: transparent;
 
@@ -203,6 +206,12 @@ $list-group-hover-bg: var(--bse-base-4);
 
 // Modals
 $modal-content-border-color: $border-color;
+$modal-header-border-width: 0;
+$modal-footer-border-width: var(--#{$prefix}border-width) !default;
+$modal-sm: 400px;
+$modal-md: 600px;
+$modal-lg: 1000px;
+$modal-xl: 1200px;
 
 // Offcanvas
 $offcanvas-horizontal-width: 320px;

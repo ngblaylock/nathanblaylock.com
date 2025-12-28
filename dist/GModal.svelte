@@ -1,12 +1,11 @@
 <script lang="ts">import uniqueId from 'lodash/uniqueId';
-import { onDestroy, onMount, tick } from 'svelte';
+import { onDestroy, onMount } from 'svelte';
 import GIconBtn from './GIconBtn.svelte';
 import Portal from 'svelte-portal';
 let { children, footer, id = `u${uniqueId()}`, onHidden, onHide, onShow, onShown, show = $bindable(false), size, title, } = $props();
 let bsModal = $state(null);
 let activatingElement = null;
 onMount(async () => {
-    // const { Modal } = await import('bootstrap');
     const modalEl = document.getElementById(id);
     bsModal = window.bootstrap.Modal.getOrCreateInstance(modalEl);
     modalEl.addEventListener('show.bs.modal', () => {
