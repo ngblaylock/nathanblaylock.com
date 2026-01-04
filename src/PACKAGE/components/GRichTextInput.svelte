@@ -24,7 +24,7 @@
     label: string;
     placeholder?: string;
     required?: boolean;
-    value?: string;
+    value?: string | null;
   } = $props();
   let uid = $derived(id || uniqueId('u'));
 
@@ -56,7 +56,13 @@
         // force re-render so `editor.isActive` works as expected
         editor = undefined;
         editor = newEditor;
-        value = newEditor.getHTML();
+        const html = newEditor.getHTML();
+        if (html === '<p></p>') {
+          if (value === null) return;
+          value = '';
+        } else {
+          value = html;
+        }
       },
     });
   });

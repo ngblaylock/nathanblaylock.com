@@ -1,5 +1,5 @@
 <script lang="ts">
-  let html = $state(/* html */ `
+  let html: string | null = $state(/* html */ `
     <h1>Header 1</h1>
     <h2>Header 2</h2>
     <h3>Header 3</h3>
@@ -61,6 +61,11 @@
     onclick={() => (html = '<h2>Lorem</h2><p>ipsum <b>dolor</b>...</p>')}
   >
     Lorem
+  </GBtn>
+  <GBtn
+    variant="base-2"
+    onclick={() => (html = null)}
+    >Set Null
   </GBtn>
   <GBtn
     variant="base-2"
