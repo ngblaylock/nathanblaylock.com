@@ -16,3 +16,4 @@ export declare const getClientEnvironment: () => {
     osName: string | undefined;
     browserName: string | undefined;
 };
+export declare function getBootstrap(): Promise<any>;

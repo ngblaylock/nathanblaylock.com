@@ -26,7 +26,7 @@ export { default as GTextInput } from './GTextInput.svelte';
 //
 // ----------------------------------------------------------------------
 
-export {getClientEnvironment} from './utils';
+export {getClientEnvironment, getBootstrap} from './utils';
 
 // ----------------------------------------------------------------------
 //

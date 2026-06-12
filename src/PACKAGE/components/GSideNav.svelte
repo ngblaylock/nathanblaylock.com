@@ -3,6 +3,7 @@
   import type { Snippet } from 'svelte';
   import uniqueId from 'lodash/uniqueId';
   import GIconBtn from './GIconBtn.svelte';
+  import { getBootstrap } from './utils';
 
   let {
     children,
@@ -21,7 +22,8 @@
   beforeNavigate(async () => {
     const offcanvasEl = document.getElementById(uid);
     if (!offcanvasEl) return;
-    const offcanvas = window.bootstrap.Offcanvas.getInstance(offcanvasEl);
+    const bs = await getBootstrap();
+    const offcanvas = bs.Offcanvas.getInstance(offcanvasEl);
     if (offcanvas) {
       offcanvas.hide();
     }

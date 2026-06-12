@@ -83,14 +83,7 @@ Add the styles in `+layout.svelte`
 
 ### JavaScript
 
-Components that require scripts need to have the bootstrap script script loaded in the window object. To do this, add the following to `src/hooks.client.js` which will load before any layout, page, or component:
-
-```ts
-// @ts-ignore
-import('bootstrap/dist/js/bootstrap.bundle.min.js').then((bootstrap) => {
-  window.bootstrap = bootstrap;
-});
-```
+To get JavaScript working with Bootstrap components, see [Bootstrap JS.md](./Bootstrap%20JS.md).
 
 ### Components
 

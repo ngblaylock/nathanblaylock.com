@@ -6,7 +6,7 @@ type $$ComponentProps = {
     label: string;
     placeholder?: string;
     required?: boolean;
-    value?: string;
+    value?: string | null;
 };
 declare const GRichTextInput: import("svelte").Component<$$ComponentProps, {}, "value">;
 type GRichTextInput = ReturnType<typeof GRichTextInput>;

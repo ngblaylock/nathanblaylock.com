@@ -35,3 +35,26 @@ export const getClientEnvironment = () => {
         browserName: browser.name,
     };
 };
+/**
+ * Initializes Bootstrap if it already hasn't. This will ensure Bootstrap is loaded and there are no race conditions.
+ *
+ * Usage:
+ * const bs = await getBootstrap();
+ * bsModal = bs.Modal.getOrCreateInstance(modalEl);
+ */
+// This promise caches the import so it only ever triggers once app-wide
+let bootstrapPromise = null;
+export function getBootstrap() {
+    if (typeof window === 'undefined')
+        return Promise.resolve(null);
+    if (window.bootstrap) {
+        return Promise.resolve(window.bootstrap);
+    }
+    if (!bootstrapPromise) {
+        bootstrapPromise = import('bootstrap').then((bootstrap) => {
+            window.bootstrap = bootstrap;
+            return bootstrap;
+        });
+    }
+    return bootstrapPromise;
+}
