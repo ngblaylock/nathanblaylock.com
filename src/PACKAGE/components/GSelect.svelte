@@ -1,61 +1,79 @@
 <script lang="ts">
-  import isEqual from 'lodash/isequal';
+  import uniqueId from 'lodash/uniqueId';
+
   interface Option {
     text: string | number;
     value: unknown;
+    disabled?: boolean;
+    hidden?: boolean;
   }
+
   let {
+    class: classList = '',
+    hideLabel = false,
+    hint = '',
+    id = '',
+    label,
     options = [],
-    value = $bindable(),
-  }: { options: (string | number | Option)[]; value: unknown } = $props();
+    required = false,
+    value = $bindable(null),
+    ...restProps
+  }: {
+    class?: string;
+    hideLabel?: boolean;
+    hint?: string;
+    id?: string;
+    label: string;
+    options: (Option | string | number | undefined)[];
+    required?: boolean;
+    value?: any;
+    [key: string]: unknown;
+  } = $props();
+
+  let uid = $derived(id || uniqueId('u'));
 
   let formattedOptions = $derived(
     options.map((option) => {
+      if (!option) return { text: '', value: undefined };
       if (typeof option === 'string' || typeof option === 'number') {
         return { text: option, value: option };
-      } else {
-        return option;
       }
-    }),
-  );
-  let foundOption = $derived(
-    formattedOptions.find((option) => {
-      return isEqual($state.snapshot(option.value), value);
+      return option;
     }),
   );
 </script>
 
-<div class="dropdown">
-  <button
-    class="form-control text-start"
-    type="button"
-    data-bs-toggle="dropdown"
-    aria-expanded="false"
+<div class={classList}>
+  <label
+    for={uid}
+    class="form-label"
+    class:visually-hidden={hideLabel}
+    >{#if required}<span class="text-primary">*</span>{/if}{label}</label
   >
-    {#if foundOption}
-      {foundOption.text}
-    {:else}
-      &nbsp;
-    {/if}
-  </button>
-  <input
-    type="text"
-    {value}
-    class="visually-hidden"
-    tabindex="-1"
-    style="width: 100% !important"
-    required
-  />
-  <ul class="dropdown-menu w-100">
+
+  <select
+    bind:value
+    class="form-select"
+    id={uid}
+    {required}
+    {...restProps}
+  >
     {#each formattedOptions as option}
-      <li>
-        <button
-          type="button"
-          class="dropdown-item"
-          class:active={isEqual(value, option.value)}
-          onclick={() => (value = option.value)}>{option.text}</button
-        >
-      </li>
+      <option
+        value={option.value}
+        disabled={option.disabled}
+        hidden={option.hidden}
+      >
+        {option.text}
+      </option>
     {/each}
-  </ul>
+  </select>
+  {#if hint}
+    <div
+      id="{uid}-hint"
+      class="form-text"
+    >
+      {hint}
+    </div>
+  {/if}
 </div>
