@@ -135,9 +135,15 @@
     "description": "Global segmented control component.",
     "scope": "svelte",
   },
+  "Global Select": {
+    "prefix": "G-Select",
+    "body": ["<GSelect label=\"$1\" bind:value={$2} />"],
+    "description": "Global text input component.",
+    "scope": "svelte",
+  },
   "Global TextInput": {
     "prefix": "G-TextInput",
-    "body": ["<GTextInput label=\"$1\" />"],
+    "body": ["<GTextInput label=\"$1\" bind:value={$2} />"],
     "description": "Global text input component.",
     "scope": "svelte",
   },
