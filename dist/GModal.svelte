@@ -2,12 +2,14 @@
 import { onDestroy, onMount } from 'svelte';
 import GIconBtn from './GIconBtn.svelte';
 import Portal from 'svelte-portal';
+import { getBootstrap } from './utils';
 let { children, footer, id = `u${uniqueId()}`, onHidden, onHide, onShow, onShown, show = $bindable(false), size, title, } = $props();
 let bsModal = $state(null);
 let activatingElement = null;
 onMount(async () => {
     const modalEl = document.getElementById(id);
-    bsModal = window.bootstrap.Modal.getOrCreateInstance(modalEl);
+    const bs = await getBootstrap();
+    bsModal = bs.Modal.getOrCreateInstance(modalEl);
     modalEl.addEventListener('show.bs.modal', () => {
         activatingElement = document.activeElement;
         show = true;

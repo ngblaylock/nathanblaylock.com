@@ -4,6 +4,8 @@
   import GIconBtn from './GIconBtn.svelte';
   import type { Modal } from 'bootstrap';
   import Portal from 'svelte-portal';
+  import { getBootstrap } from './utils';
+  
   let {
     children,
     footer,
@@ -31,9 +33,10 @@
   let bsModal = $state<Modal | null>(null);
   let activatingElement: Element | null = null;
 
-  onMount(async () => {    
-    const modalEl = document.getElementById(id)!;    
-    bsModal = window.bootstrap.Modal.getOrCreateInstance(modalEl);
+  onMount(async () => {
+    const modalEl = document.getElementById(id)!;
+    const bs = await getBootstrap();
+    bsModal = bs.Modal.getOrCreateInstance(modalEl);
 
     modalEl.addEventListener('show.bs.modal', () => {
       activatingElement = document.activeElement;

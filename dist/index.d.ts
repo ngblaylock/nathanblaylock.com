@@ -13,8 +13,9 @@ export { default as GCheckboxGroup } from './GCheckboxGroup.svelte';
 export { default as GRadioGroup } from './GRadioGroup.svelte';
 export { default as GRichTextInput } from './GRichTextInput.svelte';
 export { default as GSegmentedControl } from './GSegmentedControl.svelte';
+export { default as GSelect } from './GSelect.svelte';
 export { default as GTextInput } from './GTextInput.svelte';
-export { getClientEnvironment } from './utils';
+export { getClientEnvironment, getBootstrap } from './utils';
 import icons from './icons';
 export type IconName = keyof typeof icons;
 /** @type for the GAppNav navItems prop */
