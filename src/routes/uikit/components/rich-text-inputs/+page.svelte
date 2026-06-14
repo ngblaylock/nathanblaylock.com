@@ -52,10 +52,10 @@
     {
       name: 'value',
       bindable: true,
-      type: 'string',
+      type: 'string | null',
       default: '',
       description:
-        'The HTML value of the rich text input that can be bound to the parent component. This expects HTML. If the string is not HTML it will default it to a paragraph.',
+        'The HTML value of the rich text input that can be bound to the parent component. This expects HTML, an empty string, or null. Empty content will be an empty string instead of an empty paragraph, which is the default TipTap behavior.',
     },
   ];
 </script>

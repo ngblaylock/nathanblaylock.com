@@ -54,13 +54,22 @@
         >
           Toggle
         </GBtn>
-        {#each Array(lines) as _x}
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus,
-            labore sit voluptas expedita tempore numquam porro veniam, iure
-            repellat et asperiores soluta quaerat autem. Eveniet a nobis ratione
-            quos optio?
-          </p>
+        {#each Array(lines) as _x, index}
+          {#if index === 10}
+            <div class="card card-body my-3">
+              <p>
+                Having this card in the example demonstrates the AppNav z-index
+                is higher than other relatively positioned elements.
+              </p>
+            </div>
+          {:else}
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Accusamus, labore sit voluptas expedita tempore numquam porro
+              veniam, iure repellat et asperiores soluta quaerat autem. Eveniet
+              a nobis ratione quos optio?
+            </p>
+          {/if}
         {/each}
       </div>
     </main>

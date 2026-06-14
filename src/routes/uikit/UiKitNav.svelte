@@ -55,6 +55,7 @@
           slug: 'segmented-control',
           tags: ['button group'],
         },
+        { name: 'Selects', slug: 'selects', tags: ['autocomplete'] },
         { name: 'Text Inputs', slug: 'text-inputs', tags: ['textareas'] },
       ],
     },
