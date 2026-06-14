@@ -85,3 +85,21 @@
     <div class="p-2 text-bg-base-i4">base-i4</div>
   </div>
 </div>
+
+<div class="row mt-5">
+  <div class="col-md-6">
+    <div class="p-2 text-bg-warning d-flex justify-content-between">
+      Warning <span>{getHex('warning')}</span>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="p-2 text-bg-success d-flex justify-content-between">
+      Success <span>{getHex('success')}</span>
+    </div>
+  </div>
+</div>
+
+<GBtn variant="success">Success</GBtn>
+<GBtn variant="warning">Warning</GBtn>
+
+<div class="alert alert-success">Success Alert</div>

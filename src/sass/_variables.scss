@@ -37,6 +37,9 @@ $gray-900: #141518; // dark
 $red: $red-600;
 $blue: $blue-600;
 
+$green: #096826;
+$copper: #87540e;
+
 $primary: $red-600;
 $secondary: $blue-600;
 $gray: $gray-600;
@@ -52,6 +55,8 @@ $custom-colors: (
   'light': $light,
   'gray': $gray,
   'dev': $dev,
+  'success': $green,
+  'warning': $copper,
 );
 
 $theme-colors: ();
