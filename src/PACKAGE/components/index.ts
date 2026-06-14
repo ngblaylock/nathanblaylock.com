@@ -57,6 +57,8 @@ export type AppNavItems = {
 export type Variant =
   | 'primary'
   | 'secondary'
+  | 'warning'
+  | 'success'
   | 'light'
   | 'dark'
   | 'gray'

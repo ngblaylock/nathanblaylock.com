@@ -34,4 +34,4 @@ export type AppNavItems = {
         src?: string;
     }[];
 };
-export type Variant = 'primary' | 'secondary' | 'light' | 'dark' | 'gray' | 'base-1' | 'base-2' | 'base-3' | 'base-4' | 'base-i1' | 'base-i2' | 'base-i3' | 'base-i4';
+export type Variant = 'primary' | 'secondary' | 'warning' | 'success' | 'light' | 'dark' | 'gray' | 'base-1' | 'base-2' | 'base-3' | 'base-4' | 'base-i1' | 'base-i2' | 'base-i3' | 'base-i4';
