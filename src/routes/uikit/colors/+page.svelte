@@ -98,8 +98,3 @@
     </div>
   </div>
 </div>
-
-<GBtn variant="success">Success</GBtn>
-<GBtn variant="warning">Warning</GBtn>
-
-<div class="alert alert-success">Success Alert</div>
