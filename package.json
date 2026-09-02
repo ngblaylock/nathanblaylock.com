@@ -55,7 +55,7 @@
 		"@mdi/js": "^7.4.47",
 		"@ngblaylock/bootstrap-extensions": "0.2.1",
 		"@sveltejs/kit": "^2.65.0",
-		"@tiptap/core": "^3.0.7",
+		"@tiptap/core": "^3.31.0",
 		"@tiptap/extension-highlight": "^3.0.7",
 		"@tiptap/extensions": "^3.0.7",
 		"@tiptap/pm": "^3.0.7",
